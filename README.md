@@ -29,4 +29,4 @@ dairly learning
 - 关注我的[哔哩哔哩](https://space.bilibili.com/424394389?spm_id_from=333.788.b_765f7570696e666f.1)
 - 关注我的公众号CV伴读社
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/202005031406335.jpg#pic_center)
+<div align=center><img src="https://img-blog.csdnimg.cn/202005031406335.jpg" style='zoom:80%'>
