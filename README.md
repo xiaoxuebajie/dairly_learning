@@ -11,39 +11,40 @@
 
 ## :paperclip:  今日要点
 
-1. [车道线检测方法的一些近期论文](https://mp.weixin.qq.com/s/OqS5Ti5kyK-uk00p7qzfEA)         :star::star:
-   - 主要内容：11篇有关车道线检测的论文
+1. [有了它，你的照片能“屏蔽”人脸识别算法](https://mp.weixin.qq.com/s/AkZ9TYR4i-MvjBcdl7i19Q)         :star::star:
+   - 主要内容：通过AI技术使照片躲避人脸识别
+   - paper: [Fawkes: Protecting Privacy against Unauthorized Deep Learning Models](https://www.shawnshan.com/files/publication/fawkes.pdf)
+   - code: [https://github.com/Shawn-Shan/fawkes](https://github.com/Shawn-Shan/fawkes)
 
-
-2. [基于深度学习的2D图像深度估计:从单目到多目](https://mp.weixin.qq.com/s/i_qnsPG-w4v9M6w1UvEMQw)       :star::star:
-   - 主要内容：关于深度立体匹配和多视角立体几何的学习分享
-
-
-3. [AI防抖，稳如老狗？台湾大学和谷歌提出NeRViS：无需裁剪的全帧视频稳定算法](https://mp.weixin.qq.com/s/1K78ZBg6LqKeKlpSQ8nu_Q)       :star::star:
-   - 主要内容：无需裁剪的全帧视频稳定算法NeRViS
-   - paper: [Hybrid Neural Fusion for Full-frame Video Stabilization](https://arxiv.org/abs/2102.06205)
-   - code: [https://github.com/alex04072000/NeRViS](https://github.com/alex04072000/NeRViS)
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtAwcCXCX3IPicpy2czfRIzgrma9RicGicHnzJpHUON9loBgZibdncKTnPu0Aick9j03Y2yZbub5NXNkxxw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:50%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/DSU8cv1j3ibQicCuBlrOBD1rw9KpiaCQnnI843e0TYibZVKvhUadfyZHkFVG4GPTOOYJvpwweSHlASheQhXbk63m7w/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-4. [CVPR 2021 Oral | 55.1 AP！VFNet：全面提升密集目标检测性能](https://mp.weixin.qq.com/s/rhxAtOdbPz89LMjV31icVA)      :star::star:
-   - 主要内容：提升密集目标检测的VFNet，达到55.1的AP
-   - paper: [VarifocalNet: An IoU-aware Dense Object Detector](https://arxiv.org/abs/2008.13367)
-   - code: [https://github.com/hyz-xmaster/VarifocalNet ](https://github.com/hyz-xmaster/VarifocalNet )
-   - Tips：单模型单尺度模型可达55.1% AP！性能优于ATSS、EfficientDet等网络，代码现已开源！
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/5ooHoYt0tgmTPLOWjaSQFNNX15hogGRqqhUoAwaMHoB9MPXpcxR7T7TCDNiamNCctQ1sFD0w291D4n09wfib4txg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:50%'>
+2. [2021暑期实习 | 带你揭秘微软亚洲研究院的Micro Life](hhttps://mp.weixin.qq.com/s/-7i1oIcWd_U9DvypUzDdeg)       :star::star:
+   - 主要内容：微软亚洲研究院实习
+   - 网站：[microsoft.careers.com](microsoft.careers.com)
+3. [招聘|华为2012实验室招自动驾驶相关方向工程师/博士后/实习生](https://mp.weixin.qq.com/s/lMDxTjKMxAKx93OU4JBXPw)       :star::star:
+   - 主要内容：华为自动驾驶方面实习
+   - Tips: 主要是自动驾驶，计算机视觉方面的
+4. [二次元妹子五官画风都能改，周博磊团队用无监督方法控制GAN | CVPR 2021](https://mp.weixin.qq.com/s/eGNSh94E7axi7dCFXeBDVQ)        :star::star:
+   - 主要内容：精准调节五官、表情、姿势和绘画风格的SeFa
+   - paper: [Closed-Form Factorization of Latent Semantics in GANs](https://arxiv.org/abs/2007.06600)
+   - code: [https://github.com/genforce/sefa](https://github.com/genforce/sefa)
+   - colab: [https://colab.research.google.com/github/genforce/sefa/blob/master/docs/SeFa.ipynb](https://colab.research.google.com/github/genforce/sefa/blob/master/docs/SeFa.ipynb)
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/YicUhk5aAGtAF4AGwXyXiav7fHQXWGfQcic6vrFDN6icPdwDa3yA4G5NAAibTn616vubVII4m4zibGnhFxZpo72F1HfA/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1" style='zoom:100%'>
 </div>
 
-5. [CVPR 2021 | RegDA：针对无监督关键点检测的回归域自适应方法](https://mp.weixin.qq.com/s/Cr-Sn-9Ead6mmMZqSwwbAg)    :star::star:
-   - 主要内容：本文提出RegDA，发现了回归空间在概率意义上的稀疏性，并利用这一特性缩小回归任务和分类任务间的差距
-   - paper: [Regressive Domain Adaptation for Unsupervised Keypoint Detection](https://arxiv.org/abs/2103.06175)
-   - code: [https://github.com/thuml/Transfer-Learning-Library/tree/dev](https://github.com/thuml/Transfer-Learning-Library/tree/dev)
+5. [CVPR2021-Representative BatchNorm]()       :star::star:
+   - 主要内容：Representative BN是改进版的BN
+   - paper: [Representative Batch Normalization with Feature Calibration](https://mftp.mmcheng.net/Papers/21CVPR-BN.pdf)
+   - code: [https://github.com/ShangHua-Gao/RBN](https://github.com/ShangHua-Gao/RBN)
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/2yicI4uAMVVFLVLMGr8iaYJlstlxUhOyxynsZ2c2qCXPCdhakhYhdUaibEMGFibfaWv6I6oKzKR196Bk7fIJsQbo1g/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:50%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/SdQCib1UzF3vgqWXOQyK08GIusyLFTh0rUfXyRVibum5njHyVj16Vnoxnp3wzfIWE8tvibyiaiatYShTpXPxwBpiadWQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
+
+## 
 
 
 ## :paperclip:  历史更新
@@ -76,6 +77,7 @@
     11. <a href="notes/202104/0411.md" target="_blank">公众号内容拓展学习笔记（2021.4.11）</a>
     12. <a href="notes/202104/0412.md" target="_blank">公众号内容拓展学习笔记（2021.4.12）</a>
     13. <a href="notes/202104/0413.md" target="_blank">公众号内容拓展学习笔记（2021.4.13）</a>
+    14. <a href="notes/202104/0414.md" target="_blank">公众号内容拓展学习笔记（2021.4.14）</a>
 </details>
 </pre>
 
