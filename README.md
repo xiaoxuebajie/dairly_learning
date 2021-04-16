@@ -3,55 +3,63 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2021.4.15
+更新今日时间：2021.4.16
 
 ------
 
 
 
-## :paperclip:  今日要点
 
-1. [压缩版styleGAN，合成高保真图像，参数更少、计算复杂度更低](https://mp.weixin.qq.com/s/W3T72paS1mlQdt2ZIqdejw)         :star::star::star:
-   - 主要内容：提出了一种名为 MobileStyleGAN 的新架构
-   - paper: [MobileStyleGAN: A Lightweight Convolutional Neural Network for High-Fidelity Image Synthesis](https://arxiv.org/pdf/2104.04767.pdf)
-   - code: [https://github.com/bes-dev/MobileStyleGAN.pytorch](https://github.com/bes-dev/MobileStyleGAN.pytorch)
-   - Tips: 相比于 StyleGAN2，参数量减少了约 71 %，计算复杂度降低约 90 %，并且生成质量几乎没有下降。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/KmXPKA19gWibOjTBJ6gIBRJVP58iau9icwiagicjvHXztPuicFO0DyaOJWScEDeeweEh1qhxbIK87DWfKcX8WBicErWlA/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1" style='zoom:100%'>
-</div>
-
-
-2. [突破置换模块计算瓶颈，MSRA开源轻量版HRNet，超越主流轻量化网络！｜CVPR2021](https://mp.weixin.qq.com/s/q188jdQq5UJSgX7EHQtZwQ)       :star::star:
-   - 主要内容：Lite-HRNet是针对HRNet的轻量化设计
-   - paper: [Lite-HRNet: A Lightweight High-Resolution Network](https://arxiv.org/abs/2104.06403)
-   - code: [https://github.com/HRNet/Lite-HRNet](https://github.com/HRNet/Lite-HRNet)
-   - Tips: 通过简单的将ShuffleNet中的置换模块嵌入到HRNet即可得到性能优于其他轻量化方案的基础版Lite-HRNet;通过引入一种高效条件通道加权单元替换置换模块的卷积得到本文所提改进版高效网络Lite-HRNet
-
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfrD0Y0ROfQrccvKPY9Z3k7kiamQIiaHuEtX99j9dS3z9qMFHxFsxIsZrStSF95ZmTedqnUTy9whBLMQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-
-3. [CVPR 2021 | MSRA提出像素级别自监督预训练方法PixPro，大幅提升下游检测分割任务性能](https://mp.weixin.qq.com/s/Gbb1l7qNQSzVaGkf-8faeQ)       :star::star:
-   - 主要内容：针对下游密集任务的自监督算法PixPro
-   - paper: [Propagate Yourself: Exploring Pixel-Level Consistency for Unsupervised Visual Representation Learning](https://arxiv.org/abs/2011.10043)
-   - code: [https://github.com/zdaxie/PixPro](https://github.com/zdaxie/PixPro)
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/yNnalkXE7oUu3hnwv7QWic8OHLtycxQt20sP6hYBBuMHIoklFict9MunLdR5OrkkfzRJwhibLMiajA119IKxAmJ8jQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-
-4. [Kaggle竞赛中使用YoloV5将物体检测的性能翻倍的心路历程](https://mp.weixin.qq.com/s/ynTrY88wKj6YQ85igdSH4w)       :star::star:
-   - 主要内容：Kaggle比赛经验分享
-   - code: [https://github.com/mostafaibrahim17/VinBigData-Chest-Xrays-Object-detection-](https://github.com/mostafaibrahim17/VinBigData-Chest-Xrays-Object-detection-)
-   - Tips: 这里采用“2 filter”的方式和我之前参与的违法广告里面想用的思路一致
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KYSDTmOVZvqYWyIxpqbDHXySdngD3fxjX4Gcf5ek2nam5SVBhsaS7PUqnwt0xRxS25fq4ESXq6ccT8vmic6ZuWg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-5. [近期计算机视觉算法竞赛汇总：2021.4--2021.9](https://mp.weixin.qq.com/s/Tcsqk4It92KaVeNycPw5jg)       :star::star:
-   - 主要内容：近期的一些计算机视觉比赛
-
-
+5. - ## :paperclip:  今日要点
+   
+     1. [YOLOv5在无人机/遥感场景下做旋转目标检测时进行的适应性改建详解（踩坑记录）](https://mp.weixin.qq.com/s/qBO71glqrr2-GvdgAYgW1w)         :star::star::star:
+        - 主要内容：在YOLOV5基础上增加旋转目标检测
+        - code: [https://github.com/hukaixuan19970627/YOLOv5_DOTA_OBB](https://github.com/hukaixuan19970627/YOLOv5_DOTA_OBB)
+   
+     <div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/ABvEnMciauWsKV8icia7R9rc8jFOqT8VtvHFo6M4MxbCzbiaiaQThOLvZUAoocz17oPA8MGBjtfU5erpy4dyOic6b6CA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+     </div>
+   
+   
+     2. [超越MoCov2！阿里达摩院提出百万实例分类自监督方案 | AAAI 2021](https://mp.weixin.qq.com/s/XA1AYTT8W1XiEBPN_7Bdcw)       :star::star:
+        - 主要内容：单分支（One-branch）的参数化实例分类方法
+        - paper: [Train a One-Million-Way Instance Classifier for Unsupervised Visual Representation Learning](https://arxiv.org/abs/2102.04848)
+   
+     <div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/yNnalkXE7oWxFicLvlIdA9WUHKZLrjkibERvXAtXug9w2ICrOpX5ia6TQ6j6jhKMKSicc2P4vW2GfCWAS6ic04jKSPA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+     </div>
+   
+   
+     3. [一位外国小哥把整个 CNN 都给可视化了，卷积、池化清清楚楚！网友：美得不真实...](https://mp.weixin.qq.com/s/8otiZRjCtXENlmEOeQS1gQ)       :star::star:
+        - 主要内容：用Unity把网络层完整3D可视化。
+        - code: [https://github.com/julrog/nn_vis](https://github.com/julrog/nn_vis)
+   
+     <div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/YicUhk5aAGtCE6rdnC7WOibuapRpyUY9brQVkaNduMIEzUt04lntM49EXwHibOWVUr84Eqfa5ibbqQExhRd3DVXiaWg/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1" style='zoom:100%'>
+     </div>
+   
+   
+     4. [CVPR 2021 | 基于稠密场景匹配的相机定位学习](https://mp.weixin.qq.com/s/L5_xa2K0lOtAZi7DtvwE3w)       :star::star:
+        - 主要内容：基于稠密场景匹配的相机定位学习
+        - paper: [Learning Camera Localization via Dense Scene Matching](https://arxiv.org/abs/2103.16792)
+   
+     <div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/Q0FNTB1XHicxUvJPRBlV7pia8mHcZDjcuYVRdlEy3FGZoQwZ7jXibAibqJBBsE1a5B6RHCVUD1KaPic4XdHujNNvIKQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+     </div>
+   
+     5. [CVPR2021目标检测 | 通过可微分神经渲染数据增强（附github源码及论文下载）](https://mp.weixin.qq.com/s/jOu6IdA4RrD437U9xnj_Zg)       :star::star:
+        - 主要内容：一种新的离线数据增强方式DANR
+        - paper: [Data Augmentation for Object Detection via Differentiable Neural Rendering](https://arxiv.org/pdf/2103.02852.pdf)
+        - code: [https://arxiv.org/pdf/2103.02852.pdf](https://arxiv.org/pdf/2103.02852.pdf)
+   
+     <div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwPBQvNABvo55AXPEZaiazW6xrdYf4LahcqPqSxqpZmONaPpeyLknqOvSiaIoMK4le7Z40GBfykyVA6A/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+     </div>
+   
+     6. [CVPR2021佳作 | 重新标记ImageNet：从全局标签到局部标签（附github代码及论文）](https://mp.weixin.qq.com/s/JJ4lbLkAzY--CTeGq31EmQ)       :star::star:
+        - 主要内容：利用多标签重新标记样本
+        - paper: [Re-labeling ImageNet: from Single to Multi-Labels, from Global to Localized Labels](https://arxiv.org/pdf/2101.05022.pdf)
+        - code: [https://github.com/naver-ai/relabel](https://github.com/naver-ai/relabel_)
+   
+     <div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwOUoGnDbfVgLIYWQ85WXWKGveqnAL6QqjHn2ibSjh5P9n3ia7icZSdhTtPbYgcT8EGiaJicqbX0EicwYI5g/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+     </div>
+   
+     
 
 
 ## :paperclip:  历史更新
@@ -86,8 +94,10 @@
     13. <a href="notes/202104/0413.md" target="_blank">公众号内容拓展学习笔记（2021.4.13）</a>
     14. <a href="notes/202104/0414.md" target="_blank">公众号内容拓展学习笔记（2021.4.14）</a>
     15. <a href="notes/202104/0415.md" target="_blank">公众号内容拓展学习笔记（2021.4.15）</a>
+    16. <a href="notes/202104/0416.md" target="_blank">公众号内容拓展学习笔记（2021.4.16）</a>
 </details>
 </pre>
+
 
 
 
