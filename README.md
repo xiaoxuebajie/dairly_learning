@@ -3,63 +3,43 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2021.4.16
+更新今日时间：2021.4.17
 
 ------
 
 
 
+## :paperclip:  今日要点
 
-5. - ## :paperclip:  今日要点
-   
-     1. [YOLOv5在无人机/遥感场景下做旋转目标检测时进行的适应性改建详解（踩坑记录）](https://mp.weixin.qq.com/s/qBO71glqrr2-GvdgAYgW1w)         :star::star::star:
-        - 主要内容：在YOLOV5基础上增加旋转目标检测
-        - code: [https://github.com/hukaixuan19970627/YOLOv5_DOTA_OBB](https://github.com/hukaixuan19970627/YOLOv5_DOTA_OBB)
-   
-     <div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/ABvEnMciauWsKV8icia7R9rc8jFOqT8VtvHFo6M4MxbCzbiaiaQThOLvZUAoocz17oPA8MGBjtfU5erpy4dyOic6b6CA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-     </div>
-   
-   
-     2. [超越MoCov2！阿里达摩院提出百万实例分类自监督方案 | AAAI 2021](https://mp.weixin.qq.com/s/XA1AYTT8W1XiEBPN_7Bdcw)       :star::star:
-        - 主要内容：单分支（One-branch）的参数化实例分类方法
-        - paper: [Train a One-Million-Way Instance Classifier for Unsupervised Visual Representation Learning](https://arxiv.org/abs/2102.04848)
-   
-     <div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/yNnalkXE7oWxFicLvlIdA9WUHKZLrjkibERvXAtXug9w2ICrOpX5ia6TQ6j6jhKMKSicc2P4vW2GfCWAS6ic04jKSPA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-     </div>
-   
-   
-     3. [一位外国小哥把整个 CNN 都给可视化了，卷积、池化清清楚楚！网友：美得不真实...](https://mp.weixin.qq.com/s/8otiZRjCtXENlmEOeQS1gQ)       :star::star:
-        - 主要内容：用Unity把网络层完整3D可视化。
-        - code: [https://github.com/julrog/nn_vis](https://github.com/julrog/nn_vis)
-   
-     <div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/YicUhk5aAGtCE6rdnC7WOibuapRpyUY9brQVkaNduMIEzUt04lntM49EXwHibOWVUr84Eqfa5ibbqQExhRd3DVXiaWg/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1" style='zoom:100%'>
-     </div>
-   
-   
-     4. [CVPR 2021 | 基于稠密场景匹配的相机定位学习](https://mp.weixin.qq.com/s/L5_xa2K0lOtAZi7DtvwE3w)       :star::star:
-        - 主要内容：基于稠密场景匹配的相机定位学习
-        - paper: [Learning Camera Localization via Dense Scene Matching](https://arxiv.org/abs/2103.16792)
-   
-     <div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/Q0FNTB1XHicxUvJPRBlV7pia8mHcZDjcuYVRdlEy3FGZoQwZ7jXibAibqJBBsE1a5B6RHCVUD1KaPic4XdHujNNvIKQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-     </div>
-   
-     5. [CVPR2021目标检测 | 通过可微分神经渲染数据增强（附github源码及论文下载）](https://mp.weixin.qq.com/s/jOu6IdA4RrD437U9xnj_Zg)       :star::star:
-        - 主要内容：一种新的离线数据增强方式DANR
-        - paper: [Data Augmentation for Object Detection via Differentiable Neural Rendering](https://arxiv.org/pdf/2103.02852.pdf)
-        - code: [https://arxiv.org/pdf/2103.02852.pdf](https://arxiv.org/pdf/2103.02852.pdf)
-   
-     <div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwPBQvNABvo55AXPEZaiazW6xrdYf4LahcqPqSxqpZmONaPpeyLknqOvSiaIoMK4le7Z40GBfykyVA6A/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-     </div>
-   
-     6. [CVPR2021佳作 | 重新标记ImageNet：从全局标签到局部标签（附github代码及论文）](https://mp.weixin.qq.com/s/JJ4lbLkAzY--CTeGq31EmQ)       :star::star:
-        - 主要内容：利用多标签重新标记样本
-        - paper: [Re-labeling ImageNet: from Single to Multi-Labels, from Global to Localized Labels](https://arxiv.org/pdf/2101.05022.pdf)
-        - code: [https://github.com/naver-ai/relabel](https://github.com/naver-ai/relabel_)
-   
-     <div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwOUoGnDbfVgLIYWQ85WXWKGveqnAL6QqjHn2ibSjh5P9n3ia7icZSdhTtPbYgcT8EGiaJicqbX0EicwYI5g/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-     </div>
-   
-     
+1. [一区SCI新目标检测框架 | one-shot的条件目标检测](https://mp.weixin.qq.com/s/xEDov37S_Sb8U0hQDKuT1w)         :star::star::star:
+   - 主要内容：一种新的one-shot条件检测框架(OSCD)
+   - paper: [OSCD: A one-shot conditional object detection framework](https://doi.org/10.1016/j.neucom.2020.04.092)
+   - Tips: 条件目标检测问题：目的是检测与测试图像中给定的条件图像相似的对象。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwNlphibB3Rhz9ia1jAjjo8voJhtApwN7fGRtpRrggXeIKDbkA49RpRzYPgrPH7udfEp1jSXW4WB7ooA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+2. [【泡泡图灵智库】机器人顶级会议精华提炼（20210411-20210417）](https://mp.weixin.qq.com/s/arBi0RwpB5Cu1z0Ivsr8Bg)       :star::star:
+   - 主要内容：2021年4月11日至2021年4月17日，泡泡图灵智库与泡泡点云时空共推送了7篇文章。其内容涉及SLAM(1篇）、三维重建与语义分割（3篇）、点云与3D目标检测 （3篇）共三个方面。
+
+3. [CVPR 2021 | MI-AOD: 少量样本实现高检测性能](https://mp.weixin.qq.com/s/2ahhImUgl21LPr4PvTrpkg)       :star::star:
+   - 主要内容：主动学习+目标检测任务设计了一种方法多示例主动目标检测（MI-AOD）
+   - paper: [Multiple Instance Active Learning for Object Detection](https://arxiv.org/pdf/2104.02324.pdf)
+   - code: [https://github.com/yuantn/MI-AOD](https://github.com/yuantn/MI-AOD)
+   - Tips: 通过主动学习解决样本少的问题
+
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfpSuvjKQsXHLicXhHfoG54EJuz7vyv7k5GTE4y01jbXIKCBLPW1XdznJKp01quUROHt4Ay1JIicpckg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+4. [Python 3.10来了，switch语法终于出现](https://mp.weixin.qq.com/s/CN_7h6twOD51ac0KIEH4PQ)       :star::star:
+   - 主要内容：python新版本，增加switch语法
+   - 更多关注: [https://docs.python.org/3.10/whatsnew/3.10.html](https://docs.python.org/3.10/whatsnew/3.10.html)
+5. [一文读懂增强现实（AR)技术](https://mp.weixin.qq.com/s/6iRUmpCrKgzmavAnl1HJfA)       :star::star:
+   - 主要内容：增强现实（Augmented Reality，简称AR）技术是一种基于计算机实时计算和多传感器融合，将现实世界与虚拟信息结合起来的技术。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/qcyIKvJCkVDiaWBVrVfszB2Oklezgia59dYZic52mW4nmUIgeMFkOaywLTyWMpa0Mibd9diceYBMiakyAOCEN7zCYicAg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
 
 
 ## :paperclip:  历史更新
@@ -95,16 +75,16 @@
     14. <a href="notes/202104/0414.md" target="_blank">公众号内容拓展学习笔记（2021.4.14）</a>
     15. <a href="notes/202104/0415.md" target="_blank">公众号内容拓展学习笔记（2021.4.15）</a>
     16. <a href="notes/202104/0416.md" target="_blank">公众号内容拓展学习笔记（2021.4.16）</a>
+    17. <a href="notes/202104/0417.md" target="_blank">公众号内容拓展学习笔记（2021.4.17）</a>
 </details>
 </pre>
-
-
 
 
 ## :paperclip:  Others
 
 - 由于图片权限问题，[GitHub](https://github.com/xiaoxuebajie/dairly_learning)是完整版，可以点点 star
 - 星标的数量是与个人相关程度，不代表文章内容的好坏
+- 关注我的[个人网站](http://www.cvbds.cn/)
 - 关注我的[CSDN](https://mp.csdn.net/console/article)博客
 - 关注我的[哔哩哔哩](https://space.bilibili.com/424394389?spm_id_from=333.788.b_765f7570696e666f.1)
 - 关注我的公众号CV伴读社
