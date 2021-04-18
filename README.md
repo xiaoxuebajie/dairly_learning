@@ -3,7 +3,7 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2021.4.17
+更新今日时间：2021.4.18
 
 ------
 
@@ -11,35 +11,32 @@
 
 ## :paperclip:  今日要点
 
-1. [一区SCI新目标检测框架 | one-shot的条件目标检测](https://mp.weixin.qq.com/s/xEDov37S_Sb8U0hQDKuT1w)         :star::star::star:
-   - 主要内容：一种新的one-shot条件检测框架(OSCD)
-   - paper: [OSCD: A one-shot conditional object detection framework](https://doi.org/10.1016/j.neucom.2020.04.092)
-   - Tips: 条件目标检测问题：目的是检测与测试图像中给定的条件图像相似的对象。
+1. [ICLR 2021 | 如何减少深度学习模型的偏见？](https://mp.weixin.qq.com/s/ix0_ePOKfGlSozu9GMT64A)         :star::star::star:
+   - 主要内容：兼顾形状和纹理，去除模型偏见
+   - paper: [Shape-Texture Debiased Neural Network Training](https://arxiv.org/abs/2010.05981)
+   - code: [https://github.com/LiYingwei/ShapeTextureDebiasedTraining](https://github.com/LiYingwei/ShapeTextureDebiasedTraining)
+   - Tips: 这篇文章是图像增强的一种方式
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwNlphibB3Rhz9ia1jAjjo8voJhtApwN7fGRtpRrggXeIKDbkA49RpRzYPgrPH7udfEp1jSXW4WB7ooA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/yNnalkXE7oWhc0k6INZHnmddbsUCPQPG89EOIaUmCibbwgjXw1IiaIpXKmqEMYAKibfVictnbHw0uZFBibF8niaUYN1A/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-2. [【泡泡图灵智库】机器人顶级会议精华提炼（20210411-20210417）](https://mp.weixin.qq.com/s/arBi0RwpB5Cu1z0Ivsr8Bg)       :star::star:
-   - 主要内容：2021年4月11日至2021年4月17日，泡泡图灵智库与泡泡点云时空共推送了7篇文章。其内容涉及SLAM(1篇）、三维重建与语义分割（3篇）、点云与3D目标检测 （3篇）共三个方面。
 
-3. [CVPR 2021 | MI-AOD: 少量样本实现高检测性能](https://mp.weixin.qq.com/s/2ahhImUgl21LPr4PvTrpkg)       :star::star:
-   - 主要内容：主动学习+目标检测任务设计了一种方法多示例主动目标检测（MI-AOD）
-   - paper: [Multiple Instance Active Learning for Object Detection](https://arxiv.org/pdf/2104.02324.pdf)
-   - code: [https://github.com/yuantn/MI-AOD](https://github.com/yuantn/MI-AOD)
-   - Tips: 通过主动学习解决样本少的问题
+2. [高级YoloV5指南，使用WBF来提升目标检测性能](https://mp.weixin.qq.com/s/OFHYnSq4tiaqeJGkVp210g)       :star::star:
+   - 主要内容：一个使用YoloV5的深度指南，使用WBF进行性能提升
+   - Tips：视觉比赛通用提点方法，有些场景可能会掉点，实验出真知。
 
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfpSuvjKQsXHLicXhHfoG54EJuz7vyv7k5GTE4y01jbXIKCBLPW1XdznJKp01quUROHt4Ay1JIicpckg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
+3. [PaddleWeekly | 快速落地！垃圾分类小程序全套技术方案开源](https://mp.weixin.qq.com/s/3t77lWWJXMCFwCWsRAluoA)       :star::star:
+   - 主要内容：PaddlePaddle一些开源项目
+   - 开源垃圾分类小程序全套技术方案：[慧眼识垃圾](https://github.com/thomas-yanxin/the-eye-knows-the-garbage)：
+   - 可自主博弈的五子棋AI模型：[AlphaZero Gomoku](https://github.com/EastSmith/AlphaZero_Gomoku_PaddlePaddle)
+   - 热轧钢表面缺陷分类：[PaddleClas_NEU](https://github.com/lxk767363331/PaddleClas_NEU)
 
-4. [Python 3.10来了，switch语法终于出现](https://mp.weixin.qq.com/s/CN_7h6twOD51ac0KIEH4PQ)       :star::star:
-   - 主要内容：python新版本，增加switch语法
-   - 更多关注: [https://docs.python.org/3.10/whatsnew/3.10.html](https://docs.python.org/3.10/whatsnew/3.10.html)
-5. [一文读懂增强现实（AR)技术](https://mp.weixin.qq.com/s/6iRUmpCrKgzmavAnl1HJfA)       :star::star:
-   - 主要内容：增强现实（Augmented Reality，简称AR）技术是一种基于计算机实时计算和多传感器融合，将现实世界与虚拟信息结合起来的技术。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/qcyIKvJCkVDiaWBVrVfszB2Oklezgia59dYZic52mW4nmUIgeMFkOaywLTyWMpa0Mibd9diceYBMiakyAOCEN7zCYicAg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
+4. [6种时序异常检测思路总结！](https://mp.weixin.qq.com/s/vcd_SfZp17l_xz6aOLPc7Q)       :star::star:
+   - 主要内容：使用`tsod`库完成简单的异常检测
+   - code: [https://github.com/DHI/tsod](https://github.com/DHI/tsod)
+5. [生成对抗网络7日打卡营来了！GAN就对了！](https://mp.weixin.qq.com/s/D-O8ThhJjeMT4tANFOJcVQ)       :star::star:
+   - 主要内容：基于PaddlePaddle的GAN学习教程
 
 
 ## :paperclip:  历史更新
@@ -76,6 +73,7 @@
     15. <a href="notes/202104/0415.md" target="_blank">公众号内容拓展学习笔记（2021.4.15）</a>
     16. <a href="notes/202104/0416.md" target="_blank">公众号内容拓展学习笔记（2021.4.16）</a>
     17. <a href="notes/202104/0417.md" target="_blank">公众号内容拓展学习笔记（2021.4.17）</a>
+    18. <a href="notes/202104/0418.md" target="_blank">公众号内容拓展学习笔记（2021.4.18）</a>
 </details>
 </pre>
 
