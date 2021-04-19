@@ -3,7 +3,7 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2021.4.18
+更新今日时间：2021.4.19
 
 ------
 
@@ -11,32 +11,40 @@
 
 ## :paperclip:  今日要点
 
-1. [ICLR 2021 | 如何减少深度学习模型的偏见？](https://mp.weixin.qq.com/s/ix0_ePOKfGlSozu9GMT64A)         :star::star::star:
-   - 主要内容：兼顾形状和纹理，去除模型偏见
-   - paper: [Shape-Texture Debiased Neural Network Training](https://arxiv.org/abs/2010.05981)
-   - code: [https://github.com/LiYingwei/ShapeTextureDebiasedTraining](https://github.com/LiYingwei/ShapeTextureDebiasedTraining)
-   - Tips: 这篇文章是图像增强的一种方式
+1. [021最新对比学习（Contrastive Learning）相关必读论文整理分享](https://mp.weixin.qq.com/s/sBBGaQymTudkksaDBVQD6g)         :star::star:
+   - 主要内容：对比学习相关论文
+   - Tips: 自监督学习分为生成式方法(Generative learning)和对比式方法(Contrastive learning)
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/yNnalkXE7oWhc0k6INZHnmddbsUCPQPG89EOIaUmCibbwgjXw1IiaIpXKmqEMYAKibfVictnbHw0uZFBibF8niaUYN1A/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1niaDLWmibswdnHxTOMoKrwuXdQCPsicibT1egzNuzqUxxmiac2Y4B7LEwzvjk5DSspVLf95lkUvrJiaKulDcu2PyPAQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+2. [特征金字塔技术总结](https://mp.weixin.qq.com/s/XCZg9me2xeDhXUh6mmEvGw)       :star::star::star:
+   - 主要内容：本文主要介绍了特征金字塔的两种构建方式，讲解了目前特征金字塔的主要改进思路和方案，主要有：ASPP,FPN,PANet,RFB,ASFF,FPT,YOLOF。
+   - Tips: 很好的梳理有关特征金字塔相关的论文内容。
+
+3. [极市直播丨田春伟：基于卷积神经网络的图像复原研究](https://mp.weixin.qq.com/s/yZyiSkmpTMIdBEJUiUF3jw)       :star::star:
+   - 主要内容：田春伟博士有关图像复原的几篇论文研究分享
+
+
+4. [水下目标检测算法比赛 Baseline分享 -- 提交成绩：0.45 [135/568]](https://mp.weixin.qq.com/s/lsV43jpETqaYanmlJCPh7A)       :star::star:
+   - 主要内容：水下目标检测比赛base分享
+   - 报名地址：[https://www.heywhale.com/home/competition/605ab78821e3f6003b56a7d8](https://www.heywhale.com/home/competition/605ab78821e3f6003b56a7d8)
+   - github: [https://github.com/wangdongdut/Underwater-Object-Detection](https://github.com/wangdongdut/Underwater-Object-Detection)
+   - baseline: [https://github.com/jiangbestone/yolo_underwater_detection](https://github.com/jiangbestone/yolo_underwater_detection)
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/SjQAYGc0mKFmftBOjzAlicDYlj9b7CHdCKckOv1XfBibpicmArav9wVg1FDsic0NNUxtxBEKOM61XY6pvEEt2ZsAEw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-2. [高级YoloV5指南，使用WBF来提升目标检测性能](https://mp.weixin.qq.com/s/OFHYnSq4tiaqeJGkVp210g)       :star::star:
-   - 主要内容：一个使用YoloV5的深度指南，使用WBF进行性能提升
-   - Tips：视觉比赛通用提点方法，有些场景可能会掉点，实验出真知。
+4. [干货 | 深度学习检测小目标常用方法](https://mp.weixin.qq.com/s/di8T-5IzGzMFS62TYN4uOg)       :star::star:
+   - 主要内容：小目标检测的常用方法
+5. [CVPR 2021 | 大连理工大学卢湖川团队提出TransT: Transformer Tracking](https://mp.weixin.qq.com/s/7QkB5T9SXzBzzZQaT22B-w)       :star::star:
+   - 主要内容：基于Transformer的特征融合模型
+   - paper: [Transformer Tracking](https://arxiv.org/abs/2103.15436)
+   - code: [https://github.com/chenxin-dlut/TransT](https://github.com/chenxin-dlut/TransT)
 
-3. [PaddleWeekly | 快速落地！垃圾分类小程序全套技术方案开源](https://mp.weixin.qq.com/s/3t77lWWJXMCFwCWsRAluoA)       :star::star:
-   - 主要内容：PaddlePaddle一些开源项目
-   - 开源垃圾分类小程序全套技术方案：[慧眼识垃圾](https://github.com/thomas-yanxin/the-eye-knows-the-garbage)：
-   - 可自主博弈的五子棋AI模型：[AlphaZero Gomoku](https://github.com/EastSmith/AlphaZero_Gomoku_PaddlePaddle)
-   - 热轧钢表面缺陷分类：[PaddleClas_NEU](https://github.com/lxk767363331/PaddleClas_NEU)
-
-
-4. [6种时序异常检测思路总结！](https://mp.weixin.qq.com/s/vcd_SfZp17l_xz6aOLPc7Q)       :star::star:
-   - 主要内容：使用`tsod`库完成简单的异常检测
-   - code: [https://github.com/DHI/tsod](https://github.com/DHI/tsod)
-5. [生成对抗网络7日打卡营来了！GAN就对了！](https://mp.weixin.qq.com/s/D-O8ThhJjeMT4tANFOJcVQ)       :star::star:
-   - 主要内容：基于PaddlePaddle的GAN学习教程
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ibaXaPIy7jV0xHJnRric8xXJK0fZxWugibkZBwvhEAHq9On0JZ7NiakHYTibTnpQIScXr7XTnNllmc2OzmGaejqMPhw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
 
 
 ## :paperclip:  历史更新
