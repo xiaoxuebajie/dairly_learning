@@ -3,7 +3,7 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2021.4.23
+更新今日时间：2021.4.24
 
 ------
 
@@ -11,52 +11,61 @@
 
 ## :paperclip:  今日要点
 
-1. [这样检测是不是更准！ | 深度Stereo结构网络用于目标检测（附源码）](https://mp.weixin.qq.com/s/04TlVA1u-_pDg398njqDbA)         :star::star:
-   - 主要内容：单阶段3D目标检测网络结构DSGN，输入为立体图像对。
-   - paper: [DSGN: Deep Stereo Geometry Network for 3D Object Detection](https://arxiv.org/abs/2001.03398)
-   - code: [https://github.com/Jia-Research-Lab/DSGN](https://github.com/Jia-Research-Lab/DSGN)
+1. [不容忽视的问题：行人检测器的泛化能力](https://mp.weixin.qq.com/s/UKp6jbKqyXoO27sHT_Dwjg)         :star::star:
+   - 主要内容：适用于面向自动驾驶的行人检测渐进式训练流程
+   - paper: [Generalizable Pedestrian Detection: The Elephant In The Room](https://arxiv.org/pdf/2003.08799.pdf)
+   - code: [https://github.com/hasanirtiza/Pedestron](https://github.com/hasanirtiza/Pedestron)
+   - Tips: 通过将模型从最大（但距目标域最远）到最小（但最接近目标域）的数据集上进行逐步微调，并且无需在目标数据集上进行训练，就可以在一些数据集上获得显著的性能提升。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwNrgZxYLIng4ynCobfGo4ozU5icWDEH6GuIjQcTw43FjQ0oic3HPO2hfG0xZ0nuVKFH8l3SfFsdWAFA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="./notes/202104/images/1.gif" style='zoom:100%'>
 </div>
 
-2. [这就是你们跟我要的那种网址，全部给你们啦～](https://mp.weixin.qq.com/s/IMn_aSlnuGZiclp3MZgWJA)       :star::star:
 
-   - 主要内容：搞学习，找书籍，冷知识，写代码，资源搜索，看视频等等各类网址大全
+2. [我的机器学习和深度学习绘图模板.pptx](https://mp.weixin.qq.com/s/V2UAljaA0Xl20CB7Gcun_A)       :star::star:
+   - 主要内容：适合深度学习的绘图的模板
+   - 源码：[https://github.com/dair-ai/ml-visuals](https://github.com/dair-ai/ml-visuals)
+   - 链接：[https://pan.baidu.com/s/1abCHH6YtsPBCyXh_lhIxAA](https://pan.baidu.com/s/1abCHH6YtsPBCyXh_lhIxAA) 提取码：6r80
+   - 参考阅读：
 
-3. [⽬标⾏动及稠密环境未知情况下，⽆⼈机跟踪的系统解决⽅案](https://mp.weixin.qq.com/s/JqtxtPCnhNXqqEV4sZ6i3A)       :star::star::star:
-
-   - 主要内容：在⽬标⾏动未知，稠密环境未知的情况下，⽆⼈机跟踪的系统解决⽅案。
-
-   - paper: [Fast-Tracker: A Robust Aerial System for Tracking Agile Target in Cluttered Environments](https://arxiv.org/abs/2011.03968)
-   - code: [https://github.com/ZJU-FAST-Lab/Fast-tracker](https://github.com/ZJU-FAST-Lab/Fast-tracker)
-   - Tips: 运动轨迹预测以及运动学搜索
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/Nabxc8rdYrgQ6gIlh1pFXPFbxX3yUFXtp3JvosAOdvQ1TYk93Vbnqc33PoUx6sjibLSHV6ujcB9MtibR6PvrjR9A/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/87HjJEl4c1vzVK25RiaXNv0fYGvzdQp4I55AIs0vrIQnfdc0MGQfPPlulVQq31LVjkbHgG50GWzqg0WDcujzCmQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-4. [姚班大神胡渊鸣回国创业！超一半员工为清华校友，团队人均竞赛金牌数≥2](https://mp.weixin.qq.com/s/an1G62x6r6GKMKMKcT--Hg)       :star::star:
-   - 主要内容：太极编程语言发明者胡渊鸣回国创业
-   - code: [https://github.com/taichi-dev/taichi](https://github.com/taichi-dev/taichi)
+3. [数据分析最有用的25个 Matplotlib图](https://mp.weixin.qq.com/s/BXi8RaRjze0w_PrOVAb_XQ)       :star::star:
+   - 主要内容：利用Matplolib绘制数据可视化图
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/YicUhk5aAGtC5V9GxcMy6AicltdxYviaTo2Wfu9eX955JJukibF2yicaSoDuosiac5gQlJGzOOzmzBVC7RnQUfe9fCoQ/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1" style='zoom:100%'>
+   - Tips: 做比赛数据可视化还是写论文的分布图都可以用到，非常实用有代码分析详解
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/jupejmznDC8kiaoocQlJNVLEJBHjfbmGeVCo5PStIaibQdjVDN1lYniaBjf0YQeMXDQyzXI0HauNHGfibWnoBIRyWw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-5. [PP-YOLOv2开源，你的目标检测器又该升级了！性能超越YOLOv5且推理耗时保持不变](https://mp.weixin.qq.com/s/D7CkCbjQ-E-tvlKBwBlUsQ)       :star::star:
-   - 主要内容：PP-YOLOv2性能进一步提高
-   - paper: [PP-YOLOv2: A Practical Object Detector](https://arxiv.org/abs/2104.10419)
-   - code: [https://github.com/PaddlePaddle/PaddleDetection](https://github.com/PaddlePaddle/PaddleDetection)
-6. [肝了一晚上，总结了Pytorch的训练秘诀！](https://mp.weixin.qq.com/s/IFAYiGUMUU7oYW-vWs_u1Q)       :star::star:
-   - 主要内容：使用 PyTorch 训练深度模型时最省力、最有效的 17 种方法
-7. [CV语义分割实践指南！](https://mp.weixin.qq.com/s/H2We_CHFj5FvaeE4yCCAlQ)       :star::star:
-   - 主要内容：语义分割类项目的实践全流程
-   - 赛题地址: [https://tianchi.aliyun.com/competition/entrance/531872/information](https://tianchi.aliyun.com/competition/entrance/531872/information)
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/vI9nYe94fsGKUChxByguXrb9B2JavStzbDicKymALX9vXug2VQBV1rg1zSyprd51UkibVH5U9XrhjeCQsHluZgNw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+4. [15张图表带你速览2021人工智能最新趋势](https://mp.weixin.qq.com/s/_XFlCoop3LIX8_0Y5fN4NQ)       :star::star:
+   - 主要内容：2021年度人工智能最新的研究趋势和进展
+   - Tips： 分析了资本、政策对AI技术的影响，以及深度学习、图像识别、语言识别等AI主要子领域的研究。
+
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_png/DT8udUick9sJzW1NSGNs593nKWic4GKcOqibo9Z1G7zp4TvD1ZdmQeLqcP3icImWlvibqPiaYEY5Kj8CUGFjPFU7oAdA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
+
+5. [多传感器融合标定方法汇总](https://mp.weixin.qq.com/s/ylzE85_QBCyKQkMIsl2R6A)       :star::star:
+   - 主要内容：常见的一些单传感器、多传感器的标定融合paper、工程代码
+6. [基于OpenCV的单目摄像机测距](https://mp.weixin.qq.com/s/MoFKPy0i_lvJ4i6x6ymwnQ)       :star::star:
+   - 主要内容：基于OpenCV的单目摄像机测距，一个demo
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/u7SibXtIDeroNKw7XUibOrYibBKAxcP4Rd0YsFFicz2SRNesURwENtnpcdibIe7Q5S22njYxCu3TxBSiaA7CBE6eDib3g/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+7. [谈谈NLP下一个主战场：万亿参数的预训练模型！](https://mp.weixin.qq.com/s/vx1HykDP8fTPALcndKxQYQ)       :star::star:
+   - 主要内容：从数据、算力和分布式训练技术三个方面讲解语言模型规模的上限问题
+   - Tips：夸了一波百度，主要是工业界的解决方案
+8. [270亿参数、刷榜CLUE，阿里达摩院发布最大中文预训练语言模型PLUG（开放测试）](https://mp.weixin.qq.com/s/klHSrEzka6byEBvNjrCXOA)       :star::star:
+   - 主要内容：阿里达摩院发布最大中文预训练语言模型PLUG
+   - 测试地址：[https://nlp.aliyun.com/portal#/BigText_chinese](https://nlp.aliyun.com/portal#/BigText_chinese)
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gWicqicT3pq2lcJTme79JB78qJrQaauk12q0gsBl8a1AUKnc1ib6nmvI4U0b0rGIicqXdEOSX1KAMglgIw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
 
 ## 
-
 
 ## :paperclip:  历史更新
 
@@ -98,8 +107,10 @@
     21. <a href="notes/202104/0421.md" target="_blank">公众号内容拓展学习笔记（2021.4.21）</a>
     22. <a href="notes/202104/0422.md" target="_blank">公众号内容拓展学习笔记（2021.4.22）</a>
     23. <a href="notes/202104/0423.md" target="_blank">公众号内容拓展学习笔记（2021.4.23）</a>
+    24. <a href="notes/202104/0424.md" target="_blank">公众号内容拓展学习笔记（2021.4.24）</a>
 </details>
 </pre>
+
 
 
 
