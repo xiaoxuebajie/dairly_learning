@@ -11,52 +11,59 @@
 
 ## :paperclip:  今日要点
 
-1. [Rotation Equivariant Siamese Networks for Tracking论文解读](https://mp.weixin.qq.com/s/zAILsvH71WSjb8FhZ3DT6A)         :star::star:
-   - Abstract: 解决目标跟踪这种的旋转问题，提出RE-SiamNets网络
-   - Paper: [Rotation Equivariant Siamese Networks for Tracking]( https://arxiv.org/abs/2012.13078)
-   - Code: [https://github.com/dkgupta90/re-siamnet](https://github.com/dkgupta90/re-siamnet)
-   - Tips: 通过提出旋转等价性的孪生网络来解决目标跟踪中目标在平面内的旋转问题
+1. [丹琦女神的对比学习新SOTA，在中文表现如何？我们补充实验后，惊了！](https://mp.weixin.qq.com/s/P6oi6AgQzXiEF593y63zoA)         :star::star:
+   - Abstract: SimCSE中文表现评测
+   - Paper: [SimCSE: Simple Contrastive Learning of Sentence Embeddings](https://arxiv.org/abs/2104.08821)
+   - Code: [https://github.com/bojone/SimCSE](https://github.com/bojone/SimCSE)
+   - Tips: 本文分享了在SimCSE上的中文实验，结果表明不少任务上 SimCSE 确实相当优秀，能明显优于 BERT-whiteining 
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KToRmsQB0NFkwhvH4ibEOdaL5qU7kEUpvQr55icdBGwtANaXtSIBBeyv9JFVXLQXU6icPxN5PuLbpcaicWKm8cV0eg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-2. [NAACL’21 | 来看如何让模型学会因为所以但是如果](https://mp.weixin.qq.com/s/ZWxU4B23CJ7NUZ79HmrnRA)       :star::star:
-   - Abstract: 解决逻辑推理的问答模型DAGN
-   - Paper: [DAGN: Discourse-Aware Graph Network for Logical Reasoning](https://arxiv.org/pdf/2103.14349)
-   - Tips: DAGN 利用文本中的篇章关系构建逻辑图并使用图神经网络进行逻辑推理
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/5fknb41ib9qGc8MkaEs1KF3gGacjO1nRHy6ldU7KgRTT68rr8htWiaTS7cg3L3FyxEgNdBZgibl3byib6zKGoN35yw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/5fknb41ib9qF8ibOBKRwHnzqaCgLfAnpQa5LibErX1ibxrvEeW6HmVz3x3ibuUvrTypwaxhMbB2gS2aqKL1X8LmzGHQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-3. [EagleEye：一种用模型剪枝的快速衡量子网络性能的方法](https://mp.weixin.qq.com/s/NZpQX4r7VzpDa8X3oSnx1Q)       :star::star:
-   - Abstract: EagleEye一种快速并且准确衡量子网络性能的方法
-   - Paper: [EagleEye: Fast Sub-net Evaluation for Efficient Neural Network Pruning](https://arxiv.org/abs/2007.02491)
-   - Code: [https://github.com/anonymous47823493/EagleEye](https://github.com/anonymous47823493/EagleEye)
-   - Tips: 论文中引出Adaptive Batch Normalization结构，思路是将网络中的其他参数冻住，然后利用训练集的样本进行前向计算，修正“继承”来的BN层参数。
+2. [多模态预训练模型简述](https://mp.weixin.qq.com/s/1bnfuMJMj64WQjNovs_zSw)       :star::star:
+   - Abstract: 多模态预训练模型简述
+   - Tips: 目前多模态预训练领域相关方法，并总结了各个方法所设计的预训练任务及验证实验所使用的下游任务
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/SdQCib1UzF3vpMLVd5IFhiaMvZ7k1j0x2M1oMiaVhFNPVWNqIeiaxlb6YX1YNsWQXQlsYO2FfXPTxib9Y9PmBjB8rRg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/58FUuNaBUjob2EkMWh0dfl0bY8icwqjVUBz8Twz01lbzUrwkd5qqUy0libRfosiazFmNqruXx0CAcUWYJQuVeLcpQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-4. [一篇综述带你全面了解迁移学习的领域泛化(Domain Generalization)](https://mp.weixin.qq.com/s/Kr2F2yK34ClnSdmIRnNX_Q)       :star::star:
-   - Abstract: 一篇领域泛化（DG）的综述文献
-   - Paper: [Generalizing to Unseen Domains: A Survey on Domain Generalization](https://arxiv.org/abs/2103.03097)
-   - Tips：主要分析了领域泛化存在的问题，方法以及未来的展望。
+3. [面向智能视频监控的多目标检测与跟踪算法研究](https://mp.weixin.qq.com/s/0_kLkINBNUSmTMkD1S1DAQ)       :star::star:
+   - Abstract: 面向智能视频监控的多目标检测与跟踪算法研究
+   - Tips: 多目标跟踪最近比较主流的就是融合传统的目标跟踪和基于深度学习网络模型的跟踪算法
 
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfpibUCEg5ILKwiaULaBNTMH8Oz2icnK8e2Eh1hZbB85WynzLuCx4Al1d4etuibhnrZYB8RwoLM6gvrX7A/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KToRmsQB0NHo1iafBR8hPsI3NgFFEsg5rzt9fpl3sExRyco6G16eM6xToia5UyTjr0pTMN5ebIEMWoEyVjQSTzxg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-5. [美团视觉智能中心招实习生：视觉算法方向](https://mp.weixin.qq.com/s/rLErsx_r4NsHmNEloHYIMA)       :star::star:
-   - Abstract: 美团视觉智能中心实习机会
-   - Contact: [chuxiangxiang@meituan.com](chuxiangxiang@meituan.com)
-   - Tips: 没事就看看，看看就看看
 
-6. [熟鸡蛋返生第三集：道歉了，但还嘴硬](https://mp.weixin.qq.com/s/EOMaLYb674ThBJxIBOz1Qw)       :star::star:
-   - Abstract: 熟蛋返生的后续
-   - Tips: 这瓜也太好吃了吧，没吃够
+4. [超越YOLOv5的PP-YOLOv2和1.3M超轻量PP-YOLO Tiny都来了！（附源码）](https://mp.weixin.qq.com/s/_1RHvwDv31GejbvLOgs7MQ)       :star::star:
+   - Abstract: 高效的PP-YOLOv2和超轻量的PP-YOLO Tiny
+   - Paper: [PP-YOLOv2: A Practical Object Detector](https://arxiv.org/abs/2104.10419)
+   - Code: [https://github.com/paddlepaddle/paddledetection](https://github.com/paddlepaddle/paddledetection)
+   - Tips: mAP 50.3%，106.5FPS 的 PP-YOLOv2，1.3M超轻量PPYOLO Tiny, 让目标检测界再起风波。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/90RBB8jjBpmGfw0iaKkPe4usgPArXTGoN5lWd36TGrsa5akiaEdv2mIib5gcftGXk2T0UpPPhvOxNMhVPUatFIN1A/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gW9aKt3mveTcP9clPkvYYiaQfmWBYsCR3ia8DQ3k5JT2uKhEicic9FHrhEO6T7tLXENLIyQguO1zKrukkA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
+
+
+5. [Google 内部的 Python 代码风格指南](https://mp.weixin.qq.com/s/lfeWdZCFeu2ua0uS7FWHRQ)       :star::star:
+   - Abstract: Google 内部的 Python 代码风格指南
+   - Code: [https://github.com/shendeguize/GooglePythonStyleGuideCN](https://github.com/shendeguize/GooglePythonStyleGuideCN)
+   - Tips: Google Python代码风格指南，很全面。可以作为公司的code review 标准，也可以作为自己编写代码的风格指南
+
+6. [C++ OpenCV实现图像去阴影](https://mp.weixin.qq.com/s/ejBBC_GFM27R-0-kQuHK0Q)       :star::star:
+   - Abstract: 基于OpenCV的图像阴影去除
+   - Code: [https://github.com/kavyamusty/Shading-removal-of-images](https://github.com/kavyamusty/Shading-removal-of-images)
+   - Tips: 
+     - 图将转为灰度图
+     - 将灰度图进行膨胀操作
+     - 膨胀后的图再进行腐蚀操作
+     - 先膨胀后腐蚀后的图减去原灰度图再取反
+     - 将取反后的图使用归一化将白色背景修改贴近原图
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1PGshybxVDS3kwrbibJvVicqmKfYS95vP2osTFPdsicRIdxdR37IS3d7rMD9m8zCvFZYhd6lm1fP6XUmcibtn9KrmA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
 
 ## 
 
@@ -105,11 +112,9 @@
     26. <a href="notes/202104/0426.md" target="_blank">公众号内容拓展学习笔记（2021.4.26）</a>
     27. <a href="notes/202104/0427.md" target="_blank">公众号内容拓展学习笔记（2021.4.27）</a>
     28. <a href="notes/202104/0428.md" target="_blank">公众号内容拓展学习笔记（2021.4.28）</a>
+    29. <a href="notes/202104/0429.md" target="_blank">公众号内容拓展学习笔记（2021.4.29）</a>
 </details>
 </pre>
-
-
-
 
 
 
