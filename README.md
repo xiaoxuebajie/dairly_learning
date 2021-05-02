@@ -3,7 +3,7 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2021.5.1
+更新今日时间：2021.5.2
 
 ------
 
@@ -11,72 +11,44 @@
 
 ## :paperclip:  今日要点
 
-1. [最强无监督行人重识别方法 Cluster Contrast ReID，精度超越有监督算法](https://mp.weixin.qq.com/s/c7NIGkVyYxiaUWioela8JA)         :star::star:
-   - Abstract: 无监督行人重识别Cluster Contrast ReID，达到SOTA
-   - Paper: [Cluster Contrast for Unsupervised Person Re-Identification](https://arxiv.org/abs/2103.11568)
-   - Code: [https://github.com/alibaba/cluster-contrast-reid](https://github.com/alibaba/cluster-contrast-reid)
-   - Tips: Cluster Contrast核心就是在人的维度上去进行特征的提取和更新，从而将特征的更新速度与图片数量进行解耦，让算法工程师能够在ID的层面对模型进行调优。
+1. [CVPR 2021 | 清华大学提出：密集连接网络中的稀疏特征重激活](https://mp.weixin.qq.com/s/hfq4pBa7CZE8MWieT9FraA)         :star::star:
+   - Abstract: 密集连接网络中的稀疏特征重激活CondenseNetV2
+   - Paper: [CondenseNet V2: Sparse Feature Reactivation for Deep Networks](https://arxiv.org/abs/2104.04382)
+   - Code: [https://github.com/jianghaojun/CondenseNetV2](https://github.com/jianghaojun/CondenseNetV2)
+   - Tips: CondenseNetV2 在 CondenseNet 的基础上引入了稀疏特征重激活，对冗余特征同时进行了裁剪和更新，有效提升了密集连接网络的特征复用效率
 
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfrpkibNH7ibrC8AthIaqbMQq7KDJ3kjGrBnXN3IU2Pzer29p6RBQIc6WqKuuQTGT2ldic6kLCEVahqiaA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/yNnalkXE7oXP0nTnSvMLtaHyhcT5b01zNXmH2x1kWPPdyW3eIMNib6SUwohfibnRicB7ibMt0zL2ica3tLRkgTDWjjA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+2. [CVPR 2021 | 何恺明等人新作！深入探究无监督时空表征学习](https://mp.weixin.qq.com/s/PG9_AN-bo7emTks94AlQ8w)       :star::star:
+   - Abstract: 无监督时空表征学习的大规模研究
+   - Paper: [A Large-Scale Study on Unsupervised Spatiotemporal Representation Learning](https://arxiv.org/abs/2104.14558)
+   - Code: [https://github.com/facebookresearch/SlowFast](https://github.com/facebookresearch/SlowFast)
+   - Tips: 时空的Self-Supervised采样同一个视频的positive pair时间跨度越长效果越好，优化目标比momentum encoder影响要小，训练时间、backbone、数据增强和精选数据对于得到更好性能至关重要
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/J24zDnPUB9FsNc3uJKiaHSLCRV0UegRXfU56RTlWwKmayuDt1OEv5Oz6kY0fnjqmZN8O0gatCGv55DInWg1OWPw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-2. [2位华人博士联手设计全景分割流水线，分辨率高达51.3%](https://mp.weixin.qq.com/s/CnXFE4WNCpIdJPN5-Jdm1A)       :star::star:
-   - Abstract: 一种端到端的全景分割网络MaX-DeepLab
-   - Paper: [MaX-DeepLab: End-to-End Panoptic Segmentation with Mask Transformers](https://arxiv.org/abs/2012.00759)
-   - Tips: 端到端，结合了CNN与Transformer，缩小了box与box-free方法之间的差距，SOTA
+3. [一文深入浅出cv中的Attention机制](https://mp.weixin.qq.com/s/nZvauf0zWJq9jSBu4zJ72A)       :star::star:
+   - Abstract: 一文深入浅出cv中的Attention机制
+   - Tips: CV方向注意力机制：Non-local, CBAM, cgnl, Cross-layer non-local
 
-<div align=center><img src="https://img-blog.csdnimg.cn/20210112143234543.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzU3MjU5NQ==,size_16,color_FFFFFF,t_70#pic_center" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/8SMJ0xH7ShdV42kNMrRGy0FrbP9Y0b6tuBdOIW9LshUicZbsqm415QHwwfuIymUJFE6RxjCUQwhL5rADoYDwarQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-3. [陈丹琦组最新力作：仅需dropout两次的对比学习框架](https://mp.weixin.qq.com/s/0vK4pZXFEn28Dkxua5yN5Q)       :star::star:
-   - Abstract: 前几天推的是SimCSE在中文的实验，今天讲的是对比学习SimCSE本尊
-   - Paper: [SimCSE: Simple Contrastive Learning of Sentence Embeddings](https://arxiv.org/abs/2104.08821)
-   - Code: [https://github.com/princeton-nlp/SimCSE](https://github.com/princeton-nlp/SimCSE)
-   - Tips: 核心思想是缩短两个正样本之间的距离，拉大负样本之间的距离，从而得到输入更好的表示。
+4. [优秀！Jupyter 与 PyCharm 可以完美融合！](https://mp.weixin.qq.com/s/vT2QJwe0MEju65wEt8tHfg)       :star::star:
+   - Abstract: 联合 Jupyter Notebook 与 PyCharm的Jupytext
+   - Code: [https://github.com/mwouts/jupytext](https://github.com/mwouts/jupytext)
+   - Tips: Pycharm比较适合写项目，Jupyter比较适合数据可视化和一些demo，Jupytext联合起来就很棒
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/VBcD02jFhgnr3T2SxCAZ3svkMDdJZQDumbZ54gZpfymUbhEgaUIQbMgnC8wcepYibrbOgxrFXibhNkrbEFA206pw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gW8ibfAgrH2ibHwrofLJW5U4XK5QeicMNkHicQtWP1agD6Y8QQZoYiadicFrnhtxSGCXcH3FTCOrpRkIITkg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-
-4. [Libra R-CNN：实现平衡学习的目标检测](https://mp.weixin.qq.com/s/SV8-0fprEbvtn59bkJpVtQ)       :star::star:
-   - Abstract: 实现平衡学习的目标检测框架Libra R-CNN
-   - Paper: [Libra R-CNN: Towards Balanced Learning for Object Detection](https://openaccess.thecvf.com/content_CVPR_2019/html/Pang_Libra_R-CNN_Towards_Balanced_Learning_for_Object_Detection_CVPR_2019_paper.html)
-   - Tips: Libra R-CNN借助简单但有效的组件，即IoU平衡采样、平衡特征金字塔和平衡L1损失，实现了更准确的目标检测
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/UZltaZktr9x32EvD2ka9uz0PgkXNjnD2Btu3X17cCyLXibocf7DkUZQg0dib9YAlEa2eOROzdyr8GpsaAcKCibRSw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-
-5. [PFLD：高精度实时人脸关键点检测算法](https://mp.weixin.qq.com/s/dupmYSwX8tElT3Fmfi_ylg)       :star::star:
-   - Abstract: 高精度实时人脸关键点检测算法PFLD
-   - Paper: [PFLD: A Practical Facial Landmark Detector](https://github.com/DWCTOD/CVPR2021-Papers-with-Code-Demo)
-   - Tips: backbone采用轻量级网络，自定义一个辅助网络获取旋转信息，设计了一个新的损失算法来解决几何正则化和数据不平衡问题
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/7jnsg27ZEVEUGGP2UNNMHQh0HeFPzS6Kf4dKRD3DpEwFziaQ7ZeAnD2QztMDT8ibEVFJp4L6KucKj4QLmk62LdTQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-
-6. [用Python+OpenCV实现自动驾驶汽车的车道线检测](https://mp.weixin.qq.com/s/-DhcimloP9wU6st8Wd82lw)       :star::star:
-   - Abstract: 使用Python+OpenCV实现自动驾驶汽车的车道线检测
-   - Code: [https://github.com/pdhruv93/computer-vision/tree/main/lane-detection-self-driving](https://github.com/pdhruv93/computer-vision/tree/main/lane-detection-self-driving)
-   - Tips: 基于OpenCV的车道线检测，思路清晰简洁，在深度学习的浪潮里，这种的小酌一下很嗨
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ABvEnMciauWtaXdibO9yLuS4qKx4iaDC0ubr8SJGSRqDQUGomds3EJw6PWXydUhqa2zfYlwr7AwETqwXosgMuia4fg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-
-7. [自动驾驶中的深度学习](https://mp.weixin.qq.com/s/PuDYR42JJyALxMU-Zs4wjQ)       :star::star:
-   - Abstract: 在当前火热的自动驾驶中，用到了哪些深度学习技术
-   - Tips: 
-     - 在 感知（Perception） 中, 你发现周围的环境和障碍。
-     - 在 定位（Localization） 中, 你在世界中确定了自己的位置，精度在 1-3 cm。
-     - 在 规划（Planning） 中, 你利用感知和定位，确定了从 A 到 B 的轨迹。
-     - 在 控制（Control） 中, 你产生方向盘转向角度和加速度值来沿着轨迹行进。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/8YTzYMibIWERSojpe6edicASvughUDMskSuZFSvUecNMianbcal1iajmibUTfvkiby3cCORL2Fg7wd2ltHw7Fu8vW81g/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
+5. [腾讯/字节/华为/旷视 2022届实习面经—计算机视觉方向](https://mp.weixin.qq.com/s/2mlHNwXJQZFrddDGSRkkIg)       :star::star:
+   - Abstract: 计算机视觉方向面经
+   - Tips: 腾讯、字节跳动、华为、旷视实习面经
+   - 
 
 
 ## :paperclip:  历史更新
@@ -129,9 +101,9 @@
 </details>
 <details><summary>5月</summary>
     1. <a href="notes/202105/0501.md" target="_blank">公众号内容拓展学习笔记（2021.5.1）</a>
+    2. <a href="notes/202105/0502.md" target="_blank">公众号内容拓展学习笔记（2021.5.2）</a>
 </details>
 </pre>
-
 
 
 
