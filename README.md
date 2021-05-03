@@ -3,7 +3,7 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2021.5.2
+更新今日时间：2021.5.3
 
 ------
 
@@ -11,44 +11,50 @@
 
 ## :paperclip:  今日要点
 
-1. [CVPR 2021 | 清华大学提出：密集连接网络中的稀疏特征重激活](https://mp.weixin.qq.com/s/hfq4pBa7CZE8MWieT9FraA)         :star::star:
-   - Abstract: 密集连接网络中的稀疏特征重激活CondenseNetV2
-   - Paper: [CondenseNet V2: Sparse Feature Reactivation for Deep Networks](https://arxiv.org/abs/2104.04382)
-   - Code: [https://github.com/jianghaojun/CondenseNetV2](https://github.com/jianghaojun/CondenseNetV2)
-   - Tips: CondenseNetV2 在 CondenseNet 的基础上引入了稀疏特征重激活，对冗余特征同时进行了裁剪和更新，有效提升了密集连接网络的特征复用效率
+1. [CVPR 2021 | 250 FPS！让实时语义分割飞起！重新思考BiSeNet](https://mp.weixin.qq.com/s/Wdn71V_t4XsKR3Ezpgd47w)         :star::star:
+   - Abstract: 超强的实时语义分割新网络：STDC，表现SOTA
+   - Paper: [Rethinking BiSeNet For Real-time Semantic Segmentation](https://arxiv.org/abs/2104.13188)
+   - Code: [https://github.com/MichaelFan01/STDC-Seg](https://github.com/MichaelFan01/STDC-Seg)
+   - Tips: 本文将特征图的维数逐渐降低，并将特征图聚合起来进行图像表征，形成了STDC网络的基本模块。在decoder中，提出了一个Detail Aggregation module将空间信息的学习以single-stream方式集成到low-level layers中。最后，将low-level features和deep features融合以预测最终的分割结果
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/yNnalkXE7oXP0nTnSvMLtaHyhcT5b01zNXmH2x1kWPPdyW3eIMNib6SUwohfibnRicB7ibMt0zL2ica3tLRkgTDWjjA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-2. [CVPR 2021 | 何恺明等人新作！深入探究无监督时空表征学习](https://mp.weixin.qq.com/s/PG9_AN-bo7emTks94AlQ8w)       :star::star:
-   - Abstract: 无监督时空表征学习的大规模研究
-   - Paper: [A Large-Scale Study on Unsupervised Spatiotemporal Representation Learning](https://arxiv.org/abs/2104.14558)
-   - Code: [https://github.com/facebookresearch/SlowFast](https://github.com/facebookresearch/SlowFast)
-   - Tips: 时空的Self-Supervised采样同一个视频的positive pair时间跨度越长效果越好，优化目标比momentum encoder影响要小，训练时间、backbone、数据增强和精选数据对于得到更好性能至关重要
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/J24zDnPUB9FsNc3uJKiaHSLCRV0UegRXfU56RTlWwKmayuDt1OEv5Oz6kY0fnjqmZN8O0gatCGv55DInWg1OWPw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/5ooHoYt0tgkCREtmWJWsEX9h6bgqDo6UvDUtgiaa4dlHr1qBSy20sG1qbHUaibr38ITDnrdaiaj2Sd0icjfvlicXq4w/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-3. [一文深入浅出cv中的Attention机制](https://mp.weixin.qq.com/s/nZvauf0zWJq9jSBu4zJ72A)       :star::star:
-   - Abstract: 一文深入浅出cv中的Attention机制
-   - Tips: CV方向注意力机制：Non-local, CBAM, cgnl, Cross-layer non-local
+2. [深度稳定学习：因果学习的最新进展 | 清华大学团队 CVPR 研究](https://mp.weixin.qq.com/s/luGIYDzE3VUuGH-p_cippA)       :star::star:
+   - Abstract: 通用有效的深度稳定学习方法 StableNet
+   - Paper: [Deep Stable Learning for Out-Of-Distribution Generalization](https://arxiv.org/abs/2104.07876)
+   - Tips: 核心是基于随机傅里叶特征的深度特征去相关，从而实现模型在OOD数据上的泛化
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/8SMJ0xH7ShdV42kNMrRGy0FrbP9Y0b6tuBdOIW9LshUicZbsqm415QHwwfuIymUJFE6RxjCUQwhL5rADoYDwarQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/cNFA8C0uVPsHkqSd4YZMibVIibPwKuNOTB5p5KHHFic668o8SqOzHzB71AY9c1Wd7KLSNgSyf1OrwKotBsIbTcJHQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-4. [优秀！Jupyter 与 PyCharm 可以完美融合！](https://mp.weixin.qq.com/s/vT2QJwe0MEju65wEt8tHfg)       :star::star:
-   - Abstract: 联合 Jupyter Notebook 与 PyCharm的Jupytext
-   - Code: [https://github.com/mwouts/jupytext](https://github.com/mwouts/jupytext)
-   - Tips: Pycharm比较适合写项目，Jupyter比较适合数据可视化和一些demo，Jupytext联合起来就很棒
+3. [深度学习领域，你心目中 idea 最惊艳的论文是哪篇？](https://mp.weixin.qq.com/s/owCbMey8NKhMGzRad0buYQ)       :star::star:
+   - Abstract: 知乎作者心中白月光般存在的深度学习领域论文
+   - Tips: 我心目中凡是有开源代码的论文都是最惊艳的
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gW8ibfAgrH2ibHwrofLJW5U4XK5QeicMNkHicQtWP1agD6Y8QQZoYiadicFrnhtxSGCXcH3FTCOrpRkIITkg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfrbKwdMhbLZu4goBFSo0FnrMxhv0KA7fpcFatVrwFmytIcj8JrjLMFNnjphWmDJqpHtbSeQVCBAPg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-5. [腾讯/字节/华为/旷视 2022届实习面经—计算机视觉方向](https://mp.weixin.qq.com/s/2mlHNwXJQZFrddDGSRkkIg)       :star::star:
-   - Abstract: 计算机视觉方向面经
-   - Tips: 腾讯、字节跳动、华为、旷视实习面经
-   - 
+
+4. [电子稳像中的运动估计算法](https://mp.weixin.qq.com/s/cA9kC8ww72Dn5mLi_C2aMg)       :star::star:
+   - Abstract: 电子稳像中的运动估计算法
+   - Tips: 
+     - 块匹配算法
+     - 位平面匹配算法
+     - 灰度投影法
+     - 光流法
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KToRmsQB0NHXJYY6GVRTDItjspTpRdI2tXzen5VL5ObgiaXLI2CpaR9ezmGG3ibALMp2srVDZ7OUwCicr20IxOI7Q/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+
+5. [划重点！巴菲特讲了什么！](https://mp.weixin.qq.com/s/HPfAOPITKHYCEgaDFinktQ)       :star::star:
+   - Abstract: 巴菲特股东大会上的主要内容
+   - Tips: 航空股暂时还需要观望，再就是投资指数，指数，看看美股，看看大a，我陷入了沉思。。。
+
+
+## 
 
 
 ## :paperclip:  历史更新
@@ -102,8 +108,10 @@
 <details><summary>5月</summary>
     1. <a href="notes/202105/0501.md" target="_blank">公众号内容拓展学习笔记（2021.5.1）</a>
     2. <a href="notes/202105/0502.md" target="_blank">公众号内容拓展学习笔记（2021.5.2）</a>
+    3. <a href="notes/202105/0503.md" target="_blank">公众号内容拓展学习笔记（2021.5.3）</a>
 </details>
 </pre>
+
 
 
 
