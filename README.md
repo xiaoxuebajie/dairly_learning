@@ -3,7 +3,7 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2021.5.3
+更新今日时间：2021.5.4
 
 ------
 
@@ -11,50 +11,55 @@
 
 ## :paperclip:  今日要点
 
-1. [CVPR 2021 | 250 FPS！让实时语义分割飞起！重新思考BiSeNet](https://mp.weixin.qq.com/s/Wdn71V_t4XsKR3Ezpgd47w)         :star::star:
-   - Abstract: 超强的实时语义分割新网络：STDC，表现SOTA
-   - Paper: [Rethinking BiSeNet For Real-time Semantic Segmentation](https://arxiv.org/abs/2104.13188)
-   - Code: [https://github.com/MichaelFan01/STDC-Seg](https://github.com/MichaelFan01/STDC-Seg)
-   - Tips: 本文将特征图的维数逐渐降低，并将特征图聚合起来进行图像表征，形成了STDC网络的基本模块。在decoder中，提出了一个Detail Aggregation module将空间信息的学习以single-stream方式集成到low-level layers中。最后，将low-level features和deep features融合以预测最终的分割结果
+1. [综述 | 万字长文带你入门近几年深度学习的重要研究成果](https://mp.weixin.qq.com/s/S7EmzxGezAXP3-kpPWyfWw)         :star::star:
+   - Abstract: 列举出了近年来深度学习的重要研究成果
+   - Paper: [Recent Advances in Deep Learning: An Overview](https://arxiv.org/pdf/1807.08169v1.pdf)
+   - Tips: 这篇综述对于刚入门的深度学习新手是一份不错的参考资料，在形成基本学术界图景、指导文献查找等方面都能提供帮助
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/5ooHoYt0tgkCREtmWJWsEX9h6bgqDo6UvDUtgiaa4dlHr1qBSy20sG1qbHUaibr38ITDnrdaiaj2Sd0icjfvlicXq4w/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gW9iadNGuZLE3iaGcoyKmz4oy8kpaRx8LN0cPiburLciaoxIbCqYYPDtdfMbHnWFXpkibhDOg0GWDOCZiaUA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+2. [ICLR 2021 Group监督学习: 通过可控的解耦表征学习模拟人脑想象力！](https://mp.weixin.qq.com/s/lGzYW7YfLja4aFh7JMI8Iw)       :star::star:
+   - Abstract: 组监督学习通过可控的解耦表征学习模拟人脑想象力
+   - Paper: [Zero-shot Synthesis with Group-Supervised Learning](https://openreview.net/pdf?id=8wqCDnBmnrT)
+   - Code: [https://github.com/gyhandy/Group-Supervised-Learning](https://github.com/gyhandy/Group-Supervised-Learning)
+   - Video: [https://www.bilibili.com/video/BV1WK411c7uV/](https://www.bilibili.com/video/BV1WK411c7uV/)
+   - Tips: Group-Supervised Learning 可以将输入图片（bottom images）进行可控的解耦（controllable disentanglement）并表示为可以自由组合的不同属性（比如车的种类，姿态，背景；人的样貌，姿势，表情），然后通过属性的自由组合生成新的图片。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/cNFA8C0uVPv5v3IbNKibQwzT6NkZoiaib6dQUEMjI0hSIcULpFoRmqnSYqOqibPGyoibSQkBicrLKVfkSsOZicUjqdwtg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-2. [深度稳定学习：因果学习的最新进展 | 清华大学团队 CVPR 研究](https://mp.weixin.qq.com/s/luGIYDzE3VUuGH-p_cippA)       :star::star:
-   - Abstract: 通用有效的深度稳定学习方法 StableNet
-   - Paper: [Deep Stable Learning for Out-Of-Distribution Generalization](https://arxiv.org/abs/2104.07876)
-   - Tips: 核心是基于随机傅里叶特征的深度特征去相关，从而实现模型在OOD数据上的泛化
+3. [ICLR 2021 | 协同调制生成对抗网络，轻松帮你实现任意大区域图像填充](https://mp.weixin.qq.com/s/6e4dNKiZ1FTm-sy7x9g2OA)       :star::star:
+   - Abstract: 协同调制生成对抗网络进行大规模图像填充
+   - Paper: [Large Scale Image Completion via Co-Modulated Generative Adversarial Networks](https://arxiv.org/pdf/2103.10428)
+   - Code: [https://github.com/zsyzzsoft/co-mod-gan](https://github.com/zsyzzsoft/co-mod-gan)
+   - Demo: [http://comodgan.ml/](http://comodgan.ml/)
+   - Tips: 协同调制填补了条件与无条件图像生成之间的空缺，可轻松实现任意大区域的图像补全，还可以被拓展至更广泛的图像转换任务。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/cNFA8C0uVPsHkqSd4YZMibVIibPwKuNOTB5p5KHHFic668o8SqOzHzB71AY9c1Wd7KLSNgSyf1OrwKotBsIbTcJHQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/HkPvwCuFwNNMnqdkxRbeOVVTIoqlRUCh0ZMpvfyKy5bmDkBwEKyy6oAYqj8eXRa2FAJOW9cOdHhPCQJYGuRXdA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-3. [深度学习领域，你心目中 idea 最惊艳的论文是哪篇？](https://mp.weixin.qq.com/s/owCbMey8NKhMGzRad0buYQ)       :star::star:
-   - Abstract: 知乎作者心中白月光般存在的深度学习领域论文
-   - Tips: 我心目中凡是有开源代码的论文都是最惊艳的
+4. [五年引用量最高的10大论文：Adam登顶，AlphaGo、Transfromer上榜](https://mp.weixin.qq.com/s/HDlXEJ5I0F7SLNNjLsdX-A)       :star::star:
+   - Abstract: 知名外媒《Towards Data Science》按谷歌引用次数，统计了近五年来发表在各大国际顶级会上引用量排名前十的论文
+   - Tips: 出自ICLR、NeurIPSR、NeurIPS、ICML以及《Nature》四家期刊，覆盖深度学习、机器学、强化学习、视觉处理、自然语言处理等多个领域。其中，智能体AlphaGo、Transfromer模型、强化学习算法DQN，以及神经网络优化算法Adam全部在列
 
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfrbKwdMhbLZu4goBFSo0FnrMxhv0KA7fpcFatVrwFmytIcj8JrjLMFNnjphWmDJqpHtbSeQVCBAPg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/cNFA8C0uVPvDaZiaTAcOflWw55aH4wZvS3bHYWgndJUiaAyuzxHrprPf3DIGcC7pwTWFVH7wicVZCK80yEw7kRIqw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
+5. [多摄像头实时目标跟踪和计数，使用YOLOv4，Deep SORT和Flask](https://mp.weixin.qq.com/s/Ud7_40VUlvTfBHAkxHdL7w)       :star::star:
+   - Abstract: 目标计数demo
+   - Code: [https://github.com/LeonLok/Multi-Camera-Live-Object-Tracking](https://github.com/LeonLok/Multi-Camera-Live-Object-Tracking)
+   - Tips: 检测跟踪结合来做目标计数，可以云托管
 
-4. [电子稳像中的运动估计算法](https://mp.weixin.qq.com/s/cA9kC8ww72Dn5mLi_C2aMg)       :star::star:
-   - Abstract: 电子稳像中的运动估计算法
-   - Tips: 
-     - 块匹配算法
-     - 位平面匹配算法
-     - 灰度投影法
-     - 光流法
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KToRmsQB0NHXJYY6GVRTDItjspTpRdI2tXzen5VL5ObgiaXLI2CpaR9ezmGG3ibALMp2srVDZ7OUwCicr20IxOI7Q/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/KYSDTmOVZvrPGhkkvYwMF0G1gjOtdbWcXk2icp4AuRn6iajJH8jWp2mYia4CjmoBrZDzyiboCGvznHKsNvBu69djAQ/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1" style='zoom:100%'>
 </div>
 
+6. [2021年深度学习主机配置推荐](https://mp.weixin.qq.com/s/oXbBrm8SHTeNH2yACKSDaA)       :star::star:
+   - Abstract: 显卡，主板，内存等都多个方向该如何配置深度学习主机
+   - Tips: 之前看到Pytorch都可以支持AMD了，感觉AMD的性价比来了呀。。。
 
-5. [划重点！巴菲特讲了什么！](https://mp.weixin.qq.com/s/HPfAOPITKHYCEgaDFinktQ)       :star::star:
-   - Abstract: 巴菲特股东大会上的主要内容
-   - Tips: 航空股暂时还需要观望，再就是投资指数，指数，看看美股，看看大a，我陷入了沉思。。。
 
-
-## 
 
 
 ## :paperclip:  历史更新
@@ -109,8 +114,10 @@
     1. <a href="notes/202105/0501.md" target="_blank">公众号内容拓展学习笔记（2021.5.1）</a>
     2. <a href="notes/202105/0502.md" target="_blank">公众号内容拓展学习笔记（2021.5.2）</a>
     3. <a href="notes/202105/0503.md" target="_blank">公众号内容拓展学习笔记（2021.5.3）</a>
+    4. <a href="notes/202105/0504.md" target="_blank">公众号内容拓展学习笔记（2021.5.4）</a>
 </details>
 </pre>
+
 
 
 
