@@ -3,7 +3,7 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2021.5.5
+更新今日时间：2021.5.6
 
 ------
 
@@ -11,47 +11,61 @@
 
 ## :paperclip:  今日要点
 
-1. [2020年人工智能领域突破性工作](https://mp.weixin.qq.com/s/52Ss_O7NgAy-efADxzJyjQ)         :star::star:
-   - Abstract: 总结一下个人认为2020年人工智能领域称得上突破的一些工作，涉及到DETR、ViT、BYOL、NeRF、GPT-3和AlphaFold2
-   - Tips: NeRF这个静态图转3D效果太帅了
+1. [CVPR2021 | 华为诺亚实验室提出Transformer in Transformer](https://mp.weixin.qq.com/s/h_MzNIXBW2pjcpNEXEerCw)         :star::star:
+   - Abstract: 同时利用了块内部序列和块之间序列信息的transformer模型TNT
+   - Paper: [Transformer in Transformer](https://arxiv.org/abs/2103.00112)
+   - Code: [https://github.com/huawei-noah/noah-research/tree/master/TNT](https://github.com/huawei-noah/noah-research/tree/master/TNT)
+   - Tips: 通过提出的TNT模型，可以把全局和局部的结构信息建模，并提高特征表示能力
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/J24zDnPUB9FQKj2kaGJkdgvXEUeUZ2ngpMgcAiaVibhI8qkcoxjWiaGvakUmWh4CqqlDpuCBrM9173S5OM0kedyjA/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/V2E1ll6kaTWx3TXC7qp4SULxEK9eOavLrJiburQBHibyeH0nicN0ZGKDOdDCb66652FKT18ibYe7Vz4ztQBk50vT7Q/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-
-2. [Transformer作者创建，Hinton、李飞飞、Goodfellow等大佬投资，这家新公司要做什么？](https://mp.weixin.qq.com/s/QE98Fb7b96mMARMgIiJ96Q)       :star::star:
-   - Abstract: Transformer 作者之一 Aidan Gomez 在推特上宣布，他们创办了一家名为 Cohere 的自然语言处理公司，基于自己训练的大型 NLP 模型为外界提供 API 服务
-   - Website: [https://cohere.ai/](https://cohere.ai/)
-   - Tips: 这家公司的早期投资者包括图灵奖得主 Geoffrey Hinton、GAN 之父 Ian Goodfellow、Uber 首席科学家 Raquel Urtasun、英伟达多伦多研究实验室主任 Sanja Fidler 以及斯坦福大学教授李飞飞等。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gW8thOfLIV30xQSfPnYWibBMSNfsjHcEhpG1wEM0SVcZ9OdicIYhgfKefBBM8gBbNFhibzLAxaKRdzRfQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-3. [如何在科研论文中画出漂亮的插图？](https://mp.weixin.qq.com/s/nE1WYb9YbGjh9DxmtbdrPw)       :star::star:
-   - Abstract: 强烈推荐 Python 的绘图模块 matplotlib: python plotting
-   - Tips: 玩出花了都，还是很不错的
-
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfqX4zPvOw25FCYQa4xKRztWd2MlOoDfTFEyr7Wgbw6GOpeKf5hfZeVyRibBULNGYwkwsib49tpxBsdg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-
-4. [用乐高积木实现跨镜跟踪算法 | PPSIG诚邀你加入](https://mp.weixin.qq.com/s/MZki_d3rTqjMJnanSv0M0g)       :star::star:
-   - Abstract: 飞桨社区特殊兴趣小组（PPSIG）诚邀各方开发者一起共建Models-CV
+2. [CVPR 2021 | pixelNeRF：一种基于NeRF的多视图三维重建网络](https://mp.weixin.qq.com/s/_BIJEe099JsYZpYX109Xbg)       :star::star:
+   - Abstract: 只需要输入单张或多张图像，就能得到连续场景表示的学习框架pixelNeRF
+   - Paper: [pixelNeRF: Neural Radiance Fields from One or Few Images](https://arxiv.org/pdf/2012.02190.pdf)
+   - Code: [https://alexyu.net/pixelnerf/](https://alexyu.net/pixelnerf/)
    - Tips: 
-     - 跨境跟踪算法研究
-     - 工业分拣/质检平台搭建
+     - Pixel可以在多视图图像的数据集上面进行训练，而不需要任何额外的监督
+     - PixelNeRF预测输入图像的摄像机坐标系中的NeRF表示，而不是标准坐标系
+     - 它是完全卷积的，这允许它保持图像和输出3D表示之间的空间对齐
+     - PixelNeRF可以在测试时合并任意数量的输入视图，且不需要任何优化
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/sKia1FKFiafghiafcZLobWY9SOPczEIyzMfaUteIYKE8EgGI0BibKpKWnAQZVojyrwjaNFicQNtbQdfD0SCw4l1eFqA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://alexyu.net/pixelnerf/img/teaser/dtu_outputs_sm.gif" style='zoom:100%'>
 </div>
 
 
-5. [基于深度学习方法的3D数据合成](https://mp.weixin.qq.com/s/7WKpnZqutYUUUoTBK9b7mQ)       :star::star:
-   - Abstract: 从可用的 2D 数据中合成 3D 数据
-   - Tips: 讨论了两种主要的 3D 合成方法，即卷积深度网络和基于 transformer 的深度网络
+3. [CVPR 2021 | MotionRNN：针对复杂时空运动的通用视频预测模型](https://mp.weixin.qq.com/s/oBqtGcmsZtj_IWxBbdoGPg)       :star::star:
+   - Abstract: 分解现实世界复杂运动的通用视频预测模型MotionRNN
+   - Paper: [MotionRNN: A Flexible Model for Video Prediction with Spacetime-Varying Motions](https://arxiv.org/abs/2103.02243)
+   - Tips: MotionRNN将运动趋势和瞬时变化进行统一建模，可以准确反映复杂的时空运动，得到更优的预测结果。同时，作为一个通用的视频预测模型，MotionRNN可以与现有的基于RNN模型结合，增强它们对于复杂时空运动的预测能力。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/8YTzYMibIWEQrfBicialMicoKZBVVXic849k74Cuaiab5pqK3p6VJldZxTWT8hCibQdYe1aMu8YJ74posASXOtaRpKpKA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/2yicI4uAMVVF47MwkVrm4hYLhAnFAXT3osmiaefOiaDnibYpHOm7Stn4CnfxgXOYbMCOwEdQTlkU27JoZf39I2MQLw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
+4. [TransGAN：纯粹而又强大](https://mp.weixin.qq.com/s/OnPJrZkz_qr4lup9j6abDg)       :star::star:
+   - Abstract: 将Transformers结构作为GAN网络的主结构的TransGAN
+   - Paper: [TransGAN: Two Transformers Can Make One Strong GAN](https://arxiv.org/abs/2102.07074)
+   - Code: [https://github.com/VITA-Group/TransGAN](https://github.com/VITA-Group/TransGAN)
+   - Tips: 纯粹采用Transformers作为GAN模型的主体效果在一定程度上还是不错的
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/AIR6eRePgjOgBZQNgO5aaAnLdgkVddT3haC7rB7BA3ZOwYDe8HYZjg744cOJOLbB4wnc9icFIj9mcTYB8kuMENw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+5. [Facebook刷新开放域问答SOTA：模型训模型！Reader当Teacher！](https://mp.weixin.qq.com/s/YfsqWQnz1FIrUC-MtTX0iQ)       :star::star:
+   - Abstract: 利用生成式阅读器中的注意力权重作为相似度信息训练检索模型，刷新了开放域问答系统的SOTA
+   - Paper: [DISTILLING KNOWLEDGE FROM READER TO RETRIEVER FOR QUESTION ANSWERING](https://openreview.net/pdf?id=NTEz-6wysdb)
+   - Code: [https://github.com/lucidrains/distilled-retriever-pytorch](https://github.com/lucidrains/distilled-retriever-pytorch)
+   - Tips: 简单有效地解决了开放域问答系统中训练检索模型缺乏标注数据的问题，为研究者们提供了新思路。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/5fknb41ib9qEBqPZ0VkNNydjicj645urjoKfANCgDqXKmtyGHmjugpFwqiaGLjvU5hojsbKE912EllGnHnavJA26w/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+6. [【综述专栏】对抗网络：李宏毅GAN课程笔记](https://mp.weixin.qq.com/s/Uzpz57GH6kmPpc9awKEsVA)       :star::star:
+   - Abstract: 李宏毅GAN课程笔记
+   - Tips: 学习李宏毅老师GAN课程的笔记，全文约1.9w字，白嫖就完事了
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/AIR6eRePgjOtX6pTJqPiceP2goemWQTWOkXqk0z3FaFYichwdMoH5ZaFd2tOaT0Adh3CBQdu6JXicURyibib7KvGWcw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
 
 
 
@@ -109,6 +123,7 @@
     3. <a href="notes/202105/0503.md" target="_blank">公众号内容拓展学习笔记（2021.5.3）</a>
     4. <a href="notes/202105/0504.md" target="_blank">公众号内容拓展学习笔记（2021.5.4）</a>
     5. <a href="notes/202105/0505.md" target="_blank">公众号内容拓展学习笔记（2021.5.5）</a>
+    6. <a href="notes/202105/0506.md" target="_blank">公众号内容拓展学习笔记（2021.5.6）</a>
 </details>
 </pre>
 
