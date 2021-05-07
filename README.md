@@ -3,7 +3,7 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2021.5.6
+更新今日时间：2021.5.7
 
 ------
 
@@ -11,62 +11,63 @@
 
 ## :paperclip:  今日要点
 
-1. [CVPR2021 | 华为诺亚实验室提出Transformer in Transformer](https://mp.weixin.qq.com/s/h_MzNIXBW2pjcpNEXEerCw)         :star::star:
-   - Abstract: 同时利用了块内部序列和块之间序列信息的transformer模型TNT
-   - Paper: [Transformer in Transformer](https://arxiv.org/abs/2103.00112)
-   - Code: [https://github.com/huawei-noah/noah-research/tree/master/TNT](https://github.com/huawei-noah/noah-research/tree/master/TNT)
-   - Tips: 通过提出的TNT模型，可以把全局和局部的结构信息建模，并提高特征表示能力
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/V2E1ll6kaTWx3TXC7qp4SULxEK9eOavLrJiburQBHibyeH0nicN0ZGKDOdDCb66652FKT18ibYe7Vz4ztQBk50vT7Q/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-2. [CVPR 2021 | pixelNeRF：一种基于NeRF的多视图三维重建网络](https://mp.weixin.qq.com/s/_BIJEe099JsYZpYX109Xbg)       :star::star:
-   - Abstract: 只需要输入单张或多张图像，就能得到连续场景表示的学习框架pixelNeRF
-   - Paper: [pixelNeRF: Neural Radiance Fields from One or Few Images](https://arxiv.org/pdf/2012.02190.pdf)
-   - Code: [https://alexyu.net/pixelnerf/](https://alexyu.net/pixelnerf/)
+1. [目标检测 | 丰富特征导向Refinement Network用于目标检测（附github源码）](https://mp.weixin.qq.com/s/Ij6uwXkgvLoVVx8Voklyyg)         :star::star:
+   - Abstract: Refinement Neural Network解决了多尺度目标检测和类不平衡的问题
+   - Paper: [Enriched Feature Guided Refinement Network for Object Detection](https://openaccess.thecvf.com/content_ICCV_2019/papers/Nie_Enriched_Feature_Guided_Refinement_Network_for_Object_Detection_ICCV_2019_paper.pdf)
+   - Code: [https://github.com/Ranchentx/EFGRNet](https://github.com/Ranchentx/EFGRNet)
    - Tips: 
-     - Pixel可以在多视图图像的数据集上面进行训练，而不需要任何额外的监督
-     - PixelNeRF预测输入图像的摄像机坐标系中的NeRF表示，而不是标准坐标系
-     - 它是完全卷积的，这允许它保持图像和输出3D表示之间的空间对齐
-     - PixelNeRF可以在测试时合并任意数量的输入视图，且不需要任何优化
+     - 引入了一种简单而有效的特征丰富化方案来生成多尺度的上下文特征。
+     - 进一步引入了一种级联的优化（精炼）方案
 
-<div align=center><img src="https://alexyu.net/pixelnerf/img/teaser/dtu_outputs_sm.gif" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwOicKqaU8hsiaibejndcaJUgyMWqIyNvpVZ3icgicicGLNmHvT90NeyNXib8ZwK6GRSadR6EurewwSGHaMEQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+2. [CVPR2021｜引入记忆模块，突破长距离依赖视频预测的性能瓶颈](https://mp.weixin.qq.com/s/GXcoHk9ks_ekVv-o14fVGg)       :star::star:
+   - Abstract: 一种突破长距离依赖视频预测的性能瓶颈视频预测方法
+   - Paper: [Video Prediction Recalling Long-term Motion Context via Memory Alignment Learning](https://arxiv.org/abs/2104.00924)
+   - Code: [https://github.com/sangmin-git/LMC-Memory](https://github.com/sangmin-git/LMC-Memory)
+   - Tips: 本文方法主要由动作上下文驱动的视频预测模块和长距离动作上下文记忆模块构成
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/BJbRvwibeSTuWhMkTktMX7SyDicI6UdqGS6FE3Pkj9vuhCoI8WydhboKhz2tiaibLwTzjL1llegmngYqsad0b8rBpg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-3. [CVPR 2021 | MotionRNN：针对复杂时空运动的通用视频预测模型](https://mp.weixin.qq.com/s/oBqtGcmsZtj_IWxBbdoGPg)       :star::star:
-   - Abstract: 分解现实世界复杂运动的通用视频预测模型MotionRNN
-   - Paper: [MotionRNN: A Flexible Model for Video Prediction with Spacetime-Varying Motions](https://arxiv.org/abs/2103.02243)
-   - Tips: MotionRNN将运动趋势和瞬时变化进行统一建模，可以准确反映复杂的时空运动，得到更优的预测结果。同时，作为一个通用的视频预测模型，MotionRNN可以与现有的基于RNN模型结合，增强它们对于复杂时空运动的预测能力。
+3. [SIGGRAPH 2021 | 学习带神经融合形状的人物动画](https://mp.weixin.qq.com/s/IuvyNRJ6amJn5ya7fr8L6A)       :star::star:
+   - Abstract: 针对骨骼驱动的模型动画的高质量自动化生成进行改进，提出了神经融合形状技术
+   - Paper: [Learning Skeletal Articulations with Neural Blend Shapes ](https://peizhuoli.github.io/neural-blend-shapes/papers/neural-blend-shapes-camera-ready.pdf)
+   - Code: [https://github.com/PeizhuoLi/neural-blend-shapes](https://github.com/PeizhuoLi/neural-blend-shapes)
+   - Tips: 该方法显著减少了已有方法中需要的人工干预，大大提升了生成动画的质量
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/2yicI4uAMVVF47MwkVrm4hYLhAnFAXT3osmiaefOiaDnibYpHOm7Stn4CnfxgXOYbMCOwEdQTlkU27JoZf39I2MQLw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/3ca6UMoKPP2pJ32mXbM4ufmxVWyphsqPBKPliasicC85tFTia85bJGoxguds9z7pQ4qRPycyxVgt4I6Z31tBrkWnA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-4. [TransGAN：纯粹而又强大](https://mp.weixin.qq.com/s/OnPJrZkz_qr4lup9j6abDg)       :star::star:
-   - Abstract: 将Transformers结构作为GAN网络的主结构的TransGAN
-   - Paper: [TransGAN: Two Transformers Can Make One Strong GAN](https://arxiv.org/abs/2102.07074)
-   - Code: [https://github.com/VITA-Group/TransGAN](https://github.com/VITA-Group/TransGAN)
-   - Tips: 纯粹采用Transformers作为GAN模型的主体效果在一定程度上还是不错的
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/AIR6eRePgjOgBZQNgO5aaAnLdgkVddT3haC7rB7BA3ZOwYDe8HYZjg744cOJOLbB4wnc9icFIj9mcTYB8kuMENw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+
+4. [复旦团队“人体经络图”火了！耗时9年，证明茶可疏通经络，网友：啊这都可以发论文](https://mp.weixin.qq.com/s/n9LShjiEQIm5QTi9C0neOw)       :star::star:
+   - Abstract: 一张“人体经络图”，最近在全网火了。
+   - Paper: [Infrared imageries of human body activated by teas indicate the existence of meridian system ](https://journal.hep.com.cn/qb/EN/article/downloadArticleFile.do?attachType=PDF&id=29259)
+   - Tips: 偶尔吃吃瓜，看样子得喝喝茶，活络活络经络了。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/YicUhk5aAGtA1y0syEZic7Oe5N2LUD0icLsZ2sDHXxxhAaJdXYD2HhOmiaK0zxlribCcSRuTtKZZyfMI1ia6WHiaG3fGg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-5. [Facebook刷新开放域问答SOTA：模型训模型！Reader当Teacher！](https://mp.weixin.qq.com/s/YfsqWQnz1FIrUC-MtTX0iQ)       :star::star:
-   - Abstract: 利用生成式阅读器中的注意力权重作为相似度信息训练检索模型，刷新了开放域问答系统的SOTA
-   - Paper: [DISTILLING KNOWLEDGE FROM READER TO RETRIEVER FOR QUESTION ANSWERING](https://openreview.net/pdf?id=NTEz-6wysdb)
-   - Code: [https://github.com/lucidrains/distilled-retriever-pytorch](https://github.com/lucidrains/distilled-retriever-pytorch)
-   - Tips: 简单有效地解决了开放域问答系统中训练检索模型缺乏标注数据的问题，为研究者们提供了新思路。
+5. [30万字，“保姆级”可视化视觉设计优质学习攻略推荐](https://mp.weixin.qq.com/s/K1x1F7I3KCSSWmsGQH6eKA)       :star::star:
+   - Abstract: 数据可视化方法
+   - Tips: 之前推送的比较适合绘制普通适用的，这个就直接炫起来了，很不错
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/5fknb41ib9qEBqPZ0VkNNydjicj645urjoKfANCgDqXKmtyGHmjugpFwqiaGLjvU5hojsbKE912EllGnHnavJA26w/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/LVW0j64NZC152iaNAafRBIWUI7LWPxrLO4xzU0FGFr8LD6iaVlg3VAErUibrA3guzs0DjGIib8eoLliaslrLCMmZgfg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-6. [【综述专栏】对抗网络：李宏毅GAN课程笔记](https://mp.weixin.qq.com/s/Uzpz57GH6kmPpc9awKEsVA)       :star::star:
-   - Abstract: 李宏毅GAN课程笔记
-   - Tips: 学习李宏毅老师GAN课程的笔记，全文约1.9w字，白嫖就完事了
+6. [CVPR2021(Oral) 商汤、港中文实现单目人脸重建新突破： 基于生成网络的渲染器！几何形状更精准！渲染效果更真实！](https://mp.weixin.qq.com/s/H2zdQGVBFY4N0x4MmLf55g)       :star::star:
+   - Abstract: 基于风格化对抗生成器的人脸渲染器
+   - Paper: [Inverting Generative Adversarial Renderer for Face Reconstruction](https://arxiv.org/pdf/2105.02431.pdf)
+   - Code: [https://github.com/WestlyPark/StyleRenderer](https://github.com/WestlyPark/StyleRenderer)
+   - Tips:  构建了一种从输入3D模型到生成图像的平滑梯度，同时可以以低精度建模获得渲染更高质量的图像
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/AIR6eRePgjOtX6pTJqPiceP2goemWQTWOkXqk0z3FaFYichwdMoH5ZaFd2tOaT0Adh3CBQdu6JXicURyibib7KvGWcw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/BJbRvwibeSTuLGuha3GVxopibDV8UbvqWhIWFDlYtsCVfic7qsttBaaBJMb0caWumI6f1EBboB1Gsxz4iaQcqMRHZQ/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1" style='zoom:100%'>
 </div>
 
+## 
 
 
 ## :paperclip:  历史更新
@@ -124,8 +125,10 @@
     4. <a href="notes/202105/0504.md" target="_blank">公众号内容拓展学习笔记（2021.5.4）</a>
     5. <a href="notes/202105/0505.md" target="_blank">公众号内容拓展学习笔记（2021.5.5）</a>
     6. <a href="notes/202105/0506.md" target="_blank">公众号内容拓展学习笔记（2021.5.6）</a>
+    7. <a href="notes/202105/0507.md" target="_blank">公众号内容拓展学习笔记（2021.5.7）</a>
 </details>
 </pre>
+
 
 
 
