@@ -3,7 +3,7 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2021.5.7
+更新今日时间：2021.5.8
 
 ------
 
@@ -11,61 +11,60 @@
 
 ## :paperclip:  今日要点
 
-1. [目标检测 | 丰富特征导向Refinement Network用于目标检测（附github源码）](https://mp.weixin.qq.com/s/Ij6uwXkgvLoVVx8Voklyyg)         :star::star:
-   - Abstract: Refinement Neural Network解决了多尺度目标检测和类不平衡的问题
-   - Paper: [Enriched Feature Guided Refinement Network for Object Detection](https://openaccess.thecvf.com/content_ICCV_2019/papers/Nie_Enriched_Feature_Guided_Refinement_Network_for_Object_Detection_ICCV_2019_paper.pdf)
-   - Code: [https://github.com/Ranchentx/EFGRNet](https://github.com/Ranchentx/EFGRNet)
-   - Tips: 
-     - 引入了一种简单而有效的特征丰富化方案来生成多尺度的上下文特征。
-     - 进一步引入了一种级联的优化（精炼）方案
+1. [MLP回归，无需卷积、自注意力，纯多层感知机视觉架构媲美CNN、ViT](https://mp.weixin.qq.com/s/gK6OHqH5zEWKVPGGfJBVxg)         :star::star:
+   - Abstract: 一种舍弃卷积和自注意力且完全使用多层感知机（MLP）的视觉网络架构 MLP-Mixer 
+   - Paper: [MLP-Mixer: An all-MLP Architecture for Vision](https://arxiv.org/pdf/2105.01601.pdf)
+   - Code: [https://github.com/google-research/vision_transformer/tree/linen](https://github.com/google-research/vision_transformer/tree/linen)
+   - Tips: Mixer 架构的设计思想是清楚地将按位置（channel-mixing）操作 (i) 和跨位置（token-mixing）操作 (ii) 分开，两种操作都通过 MLP 来实现
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwOicKqaU8hsiaibejndcaJUgyMWqIyNvpVZ3icgicicGLNmHvT90NeyNXib8ZwK6GRSadR6EurewwSGHaMEQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/KmXPKA19gW9ePbz8uFT0UPiad6mAibvZolcywxibZMrWWzunHYPt5bjKw9PH9EpzsVZ1J2hoSjtlTU1f5zCpOIaQw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-2. [CVPR2021｜引入记忆模块，突破长距离依赖视频预测的性能瓶颈](https://mp.weixin.qq.com/s/GXcoHk9ks_ekVv-o14fVGg)       :star::star:
-   - Abstract: 一种突破长距离依赖视频预测的性能瓶颈视频预测方法
-   - Paper: [Video Prediction Recalling Long-term Motion Context via Memory Alignment Learning](https://arxiv.org/abs/2104.00924)
-   - Code: [https://github.com/sangmin-git/LMC-Memory](https://github.com/sangmin-git/LMC-Memory)
-   - Tips: 本文方法主要由动作上下文驱动的视频预测模块和长距离动作上下文记忆模块构成
+2. [RepPoint及RepPointv2初探](https://mp.weixin.qq.com/s/UCTvSgqGVba4ym-f7Nr02A)       :star::star:公众号内容拓展学习笔记（2021.5.8）
+   - Abstract: 基于特征采样点目标检测网络RepPoint及RepPointv2
+   - Paper: [RepPoints v2: Verification Meets Regression for Object Detection](https://arxiv.org/pdf/2007.08508.pdf)
+   - Code: [https://github.com/Scalsol/RepPointsV2](https://github.com/Scalsol/RepPointsV2)
+   - Tips: 给出的是RepPointsV2的论文代码以及网络结构图，相对于v1主要是通过添加辅助分支来强化了定位能力
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/BJbRvwibeSTuWhMkTktMX7SyDicI6UdqGS6FE3Pkj9vuhCoI8WydhboKhz2tiaibLwTzjL1llegmngYqsad0b8rBpg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-
-3. [SIGGRAPH 2021 | 学习带神经融合形状的人物动画](https://mp.weixin.qq.com/s/IuvyNRJ6amJn5ya7fr8L6A)       :star::star:
-   - Abstract: 针对骨骼驱动的模型动画的高质量自动化生成进行改进，提出了神经融合形状技术
-   - Paper: [Learning Skeletal Articulations with Neural Blend Shapes ](https://peizhuoli.github.io/neural-blend-shapes/papers/neural-blend-shapes-camera-ready.pdf)
-   - Code: [https://github.com/PeizhuoLi/neural-blend-shapes](https://github.com/PeizhuoLi/neural-blend-shapes)
-   - Tips: 该方法显著减少了已有方法中需要的人工干预，大大提升了生成动画的质量
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/3ca6UMoKPP2pJ32mXbM4ufmxVWyphsqPBKPliasicC85tFTia85bJGoxguds9z7pQ4qRPycyxVgt4I6Z31tBrkWnA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/SdQCib1UzF3ugnSAYPGGt7knCUicHJk459s166y8R8LFPrzOKia64OBoBmaTaT6zw6iazMLblvxicvjaO0g7GexLHIg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
+3. [干货｜pytorch必须掌握的的4种学习率衰减策略](https://mp.weixin.qq.com/s/N_mzevDeBE4Er-Ncj7gsRQ)       :star::star:
+   - Abstract: pytorch必须掌握的的4种学习率衰减策略
+   - Tips: 指数衰减、固定步长的衰减、多步长衰、余弦退火衰减
 
-4. [复旦团队“人体经络图”火了！耗时9年，证明茶可疏通经络，网友：啊这都可以发论文](https://mp.weixin.qq.com/s/n9LShjiEQIm5QTi9C0neOw)       :star::star:
-   - Abstract: 一张“人体经络图”，最近在全网火了。
-   - Paper: [Infrared imageries of human body activated by teas indicate the existence of meridian system ](https://journal.hep.com.cn/qb/EN/article/downloadArticleFile.do?attachType=PDF&id=29259)
-   - Tips: 偶尔吃吃瓜，看样子得喝喝茶，活络活络经络了。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/YicUhk5aAGtA1y0syEZic7Oe5N2LUD0icLsZ2sDHXxxhAaJdXYD2HhOmiaK0zxlribCcSRuTtKZZyfMI1ia6WHiaG3fGg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_png/gYUsOT36vfo7NFWmf8QBM9BzaxzibhWa2xpVbXiaiaZyaKYibCRStkpu5ibAhPSJPf8g6ckp34fYWyXezpRNfcXiblzA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-5. [30万字，“保姆级”可视化视觉设计优质学习攻略推荐](https://mp.weixin.qq.com/s/K1x1F7I3KCSSWmsGQH6eKA)       :star::star:
-   - Abstract: 数据可视化方法
-   - Tips: 之前推送的比较适合绘制普通适用的，这个就直接炫起来了，很不错
+4. [CV圈杀疯了！继谷歌之后，清华、牛津等学者又发表三篇MLP相关论文，LeCun也在发声](https://mp.weixin.qq.com/s/MU4j1ORGa8fJu5J8LZkWug)       :star::star:
+   - Abstract: MLP（多层感知机）真的有那么“丝滑”吗，它究竟有多大的潜力？
+   - Tips: MLP->CNN->Transformer->MLP，真是兜兜绕绕又回来了，最近MLP的三兄弟大合集
+     - External Attention——清华大学Jittor团队
+     - RepMLP——清华大学丁贵广团队
+     - Feed forward代替Attention ——牛津学者
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/LVW0j64NZC152iaNAafRBIWUI7LWPxrLO4xzU0FGFr8LD6iaVlg3VAErUibrA3guzs0DjGIib8eoLliaslrLCMmZgfg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/Z8w2ExrFgDyGqhgclsib6vOYYHiaqKZwbYPiatfHyDA5WTP0rXtB0PVSQQs0FzdVVB9WhjdwzdvNgZ3VK6WmEQj6g/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-6. [CVPR2021(Oral) 商汤、港中文实现单目人脸重建新突破： 基于生成网络的渲染器！几何形状更精准！渲染效果更真实！](https://mp.weixin.qq.com/s/H2zdQGVBFY4N0x4MmLf55g)       :star::star:
-   - Abstract: 基于风格化对抗生成器的人脸渲染器
-   - Paper: [Inverting Generative Adversarial Renderer for Face Reconstruction](https://arxiv.org/pdf/2105.02431.pdf)
-   - Code: [https://github.com/WestlyPark/StyleRenderer](https://github.com/WestlyPark/StyleRenderer)
-   - Tips:  构建了一种从输入3D模型到生成图像的平滑梯度，同时可以以低精度建模获得渲染更高质量的图像
+5. [清华&旷视提出RepMLP：将重参数卷积嵌入到全连接层](https://mp.weixin.qq.com/s/DfQoKLl7blbhr07nYdLm0Q)       :star::star:
+   - Abstract: 将重参数卷积嵌入到全连接层的RepMLP
+   - Paper: [RepMLP: Re-parameterizing Convolutions into Fully-connected Layers for Image Recognition](https://arxiv.org/abs/2105.01883 )
+   - Code: [https://github.com/DingXiaoH/RepMLP](https://github.com/DingXiaoH/RepMLP)
+   - Tips: 本文提出一种多层感知器风格的神经网络构建模块RepMLP用于图像识别，它有一系列的全连接层构成
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/BJbRvwibeSTuLGuha3GVxopibDV8UbvqWhIWFDlYtsCVfic7qsttBaaBJMb0caWumI6f1EBboB1Gsxz4iaQcqMRHZQ/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/VvkhdVVVIDia19rHySo0WSnWCfQf5iaDOg0JENFPSaSE2xuYCGAmMGFysgNWODDde0UYibjbUByJFEMuVaJS8DduA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
+
+6. [CVPR2021 | 任何网络都能山寨！新型黑盒对抗攻击模拟未知网络进行攻击](https://mp.weixin.qq.com/s/8EBqX8fhK2rW5FLx2qh1UQ)       :star::star:
+   - Abstract: 新型黑盒对抗攻击模拟未知网络进行攻击
+   - Paper: [Inverting Generative Adversarial Renderer for Face Reconstruction](https://arxiv.org/abs/2009.00960)
+   - Code: [https://github.com/machanic/SimulatorAttack](https://github.com/machanic/SimulatorAttack)
+   - Tips:  攻击者可以在获知目标模型的最少量的信息的情况下成功地伪造出相似的模型，即模拟器。在攻击时，这就可以将大量的查询转移到模拟器上，从而将查询复杂度显著降低而不过多地改变成功率
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gW9ePbz8uFT0UPiad6mAibvZolccLAUcK1NZAJkhrVT3OIr7ia7ZfxSE1WpGrXITuWqsCA8sSOYjTvXTw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
 
 ## 
 
@@ -126,9 +125,9 @@
     5. <a href="notes/202105/0505.md" target="_blank">公众号内容拓展学习笔记（2021.5.5）</a>
     6. <a href="notes/202105/0506.md" target="_blank">公众号内容拓展学习笔记（2021.5.6）</a>
     7. <a href="notes/202105/0507.md" target="_blank">公众号内容拓展学习笔记（2021.5.7）</a>
+    8. <a href="notes/202105/0508.md" target="_blank">公众号内容拓展学习笔记（2021.5.8）</a>
 </details>
 </pre>
-
 
 
 
