@@ -3,7 +3,7 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2021.5.9
+更新今日时间：2021.5.10
 
 ------
 
@@ -11,55 +11,58 @@
 
 ## :paperclip:  今日要点
 
-1. [CoMoGAN （白天->黑夜->白天） 连续模仿引导的 img-to-img translation |CVPR2021](https://mp.weixin.qq.com/s/uQSdwJ-Rysq62h1YcyQdoQ)         :star::star:
-   - Abstract: 连续模仿引导的 img-to-img translation的CoMoGAN
-   - Paper: [CoMoGAN: continuous model-guided image-to-image translation](https://arxiv.org/abs/2103.06879)
-   - Code: [https://github.com/cv-rits/CoMoGAN](https://github.com/cv-rits/CoMoGAN)
-   - Tips:  CoMoGAN可以与任何GAN主干一起使用，并且允许新类型的图像转换，例如像timelapse生成这样的循环图像转换，或者分离的线性转换
+1. [CVPR2021：单目实时全身动作捕捉（清华大学）](https://mp.weixin.qq.com/s/comg8g4kCKZvCZN1uEfiGA)         :star::star:
+   - Abstract: 单目实时全身动作捕捉
+   - Paper: [Monocular Real-time Full Body Capture with Inter-part Correlations](https://arxiv.org/abs/2012.06087)
+   - Tips:  整个网络框架主要被划分为四个独立的模块：DetNet，是根据人体图像估算人体和手部关键点的位置，其中嵌有新的交互特征，注意力机制和二级人体关键点检测结构。BodyIKNet和HandIKNet，是根据人体和手部的关键点坐标估计形状参数和关节角度；FaceNet，是用于从人脸图像裁剪中回归获取人脸的参数
 
-<div align=center><img src="notes/202105/images/sample_result.gif" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/Q0FNTB1XHicx8eXJhlThstZAuzPQuugAFUgrS4hhjXshlibAicgkN2sEV5hxFzkJTpNM1LyvhhVlOGj2QXXz3VryQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+2. [近期激光雷达点云的3D目标检测方法](https://mp.weixin.qq.com/s/Gk39tazsqEcqJFbHPSHEcA)       :star::star:
+   - Abstract: 近期激光雷达做目标检测的论文
+   - Tips: 包括自动标注、SIENet、室内数据、HVPP、SE-SSD、BEVDetNet六篇论文
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/Q0FNTB1XHicx8eXJhlThstZAuzPQuugAFJgumWibJsyTicNCNibuUUrDicOww5lfDLhgXSRu5EgGewNfg9TCWHE8VNw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-2. [技压群雄！2021 NTIRE @CVPR 2021的三冠一亚视频超分方案：BasicVSR++](https://mp.weixin.qq.com/s/TyYb6jKW7GCBCVjP5TN_UQ)       :star::star:
-   - Abstract: 视频超分方案BasicVSR++
-   - Paper: [BasicVSR++: Improving Video Super-Resolution with Enhanced Propagation and Alignment](https://arxiv.org/pdf/2104.13371.pdf)
-   - Code: [https://github.com/open-mmlab/mmediting](https://github.com/open-mmlab/mmediting)
-   - Tips: 本文提出了流引导可变形对齐，该模块使用光流作为基础偏移量而没有直接学习DCN偏移量，通过学习残差偏移量来减轻偏移量学习的负担
+3. [GODIVA：只需一步，文字到视频秒级生成，微软亚洲研究院最新成果](https://mp.weixin.qq.com/s/LCKL09tspA4WoP0q4rvFqg)       :star::star:
+   - Abstract: 开放领域视频生成预训练模型GODIVA
+   - Paper: [GODIVA: Generating Open-DomaIn Videos from nAtural Descriptions](https://arxiv.org/abs/2104.14806)
+   - Tips: 实现了文字到视频的秒级生成，在视频日渐成为主流传播介质的今天，未来每个人都有机会成为视频制作达人
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/BJbRvwibeSTut9cNvfutZOwW1C2ibQcjklcsX39OmO0UyTVjVQoksqBFhGPIrtlnBJ8OVt4wU4PkEEE9n8liceCmg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/HkPvwCuFwNNVH4dpbZgT5l6xqzJtxlZLFAu3iaIJhF10tThNRsicsF5hufibPgNqtsBGZJWB2S2zHWbJkqZALxKUA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-3. [Deblurring by Realistic Blurring 图像去模糊论文解读](https://mp.weixin.qq.com/s/Hee6PTXZ1ZgtgMpWLthV_w)       :star::star:
-   - Abstract: 一种全新的图像去模糊GAN网络
-   - Paper: [Deblurring by Realistic Blurring](https://ieeexplore.ieee.org/document/9156306)
-   - Tips: 设计了一个可以生成逼真合成模糊图像的GAN网络，并提出了一种新的对抗损失函数，其实很多领域都可以借鉴这篇文章的方法来生成数据集
+4. [EACL 2021 | 基于依存句法增强的方面情感分析](https://mp.weixin.qq.com/s/rTPxm_V7U99j0pHG7jqvyA)       :star::star:
+   - Abstract: 基于依存句法增强的方面情感分析
+   - Paper: [Enhancing Aspect-level Sentiment Analysis with Word Dependencies](https://www.aclweb.org/anthology/2021.eacl-main.326/)
+   - Code: [https://github.com/cuhksz-nlp/ASA-WD](https://github.com/cuhksz-nlp/ASA-WD)
+   - Tips: 论文采用记忆网络（Memory network）的形式将句子的依存句法 （dependency syntax）信息加入到方面情感分析（aspect-level sentiment analysis）中，使得模型能够学习依存句法中有用的信息，达到更好的方面情感分析效果
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/SdQCib1UzF3sAV9icNA3Q5XFngqzHOhYAzYCXhiclO5aFAYPC9OEa0Jicod6Agm4icdHkSqlzaYJrBnLia3K4QFCDOxw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/reteKm2hCvia3KmKBBcdhK4FrNeMib4pW18yKB3jwKfNbACLHF9icwfZCF64ibCNic6Ric3yibCN3gXGGqAZRAA33YpDQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+5. [MobileBERT —资源受限设备上的任务无关BERT](https://mp.weixin.qq.com/s/HSPW38MgUZlwBMpWnP9iAg)       :star::star:
+   - Abstract: 提出 MobileBert 来压缩和加速 Bert 模型
+   - Paper: [MobileBERT: a Compact Task-Agnostic BERT for Resource-Limited Devices](https://arxiv.org/abs/2004.02984)
+   - Code: [https://github.com/google-research/google-research/tree/master/mobilebert](https://github.com/google-research/google-research/tree/master/mobilebert)
+   - Tips: MobileBERT 在转换模块中引入了bottleneck，这使我们可以更轻松地将知识从大teacher模型传授给小student模型。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1niaDLWmibswfAQs6UIjOpBwRAdFAHArMqQAFbkVlan3TibSfBqfMUHAz4ibpY6LdZ5oiaamQdv0LLF3mQUiaSryT2gg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-4. [计算机视觉物体检测中所面对的挑战](https://mp.weixin.qq.com/s/c_uZJXLcpkyrAhhzTk1YdA)       :star::star:
-   - Abstract: 目前目标检测中的一些问题和挑战
-   - Tips: 视角的多样性，变形，遮挡，光照，杂乱或有纹理的背景，速度等
+6. [CVPR 2021 | RfD-Net: 从点云中重建三维物体实例](https://mp.weixin.qq.com/s/U1H5j3EZMYqn2iB_5Rk2IQ)       :star::star:
+   - Abstract: 从三维场景点云中重建高精度物体网格的学习框架RfD-Net
+   - Paper: [RfD-Net: Point Scene Understanding by Semantic Instance Reconstruction](https://arxiv.org/abs/2011.14744)
+   - Code: [https://github.com/yinyunie/RfDNet](https://github.com/yinyunie/RfDNet)
+   - Tips:  主要思路是通过目标检测来进行三维重建，该网络由三个模块组成：三维检测器模块(3D detector)，空间变换器模块(spatial transformer)和形状生成器模块(shape generator)
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/KYSDTmOVZvrt7YLvabtHDBbCCq3ItoLxAxqGxOJm8JnicF6r5qWodJSQ13bM3WEvL9jAEmXlBUovkicBKOZTZupg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ibaXaPIy7jV27QpSqqPgKbFxY3iaqtywAGgjQFr4DRUvh2CDp9ltdoW1j5MUKRicoS6icibmiazG5eFFeozuVzdxMKyA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-
-5. [大神推荐：国内较强的NLP高校实验室有哪些？](https://mp.weixin.qq.com/s/JUofGnVaYIU1j4LMKrNgaQ)       :star::star:
-   - Abstract: 国内较强的NLP高校实验室
-   - Tips: 研究方向是NLP的同学找导师的话可以优选之
-
-
-6. [【NLP】可交互的 Attention 可视化工具！我的Transformer可解释性有救了？](https://mp.weixin.qq.com/s/s-94r54K6i-CqxHZaG_u5Q)       :star::star:
-   - Abstract: DODRIO，一种可交互的Attention可视化工具
-   - Paper: [DODRIO: Exploring Transformer Models with Interactive Visualization](http://arxiv-download.xixiaoyao.cn/pdf/2103.14625.pdf)
-   - Code: [https://poloclub.github.io/dodrio/](https://poloclub.github.io/dodrio/)
-   - Tips:  从句法和寓意层面总结了不同注意力头的信息
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/5fknb41ib9qFLWnPvDEgVfwuLAWGFcUQicX9mF0KhNNfGUOR4XiarLmGBYEPRrUrNGHRtufKJjqbkggMD8XUExpbw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
 
 ## 
 
@@ -122,9 +125,9 @@
     7. <a href="notes/202105/0507.md" target="_blank">公众号内容拓展学习笔记（2021.5.7）</a>
     8. <a href="notes/202105/0508.md" target="_blank">公众号内容拓展学习笔记（2021.5.8）</a>
     9. <a href="notes/202105/0509.md" target="_blank">公众号内容拓展学习笔记（2021.5.9）</a>
+    10. <a href="notes/202105/05010.md" target="_blank">公众号内容拓展学习笔记（2021.5.10）</a>
 </details>
 </pre>
-
 
 
 
