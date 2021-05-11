@@ -3,7 +3,7 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2021.5.10
+更新今日时间：2021.5.11
 
 ------
 
@@ -11,58 +11,63 @@
 
 ## :paperclip:  今日要点
 
-1. [CVPR2021：单目实时全身动作捕捉（清华大学）](https://mp.weixin.qq.com/s/comg8g4kCKZvCZN1uEfiGA)         :star::star:
-   - Abstract: 单目实时全身动作捕捉
-   - Paper: [Monocular Real-time Full Body Capture with Inter-part Correlations](https://arxiv.org/abs/2012.06087)
-   - Tips:  整个网络框架主要被划分为四个独立的模块：DetNet，是根据人体图像估算人体和手部关键点的位置，其中嵌有新的交互特征，注意力机制和二级人体关键点检测结构。BodyIKNet和HandIKNet，是根据人体和手部的关键点坐标估计形状参数和关节角度；FaceNet，是用于从人脸图像裁剪中回归获取人脸的参数
+1. [AI圈真魔幻！谷歌最新研究表明卷积在NLP预训练上竟优于Transformer？LeCun暧昧表态](https://mp.weixin.qq.com/s/w70mFSP-l-Zk95ZpEAo8qQ)         :star::star:
+   - Abstract: 谷歌最新研究表明卷积在NLP预训练上竟优于Transformer
+   - Paper: [Are Pre-trained Convolutions Better than Pre-trained Transformers?](https://arxiv.org/abs/2105.03322)
+   - Tips:  通过对大量NLP任务的实验表明，在某些场景下，预训练卷积在模型质量和训练速度方面甚至优于预训练Transformers的SOTA性能
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/Q0FNTB1XHicx8eXJhlThstZAuzPQuugAFUgrS4hhjXshlibAicgkN2sEV5hxFzkJTpNM1LyvhhVlOGj2QXXz3VryQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-2. [近期激光雷达点云的3D目标检测方法](https://mp.weixin.qq.com/s/Gk39tazsqEcqJFbHPSHEcA)       :star::star:
-   - Abstract: 近期激光雷达做目标检测的论文
-   - Tips: 包括自动标注、SIENet、室内数据、HVPP、SE-SSD、BEVDetNet六篇论文
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/Q0FNTB1XHicx8eXJhlThstZAuzPQuugAFJgumWibJsyTicNCNibuUUrDicOww5lfDLhgXSRu5EgGewNfg9TCWHE8VNw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/cNFA8C0uVPtUWFrCicwbEWgraqHTpGzd08WKHN6uiaReDa11OkNgTsFLUTPZ4ywBIl5M6hc9V8tCFacOtzl36mWw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-3. [GODIVA：只需一步，文字到视频秒级生成，微软亚洲研究院最新成果](https://mp.weixin.qq.com/s/LCKL09tspA4WoP0q4rvFqg)       :star::star:
-   - Abstract: 开放领域视频生成预训练模型GODIVA
-   - Paper: [GODIVA: Generating Open-DomaIn Videos from nAtural Descriptions](https://arxiv.org/abs/2104.14806)
-   - Tips: 实现了文字到视频的秒级生成，在视频日渐成为主流传播介质的今天，未来每个人都有机会成为视频制作达人
+2. [高光压制、清晰边界、任意场景，谷歌人像抠图新作！有了它，以后五一足不出户游世界](https://mp.weixin.qq.com/s/1QCSMHquZvYKTLypqPMzmQ)       :star::star:
+   - Abstract: 高光压制、清晰边界、任意场景，谷歌人像抠图新作
+   - Paper: [Total Relighting: Learning to Relight Portraits for Background Replacement](https://augmentedperception.github.io/total_relighting/total_relighting_paper.pdf)
+   - Tips:  该研究的亮点和核心是通过前景蒙版（alpha matting）、重照明（relighting）和合成（compositing）进行前景估计。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/HkPvwCuFwNNVH4dpbZgT5l6xqzJtxlZLFAu3iaIJhF10tThNRsicsF5hufibPgNqtsBGZJWB2S2zHWbJkqZALxKUA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/KmXPKA19gWicdP2xibVicdHzGJDnTavYyWyKial6HICTPclaQrsokicoKgybaibCCksfPKgqYskACicabpUmqappic8K8w/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1" style='zoom:100%'>
 </div>
 
-4. [EACL 2021 | 基于依存句法增强的方面情感分析](https://mp.weixin.qq.com/s/rTPxm_V7U99j0pHG7jqvyA)       :star::star:
-   - Abstract: 基于依存句法增强的方面情感分析
-   - Paper: [Enhancing Aspect-level Sentiment Analysis with Word Dependencies](https://www.aclweb.org/anthology/2021.eacl-main.326/)
-   - Code: [https://github.com/cuhksz-nlp/ASA-WD](https://github.com/cuhksz-nlp/ASA-WD)
-   - Tips: 论文采用记忆网络（Memory network）的形式将句子的依存句法 （dependency syntax）信息加入到方面情感分析（aspect-level sentiment analysis）中，使得模型能够学习依存句法中有用的信息，达到更好的方面情感分析效果
+3. [半监督学习与PyTorch和SESEMI](https://mp.weixin.qq.com/s/jyDaJbyRFNTsdSfzSDBq8g)       :star::star:
+   - Abstract: 半监督训练技术SESEMI
+   - Code: [https://github.com/FlyreelAI/sesemi](https://github.com/FlyreelAI/sesemi)
+   - Tips: 速度上手，效果显著，非常适合比赛中使用，感觉可以不再用手工Pseudo-lable了
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/reteKm2hCvia3KmKBBcdhK4FrNeMib4pW18yKB3jwKfNbACLHF9icwfZCF64ibCNic6Ric3yibCN3gXGGqAZRAA33YpDQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-5. [MobileBERT —资源受限设备上的任务无关BERT](https://mp.weixin.qq.com/s/HSPW38MgUZlwBMpWnP9iAg)       :star::star:
-   - Abstract: 提出 MobileBert 来压缩和加速 Bert 模型
-   - Paper: [MobileBERT: a Compact Task-Agnostic BERT for Resource-Limited Devices](https://arxiv.org/abs/2004.02984)
-   - Code: [https://github.com/google-research/google-research/tree/master/mobilebert](https://github.com/google-research/google-research/tree/master/mobilebert)
-   - Tips: MobileBERT 在转换模块中引入了bottleneck，这使我们可以更轻松地将知识从大teacher模型传授给小student模型。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1niaDLWmibswfAQs6UIjOpBwRAdFAHArMqQAFbkVlan3TibSfBqfMUHAz4ibpY6LdZ5oiaamQdv0LLF3mQUiaSryT2gg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/6wQyVOrkRNLZKmOpzic5bQ7WxAQfpchkuFINPP3pS3V8n2VnL96goM8gBQuvniaeB6FkTNDDia961Gk0XY86Kl23g/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-6. [CVPR 2021 | RfD-Net: 从点云中重建三维物体实例](https://mp.weixin.qq.com/s/U1H5j3EZMYqn2iB_5Rk2IQ)       :star::star:
-   - Abstract: 从三维场景点云中重建高精度物体网格的学习框架RfD-Net
-   - Paper: [RfD-Net: Point Scene Understanding by Semantic Instance Reconstruction](https://arxiv.org/abs/2011.14744)
-   - Code: [https://github.com/yinyunie/RfDNet](https://github.com/yinyunie/RfDNet)
-   - Tips:  主要思路是通过目标检测来进行三维重建，该网络由三个模块组成：三维检测器模块(3D detector)，空间变换器模块(spatial transformer)和形状生成器模块(shape generator)
+4. [传统方法 + 深度学习发威！ | 2021瓷砖缺陷检测总决赛冠军思路分享](https://mp.weixin.qq.com/s/S8G91KWFf7q0A8oGEho_Qw)       :star::star:
+   - Abstract: 2021瓷砖缺陷检测总决赛冠军思路分享
+   - Tips: 核心就是把通过差分得到的特征在深层和浅层按通道进行拼接，和天池布匹比赛思路有点像，后续就是一个acc和map的balance的双阈值
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ibaXaPIy7jV27QpSqqPgKbFxY3iaqtywAGgjQFr4DRUvh2CDp9ltdoW1j5MUKRicoS6icibmiazG5eFFeozuVzdxMKyA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/7jnsg27ZEVGJ0Kzict56rEFquz9NvryvwBtGTJGjjdWPPffPMJibtiayn3eibhHiajbMVWkL52qgDiaWaBv5JFS4IRUw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
+
+5. [Attention九层塔：注意力机制的九重理解](https://mp.weixin.qq.com/s/2qLUKeuEBeH8fVAqwBtRyg)       :star::star:
+   - Abstract: 效仿EM九层塔，提出Attention九层塔
+   - Tips: 对Attention进行了梳理，万象归春，所有的模型都只是促进我们对数据的深入认知而已。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/J24zDnPUB9EW9OhXXF61nu1bNs02COZyOwno4Jh1CW4icr1Y8qMdDKqTkl27CpvtbEyia5LhsqgZMSlLTEy2hicGw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+6. [SAHI：用于对大图像/小目标执行切片推理的视觉库](https://mp.weixin.qq.com/s/vdD8KTc8aLRYWKIQBX7YbA)       :star::star:
+   - Abstract: 基于mmdetection用于对大图像/小目标执行切片推理的视觉库SAHI
+   - Code: [https://github.com/obss/sahi](https://github.com/obss/sahi)
+   - Tips:  视觉比赛中对于大图像中的小目标检测问题常用的策略就是切分infer，这里直接提供了一个库SAHI
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/SjQAYGc0mKGuJD1Rr7unBDszFBviaPsF9l8BbNmJoVUPJibiclicQxibHOPM76oEO1ODV4C5AMfNtd3CS3KNJaDkibWg/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1" style='zoom:100%'>
+</div>
+
+7. [Github标星4.8K！微软开源的可视化工具，未免太酷炫了吧](https://mp.weixin.qq.com/s/kL3hg0a-YsORwGiMBK6t2g)       :star::star:
+   - Abstract: 微软开源的可视化工具SandDance
+   - Code: [https://github.com/microsoft/SandDance](https://github.com/microsoft/SandDance)
+   - Demo: [https://sanddance.js.org/app/](https://sanddance.js.org/app/)
+   - Tips: 最近推荐了好几个可视化教程，这个也很秀
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/KdayOo3PqHDakAgwPrTaMDSfCDCBIkIXtBnzjkOiaYib9PTyAyDheX5enUONkqhiaicpjSHudKKMz96SWicyMah3icxg/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1" style='zoom:100%'>
+</div>
 
 ## 
 
@@ -126,8 +131,10 @@
     8. <a href="notes/202105/0508.md" target="_blank">公众号内容拓展学习笔记（2021.5.8）</a>
     9. <a href="notes/202105/0509.md" target="_blank">公众号内容拓展学习笔记（2021.5.9）</a>
     10. <a href="notes/202105/05010.md" target="_blank">公众号内容拓展学习笔记（2021.5.10）</a>
+    11. <a href="notes/202105/05011.md" target="_blank">公众号内容拓展学习笔记（2021.5.11）</a>
 </details>
 </pre>
+
 
 
 
