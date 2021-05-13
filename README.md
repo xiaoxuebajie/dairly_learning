@@ -3,7 +3,7 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2021.5.11
+更新今日时间：2021.5.13
 
 ------
 
@@ -11,63 +11,61 @@
 
 ## :paperclip:  今日要点
 
-1. [AI圈真魔幻！谷歌最新研究表明卷积在NLP预训练上竟优于Transformer？LeCun暧昧表态](https://mp.weixin.qq.com/s/w70mFSP-l-Zk95ZpEAo8qQ)         :star::star:
-   - Abstract: 谷歌最新研究表明卷积在NLP预训练上竟优于Transformer
-   - Paper: [Are Pre-trained Convolutions Better than Pre-trained Transformers?](https://arxiv.org/abs/2105.03322)
-   - Tips:  通过对大量NLP任务的实验表明，在某些场景下，预训练卷积在模型质量和训练速度方面甚至优于预训练Transformers的SOTA性能
+1. [CVPR 2021 | 无需密集人工标签，用于下游密集预测任务的自监督学习方法出炉](https://mp.weixin.qq.com/s/YTnKI2RLHzPwHkvRbWipjQ)         :star::star:
+   - Abstract: 无需密集人工标签，用于下游密集预测任务的自监督学习方法
+   - Paper: [Dense Contrastive Learning for Self-Supervised Visual Pre-Training](https://arxiv.org/pdf/2011.09157.pdf)
+   - Code: [https://github.com/WXinlong/DenseCL](https://github.com/WXinlong/DenseCL)
+   - Tips:  该研究提出的新方法 DenseCL（Dense Contrastive Learning）通过考虑局部特征之间的对应关系，直接在输入图像的两个视图之间的像素（或区域）特征上优化成对的对比（不相似）损失来实现密集自监督学习
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/cNFA8C0uVPtUWFrCicwbEWgraqHTpGzd08WKHN6uiaReDa11OkNgTsFLUTPZ4ywBIl5M6hc9V8tCFacOtzl36mWw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gW9M1nGfNRTsDzlwx5fx2fmOMRqojLGX4NuxhT1CbfwW1u3ib8LDeyvOY2Mjj6OkxPJic3U3EwRL5O7w/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-2. [高光压制、清晰边界、任意场景，谷歌人像抠图新作！有了它，以后五一足不出户游世界](https://mp.weixin.qq.com/s/1QCSMHquZvYKTLypqPMzmQ)       :star::star:
-   - Abstract: 高光压制、清晰边界、任意场景，谷歌人像抠图新作
-   - Paper: [Total Relighting: Learning to Relight Portraits for Background Replacement](https://augmentedperception.github.io/total_relighting/total_relighting_paper.pdf)
-   - Tips:  该研究的亮点和核心是通过前景蒙版（alpha matting）、重照明（relighting）和合成（compositing）进行前景估计。
+2. [CVPR 2021| 端到端场景无关视觉定位算法(SuperGlue一作出品)](https://mp.weixin.qq.com/s/cjtHKEUqSGM8Ej_mOhLjWg)       :star::star:
+   - Abstract: 端到端场景无关视觉定位算法PixLoc
+   - Paper: [Back to the Feature: Learning Robust Camera Localization from Pixels to Pose](https://arxiv.org/abs/2103.09213)
+   - Code: [http://github.com/cvg/pixloc](http://github.com/cvg/pixloc)
+   - Tips:  PixLoc能够做到场景无关的端到端学习位姿，且能够较好地做到跨场景（室外到室内）的相机定位
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/KmXPKA19gWicdP2xibVicdHzGJDnTavYyWyKial6HICTPclaQrsokicoKgybaibCCksfPKgqYskACicabpUmqappic8K8w/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/RkDHyHvXvJ7aibibUCicRh3JvicDyibD0PXZvRdUwiaa5fkoJxcVn48C0XdaUnZComKIkx2YuhIUWIPuw5xlebBjeteg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-3. [半监督学习与PyTorch和SESEMI](https://mp.weixin.qq.com/s/jyDaJbyRFNTsdSfzSDBq8g)       :star::star:
-   - Abstract: 半监督训练技术SESEMI
-   - Code: [https://github.com/FlyreelAI/sesemi](https://github.com/FlyreelAI/sesemi)
-   - Tips: 速度上手，效果显著，非常适合比赛中使用，感觉可以不再用手工Pseudo-lable了
+3. [PatchmatchNet：一种高效multi-view stereo框架 (CVPR2021 Oral)](https://mp.weixin.qq.com/s/vR6Qz68we082kpZy5-XzEw)       :star::star:
+   - Abstract: 一种高效multi-view stereo框架PatchmatchNet
+   - Paper: [PatchmatchNet: Learned Multi-View Patchmatch Stereo](https://arxiv.org/abs/2012.01411)
+   - Code: [https://github.com/FangjinhuaWang/PatchmatchNet](https://github.com/FangjinhuaWang/PatchmatchNet)
+   - Tips: PatchmatchNet是一种以learning-based Patchmatch为主体的cascade结构，对传统的PatchMatch进行了拓展，提出了adaptive propagation和adaptive evaluation
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/6wQyVOrkRNLZKmOpzic5bQ7WxAQfpchkuFINPP3pS3V8n2VnL96goM8gBQuvniaeB6FkTNDDia961Gk0XY86Kl23g/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-
-4. [传统方法 + 深度学习发威！ | 2021瓷砖缺陷检测总决赛冠军思路分享](https://mp.weixin.qq.com/s/S8G91KWFf7q0A8oGEho_Qw)       :star::star:
-   - Abstract: 2021瓷砖缺陷检测总决赛冠军思路分享
-   - Tips: 核心就是把通过差分得到的特征在深层和浅层按通道进行拼接，和天池布匹比赛思路有点像，后续就是一个acc和map的balance的双阈值
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/7jnsg27ZEVGJ0Kzict56rEFquz9NvryvwBtGTJGjjdWPPffPMJibtiayn3eibhHiajbMVWkL52qgDiaWaBv5JFS4IRUw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/Q0FNTB1XHicy1BFcBpwR4QtQ3ZxeHCicZ1BKyiaBvicx03LVtBsPMVUickkTx5NgrMN0UQeydJg9waPhvghyfniaZeVg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-5. [Attention九层塔：注意力机制的九重理解](https://mp.weixin.qq.com/s/2qLUKeuEBeH8fVAqwBtRyg)       :star::star:
-   - Abstract: 效仿EM九层塔，提出Attention九层塔
-   - Tips: 对Attention进行了梳理，万象归春，所有的模型都只是促进我们对数据的深入认知而已。
+4. [CVPR2021| TimeSformer-视频理解的时空注意模型](https://mp.weixin.qq.com/s/VDkJ3Ro-4yMytjk7DNoeEg)       :star::star:
+   - Abstract: TimeSformer-视频理解的时空注意模型
+   - Paper: [Is Space-Time Attention All You Need for Video Understanding?](https://arxiv.org/abs/2102.05095)
+   - Code: [https://github.com/lucidrains/TimeSformer-pytorch](https://github.com/lucidrains/TimeSformer-pytorch)
+   - Tips: TimeSformer通过直接从一系列帧级别的patch中启用时空特征学习，将标准的Transformer体系结构适应于视频
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/J24zDnPUB9EW9OhXXF61nu1bNs02COZyOwno4Jh1CW4icr1Y8qMdDKqTkl27CpvtbEyia5LhsqgZMSlLTEy2hicGw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/V2E1ll6kaTVXcUwFiblB9Q4IicE5bWxwUjiaRiawm6T5Iu0lFZzIlDefnj9auEgI5ES3xNiadiaCGia2ZaapFjCpXuaAg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-6. [SAHI：用于对大图像/小目标执行切片推理的视觉库](https://mp.weixin.qq.com/s/vdD8KTc8aLRYWKIQBX7YbA)       :star::star:
-   - Abstract: 基于mmdetection用于对大图像/小目标执行切片推理的视觉库SAHI
-   - Code: [https://github.com/obss/sahi](https://github.com/obss/sahi)
-   - Tips:  视觉比赛中对于大图像中的小目标检测问题常用的策略就是切分infer，这里直接提供了一个库SAHI
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/SjQAYGc0mKGuJD1Rr7unBDszFBviaPsF9l8BbNmJoVUPJibiclicQxibHOPM76oEO1ODV4C5AMfNtd3CS3KNJaDkibWg/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1" style='zoom:100%'>
+5. [来自Google Research：宽模型和深模型学到的是相同的东西吗？](https://mp.weixin.qq.com/s/3LtHqNrIp-grM0nQU_Qq0Q)       :star::star:
+   - Abstract: 宽模型和深模型学到的是相同的东西吗？
+   - Paper: [Do Wide and Deep Networks Learn the Same Things? Uncovering How Neural Network Representations Vary with Width and Depth](https://arxiv.org/abs/2010.15327)
+   - Tips: 在研究深度和宽度对内部表征的影响时，我们发现了块结构现象，并证明了它与模型容量的联系。我们还表明，宽模型和深模型在类和样本级别上显示出系统输出差异
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/KYSDTmOVZvoFs5sS44BmXLhwSwDo6H51CGptCn1jiaO5yldRFzeLgyyH2ZR4iafGILZwdZVI8Nicxy9ewhPZaUoBA/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1" style='zoom:100%'>
 </div>
 
-7. [Github标星4.8K！微软开源的可视化工具，未免太酷炫了吧](https://mp.weixin.qq.com/s/kL3hg0a-YsORwGiMBK6t2g)       :star::star:
-   - Abstract: 微软开源的可视化工具SandDance
-   - Code: [https://github.com/microsoft/SandDance](https://github.com/microsoft/SandDance)
-   - Demo: [https://sanddance.js.org/app/](https://sanddance.js.org/app/)
-   - Tips: 最近推荐了好几个可视化教程，这个也很秀
+6. [用超分辨率扛把子算法 ESRGAN，训练图像增强模型](https://mp.weixin.qq.com/s/ROVY0GN8gh7cbElZmtMRhw)       :star::star:
+   - Abstract: 用超分辨率扛把子算法 ESRGAN，训练图像增强模型
+   - Code: [https://openbayes.com/console/openbayes/containers/EsAbdwfM6YN](https://openbayes.com/console/openbayes/containers/EsAbdwfM6YN)
+   - Tips:  将图像或影片从低分辨率转化为高分辨率，恢复或补足丢失的细节（即高频信息），往往需要用到超分辨率技术，ESRGAN算法的demo
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/KdayOo3PqHDakAgwPrTaMDSfCDCBIkIXtBnzjkOiaYib9PTyAyDheX5enUONkqhiaicpjSHudKKMz96SWicyMah3icxg/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/QkCvnz083Aj8xCgRCX0icsPp31JWoMbNwflSl3X4OVbjvgibKLdb1sOAZNqsz5Jstw181ZKdIqCxQBz2CCd8YXnQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
+
 
 ## 
 
@@ -132,9 +130,10 @@
     9. <a href="notes/202105/0509.md" target="_blank">公众号内容拓展学习笔记（2021.5.9）</a>
     10. <a href="notes/202105/05010.md" target="_blank">公众号内容拓展学习笔记（2021.5.10）</a>
     11. <a href="notes/202105/05011.md" target="_blank">公众号内容拓展学习笔记（2021.5.11）</a>
+    12. <a href="notes/202105/05012.md" target="_blank">公众号内容拓展学习笔记（2021.5.12）</a>
+    13. <a href="notes/202105/05013.md" target="_blank">公众号内容拓展学习笔记（2021.5.13）</a>
 </details>
 </pre>
-
 
 
 
