@@ -3,7 +3,7 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2021.5.13
+更新今日时间：2021.5.14
 
 ------
 
@@ -11,63 +11,52 @@
 
 ## :paperclip:  今日要点
 
-1. [CVPR 2021 | 无需密集人工标签，用于下游密集预测任务的自监督学习方法出炉](https://mp.weixin.qq.com/s/YTnKI2RLHzPwHkvRbWipjQ)         :star::star:
-   - Abstract: 无需密集人工标签，用于下游密集预测任务的自监督学习方法
-   - Paper: [Dense Contrastive Learning for Self-Supervised Visual Pre-Training](https://arxiv.org/pdf/2011.09157.pdf)
-   - Code: [https://github.com/WXinlong/DenseCL](https://github.com/WXinlong/DenseCL)
-   - Tips:  该研究提出的新方法 DenseCL（Dense Contrastive Learning）通过考虑局部特征之间的对应关系，直接在输入图像的两个视图之间的像素（或区域）特征上优化成对的对比（不相似）损失来实现密集自监督学习
+1. [IJCAI 2021 | 腾讯和复旦联合出品：Adv-Makeup人脸黑盒攻击对抗算法](https://mp.weixin.qq.com/s/xZsfi6o4zfjdhCrjixheiQ)         :star::star:
+   - Abstract: 人脸黑盒攻击对抗算法：Adv-Makeup
+   - Paper: [Adv-Makeup: A New Imperceptible and Transferable Attack on Face Recognition](https://arxiv.org/abs/2105.03162)
+   - Tips:  Adv-makeup为生成人脸对抗样本提供了另一个新的思路，即对抗扰动隐藏在你的妆容中。该方法能够在黑盒环境下实现可感知和可转移的攻击。为了实现可移植性，并且实现了一种细粒度的元学习对抗攻击策略，以从各种模型中学习更多的一般性攻击特征
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gW9M1nGfNRTsDzlwx5fx2fmOMRqojLGX4NuxhT1CbfwW1u3ib8LDeyvOY2Mjj6OkxPJic3U3EwRL5O7w/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/BJbRvwibeSTudVEH3oRX1vARLZYtnE5ISYq91OQQYvxOz2Q5FCaXK9tlYgCgkCmsAI1y3nU2GxDy0f0dmibnh4dg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+2. [【泡泡图灵智库】DPANet: 基于深度感知的注意力调控网络RGBD显著物体检测](https://mp.weixin.qq.com/s/kQFZ9Svf6m2boTrX4X2lDA)       :star::star:
+   - Abstract: 基于深度感知的注意力调控网络RGBD显著物体检测DPANet
+   - Paper: [DPANet: Depth Potentiality-Aware Gated Attention Network for RGB-D Salient Object Detection](https://arxiv.org/pdf/2003.08608.pdf)
+   - Code: [https://github.com/JosephChenHub/DPANet](https://github.com/JosephChenHub/DPANet)
+   - Tips: DPANet通过引入深度潜力感知，网络可以以基于学习的方式感知深度信息的潜力，并指导两个模态数据的融合过程，以防止发生污染。融合过程中的门控多模式注意力模块(Gated multi-modality attention )通过利用门控制器的注意力机制从交叉模式的角度来捕获远程依赖关系。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/O60Uib8kfuu81jh8muz4fNiazhceTMEiaVS6TXbvNLjnZfhsIutK9AlbAnzeJP3SqkSwpCmCP9GpHOxGmqfoXae6g/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-2. [CVPR 2021| 端到端场景无关视觉定位算法(SuperGlue一作出品)](https://mp.weixin.qq.com/s/cjtHKEUqSGM8Ej_mOhLjWg)       :star::star:
-   - Abstract: 端到端场景无关视觉定位算法PixLoc
-   - Paper: [Back to the Feature: Learning Robust Camera Localization from Pixels to Pose](https://arxiv.org/abs/2103.09213)
-   - Code: [http://github.com/cvg/pixloc](http://github.com/cvg/pixloc)
-   - Tips:  PixLoc能够做到场景无关的端到端学习位姿，且能够较好地做到跨场景（室外到室内）的相机定位
+3. [CVPR 2021 | 基于模型的图像风格迁移](https://mp.weixin.qq.com/s/V3a79VFqLt6EB_5bZqETWw)       :star::star:
+   - Abstract: 基于模型的图像风格迁移
+   - Paper: [Visualizing Adapted Knowledge in Domain Transfer](ttps://arxiv.org/abs/2104.10602)
+   - Code: [https://github.com/hou-yz/DA_visualization](https://github.com/hou-yz/DA_visualization)
+   - Tips: 仅利用一张图片作为内容指导的情况下，通过训练好的模型作为指导，将该图片迁移至一种未曾见过的风格
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/RkDHyHvXvJ7aibibUCicRh3JvicDyibD0PXZvRdUwiaa5fkoJxcVn48C0XdaUnZComKIkx2YuhIUWIPuw5xlebBjeteg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/yNnalkXE7oXBb7f7QQE6EiaCB0F6AvkuvENNUicFgP2OjofNw05tO3YMHgyLqiaHVvSGFajkZJjGn3DMickjTJibicQw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-3. [PatchmatchNet：一种高效multi-view stereo框架 (CVPR2021 Oral)](https://mp.weixin.qq.com/s/vR6Qz68we082kpZy5-XzEw)       :star::star:
-   - Abstract: 一种高效multi-view stereo框架PatchmatchNet
-   - Paper: [PatchmatchNet: Learned Multi-View Patchmatch Stereo](https://arxiv.org/abs/2012.01411)
-   - Code: [https://github.com/FangjinhuaWang/PatchmatchNet](https://github.com/FangjinhuaWang/PatchmatchNet)
-   - Tips: PatchmatchNet是一种以learning-based Patchmatch为主体的cascade结构，对传统的PatchMatch进行了拓展，提出了adaptive propagation和adaptive evaluation
+4. [【开源】Transformer 在CV领域全面开花：新出跟踪、分割、配准等总结](https://mp.weixin.qq.com/s/g9qNZWbXM3IF-7Khbfb12Q)       :star::star:
+   - Abstract:  5 月 以来值得关注的 Transformer 相关开源论文
+   - Tips: 包括基于 Transformer 的自监督学习方法在 CV 任务中应用、视觉跟踪、视频预测、语义分割、图像配准，以及 1 篇针对 Transformer 风格的网络中，“attention layer”是否是必要的技术报告。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/Q0FNTB1XHicy1BFcBpwR4QtQ3ZxeHCicZ1BKyiaBvicx03LVtBsPMVUickkTx5NgrMN0UQeydJg9waPhvghyfniaZeVg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/BJbRvwibeSTuU9YlDSSonMFSuG7nVFaCtj536u1ERCzArtH6Qkz2F90BTV9J2z1fiaprPAFq0GaTsB2Y4atClZkA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
+5. [学术新星畅谈计算机视觉科研之路：视觉研究已经成熟，跨学科方法成为趋势](https://mp.weixin.qq.com/s/l7Uiu2yfjI4S-Ps4YiOMmg)       :star::star:
+   - Abstract: 微软亚洲研究院创研论坛 CVPR 2021 论文分享会主要内容
+   - Tips: 不多哔哔，看视频就完事了
 
-4. [CVPR2021| TimeSformer-视频理解的时空注意模型](https://mp.weixin.qq.com/s/VDkJ3Ro-4yMytjk7DNoeEg)       :star::star:
-   - Abstract: TimeSformer-视频理解的时空注意模型
-   - Paper: [Is Space-Time Attention All You Need for Video Understanding?](https://arxiv.org/abs/2102.05095)
-   - Code: [https://github.com/lucidrains/TimeSformer-pytorch](https://github.com/lucidrains/TimeSformer-pytorch)
-   - Tips: TimeSformer通过直接从一系列帧级别的patch中启用时空特征学习，将标准的Transformer体系结构适应于视频
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/V2E1ll6kaTVXcUwFiblB9Q4IicE5bWxwUjiaRiawm6T5Iu0lFZzIlDefnj9auEgI5ES3xNiadiaCGia2ZaapFjCpXuaAg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/HkPvwCuFwNM5hiaQcqkSHwIBF4VLictoGlNvz9qIT13YBHGzuKaSePTiaUMPDuicicDDBJNs7gPjzEpTKBIZTUlPQNw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-5. [来自Google Research：宽模型和深模型学到的是相同的东西吗？](https://mp.weixin.qq.com/s/3LtHqNrIp-grM0nQU_Qq0Q)       :star::star:
-   - Abstract: 宽模型和深模型学到的是相同的东西吗？
-   - Paper: [Do Wide and Deep Networks Learn the Same Things? Uncovering How Neural Network Representations Vary with Width and Depth](https://arxiv.org/abs/2010.15327)
-   - Tips: 在研究深度和宽度对内部表征的影响时，我们发现了块结构现象，并证明了它与模型容量的联系。我们还表明，宽模型和深模型在类和样本级别上显示出系统输出差异
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/KYSDTmOVZvoFs5sS44BmXLhwSwDo6H51CGptCn1jiaO5yldRFzeLgyyH2ZR4iafGILZwdZVI8Nicxy9ewhPZaUoBA/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1" style='zoom:100%'>
-</div>
-
-6. [用超分辨率扛把子算法 ESRGAN，训练图像增强模型](https://mp.weixin.qq.com/s/ROVY0GN8gh7cbElZmtMRhw)       :star::star:
-   - Abstract: 用超分辨率扛把子算法 ESRGAN，训练图像增强模型
-   - Code: [https://openbayes.com/console/openbayes/containers/EsAbdwfM6YN](https://openbayes.com/console/openbayes/containers/EsAbdwfM6YN)
-   - Tips:  将图像或影片从低分辨率转化为高分辨率，恢复或补足丢失的细节（即高频信息），往往需要用到超分辨率技术，ESRGAN算法的demo
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/QkCvnz083Aj8xCgRCX0icsPp31JWoMbNwflSl3X4OVbjvgibKLdb1sOAZNqsz5Jstw181ZKdIqCxQBz2CCd8YXnQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-
-## 
+6. [大学生打篮球撞倒老人被索赔5万！法院判“免责”！](https://mp.weixin.qq.com/s/jR4DZqLVBdSGpTqaovu6cg)       :star::star:
+   - Abstract: 大学生打篮球撞倒老人被索赔5万！法院判“免责”！
+   - Tips:  嗯！（主要是想打篮球了，哈哈哈哈）
+   - 
 
 
 ## :paperclip:  历史更新
@@ -132,6 +121,7 @@
     11. <a href="notes/202105/05011.md" target="_blank">公众号内容拓展学习笔记（2021.5.11）</a>
     12. <a href="notes/202105/05012.md" target="_blank">公众号内容拓展学习笔记（2021.5.12）</a>
     13. <a href="notes/202105/05013.md" target="_blank">公众号内容拓展学习笔记（2021.5.13）</a>
+    14. <a href="notes/202105/05014.md" target="_blank">公众号内容拓展学习笔记（2021.5.14）</a>
 </details>
 </pre>
 
