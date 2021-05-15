@@ -3,7 +3,7 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2021.5.14
+更新今日时间：2021.5.15
 
 ------
 
@@ -11,52 +11,64 @@
 
 ## :paperclip:  今日要点
 
-1. [IJCAI 2021 | 腾讯和复旦联合出品：Adv-Makeup人脸黑盒攻击对抗算法](https://mp.weixin.qq.com/s/xZsfi6o4zfjdhCrjixheiQ)         :star::star:
-   - Abstract: 人脸黑盒攻击对抗算法：Adv-Makeup
-   - Paper: [Adv-Makeup: A New Imperceptible and Transferable Attack on Face Recognition](https://arxiv.org/abs/2105.03162)
-   - Tips:  Adv-makeup为生成人脸对抗样本提供了另一个新的思路，即对抗扰动隐藏在你的妆容中。该方法能够在黑盒环境下实现可感知和可转移的攻击。为了实现可移植性，并且实现了一种细粒度的元学习对抗攻击策略，以从各种模型中学习更多的一般性攻击特征
+1. [防噪音的深度度量学习：一种样本选择方法 | CVPR 2021](https://mp.weixin.qq.com/s/3quosMbKXUTlE9LJjo4yqA)         :star::star:
+   - Abstract: 基于度量学习的一种样本选择方法PRISM
+   - Paper: [Adv-Makeup: A New Imperceptible and Transferable Attack on Face Recognition](https://arxiv.org/abs/2103.16047)
+   - Code: [https://github.com/alibaba-edu/Ranking-based-Instance-Selection](https://github.com/alibaba-edu/Ranking-based-Instance-Selection)
+   - Tips:  基于概率排序的样本选择算法(PRISM)，该算法使用图像特征的平均相似度来识别minibatch中的错误标签
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/BJbRvwibeSTudVEH3oRX1vARLZYtnE5ISYq91OQQYvxOz2Q5FCaXK9tlYgCgkCmsAI1y3nU2GxDy0f0dmibnh4dg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-2. [【泡泡图灵智库】DPANet: 基于深度感知的注意力调控网络RGBD显著物体检测](https://mp.weixin.qq.com/s/kQFZ9Svf6m2boTrX4X2lDA)       :star::star:
-   - Abstract: 基于深度感知的注意力调控网络RGBD显著物体检测DPANet
-   - Paper: [DPANet: Depth Potentiality-Aware Gated Attention Network for RGB-D Salient Object Detection](https://arxiv.org/pdf/2003.08608.pdf)
-   - Code: [https://github.com/JosephChenHub/DPANet](https://github.com/JosephChenHub/DPANet)
-   - Tips: DPANet通过引入深度潜力感知，网络可以以基于学习的方式感知深度信息的潜力，并指导两个模态数据的融合过程，以防止发生污染。融合过程中的门控多模式注意力模块(Gated multi-modality attention )通过利用门控制器的注意力机制从交叉模式的角度来捕获远程依赖关系。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/O60Uib8kfuu81jh8muz4fNiazhceTMEiaVS6TXbvNLjnZfhsIutK9AlbAnzeJP3SqkSwpCmCP9GpHOxGmqfoXae6g/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/cNFA8C0uVPtjP7hWWwrYXSI1Ziay6RER0bgsuRdJOTyq2nNr9fE70mXBaCnttoBNp32xhAITHWs2shFbLTrrjJg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-3. [CVPR 2021 | 基于模型的图像风格迁移](https://mp.weixin.qq.com/s/V3a79VFqLt6EB_5bZqETWw)       :star::star:
-   - Abstract: 基于模型的图像风格迁移
-   - Paper: [Visualizing Adapted Knowledge in Domain Transfer](ttps://arxiv.org/abs/2104.10602)
-   - Code: [https://github.com/hou-yz/DA_visualization](https://github.com/hou-yz/DA_visualization)
-   - Tips: 仅利用一张图片作为内容指导的情况下，通过训练好的模型作为指导，将该图片迁移至一种未曾见过的风格
+2. [CVPR 2021 | 突破性研究！将自监督学习应用到自动驾驶上](https://mp.weixin.qq.com/s/0nnLJlyHks2xxrXEEMW2bw)       :star::star:
+   - Abstract: 将自监督学习应用到自动驾驶上
+   - Paper: [Self-Supervised Pillar Motion Learning for Autonomous Driving](https://arxiv.org/pdf/2104.08683.pdf)
+   - Tips: 借助自监督学习，从未标注的激光雷达点云和配对的相机图像中获得了点云运动信息，在不需要标注数据的情况下，就可以较好地理解交通参与者的运动
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/yNnalkXE7oXBb7f7QQE6EiaCB0F6AvkuvENNUicFgP2OjofNw05tO3YMHgyLqiaHVvSGFajkZJjGn3DMickjTJibicQw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/yNnalkXE7oXBb7f7QQE6EiaCB0F6AvkuvdDKbINGRvKcwExlic6qpG2fwibFVLzibtlFdc8Z6MaWY9uJYgBJaPnzSg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-4. [【开源】Transformer 在CV领域全面开花：新出跟踪、分割、配准等总结](https://mp.weixin.qq.com/s/g9qNZWbXM3IF-7Khbfb12Q)       :star::star:
-   - Abstract:  5 月 以来值得关注的 Transformer 相关开源论文
-   - Tips: 包括基于 Transformer 的自监督学习方法在 CV 任务中应用、视觉跟踪、视频预测、语义分割、图像配准，以及 1 篇针对 Transformer 风格的网络中，“attention layer”是否是必要的技术报告。
+3. [Transformer再下一城！厦大等提出ISTR：端到端实例分割](https://mp.weixin.qq.com/s/A68C5nJpRyvOyNdqA7ugXg)       :star::star:
+   - Abstract:基于Transformer的实例分割网络ISTR
+   - Paper: [Visualizing Adapted Knowledge in Domain Transfer](https://arxiv.org/abs/2105.00637)
+   - Code: [https://github.com/hujiecpp/ISTR](https://github.com/hujiecpp/ISTR)
+   - Tips: ISTR通过预测低维Mask嵌入，并将其与Ground-Truth Mask嵌入进行匹配以得到Set Loss。此外，ISTR同时使用循环细化策略进行检测和分割，与现有的自上而下和自下而上的框架相比，它提供了一种实现实例分割的新方法
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/BJbRvwibeSTuU9YlDSSonMFSuG7nVFaCtj536u1ERCzArtH6Qkz2F90BTV9J2z1fiaprPAFq0GaTsB2Y4atClZkA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-5. [学术新星畅谈计算机视觉科研之路：视觉研究已经成熟，跨学科方法成为趋势](https://mp.weixin.qq.com/s/l7Uiu2yfjI4S-Ps4YiOMmg)       :star::star:
-   - Abstract: 微软亚洲研究院创研论坛 CVPR 2021 论文分享会主要内容
-   - Tips: 不多哔哔，看视频就完事了
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/HkPvwCuFwNM5hiaQcqkSHwIBF4VLictoGlNvz9qIT13YBHGzuKaSePTiaUMPDuicicDDBJNs7gPjzEpTKBIZTUlPQNw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/5ooHoYt0tgnYxOhj3Lv6ic5v8dIXmvkGAqjmhZ6CXFkIBIcQvDhSrlibNqPa5cPdnlByNrJ9ylicO4Z0hCgP0w92Q/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-6. [大学生打篮球撞倒老人被索赔5万！法院判“免责”！](https://mp.weixin.qq.com/s/jR4DZqLVBdSGpTqaovu6cg)       :star::star:
-   - Abstract: 大学生打篮球撞倒老人被索赔5万！法院判“免责”！
-   - Tips:  嗯！（主要是想打篮球了，哈哈哈哈）
-   - 
+4. [【开源】近期遥感航空影像的检索、检测、跟踪、计数、分类相关工作](https://mp.weixin.qq.com/s/efXHdqaH-tSfWbHzN4ETNg)       :star::star:
+   - Abstract:  近期遥感航空影像的检索、检测、跟踪、计数、分类相关工作
+   - Tips: 篇收录遥感航空影像相关论文，其中应用到超分辨率、检索、对齐、检测、跟踪、计数与分类技术。共计 5 篇
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/BJbRvwibeSTuU9YlDSSonMFSuG7nVFaCtlKpgO3aK5f28V4GbXoyfxcGnUWDAfhYs18owJbRqeBaD5BPYpL9jIg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+
+5. [基于深度学习的图像增强综述](https://mp.weixin.qq.com/s/OfJ5_0N3h6mDC8OCdZ1qxA)       :star::star:
+   - Abstract: 基于深度学习的图像增强综述
+   - Tips: 介绍了近年来比较经典的图像增强模型，并分析其优缺点
+
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfoWYOCGVnicMKNNr6rFU8ALquozDZXtxPxkgQiclMwVTsoTRWwibJ2dwDMGicPaySfjP4bMYPcpzewbxQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+6. [干货｜基于深度学习的目标检测算法面试必备（RCNN~YOLOv5）](https://mp.weixin.qq.com/s/ZpE7a6xrG8eqBEnEGbI-fg)       :star::star:
+   - Abstract: 基于深度学习的目标检测算法面试必备（RCNN~YOLOv5）
+   - Tips:  按照目标检测的三个分类：两阶段目标检测算法、多阶段目标检测算法、单阶段目标检测算法，讲解了该方向下各目标检测算法的特点。
+
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfpoNPRibFklKkeenx5mob3viace7l9TSt14Y1n4QmsJ3ibynsIXq1FnlSZxUyiaDfyYyEmFrh20oANADw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+7. [炼丹宝典 | Deep Learning 调参 tricks](https://mp.weixin.qq.com/s/u21XnUOgrbuzqXWnZp0BaQ)       :star::star:
+   - Abstract: Deep Learning 调参 tricks
+   - Tips: 大部分都是常规操作，但都是很多实用的调参技巧
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/DHibuUfpZvQfzTJj9E6KAqeYmeoPQKU2IbOOqVBQx6WFUrGx3ImosNSlibttTryAfEcxR6iaiaptocK7iavjGQhbkoA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+## 
 
 
 ## :paperclip:  历史更新
@@ -122,8 +134,10 @@
     12. <a href="notes/202105/05012.md" target="_blank">公众号内容拓展学习笔记（2021.5.12）</a>
     13. <a href="notes/202105/05013.md" target="_blank">公众号内容拓展学习笔记（2021.5.13）</a>
     14. <a href="notes/202105/05014.md" target="_blank">公众号内容拓展学习笔记（2021.5.14）</a>
+    15. <a href="notes/202105/05015.md" target="_blank">公众号内容拓展学习笔记（2021.5.15）</a>
 </details>
 </pre>
+
 
 
 
