@@ -3,7 +3,7 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2021.5.15
+更新今日时间：2021.5.16
 
 ------
 
@@ -11,62 +11,64 @@
 
 ## :paperclip:  今日要点
 
-1. [防噪音的深度度量学习：一种样本选择方法 | CVPR 2021](https://mp.weixin.qq.com/s/3quosMbKXUTlE9LJjo4yqA)         :star::star:
-   - Abstract: 基于度量学习的一种样本选择方法PRISM
-   - Paper: [Adv-Makeup: A New Imperceptible and Transferable Attack on Face Recognition](https://arxiv.org/abs/2103.16047)
-   - Code: [https://github.com/alibaba-edu/Ranking-based-Instance-Selection](https://github.com/alibaba-edu/Ranking-based-Instance-Selection)
-   - Tips:  基于概率排序的样本选择算法(PRISM)，该算法使用图像特征的平均相似度来识别minibatch中的错误标签
+1. [IJCAI 2021｜美团提出车道线检测新框架SGNet，精准且快速](https://mp.weixin.qq.com/s/1dwRw9u3mI9SGP-vqGHplQ)         :star::star:
+   - Abstract: 美团提出车道线检测新框架SGNet
+   - Paper: [Structure Guided Lane Detection](https://arxiv.org/pdf/2105.05403.pdf)
+   - Tips:  实现了一种结构信息引导的车道线检测框架 SGNet，可以精准地描述车道线并对不确定条数的车道线进行分类与定位
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/cNFA8C0uVPtjP7hWWwrYXSI1Ziay6RER0bgsuRdJOTyq2nNr9fE70mXBaCnttoBNp32xhAITHWs2shFbLTrrjJg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gW96C0Ofhb81ibXQnKBuX4kziaqlPfDlDGzQaX4zwcotzOibZ6D2Reqgk0xQFbDpsdb7yicT9eSYsmt4Iw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+2. [SlowFast Networks for Video Recognition](https://mp.weixin.qq.com/s/FnPTJ5o_qxu5BNZC2udP_A)       :star::star:
+   - Abstract: 一种双流视频识别模型SlowFast网络
+   - Paper: [SlowFast Networks for Video Recognition](https://arxiv.org/pdf/1812.03982.pdf)
+   - Code: [https://github.com/facebookresearch/SlowFast](https://github.com/facebookresearch/SlowFast)
+   - Tips: 将slow path和fast path在时间和空间维度对齐，之后可以在channel维度上concat，拼接之后的特征经过空间池化被输入到全连接层进行分类
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ldNS06W0w5uWgYNPwzR9T1Zz9EeiaS5qL8humJP3NMrnvvog5x9wkpMYdntW0UmkDVcUocAGmEbwCJ6SibkaWOTg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-2. [CVPR 2021 | 突破性研究！将自监督学习应用到自动驾驶上](https://mp.weixin.qq.com/s/0nnLJlyHks2xxrXEEMW2bw)       :star::star:
-   - Abstract: 将自监督学习应用到自动驾驶上
-   - Paper: [Self-Supervised Pillar Motion Learning for Autonomous Driving](https://arxiv.org/pdf/2104.08683.pdf)
-   - Tips: 借助自监督学习，从未标注的激光雷达点云和配对的相机图像中获得了点云运动信息，在不需要标注数据的情况下，就可以较好地理解交通参与者的运动
+3. [更逼真的抠图技术！Realistic Lighting on Different Backgrounds](https://mp.weixin.qq.com/s/WAUvHV-oc4MstXouvU9NGA)       :star::star:
+   - Abstract: 更逼真的抠图技术
+   - Paper: [Total Relighting: Learning to Relight Portraits for Background Replacement](https://augmentedperception.github.io/total_relighting/total_relighting_paper.pdf)
+   - Code: [https://github.com/augmentedperception/total_relighting](https://github.com/augmentedperception/total_relighting)
+   - Tips: 目标是根据你添加的新背景的照明正确地重新照亮任何肖像
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/yNnalkXE7oXBb7f7QQE6EiaCB0F6AvkuvdDKbINGRvKcwExlic6qpG2fwibFVLzibtlFdc8Z6MaWY9uJYgBJaPnzSg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/7jnsg27ZEVFYXCQ5Mic6rvc3zbrCnQ2EU30JQ47soFjq6u3aqwj7upIztAricUZIn36b8VGaRWWUQtkK2FUzHpVQ/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1" style='zoom:100%'>
 </div>
 
-3. [Transformer再下一城！厦大等提出ISTR：端到端实例分割](https://mp.weixin.qq.com/s/A68C5nJpRyvOyNdqA7ugXg)       :star::star:
-   - Abstract:基于Transformer的实例分割网络ISTR
-   - Paper: [Visualizing Adapted Knowledge in Domain Transfer](https://arxiv.org/abs/2105.00637)
-   - Code: [https://github.com/hujiecpp/ISTR](https://github.com/hujiecpp/ISTR)
-   - Tips: ISTR通过预测低维Mask嵌入，并将其与Ground-Truth Mask嵌入进行匹配以得到Set Loss。此外，ISTR同时使用循环细化策略进行检测和分割，与现有的自上而下和自下而上的框架相比，它提供了一种实现实例分割的新方法
+4. [CVPR2021 行人重识别/Person Re-identification 论文+开源代码汇总](https://mp.weixin.qq.com/s/cH1EfiJbj0Ikg34HB0VH_Q)       :star::star:
+   - Abstract:  行人重识别/Person Re-identification 论文+开源代码汇总
+   - Tips: 行人重识别（Person re-identification）也称行人再识别，是利用计算机视觉技术判断图像或者视频序列中是否存在特定行人的技术。广泛被认为是一个图像检索的子问题。给定一个监控行人图像，检索跨设备下的该行人图像
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/5ooHoYt0tgnYxOhj3Lv6ic5v8dIXmvkGAqjmhZ6CXFkIBIcQvDhSrlibNqPa5cPdnlByNrJ9ylicO4Z0hCgP0w92Q/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/7jnsg27ZEVGgmz49vy0KbCxjZYS596lAdPzhc148GNuAfsclyOibLqQz9U5CTH9fHbQjIbYXNJBBe1ibBibJNfVZQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+5. [基于运动相关分析的实时多源异构传感器时空标定方法研究](https://mp.weixin.qq.com/s/2Qb1TbaiBpM7HscmKNcAAA)       :star::star:
+   - Abstract: 基于运动相关分析的实时多源异构传感器时空标定方法研究
+   - Paper: [Real-Time Temporal and Rotational Calibration of Heterogeneous Sensors Using Motion Correlation Analysis](https://ieeexplore.ieee.org/document/9271875)
+   - Tips: 一种异构多源传感器校准的中心IMU时间偏移和外部旋转参数的估计算法。该校准方法与优化方法具有相当的估计精度，具有更大的时间偏移估计范围和解析式的外部旋转参数。它可以实时的在没有标定板的自然场景中工作
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/Q0FNTB1XHicxlwugTXy9Twic6dxoEJv6yLQKkJZdxE1vdI6e7ZibZxtCAvELibDs03xLrYPo8SjVhILnn65icg6Tu7Q/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-4. [【开源】近期遥感航空影像的检索、检测、跟踪、计数、分类相关工作](https://mp.weixin.qq.com/s/efXHdqaH-tSfWbHzN4ETNg)       :star::star:
-   - Abstract:  近期遥感航空影像的检索、检测、跟踪、计数、分类相关工作
-   - Tips: 篇收录遥感航空影像相关论文，其中应用到超分辨率、检索、对齐、检测、跟踪、计数与分类技术。共计 5 篇
+6. [CVPR 2021 Inpainting专题](https://mp.weixin.qq.com/s/VSZqai9fptteGnrg_hb-yQ)       :star::star:
+   - Abstract: CVPR 2021 Inpainting专题
+   - Tips:  CVPR 2021的inpainting相关的文章进行了总结
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/BJbRvwibeSTuU9YlDSSonMFSuG7nVFaCtlKpgO3aK5f28V4GbXoyfxcGnUWDAfhYs18owJbRqeBaD5BPYpL9jIg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ldNS06W0w5uWgYNPwzR9T1Zz9EeiaS5qLzDjCByaVjrL4bbNrFTibj00klZEC3J36CsWbtAbjwVDiao0iam0gG19jA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-5. [基于深度学习的图像增强综述](https://mp.weixin.qq.com/s/OfJ5_0N3h6mDC8OCdZ1qxA)       :star::star:
-   - Abstract: 基于深度学习的图像增强综述
-   - Tips: 介绍了近年来比较经典的图像增强模型，并分析其优缺点
+7. [增量学习(Incremental Learning)小综述](https://mp.weixin.qq.com/s/fWUrS05w35jr1dTqQZexJA)       :star::star:
+   - Abstract: 增量学习(Incremental Learning)小综述
+   - Tips: 尤其要注意增量学习和在线学习的区别，在线学习通常要求每个样本只能使用一次，且数据全都来自于同一个任务，而增量学习是多任务的，但它允许在进入下一个任务之前多次处理当前任务的数据
 
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfoWYOCGVnicMKNNr6rFU8ALquozDZXtxPxkgQiclMwVTsoTRWwibJ2dwDMGicPaySfjP4bMYPcpzewbxQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/nJZZib3qIQW5Gnp7RLgCKs4Y2iaG6OqvTHpyNx8xp6XxA4OZ6ClYDOlRuV7BETJ0pUlTPabKGXYESzDO78wuKfyw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-6. [干货｜基于深度学习的目标检测算法面试必备（RCNN~YOLOv5）](https://mp.weixin.qq.com/s/ZpE7a6xrG8eqBEnEGbI-fg)       :star::star:
-   - Abstract: 基于深度学习的目标检测算法面试必备（RCNN~YOLOv5）
-   - Tips:  按照目标检测的三个分类：两阶段目标检测算法、多阶段目标检测算法、单阶段目标检测算法，讲解了该方向下各目标检测算法的特点。
-
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfpoNPRibFklKkeenx5mob3viace7l9TSt14Y1n4QmsJ3ibynsIXq1FnlSZxUyiaDfyYyEmFrh20oANADw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-7. [炼丹宝典 | Deep Learning 调参 tricks](https://mp.weixin.qq.com/s/u21XnUOgrbuzqXWnZp0BaQ)       :star::star:
-   - Abstract: Deep Learning 调参 tricks
-   - Tips: 大部分都是常规操作，但都是很多实用的调参技巧
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/DHibuUfpZvQfzTJj9E6KAqeYmeoPQKU2IbOOqVBQx6WFUrGx3ImosNSlibttTryAfEcxR6iaiaptocK7iavjGQhbkoA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
 
 ## 
 
@@ -135,9 +137,9 @@
     13. <a href="notes/202105/05013.md" target="_blank">公众号内容拓展学习笔记（2021.5.13）</a>
     14. <a href="notes/202105/05014.md" target="_blank">公众号内容拓展学习笔记（2021.5.14）</a>
     15. <a href="notes/202105/05015.md" target="_blank">公众号内容拓展学习笔记（2021.5.15）</a>
+    16. <a href="notes/202105/05016.md" target="_blank">公众号内容拓展学习笔记（2021.5.16）</a>
 </details>
 </pre>
-
 
 
 
