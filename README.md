@@ -3,7 +3,7 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2021.5.16
+更新今日时间：2021.5.27
 
 ------
 
@@ -11,64 +11,53 @@
 
 ## :paperclip:  今日要点
 
-1. [IJCAI 2021｜美团提出车道线检测新框架SGNet，精准且快速](https://mp.weixin.qq.com/s/1dwRw9u3mI9SGP-vqGHplQ)         :star::star:
-   - Abstract: 美团提出车道线检测新框架SGNet
-   - Paper: [Structure Guided Lane Detection](https://arxiv.org/pdf/2105.05403.pdf)
-   - Tips:  实现了一种结构信息引导的车道线检测框架 SGNet，可以精准地描述车道线并对不确定条数的车道线进行分类与定位
+1. [RepPointv2：使用点集合表示来做目标检测](https://mp.weixin.qq.com/s/agXb87YuHESpJm7JaMB2jQ)         :star::star:
+   - Abstract: 使用点集合表示来做目标检测的RepPointv2
+   - Paper: [RepPoints v2: Verification Meets Regression for Object Detection](https://arxiv.org/pdf/2007.08508.pdf)
+   - Code: [https://github.com/Scalsol/RepPointsV2](https://github.com/Scalsol/RepPointsV2)
+   - Tips:  RepPointv2论文主要通过增加辅助分支来加强定位能力，所采用的方法是通过生成的前背景和角落热度图来达到参考索引的效果
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gW96C0Ofhb81ibXQnKBuX4kziaqlPfDlDGzQaX4zwcotzOibZ6D2Reqgk0xQFbDpsdb7yicT9eSYsmt4Iw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-2. [SlowFast Networks for Video Recognition](https://mp.weixin.qq.com/s/FnPTJ5o_qxu5BNZC2udP_A)       :star::star:
-   - Abstract: 一种双流视频识别模型SlowFast网络
-   - Paper: [SlowFast Networks for Video Recognition](https://arxiv.org/pdf/1812.03982.pdf)
-   - Code: [https://github.com/facebookresearch/SlowFast](https://github.com/facebookresearch/SlowFast)
-   - Tips: 将slow path和fast path在时间和空间维度对齐，之后可以在channel维度上concat，拼接之后的特征经过空间池化被输入到全连接层进行分类
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ldNS06W0w5uWgYNPwzR9T1Zz9EeiaS5qL8humJP3NMrnvvog5x9wkpMYdntW0UmkDVcUocAGmEbwCJ6SibkaWOTg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KYSDTmOVZvpdhaj3PgHIK1afk3czhxgcmdywGvInGJF8QkqliaUlxKe6YMYb3cPOrQK9WzXxJZdI8vDcMgH6E3A/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-3. [更逼真的抠图技术！Realistic Lighting on Different Backgrounds](https://mp.weixin.qq.com/s/WAUvHV-oc4MstXouvU9NGA)       :star::star:
-   - Abstract: 更逼真的抠图技术
-   - Paper: [Total Relighting: Learning to Relight Portraits for Background Replacement](https://augmentedperception.github.io/total_relighting/total_relighting_paper.pdf)
-   - Code: [https://github.com/augmentedperception/total_relighting](https://github.com/augmentedperception/total_relighting)
-   - Tips: 目标是根据你添加的新背景的照明正确地重新照亮任何肖像
+2. [CVPR2021 双图层实例分割，大幅提升遮挡处理性能](https://mp.weixin.qq.com/s/LL3uw1ZVxio20wrvzM8Vag)       :star::star:
+   - Abstract: 大幅提升遮挡处理性能的双图层实例分割BCNet
+   - Paper: [Deep Occlusion-Aware Instance Segmentation with Overlapping BiLayers](https://arxiv.org/pdf/2103.12340.pdf)
+   - Code: [https://github.com/lkeab/BCNet](https://github.com/lkeab/BCNet)
+   - Tips: 本文通过将图像建模为两个重叠图层，为网络引入物体间的遮挡与被遮挡关系，从而提出了一个轻量级的能有效处理遮挡的实例分割算法
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/7jnsg27ZEVFYXCQ5Mic6rvc3zbrCnQ2EU30JQ47soFjq6u3aqwj7upIztAricUZIn36b8VGaRWWUQtkK2FUzHpVQ/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/PZnHqRzLEck8Ou27RAviaYmKO9yteee2ctVszia7y5ubiaOW6ms6uOZ7cfmFB8MujkufEoIs01RnWvvakDIRwGMQQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-4. [CVPR2021 行人重识别/Person Re-identification 论文+开源代码汇总](https://mp.weixin.qq.com/s/cH1EfiJbj0Ikg34HB0VH_Q)       :star::star:
-   - Abstract:  行人重识别/Person Re-identification 论文+开源代码汇总
-   - Tips: 行人重识别（Person re-identification）也称行人再识别，是利用计算机视觉技术判断图像或者视频序列中是否存在特定行人的技术。广泛被认为是一个图像检索的子问题。给定一个监控行人图像，检索跨设备下的该行人图像
+3. [CNN可视化又添新作，南大开源Group-CAM：高效的显著图生成方法｜CVPR2021](https://mp.weixin.qq.com/s/kBlTAbNoyfiJeEEhexA4-A)       :star::star:
+   - Abstract: 高效的显著图生成方法Group-CAM
+   - Paper: [Group-CAM: Group Score-Weighted Visual Explanations for Deep Convolutional Networks](https://augmentedperception.github.io/total_relighting/total_relighting_paper.pdf)
+   - Code: [https://github.com/wofmanaf/Group-CAM](https://github.com/wofmanaf/Group-CAM)
+   - Tips: 提出了一种高效的Saliency Map生成方法，称为组分数加权类激活映射(Group-CAM)
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/7jnsg27ZEVGgmz49vy0KbCxjZYS596lAdPzhc148GNuAfsclyOibLqQz9U5CTH9fHbQjIbYXNJBBe1ibBibJNfVZQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-5. [基于运动相关分析的实时多源异构传感器时空标定方法研究](https://mp.weixin.qq.com/s/2Qb1TbaiBpM7HscmKNcAAA)       :star::star:
-   - Abstract: 基于运动相关分析的实时多源异构传感器时空标定方法研究
-   - Paper: [Real-Time Temporal and Rotational Calibration of Heterogeneous Sensors Using Motion Correlation Analysis](https://ieeexplore.ieee.org/document/9271875)
-   - Tips: 一种异构多源传感器校准的中心IMU时间偏移和外部旋转参数的估计算法。该校准方法与优化方法具有相当的估计精度，具有更大的时间偏移估计范围和解析式的外部旋转参数。它可以实时的在没有标定板的自然场景中工作
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/Q0FNTB1XHicxlwugTXy9Twic6dxoEJv6yLQKkJZdxE1vdI6e7ZibZxtCAvELibDs03xLrYPo8SjVhILnn65icg6Tu7Q/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfqhwlSMXLnS5zGibEhoQj5ib4SQN5RWMkm0DJA11DiawPvtWFrUz5u4dPrdvlI0GEguDDhFnRPwODxbA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-6. [CVPR 2021 Inpainting专题](https://mp.weixin.qq.com/s/VSZqai9fptteGnrg_hb-yQ)       :star::star:
-   - Abstract: CVPR 2021 Inpainting专题
-   - Tips:  CVPR 2021的inpainting相关的文章进行了总结
+4. [干货 | 阿里的图像搜索架构](https://mp.weixin.qq.com/s/bS_oUW5B9L3e6-3oGRjXUA)       :star::star:
+   - Abstract:  阿里的图像搜索架构（拍立淘）
+   - Tips: 拍立淘的整个图像搜索架构，主要涉及图像搜索和识别
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ldNS06W0w5uWgYNPwzR9T1Zz9EeiaS5qLzDjCByaVjrL4bbNrFTibj00klZEC3J36CsWbtAbjwVDiao0iam0gG19jA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/PW0wIHxgg3mBpkvWMzg4h02PBhibkpIJKdib9NDaZsnpyrCucxib2cUia1eAw2U4RZd6zwwyxnZ1SREbjOorHxB9dw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-7. [增量学习(Incremental Learning)小综述](https://mp.weixin.qq.com/s/fWUrS05w35jr1dTqQZexJA)       :star::star:
-   - Abstract: 增量学习(Incremental Learning)小综述
-   - Tips: 尤其要注意增量学习和在线学习的区别，在线学习通常要求每个样本只能使用一次，且数据全都来自于同一个任务，而增量学习是多任务的，但它允许在进入下一个任务之前多次处理当前任务的数据
+5. [Transformer有可能替代CNN吗？未来有哪些研究方向？听听大家都怎么说](https://mp.weixin.qq.com/s/0edxWEbJQltbqHKLFz2uFg)       :star::star:
+   - Abstract: Transformer的发展情况与未来研究思路
+   - Paper: [Transformers in Vision: A Survey](https://arxiv.org/pdf/2101.01169.pdf)
+   - Tips: 
+     - 目前还是初步探索
+     - 单模型多任务
+     - 减少参数量和计算量
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/nJZZib3qIQW5Gnp7RLgCKs4Y2iaG6OqvTHpyNx8xp6XxA4OZ6ClYDOlRuV7BETJ0pUlTPabKGXYESzDO78wuKfyw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gWibvpyNraHJgibTovCUO9pUwicFjtjLx1qciaTTwdTqOdaYNBa60rMukRRcC1tR8se9aiaTlNyJ04X8W4Q/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
-
 
 ## 
 
@@ -138,8 +127,10 @@
     14. <a href="notes/202105/05014.md" target="_blank">公众号内容拓展学习笔记（2021.5.14）</a>
     15. <a href="notes/202105/05015.md" target="_blank">公众号内容拓展学习笔记（2021.5.15）</a>
     16. <a href="notes/202105/05016.md" target="_blank">公众号内容拓展学习笔记（2021.5.16）</a>
+    17. <a href="notes/202105/05027.md" target="_blank">公众号内容拓展学习笔记（2021.5.27）</a>
 </details>
 </pre>
+
 
 
 
