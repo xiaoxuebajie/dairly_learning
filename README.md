@@ -3,7 +3,7 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2021.5.27
+更新今日时间：2021.9.30
 
 ------
 
@@ -11,55 +11,61 @@
 
 ## :paperclip:  今日要点
 
-1. [RepPointv2：使用点集合表示来做目标检测](https://mp.weixin.qq.com/s/agXb87YuHESpJm7JaMB2jQ)         :star::star:
-   - Abstract: 使用点集合表示来做目标检测的RepPointv2
-   - Paper: [RepPoints v2: Verification Meets Regression for Object Detection](https://arxiv.org/pdf/2007.08508.pdf)
-   - Code: [https://github.com/Scalsol/RepPointsV2](https://github.com/Scalsol/RepPointsV2)
-   - Tips:  RepPointv2论文主要通过增加辅助分支来加强定位能力，所采用的方法是通过生成的前背景和角落热度图来达到参考索引的效果
+1. [ICCV 2021 | ResRep：剪枝SOTA！用结构重参数化实现CNN无损压缩](https://mp.weixin.qq.com/s/88nRC3VttYBsuTZ5S49Iww)         :star::star:
+   - Abstract: ResRep用结构重参数化实现CNN无损压缩
+   - Paper: [ResRep: Lossless CNN Pruning via Decoupling Remembering and Forgetting](https://arxiv.org/abs/2007.03260)
+   - Code: [https://github.com/DingXiaoH/ResRep](https://github.com/DingXiaoH/ResRep)
+   - Tips:  将原CNN等价拆分成负责“记忆”（保持精度不降低）的部分和负责“遗忘”（去掉某些通道）的部分，前者进行“记忆训练”，后者进行“遗忘训练”。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KYSDTmOVZvpdhaj3PgHIK1afk3czhxgcmdywGvInGJF8QkqliaUlxKe6YMYb3cPOrQK9WzXxJZdI8vDcMgH6E3A/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ibaXaPIy7jV3lC5xFY2lIsWycerFiaXgEdt1HNr87KHnIUNMVzK6hVjTYCsIFUxkn6fFPsLKxarwxkziaP4trQ8Jw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-2. [CVPR2021 双图层实例分割，大幅提升遮挡处理性能](https://mp.weixin.qq.com/s/LL3uw1ZVxio20wrvzM8Vag)       :star::star:
-   - Abstract: 大幅提升遮挡处理性能的双图层实例分割BCNet
-   - Paper: [Deep Occlusion-Aware Instance Segmentation with Overlapping BiLayers](https://arxiv.org/pdf/2103.12340.pdf)
-   - Code: [https://github.com/lkeab/BCNet](https://github.com/lkeab/BCNet)
-   - Tips: 本文通过将图像建模为两个重叠图层，为网络引入物体间的遮挡与被遮挡关系，从而提出了一个轻量级的能有效处理遮挡的实例分割算法
+2. [深入探究ConvNets vs. Transformers，哪种预训练模型的可迁移性更好？](https://mp.weixin.qq.com/s/lH4o_g319N4Xeq2hi5UQvg)       :star::star:
+   - Abstract: 通过下游实验来验证ConvNets和Transformers哪个预训练模型的可迁移性更好
+   - Paper: [ConvNets vs. Transformers: Whose Visual Representations are More Transferable?](https://arxiv.org/abs/2108.05305)
+   - Tips: 综合表现Transformers更佳，传统的观点一般认为Transformer优于ConvNets的原因是在于其更加放松（relaxed）的inductive bias。通过系统的实验，我们认为使得Transformer的迁移性能优于ConvNets的另外一大原因是其在提供相近ImageNet预训练性能的情况下，具有更少的参数量，这有利于降低预训练模型在下游任务上过拟合的风险。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/PZnHqRzLEck8Ou27RAviaYmKO9yteee2ctVszia7y5ubiaOW6ms6uOZ7cfmFB8MujkufEoIs01RnWvvakDIRwGMQQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-3. [CNN可视化又添新作，南大开源Group-CAM：高效的显著图生成方法｜CVPR2021](https://mp.weixin.qq.com/s/kBlTAbNoyfiJeEEhexA4-A)       :star::star:
-   - Abstract: 高效的显著图生成方法Group-CAM
-   - Paper: [Group-CAM: Group Score-Weighted Visual Explanations for Deep Convolutional Networks](https://augmentedperception.github.io/total_relighting/total_relighting_paper.pdf)
-   - Code: [https://github.com/wofmanaf/Group-CAM](https://github.com/wofmanaf/Group-CAM)
-   - Tips: 提出了一种高效的Saliency Map生成方法，称为组分数加权类激活映射(Group-CAM)
-
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfqhwlSMXLnS5zGibEhoQj5ib4SQN5RWMkm0DJA11DiawPvtWFrUz5u4dPrdvlI0GEguDDhFnRPwODxbA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/BJbRvwibeSTue6LO8k8PoDcHCVkJibPFGnZN4bElk1KraUhax91cXH19Y6jtQoibmnOagL6WibKWrjecPSXCVhsInw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-4. [干货 | 阿里的图像搜索架构](https://mp.weixin.qq.com/s/bS_oUW5B9L3e6-3oGRjXUA)       :star::star:
-   - Abstract:  阿里的图像搜索架构（拍立淘）
-   - Tips: 拍立淘的整个图像搜索架构，主要涉及图像搜索和识别
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/PW0wIHxgg3mBpkvWMzg4h02PBhibkpIJKdib9NDaZsnpyrCucxib2cUia1eAw2U4RZd6zwwyxnZ1SREbjOorHxB9dw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+3. [CVPR 2021 比CNN和Transformer更好的Backbone？伯克利&谷歌提出BoTNet，精度达84.7%](https://mp.weixin.qq.com/s/A40zE1CA_YwovI53eLGA1A)       :star::star:
+   - Abstract: BoTNet比CNN和Transformer更好的Backbone
+   - Paper: [Bottleneck Transformers for Visual Recognition](https://arxiv.org/abs/2101.11605)
+   - Tips: 直接将ResNet C5中的3x3卷积替换成了Self-Attention，来提升模型的性能
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/BJbRvwibeSTt3F9VlTib8RB3o9sZhnxSECnbZEMZyOEmJfHZpclc0Iy3Rmu0ibmKst9vmQR6HcdGqzsXp5teevU2A/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-5. [Transformer有可能替代CNN吗？未来有哪些研究方向？听听大家都怎么说](https://mp.weixin.qq.com/s/0edxWEbJQltbqHKLFz2uFg)       :star::star:
-   - Abstract: Transformer的发展情况与未来研究思路
-   - Paper: [Transformers in Vision: A Survey](https://arxiv.org/pdf/2101.01169.pdf)
-   - Tips: 
-     - 目前还是初步探索
-     - 单模型多任务
-     - 减少参数量和计算量
+4. [语义分割综述](https://mp.weixin.qq.com/s/Tz7kT14S8ZkWZ-OgE2WO5g)       :star::star:
+   - Abstract:  有关语义分割的文献综述
+   - Tips: 比较经典的几篇文章，适合研究语义分割的同学好好看看。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gWibvpyNraHJgibTovCUO9pUwicFjtjLx1qciaTTwdTqOdaYNBa60rMukRRcC1tR8se9aiaTlNyJ04X8W4Q/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/V2E1ll6kaTXGLrzSIq30EEb7tENQWaHn5l1pXWP1TYR8h1dZia1XWvPTKTKFaJexeT45L1cEG4KQR4LliapHdWyQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-## 
+
+5. [高通人工智能应用创新大赛冠军方案解读](https://mp.weixin.qq.com/s/2efke2PymcqMstkw4httUA)       :star::star:
+   - Abstract:高通人工智能应用创新大赛冠军方案解读
+   - Tips: 解决方案更贴近工业应用，包括落地
+
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfqkuEUVb8WJCRXZCY6HA6tu9eLm69ztjTstynjKFKWUqyPClaBxGic4aKoHFMZlw2AcPpLpsSrAm0A/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+
+6. [AI全自动钓鱼，原神游戏沦陷！（硬核开源）](https://mp.weixin.qq.com/s/zA1jnCS6o1UNPum_FoUQlg)       :star::star:
+   - Abstract:AI全自动钓鱼项目详解
+   - Code: [https://github.com/7eu7d7/genshin_auto_fish](https://github.com/7eu7d7/genshin_auto_fish)
+   - bilibili: [https://www.bilibili.com/read/cv13270965](https://www.bilibili.com/read/cv13270965)
+   - Tips: YOLOX 用于鱼的定位和类型的识别以及鱼竿落点的定位,DQN 用于自适应控制钓鱼过程的点击，让力度落在最佳区域内
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/v1JN0W4OpXgShLltx9u3vsPxNRmvp29suzF38JQB1FbJccV4RQCT4C8dOgu6zWynAHITI18mTT55hVclZgVccg/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1" style='zoom:100%'>
+</div>
+
+
 
 
 ## :paperclip:  历史更新
@@ -129,7 +135,11 @@
     16. <a href="notes/202105/05016.md" target="_blank">公众号内容拓展学习笔记（2021.5.16）</a>
     17. <a href="notes/202105/05027.md" target="_blank">公众号内容拓展学习笔记（2021.5.27）</a>
 </details>
+<details><summary>9月</summary>
+    1. <a href="notes/202109/0930.md" target="_blank">公众号内容拓展学习笔记（2021.9.30）</a>
+</details>
 </pre>
+
 
 
 
