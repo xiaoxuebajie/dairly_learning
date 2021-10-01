@@ -3,7 +3,7 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2021.9.30
+更新今日时间：2021.10.1
 
 ------
 
@@ -11,60 +11,61 @@
 
 ## :paperclip:  今日要点
 
-1. [ICCV 2021 | ResRep：剪枝SOTA！用结构重参数化实现CNN无损压缩](https://mp.weixin.qq.com/s/88nRC3VttYBsuTZ5S49Iww)         :star::star:
-   - Abstract: ResRep用结构重参数化实现CNN无损压缩
-   - Paper: [ResRep: Lossless CNN Pruning via Decoupling Remembering and Forgetting](https://arxiv.org/abs/2007.03260)
-   - Code: [https://github.com/DingXiaoH/ResRep](https://github.com/DingXiaoH/ResRep)
-   - Tips:  将原CNN等价拆分成负责“记忆”（保持精度不降低）的部分和负责“遗忘”（去掉某些通道）的部分，前者进行“记忆训练”，后者进行“遗忘训练”。
+1. [ICCV 2021 | 英伟达新研究：直接通过视频就能捕获3D人体动作！](https://mp.weixin.qq.com/s/b3qJSrC-aevPlBc89GwCAw)         :star::star:
+   - Abstract: 英伟达新研究直接通过视频就能捕获3D人体动作
+   - Paper: [Physics-based Human Motion Estimation and Synthesis from Videos](https://arxiv.org/abs/2109.09913)
+   - Tips:  用输入视频生成动作序列，然后建模成3D人体，再进行优化，最后就可以像使用标准动作捕捉数据集一样使用它们来训练你的动作生成模型
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ibaXaPIy7jV3lC5xFY2lIsWycerFiaXgEdt1HNr87KHnIUNMVzK6hVjTYCsIFUxkn6fFPsLKxarwxkziaP4trQ8Jw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/YicUhk5aAGtATo98PmhyiavfJNjnFHKxcOiaGoaMfHxM7HGbmibExPxm04ndEXAT0dFuk7jHQeTYNddHjnuUmRia8eA/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1" style='zoom:100%'>
 </div>
 
 
-2. [深入探究ConvNets vs. Transformers，哪种预训练模型的可迁移性更好？](https://mp.weixin.qq.com/s/lH4o_g319N4Xeq2hi5UQvg)       :star::star:
-   - Abstract: 通过下游实验来验证ConvNets和Transformers哪个预训练模型的可迁移性更好
-   - Paper: [ConvNets vs. Transformers: Whose Visual Representations are More Transferable?](https://arxiv.org/abs/2108.05305)
-   - Tips: 综合表现Transformers更佳，传统的观点一般认为Transformer优于ConvNets的原因是在于其更加放松（relaxed）的inductive bias。通过系统的实验，我们认为使得Transformer的迁移性能优于ConvNets的另外一大原因是其在提供相近ImageNet预训练性能的情况下，具有更少的参数量，这有利于降低预训练模型在下游任务上过拟合的风险。
+2. [NeurIPS 2021 | Twins：更高效的Transformer主干网！完美适配下游检测、分割任务](https://mp.weixin.qq.com/s/jqbPt5yXKPdEnW3WzAno9g)       :star::star:
+   - Abstract: Twins 更高效的 Transformer 主干网，完美适配下游检测、分割任务
+   - Paper: [Twins: Revisiting the Design of Spatial Attention in Vision Transformers](https://arxiv.org/abs/2104.13840)
+   - Code: [https://github.com/Meituan-AutoML/Twins](https://github.com/Meituan-AutoML/Twins)
+   - Tips: 这篇文章 Twins 提出了两种新的 Transformer 架构，分别起名叫 Twins-PCPVT 和 Twins-SVT
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/BJbRvwibeSTue6LO8k8PoDcHCVkJibPFGnZN4bElk1KraUhax91cXH19Y6jtQoibmnOagL6WibKWrjecPSXCVhsInw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/yNnalkXE7oUS4c203L60Fe8iaeSZeuVCII06bbQ161hPia4jAricic6wrGcjbJZzcOEpESXXjYiawgRal3pzTHfgf4w/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/yNnalkXE7oUS4c203L60Fe8iaeSZeuVCIZYuyHrdYB8bez6iaibymWaNJCOaA9XicBopicDeXZ5GIIY9z14sCsEc59A/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+3. [完美抠图王冰冰！字节实习生开发的 AI，实现 4K60 帧视频实时抠图，连头发丝都根根分明](https://mp.weixin.qq.com/s/kHMWQ8D-mQWJltwGp2dt2w)       :star::star:
+   - Abstract: 实现 4K60 帧视频实时抠图，连头发丝都根根分明
+   - Paper: [Robust High-Resolution Video Matting with Temporal Guidance](https://arxiv.org/abs/2108.11515)
+   - Code: [https://github.com/PeterL1n/RobustVideoMatting](https://github.com/PeterL1n/RobustVideoMatting)
+   - Demo: [https://peterl1n.github.io/RobustVideoMatting/#/demo](https://peterl1n.github.io/RobustVideoMatting/#/demo)
+   - Tips: 除了一些遮挡或者阴暗效果较差以外，性能都非常理想。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/libMic1J2Kj4r3QiaXMFCHviaMoYfKRs5JonGiciamcicUwH3GcFUO5I6f5RsfHIL7DsPaKPAwvjdicrIwr8yDmIVgshvw/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1" style='zoom:100%'>
 </div>
 
 
+4. [图特征金字塔应用在目标检测，最终精度大幅度提升（附论文下载）](https://mp.weixin.qq.com/s/X25kEQDF9KM4xPgfliaD0g)       :star::star:
+   - Abstract:  图特征金字塔应用在目标检测，精度大幅度提升
+   - Paper: [GraphFPN: Graph Feature Pyramid Network for Object Detection](https://arxiv.org/pdf/2108.00580.pdf)
+   - Tips: 图特征金字塔网络可以增强卷积特征金字塔网络的多尺度特征
 
-3. [CVPR 2021 比CNN和Transformer更好的Backbone？伯克利&谷歌提出BoTNet，精度达84.7%](https://mp.weixin.qq.com/s/A40zE1CA_YwovI53eLGA1A)       :star::star:
-   - Abstract: BoTNet比CNN和Transformer更好的Backbone
-   - Paper: [Bottleneck Transformers for Visual Recognition](https://arxiv.org/abs/2101.11605)
-   - Tips: 直接将ResNet C5中的3x3卷积替换成了Self-Attention，来提升模型的性能
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/BJbRvwibeSTt3F9VlTib8RB3o9sZhnxSECnbZEMZyOEmJfHZpclc0Iy3Rmu0ibmKst9vmQR6HcdGqzsXp5teevU2A/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwPVaibPicy7Txh9tIVUnUiaicLogIhGNriaaEJmzMASibWUiaicwmlAp7hDLDibdYOGYxdEibJhFCkDXYZhPyfQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-4. [语义分割综述](https://mp.weixin.qq.com/s/Tz7kT14S8ZkWZ-OgE2WO5g)       :star::star:
-   - Abstract:  有关语义分割的文献综述
-   - Tips: 比较经典的几篇文章，适合研究语义分割的同学好好看看。
+5. [图像去模糊算法代码实践！](https://mp.weixin.qq.com/s/pHUqQ-6dPpVAHD71h6Gxgg)       :star::star:
+   - Abstract: 图像去模糊算法代码实践
+   - Tips: 采用的方法DeblurGANv2
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/V2E1ll6kaTXGLrzSIq30EEb7tENQWaHn5l1pXWP1TYR8h1dZia1XWvPTKTKFaJexeT45L1cEG4KQR4LliapHdWyQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/vI9nYe94fsEIfkFYyX4FjBiavmerdnlBIiaIhRwW7fGn23p1HKP6Rljic7Do9ggdN7yTlTvxylrmCKByPGcLXibASQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-5. [高通人工智能应用创新大赛冠军方案解读](https://mp.weixin.qq.com/s/2efke2PymcqMstkw4httUA)       :star::star:
-   - Abstract:高通人工智能应用创新大赛冠军方案解读
-   - Tips: 解决方案更贴近工业应用，包括落地
+6. [Batch Size 对 神经网络训练的影响](https://mp.weixin.qq.com/s/cVMOGS64KR5gLuuoco2x1w)       :star::star:
+   - Abstract: Batch Size 对 神经网络训练的影响
+   - Tips: 主要介绍了batch size对于网络训练的影响以及如何调整。
 
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfqkuEUVb8WJCRXZCY6HA6tu9eLm69ztjTstynjKFKWUqyPClaBxGic4aKoHFMZlw2AcPpLpsSrAm0A/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_png/gYUsOT36vfqc1hq4Picemq0ElPXMbB6EOvxWibqW5VolPgzGNgavbEKYu2SlovPC8qv7SWciabk0zeETIHrzFZBKg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
-
-
-6. [AI全自动钓鱼，原神游戏沦陷！（硬核开源）](https://mp.weixin.qq.com/s/zA1jnCS6o1UNPum_FoUQlg)       :star::star:
-   - Abstract:AI全自动钓鱼项目详解
-   - Code: [https://github.com/7eu7d7/genshin_auto_fish](https://github.com/7eu7d7/genshin_auto_fish)
-   - bilibili: [https://www.bilibili.com/read/cv13270965](https://www.bilibili.com/read/cv13270965)
-   - Tips: YOLOX 用于鱼的定位和类型的识别以及鱼竿落点的定位,DQN 用于自适应控制钓鱼过程的点击，让力度落在最佳区域内
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/v1JN0W4OpXgShLltx9u3vsPxNRmvp29suzF38JQB1FbJccV4RQCT4C8dOgu6zWynAHITI18mTT55hVclZgVccg/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1" style='zoom:100%'>
-</div>
-
 
 
 
@@ -138,7 +139,11 @@
 <details><summary>9月</summary>
     1. <a href="notes/202109/0930.md" target="_blank">公众号内容拓展学习笔记（2021.9.30）</a>
 </details>
+<details><summary>10月</summary>
+    1. <a href="notes/202110/1001.md" target="_blank">公众号内容拓展学习笔记（2021.9.30）</a>
+</details>
 </pre>
+
 
 
 
