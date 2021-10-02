@@ -11,61 +11,57 @@
 
 ## :paperclip:  今日要点
 
-1. [ICCV 2021 | 英伟达新研究：直接通过视频就能捕获3D人体动作！](https://mp.weixin.qq.com/s/b3qJSrC-aevPlBc89GwCAw)         :star::star:
-   - Abstract: 英伟达新研究直接通过视频就能捕获3D人体动作
-   - Paper: [Physics-based Human Motion Estimation and Synthesis from Videos](https://arxiv.org/abs/2109.09913)
-   - Tips:  用输入视频生成动作序列，然后建模成3D人体，再进行优化，最后就可以像使用标准动作捕捉数据集一样使用它们来训练你的动作生成模型
+1. [NLP与CV大一统的尽头是语言模型？Hinton团队提出Pix2Seq做目标检测，性能抗打！](https://mp.weixin.qq.com/s/UKdiPF0ro9IgUcYxPmXo0Q)         :star::star:
+   - Abstract: Hinton团队提出Pix2Seq做目标检测
+   - Paper: [PIX2SEQ: A LANGUAGE MODELING FRAMEWORK FOR OBJECT DETECTION](https://arxiv.org/pdf/2109.10852.pdf)
+   - Tips:  将目标检测问题转化为NLP，这种转变会带来很多值得探索的方向。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/YicUhk5aAGtATo98PmhyiavfJNjnFHKxcOiaGoaMfHxM7HGbmibExPxm04ndEXAT0dFuk7jHQeTYNddHjnuUmRia8eA/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfqTes2wbJibCk8XfbdpGibBMrw6jrgU5Kjeo3RrPxPiayvct7mqS1jHV3Q3GEyKrcXZ1fOtAWn0A1wzA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-2. [NeurIPS 2021 | Twins：更高效的Transformer主干网！完美适配下游检测、分割任务](https://mp.weixin.qq.com/s/jqbPt5yXKPdEnW3WzAno9g)       :star::star:
-   - Abstract: Twins 更高效的 Transformer 主干网，完美适配下游检测、分割任务
-   - Paper: [Twins: Revisiting the Design of Spatial Attention in Vision Transformers](https://arxiv.org/abs/2104.13840)
-   - Code: [https://github.com/Meituan-AutoML/Twins](https://github.com/Meituan-AutoML/Twins)
-   - Tips: 这篇文章 Twins 提出了两种新的 Transformer 架构，分别起名叫 Twins-PCPVT 和 Twins-SVT
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/yNnalkXE7oUS4c203L60Fe8iaeSZeuVCII06bbQ161hPia4jAricic6wrGcjbJZzcOEpESXXjYiawgRal3pzTHfgf4w/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
+2. [重磅干货来袭 | 关系网络用于目标检测（文末附源码）](https://mp.weixin.qq.com/s/ZJ5Jnk7azL3oku1jM3n5gQ)       :star::star:
+   - Abstract: 关系网络用于目标检测
+   - Paper: [Relation Networks for Object Detection](https://arxiv.org/pdf/1711.11575.pdf)
+   - Code: [https://github.com/msracver/Relation-Networks-for-Object-Detection](https://github.com/msracver/Relation-Networks-for-Object-Detection)
+   - Tips: 作者提出一个模块object relation module来描述目标之间的关系，同时引入到NMS中来提升性能。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/yNnalkXE7oUS4c203L60Fe8iaeSZeuVCIZYuyHrdYB8bez6iaibymWaNJCOaA9XicBopicDeXZ5GIIY9z14sCsEc59A/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-3. [完美抠图王冰冰！字节实习生开发的 AI，实现 4K60 帧视频实时抠图，连头发丝都根根分明](https://mp.weixin.qq.com/s/kHMWQ8D-mQWJltwGp2dt2w)       :star::star:
-   - Abstract: 实现 4K60 帧视频实时抠图，连头发丝都根根分明
-   - Paper: [Robust High-Resolution Video Matting with Temporal Guidance](https://arxiv.org/abs/2108.11515)
-   - Code: [https://github.com/PeterL1n/RobustVideoMatting](https://github.com/PeterL1n/RobustVideoMatting)
-   - Demo: [https://peterl1n.github.io/RobustVideoMatting/#/demo](https://peterl1n.github.io/RobustVideoMatting/#/demo)
-   - Tips: 除了一些遮挡或者阴暗效果较差以外，性能都非常理想。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/libMic1J2Kj4r3QiaXMFCHviaMoYfKRs5JonGiciamcicUwH3GcFUO5I6f5RsfHIL7DsPaKPAwvjdicrIwr8yDmIVgshvw/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwN6VStBnd3CGEcy4H4GS8EgJ8oux3fPhvDzK5CcLvVVZF9pCPhfudEavXgMhDnPiaLJ6aFuBichEHMQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-4. [图特征金字塔应用在目标检测，最终精度大幅度提升（附论文下载）](https://mp.weixin.qq.com/s/X25kEQDF9KM4xPgfliaD0g)       :star::star:
-   - Abstract:  图特征金字塔应用在目标检测，精度大幅度提升
-   - Paper: [GraphFPN: Graph Feature Pyramid Network for Object Detection](https://arxiv.org/pdf/2108.00580.pdf)
-   - Tips: 图特征金字塔网络可以增强卷积特征金字塔网络的多尺度特征
+3. [谷歌提出COMISR算法：针对视频压缩的压缩感知超分辨率](https://mp.weixin.qq.com/s/DhE49Ek0v0PelDewNNjP3w)       :star::star:
+   - Abstract: 针对视频压缩的压缩感知超分辨率COMISR算法
+   - Paper: [COMISR: Compression-Informed Video Super-Resolution](https://arxiv.org/pdf/2105.01237.pdf)
+   - Tips: 针对H.264等视频压缩标准压缩后的视频进行超分，定量和定性效果相比过去的是视频超分辨率（VSR）算法有较大提升，有一定的业界价值。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwPVaibPicy7Txh9tIVUnUiaicLogIhGNriaaEJmzMASibWUiaicwmlAp7hDLDibdYOGYxdEibJhFCkDXYZhPyfQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/BJbRvwibeSTs2ECmrCYiabng4SpaLPC99Fic56hzeCGibdyw4mdZpSwItuASvRHWx9wKhHtsQ8RE7HwG7BhJfZ6T3A/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-5. [图像去模糊算法代码实践！](https://mp.weixin.qq.com/s/pHUqQ-6dPpVAHD71h6Gxgg)       :star::star:
-   - Abstract: 图像去模糊算法代码实践
-   - Tips: 采用的方法DeblurGANv2
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/vI9nYe94fsEIfkFYyX4FjBiavmerdnlBIiaIhRwW7fGn23p1HKP6Rljic7Do9ggdN7yTlTvxylrmCKByPGcLXibASQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+4. [国庆堵车 | AI“高速”车辆检测轻而易举监测大家安全](https://mp.weixin.qq.com/s/LV8BTi1gAfpmxRIM_NUiHA)       :star::star:
+   - Abstract:  通过目标检测实现车辆检测
+   - Tips: 主要采用的SSD+LSN+双向网络（核心）
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwOuNIIv749gaVBDicnN2PaNy6TVae17XUvR4UGd3KyseT9SNFj1X1abD3p96Msm3pibE7nyIs9o9NVw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
+5. [深度框架训练：不是所有数据增强都可以提升最终精度](https://mp.weixin.qq.com/s/YryR16mQ-VJeWAlRVZd6PQ)       :star::star:
+   - Abstract: 不是所有数据增强都可以提升最终精度
+   - Tips: 数据增强可能会引入噪声增强的例子，从而在推理过程中损害非增强数据的性能
 
-6. [Batch Size 对 神经网络训练的影响](https://mp.weixin.qq.com/s/cVMOGS64KR5gLuuoco2x1w)       :star::star:
-   - Abstract: Batch Size 对 神经网络训练的影响
-   - Tips: 主要介绍了batch size对于网络训练的影响以及如何调整。
-
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_png/gYUsOT36vfqc1hq4Picemq0ElPXMbB6EOvxWibqW5VolPgzGNgavbEKYu2SlovPC8qv7SWciabk0zeETIHrzFZBKg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwNEBqGkDOyUqpUrZo2saDnwh9LH6Q7PHaPyLN1zBue4ia0Nuw3ug64LlBLZ6s0eWF5E5vKwCdtnT7Q/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
+
+6. [详尽实用的 PyCharm 教程，这篇文章值得一看](https://mp.weixin.qq.com/s/lv55Z_w5F1brk99P3r4zLA)       :star::star:
+   - Abstract: 详尽实用的 PyCharm 教程
+   - Tips: 非常详尽，包括安装运行以及debug等等
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/qX7rSBgoEp3ibc5jqqODEibTo7FCTXS90cmFicOFejXntAgOGcRbN2jayuic9AHyv1YfHSftOmRkEo3EGKyDQDXkGQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
 
 
 
@@ -140,9 +136,11 @@
     1. <a href="notes/202109/0930.md" target="_blank">公众号内容拓展学习笔记（2021.9.30）</a>
 </details>
 <details><summary>10月</summary>
-    1. <a href="notes/202110/1001.md" target="_blank">公众号内容拓展学习笔记（2021.9.30）</a>
+    1. <a href="notes/202110/1001.md" target="_blank">公众号内容拓展学习笔记（2021.10.1）</a>
+    2. <a href="notes/202110/1002.md" target="_blank">公众号内容拓展学习笔记（2021.10.2）</a>
 </details>
 </pre>
+
 
 
 
