@@ -3,64 +3,77 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2021.10.1
+更新今日时间：2021.10.3
 
 ------
 
 
 
+
+
 ## :paperclip:  今日要点
 
-1. [NLP与CV大一统的尽头是语言模型？Hinton团队提出Pix2Seq做目标检测，性能抗打！](https://mp.weixin.qq.com/s/UKdiPF0ro9IgUcYxPmXo0Q)         :star::star:
-   - Abstract: Hinton团队提出Pix2Seq做目标检测
-   - Paper: [PIX2SEQ: A LANGUAGE MODELING FRAMEWORK FOR OBJECT DETECTION](https://arxiv.org/pdf/2109.10852.pdf)
-   - Tips:  将目标检测问题转化为NLP，这种转变会带来很多值得探索的方向。
+1. [Google 提出两个逆天模型：体积下降7倍，速度提升10倍](https://mp.weixin.qq.com/s/GmH9wBkNUjBgZS9rF6ngdw)         :star::star:
+   - Abstract: Google 提出两个逆天模型EfficientNetV2和CoAtNet
+   - Paper1: [EfficientNetV2: Smaller Models and Faster Training](https://arxiv.org/abs/2104.00298)
+   - Paper2: [CoAtNet: Marrying Convolution and Attention for All Data Sizes](https://arxiv.org/abs/2106.04803)
+   - Code1: [https://github.com/d-li14/efficientnetv2.pytorch](https://github.com/d-li14/efficientnetv2.pytorch)
+   - Tips:  EfficientNetV2在较小数据集上模型更小更快，CoAtNet结合了卷积和自注意的混合模型在大规模数据集上实现更高的精度。
 
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfqTes2wbJibCk8XfbdpGibBMrw6jrgU5Kjeo3RrPxPiayvct7mqS1jHV3Q3GEyKrcXZ1fOtAWn0A1wzA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/UicQ7HgWiaUb3hv0a8iaR7Gth8ibrt98PNmH5icIsS063WyYia9EC8kHpldHKmBY8ACno8AibStibTqpWBLIaodTGZXmgQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/UicQ7HgWiaUb3hv0a8iaR7Gth8ibrt98PNmHPeTJLj4vw4iabrJEEYV0TyzM6MB3CmV24TF9PjljZbibQHOeoKA07Xbg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+
+2. [NeurIPS 2021 | 所有图像都值16x16个词吗？清华提出DVT：可变序列长度的动态Transformer](https://mp.weixin.qq.com/s/dsQaIN3sm7qPjnBXTUEmFw)       :star::star:
+   - Abstract: 清华提出DVT可变序列长度的动态Transformer
+   - Paper: [Not All Images are Worth 16x16 Words: Dynamic Vision Transformers with Adaptive Sequence Length](https://arxiv.org/abs/2105.15075)
+   - Code: [https://github.com/blackfeather-wang/Dynamic-Vision-Transformer](https://github.com/blackfeather-wang/Dynamic-Vision-Transformer)
+   - Tips: 对于大多数Transformer采用的对图片以固定方式划分patch的表征方式，不够灵活，应当根据输入数据动态调整表征方式。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/yNnalkXE7oUS4c203L60Fe8iaeSZeuVCIYosgxZYQ4FicCvribiaxRnq0CyMu6K3ZB42zicpzuYf07cibbaHFhvUQDCg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
 
-2. [重磅干货来袭 | 关系网络用于目标检测（文末附源码）](https://mp.weixin.qq.com/s/ZJ5Jnk7azL3oku1jM3n5gQ)       :star::star:
-   - Abstract: 关系网络用于目标检测
-   - Paper: [Relation Networks for Object Detection](https://arxiv.org/pdf/1711.11575.pdf)
-   - Code: [https://github.com/msracver/Relation-Networks-for-Object-Detection](https://github.com/msracver/Relation-Networks-for-Object-Detection)
-   - Tips: 作者提出一个模块object relation module来描述目标之间的关系，同时引入到NMS中来提升性能。
+3. [用ViT替代卷积网络做密集预测，英特尔实验室提出DPT架构，在线Demo可用](https://mp.weixin.qq.com/s/6HfYVVMa6ZR8u-Vy51LKhQ)       :star::star:
+   - Abstract: 英特尔实验室提出DPT架构做密集预测
+   - Paper: [Vision Transformers for Dense Prediction](https://arxiv.org/abs/2103.13413)
+   - Code: [https://github.com/intel-isl/dpt](https://github.com/intel-isl/dpt)
+   - Demo: [https://huggingface.co/spaces/akhaliq/DPT-Large](https://huggingface.co/spaces/akhaliq/DPT-Large)
+   - Tips: DPT这种架构对于密集预测任务有很大的改进，特别是在有大量训练数据可用的情况下。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwN6VStBnd3CGEcy4H4GS8EgJ8oux3fPhvDzK5CcLvVVZF9pCPhfudEavXgMhDnPiaLJ6aFuBichEHMQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gW8KyE14ibib9Xx3ZQx28NRcpKoLodLZ0mibj86ibfVfvhPibOqdOWrPTWia7PO9hBcZAG3kmrfoxZkxNYFw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-3. [谷歌提出COMISR算法：针对视频压缩的压缩感知超分辨率](https://mp.weixin.qq.com/s/DhE49Ek0v0PelDewNNjP3w)       :star::star:
-   - Abstract: 针对视频压缩的压缩感知超分辨率COMISR算法
-   - Paper: [COMISR: Compression-Informed Video Super-Resolution](https://arxiv.org/pdf/2105.01237.pdf)
-   - Tips: 针对H.264等视频压缩标准压缩后的视频进行超分，定量和定性效果相比过去的是视频超分辨率（VSR）算法有较大提升，有一定的业界价值。
+4. [一文读懂3D人脸识别十年发展及未来趋势](https://mp.weixin.qq.com/s/kEZYpPnqJiiLxqH-CIK-Zw)       :star::star:
+   - Abstract:  3D人脸识别十年发展及未来趋势
+   - Paper: [3D Face Recognition: A Survey](https://arxiv.org/pdf/2108.11082v1.pdf)
+   - Tips: 这是第一篇全面涵盖传统方法和基于深度学习的 3D 人脸识别方法的调查论文,特别关注基于深度学习的 3D 人脸识别方法.
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/BJbRvwibeSTs2ECmrCYiabng4SpaLPC99Fic56hzeCGibdyw4mdZpSwItuASvRHWx9wKhHtsQ8RE7HwG7BhJfZ6T3A/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gWibzjrRjLy3UfhQ4JVjUZJo6cglIgucnZvAndHj3h3GDMRLdZKzzib25gIAN4MG8OY4XrgY5GtFNPGw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
+5. [单目视觉系统检测车辆的测距方法（Mobileye单目测距等7种方法）](https://mp.weixin.qq.com/s/0kL-RUb8nmmYIgnD-h2EcA)       :star::star:
+   - Abstract: 单目视觉系统检测车辆的测距方法
+   - Tips: 介绍了若干有关单目视觉系统的测距方法以及相关论文
 
-4. [国庆堵车 | AI“高速”车辆检测轻而易举监测大家安全](https://mp.weixin.qq.com/s/LV8BTi1gAfpmxRIM_NUiHA)       :star::star:
-   - Abstract:  通过目标检测实现车辆检测
-   - Tips: 主要采用的SSD+LSN+双向网络（核心）
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwOuNIIv749gaVBDicnN2PaNy6TVae17XUvR4UGd3KyseT9SNFj1X1abD3p96Msm3pibE7nyIs9o9NVw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/q7yyTjjeGadmqdCwibNoI0a4oIKeaqMDVKEWDRuQVfP4zRYPauagJo2ck7RiaI5dfzabWvAhufGmYNia8ehYtSnbw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-5. [深度框架训练：不是所有数据增强都可以提升最终精度](https://mp.weixin.qq.com/s/YryR16mQ-VJeWAlRVZd6PQ)       :star::star:
-   - Abstract: 不是所有数据增强都可以提升最终精度
-   - Tips: 数据增强可能会引入噪声增强的例子，从而在推理过程中损害非增强数据的性能
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwNEBqGkDOyUqpUrZo2saDnwh9LH6Q7PHaPyLN1zBue4ia0Nuw3ug64LlBLZ6s0eWF5E5vKwCdtnT7Q/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+6. [2021年自然语言处理校招社招实习必备知识点盘点分享](https://mp.weixin.qq.com/s/0B_nxgv0w_4MoTErjdvoHg)       :star::star:
+   - Abstract: 2021年自然语言处理校招社招实习必备知识点盘点分享
+   - Address: [https://github.com/km1994/nlp_paper_study](https://github.com/km1994/nlp_paper_study)
+   - Tips: 本资源整理了自然语言处理领域中常见的一些知识点，并给出了答案，分享给大家。对于准备自然语言处理校招、社招、实习岗位的朋友，可以好好研读一下
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1niaDLWmibswdnHxTOMoKrwuXdQCPsicibT1IL9ia1VuD4H3v4O56nr8PfJ172CSVzVSCSAF3OPMwQJt1laic8VLDj6g/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-6. [详尽实用的 PyCharm 教程，这篇文章值得一看](https://mp.weixin.qq.com/s/lv55Z_w5F1brk99P3r4zLA)       :star::star:
-   - Abstract: 详尽实用的 PyCharm 教程
-   - Tips: 非常详尽，包括安装运行以及debug等等
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/qX7rSBgoEp3ibc5jqqODEibTo7FCTXS90cmFicOFejXntAgOGcRbN2jayuic9AHyv1YfHSftOmRkEo3EGKyDQDXkGQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
 
 
 
@@ -138,8 +151,10 @@
 <details><summary>10月</summary>
     1. <a href="notes/202110/1001.md" target="_blank">公众号内容拓展学习笔记（2021.10.1）</a>
     2. <a href="notes/202110/1002.md" target="_blank">公众号内容拓展学习笔记（2021.10.2）</a>
+    3. <a href="notes/202110/1003.md" target="_blank">公众号内容拓展学习笔记（2021.10.3）</a>
 </details>
 </pre>
+
 
 
 
