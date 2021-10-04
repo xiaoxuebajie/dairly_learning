@@ -3,7 +3,7 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2021.10.3
+更新今日时间：2021.10.4
 
 ------
 
@@ -13,66 +13,63 @@
 
 ## :paperclip:  今日要点
 
-1. [Google 提出两个逆天模型：体积下降7倍，速度提升10倍](https://mp.weixin.qq.com/s/GmH9wBkNUjBgZS9rF6ngdw)         :star::star:
-   - Abstract: Google 提出两个逆天模型EfficientNetV2和CoAtNet
-   - Paper1: [EfficientNetV2: Smaller Models and Faster Training](https://arxiv.org/abs/2104.00298)
-   - Paper2: [CoAtNet: Marrying Convolution and Attention for All Data Sizes](https://arxiv.org/abs/2106.04803)
-   - Code1: [https://github.com/d-li14/efficientnetv2.pytorch](https://github.com/d-li14/efficientnetv2.pytorch)
-   - Tips:  EfficientNetV2在较小数据集上模型更小更快，CoAtNet结合了卷积和自注意的混合模型在大规模数据集上实现更高的精度。
+1. [ICCV2021 Oral SimROD：简单高效的数据增强！华为提出了一种简单的鲁棒目标检测自适应方法](https://mp.weixin.qq.com/s/ioX3DVMUpuKsKt6eyFTwEg)         :star::star:
+   - Abstract: 简单有效的鲁棒目标检测无监督自适应方法SimROD
+   - Paper: [SimROD: A Simple Adaptation Method for Robust Object Detection](https://arxiv.org/abs/2107.13389)
+   - Code: [https://github.com/reactivetype/simrod](https://github.com/reactivetype/simrod)
+   - Tips:  利用域混合数据增强和教师指导下的逐步自适应策略来减轻域转移的影响。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/UicQ7HgWiaUb3hv0a8iaR7Gth8ibrt98PNmH5icIsS063WyYia9EC8kHpldHKmBY8ACno8AibStibTqpWBLIaodTGZXmgQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/BJbRvwibeSTvzEhsggGrJNm6s2uhPicOIiaUDkXnBmUwtfRib3rhAO1aRe1ZpibMxJ8dVPvsqgQC8zatJjc35H81VXA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/UicQ7HgWiaUb3hv0a8iaR7Gth8ibrt98PNmHPeTJLj4vw4iabrJEEYV0TyzM6MB3CmV24TF9PjljZbibQHOeoKA07Xbg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
+2. [NeurIPS 2021 | 超越Swin！微软提出Focal Transformer：又一超强主干网络！](https://mp.weixin.qq.com/s/NOKMUS6JJOkJTb2SwTSA0w)       :star::star:
+   - Abstract: 微软提出超强主干网络Focal Transformer
+   - Paper: [Focal Self-attention for Local-Global Interactions in Vision Transformers](https://arxiv.org/abs/2107.00641)
+   - Code: [https://github.com/microsoft/Focal-Transformer](https://github.com/microsoft/Focal-Transformer)
+   - Tips: 本文提出了Focal Self-Attention，对当前token周围的区域进行细粒度的关注，对离当前token较远的区域进行粗粒度的关注，用这样的方式来更加有效的捕获局部和全局的注意力。
 
-
-2. [NeurIPS 2021 | 所有图像都值16x16个词吗？清华提出DVT：可变序列长度的动态Transformer](https://mp.weixin.qq.com/s/dsQaIN3sm7qPjnBXTUEmFw)       :star::star:
-   - Abstract: 清华提出DVT可变序列长度的动态Transformer
-   - Paper: [Not All Images are Worth 16x16 Words: Dynamic Vision Transformers with Adaptive Sequence Length](https://arxiv.org/abs/2105.15075)
-   - Code: [https://github.com/blackfeather-wang/Dynamic-Vision-Transformer](https://github.com/blackfeather-wang/Dynamic-Vision-Transformer)
-   - Tips: 对于大多数Transformer采用的对图片以固定方式划分patch的表征方式，不够灵活，应当根据输入数据动态调整表征方式。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/yNnalkXE7oUS4c203L60Fe8iaeSZeuVCIYosgxZYQ4FicCvribiaxRnq0CyMu6K3ZB42zicpzuYf07cibbaHFhvUQDCg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfoVQDtNKjHffB2f00poQEHn1rg8OGxFXEKckZJib0WE0k8mzRggVFWy4wu4cH5fl78cIhgn9qYia2mw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
 
-3. [用ViT替代卷积网络做密集预测，英特尔实验室提出DPT架构，在线Demo可用](https://mp.weixin.qq.com/s/6HfYVVMa6ZR8u-Vy51LKhQ)       :star::star:
-   - Abstract: 英特尔实验室提出DPT架构做密集预测
-   - Paper: [Vision Transformers for Dense Prediction](https://arxiv.org/abs/2103.13413)
-   - Code: [https://github.com/intel-isl/dpt](https://github.com/intel-isl/dpt)
-   - Demo: [https://huggingface.co/spaces/akhaliq/DPT-Large](https://huggingface.co/spaces/akhaliq/DPT-Large)
-   - Tips: DPT这种架构对于密集预测任务有很大的改进，特别是在有大量训练数据可用的情况下。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gW8KyE14ibib9Xx3ZQx28NRcpKoLodLZ0mibj86ibfVfvhPibOqdOWrPTWia7PO9hBcZAG3kmrfoxZkxNYFw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+3. [ICCV 2021 | 2D和3D通用！港大提出PCRL：新医疗影像自监督SOTA！](https://mp.weixin.qq.com/s/7CwY_ngBvez2kAmW621rkw)       :star::star:
+   - Abstract: 新的自监督方法PCRL，可以简单拓展到多个2D和3D医疗影像数据集上
+   - Paper: [Preservational Learning Improves Self-supervised Medical Image Models by Reconstructing Diverse Contexts](https://arxiv.org/abs/2109.04379)
+   - Code: [https://github.com/Luchixiang/PCRL](https://github.com/Luchixiang/PCRL)
+   - Tips: 通过结合基于contrastive的方法和predictive的方法取得更好的自监督性能。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/yNnalkXE7oWXs0TDrwSSlFHLd1cXdiaX3BtqsbnHxkpmeJQwBQqJQichP0R6LiarOxjKFA2lfHGurrclNlib6YP3Tg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-4. [一文读懂3D人脸识别十年发展及未来趋势](https://mp.weixin.qq.com/s/kEZYpPnqJiiLxqH-CIK-Zw)       :star::star:
-   - Abstract:  3D人脸识别十年发展及未来趋势
-   - Paper: [3D Face Recognition: A Survey](https://arxiv.org/pdf/2108.11082v1.pdf)
-   - Tips: 这是第一篇全面涵盖传统方法和基于深度学习的 3D 人脸识别方法的调查论文,特别关注基于深度学习的 3D 人脸识别方法.
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gWibzjrRjLy3UfhQ4JVjUZJo6cglIgucnZvAndHj3h3GDMRLdZKzzib25gIAN4MG8OY4XrgY5GtFNPGw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+4. [目标检测中边界框的回归策略](https://mp.weixin.qq.com/s/lC5iRYgOrmExaCoAAFvx7A)       :star::star:
+   - Abstract:  目标检测中边界框的回归策略
+   - Tips: 主要讲述：1.无Anchor的目标检测算法：YOLOv1，CenterNet，CornerNet的边框回归策略；2.有Anchor的目标检测算法：SSD，YOLOv2，Faster R-CNN的边框回归策略
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/gYUsOT36vfqkEd3rlEKAXRfVTLic5FBibIzrhsXXByxtER4ctLfjmxl4oO6k2PV9d3cjMyHR0SibNcZIe0xTuyQBA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-5. [单目视觉系统检测车辆的测距方法（Mobileye单目测距等7种方法）](https://mp.weixin.qq.com/s/0kL-RUb8nmmYIgnD-h2EcA)       :star::star:
-   - Abstract: 单目视觉系统检测车辆的测距方法
-   - Tips: 介绍了若干有关单目视觉系统的测距方法以及相关论文
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/q7yyTjjeGadmqdCwibNoI0a4oIKeaqMDVKEWDRuQVfP4zRYPauagJo2ck7RiaI5dfzabWvAhufGmYNia8ehYtSnbw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+5. [用 Python 画不可思议的专业插图](https://mp.weixin.qq.com/s/KLOUvOneQdpCQT25tD89Eg)       :star::star:
+   - Abstract: 用 Python 画不可思议的专业插图
+   - Tips:  Python 的绘图模块 matplotlib
+
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfqX4zPvOw25FCYQa4xKRztWIaObucA0zheJ3njzxwsiaQ6STP0L8g4UK7fZwWOEQA69Tm9PJc1voRw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-6. [2021年自然语言处理校招社招实习必备知识点盘点分享](https://mp.weixin.qq.com/s/0B_nxgv0w_4MoTErjdvoHg)       :star::star:
-   - Abstract: 2021年自然语言处理校招社招实习必备知识点盘点分享
-   - Address: [https://github.com/km1994/nlp_paper_study](https://github.com/km1994/nlp_paper_study)
-   - Tips: 本资源整理了自然语言处理领域中常见的一些知识点，并给出了答案，分享给大家。对于准备自然语言处理校招、社招、实习岗位的朋友，可以好好研读一下
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1niaDLWmibswdnHxTOMoKrwuXdQCPsicibT1IL9ia1VuD4H3v4O56nr8PfJ172CSVzVSCSAF3OPMwQJt1laic8VLDj6g/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+6. [AI 模型部署概述](https://mp.weixin.qq.com/s/OIb5j3OHcgQKYB1l5qVGug)       :star::star:
+   - Abstract: AI 模型部署概述
+   - Tips: 本文介绍了部署的场景、部署方式（中心服务化还是本地终端部署）、模型的优化指标，以及如何提高吞吐率和减少延迟等
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/V2E1ll6kaTXbmJqRrnTwJaxZnhnY1zVODfvicm46WRvd7lB8KWtAaQV2H46pICw1NMjE4eGSh0c3kmibPEpCdBOA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
+
 
 
 
@@ -152,8 +149,10 @@
     1. <a href="notes/202110/1001.md" target="_blank">公众号内容拓展学习笔记（2021.10.1）</a>
     2. <a href="notes/202110/1002.md" target="_blank">公众号内容拓展学习笔记（2021.10.2）</a>
     3. <a href="notes/202110/1003.md" target="_blank">公众号内容拓展学习笔记（2021.10.3）</a>
+    4. <a href="notes/202110/1004.md" target="_blank">公众号内容拓展学习笔记（2021.10.4）</a>
 </details>
 </pre>
+
 
 
 
