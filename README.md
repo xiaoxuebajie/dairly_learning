@@ -3,7 +3,7 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2021.10.4
+更新今日时间：2021.10.6
 
 ------
 
@@ -13,65 +13,61 @@
 
 ## :paperclip:  今日要点
 
-1. [ICCV2021 Oral SimROD：简单高效的数据增强！华为提出了一种简单的鲁棒目标检测自适应方法](https://mp.weixin.qq.com/s/ioX3DVMUpuKsKt6eyFTwEg)         :star::star:
-   - Abstract: 简单有效的鲁棒目标检测无监督自适应方法SimROD
-   - Paper: [SimROD: A Simple Adaptation Method for Robust Object Detection](https://arxiv.org/abs/2107.13389)
-   - Code: [https://github.com/reactivetype/simrod](https://github.com/reactivetype/simrod)
-   - Tips:  利用域混合数据增强和教师指导下的逐步自适应策略来减轻域转移的影响。
+1. [霸榜NWPU-Crowd！CCTrans：基于Transformer的人群计数新网络！支持强、弱监督](https://mp.weixin.qq.com/s/glig3jMUwhk82pP1PGVayQ)         :star::star:
+   - Abstract: CCTrans基于 Twins 简化并提升人群计数，支持强、弱监督
+   - Paper: [CCTrans: Simplifying and Improving Crowd Counting with Transformer](https://arxiv.org/abs/2109.14483)
+   - Tips:   CCTrans 能够对全局范围内的尺度、密度差异及光照变化都有更好的处理，也没有将示例中的假人和无关背景识别为真人。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/BJbRvwibeSTvzEhsggGrJNm6s2uhPicOIiaUDkXnBmUwtfRib3rhAO1aRe1ZpibMxJ8dVPvsqgQC8zatJjc35H81VXA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-2. [NeurIPS 2021 | 超越Swin！微软提出Focal Transformer：又一超强主干网络！](https://mp.weixin.qq.com/s/NOKMUS6JJOkJTb2SwTSA0w)       :star::star:
-   - Abstract: 微软提出超强主干网络Focal Transformer
-   - Paper: [Focal Self-attention for Local-Global Interactions in Vision Transformers](https://arxiv.org/abs/2107.00641)
-   - Code: [https://github.com/microsoft/Focal-Transformer](https://github.com/microsoft/Focal-Transformer)
-   - Tips: 本文提出了Focal Self-Attention，对当前token周围的区域进行细粒度的关注，对离当前token较远的区域进行粗粒度的关注，用这样的方式来更加有效的捕获局部和全局的注意力。
-
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfoVQDtNKjHffB2f00poQEHn1rg8OGxFXEKckZJib0WE0k8mzRggVFWy4wu4cH5fl78cIhgn9qYia2mw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/yNnalkXE7oViahtg08Ddze43F4IIRHGmkLs062TlMKM1ziapyeBveiafvJZc87s0hLIEeHFR5PJxaVx8XUIVpBYxg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
+2. [目标检测新框架：大幅度提升检测精度（附源代码下载）](https://mp.weixin.qq.com/s/NOKMUS6JJOkJTb2SwTSA0w)       :star::star:
+   - Abstract: BorderDet的新型检测架构，它明确利用边界信息进行更强的分类和更准确的定位
+   - Paper: [BorderDet: Border Feature for Dense Object Detection](https://arxiv.org/abs/2007.11056)
+   - Tips: BorderDet优势在于能提取边界极限的特征，且边界极限点的特征对物体的精准定位具有一些帮助
 
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwO4eiau2faNydTGCz34pZVMnKdgllo7bicDAZr9ghzUBkVicR4icB9QFulHwdQba2fniaicR8NJmQE6M45w/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
 
-3. [ICCV 2021 | 2D和3D通用！港大提出PCRL：新医疗影像自监督SOTA！](https://mp.weixin.qq.com/s/7CwY_ngBvez2kAmW621rkw)       :star::star:
-   - Abstract: 新的自监督方法PCRL，可以简单拓展到多个2D和3D医疗影像数据集上
-   - Paper: [Preservational Learning Improves Self-supervised Medical Image Models by Reconstructing Diverse Contexts](https://arxiv.org/abs/2109.04379)
-   - Code: [https://github.com/Luchixiang/PCRL](https://github.com/Luchixiang/PCRL)
-   - Tips: 通过结合基于contrastive的方法和predictive的方法取得更好的自监督性能。
+3. [NeurIPS 2021 | 超越gMLP！清华提出GFNet：用于图像分类的全局Filter网络](https://mp.weixin.qq.com/s/5Zfszc3RCoalFuTANceNug)       :star::star:
+   - Abstract: 清华提出GFNet：用于图像分类的全局Filter网络
+   - Paper: [Global Filter Networks for Image Classification](https://arxiv.org/abs/2107.00645)
+   - Code: [https://github.com/raoyongming/GFNet](https://github.com/raoyongming/GFNet)
+   - Tips: 提出了全局滤波器网络(Global Filter Network, GFNet)，一种概念简单且计算高效的架构，它在频域以`log-linear`复杂度学习长距离空间依赖
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/yNnalkXE7oWXs0TDrwSSlFHLd1cXdiaX3BtqsbnHxkpmeJQwBQqJQichP0R6LiarOxjKFA2lfHGurrclNlib6YP3Tg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/VvkhdVVVIDjCP7cCB5XnvNamiaHFk2ibaytyC7hh2vGYp4AAj25TANaaXrrJXQAiaXVMrfa3Rcibxaa9abdRuuQwKw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
+4. [CVPR2021 | TransCenter: transformer用于多目标跟踪算法](https://mp.weixin.qq.com/s/3idsff-ayQKYvP1StL0WEA)       :star::star:
+   - Abstract:  TransCenter: transformer用于多目标跟踪算法
+   - Paper: [TransCenter: Transformers with Dense Queries for Multiple-Object Tracking](https://arxiv.org/abs/2103.15145)
+   - Code: [https://github.com/yihongXU/TransCenter](https://github.com/yihongXU/TransCenter)
+   - Tips: 这是首个用于预测密集目标点热力图 （dense center heatmap）Transformer MOT 架构
 
-4. [目标检测中边界框的回归策略](https://mp.weixin.qq.com/s/lC5iRYgOrmExaCoAAFvx7A)       :star::star:
-   - Abstract:  目标检测中边界框的回归策略
-   - Tips: 主要讲述：1.无Anchor的目标检测算法：YOLOv1，CenterNet，CornerNet的边框回归策略；2.有Anchor的目标检测算法：SSD，YOLOv2，Faster R-CNN的边框回归策略
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/gYUsOT36vfqkEd3rlEKAXRfVTLic5FBibIzrhsXXByxtER4ctLfjmxl4oO6k2PV9d3cjMyHR0SibNcZIe0xTuyQBA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gWibTrrCKN2RUM6XOIChKUdpkWCZw6Dvl0ouyVHqoYq3VYYlqmaS3uNzKDchTtsibeW1768ZFHLF9dBw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
+5. [港大&南科大提出端到端PDVC，用DETR的方法做Dense Video Captioning！简化训练流程](https://mp.weixin.qq.com/s/NG8F-J7tXLD9pvXXw-UydA)       :star::star:
+   - Abstract: PDVC用DETR的方法做Dense Video Captioning
+   - Paper: [End-to-End Dense Video Captioning with Parallel Decoding](https://arxiv.org/abs/2108.07781)
+   - Code: [https://github.com/ttengwang/pdvc](https://github.com/ttengwang/pdvc)
+   - Tips:  本文提出了一种并行解码的端到端密集视频字幕框架PDVC ，直接生成一组特定于时间片段的句子，而不需要密集到稀疏的proposal生成和选择过程，显著简化了传统的“localize-then-describe” 方式
 
-5. [用 Python 画不可思议的专业插图](https://mp.weixin.qq.com/s/KLOUvOneQdpCQT25tD89Eg)       :star::star:
-   - Abstract: 用 Python 画不可思议的专业插图
-   - Tips:  Python 的绘图模块 matplotlib
-
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfqX4zPvOw25FCYQa4xKRztWIaObucA0zheJ3njzxwsiaQ6STP0L8g4UK7fZwWOEQA69Tm9PJc1voRw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/BJbRvwibeSTs2ECmrCYiabng4SpaLPC99F0NBhInFibxias4qWCzWCq28eLokEm210QJ545EWH6NUoNxtEyiaLvvSYw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
+6. [CNN网络结构的发展（最全整理）](https://mp.weixin.qq.com/s/im-VZ1BVuaQi7Bh5adZ8kA)       :star::star:
+   - Abstract: CNN网络结构的发展（最全整理)
+   - Tips: CNN网络结构发展历程，都是经典网络
 
-6. [AI 模型部署概述](https://mp.weixin.qq.com/s/OIb5j3OHcgQKYB1l5qVGug)       :star::star:
-   - Abstract: AI 模型部署概述
-   - Tips: 本文介绍了部署的场景、部署方式（中心服务化还是本地终端部署）、模型的优化指标，以及如何提高吞吐率和减少延迟等
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/V2E1ll6kaTXbmJqRrnTwJaxZnhnY1zVODfvicm46WRvd7lB8KWtAaQV2H46pICw1NMjE4eGSh0c3kmibPEpCdBOA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/gYUsOT36vfrpU5dibTK62MLSYpAV9siaRQE6eWbvMMWD7T6nXv7zbOLiagyu87IA1TS1DsQaSc6PnbgZHD0aQXD2A/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-
-
+## 
 
 
 
@@ -150,8 +146,10 @@
     2. <a href="notes/202110/1002.md" target="_blank">公众号内容拓展学习笔记（2021.10.2）</a>
     3. <a href="notes/202110/1003.md" target="_blank">公众号内容拓展学习笔记（2021.10.3）</a>
     4. <a href="notes/202110/1004.md" target="_blank">公众号内容拓展学习笔记（2021.10.4）</a>
+    5. <a href="notes/202110/1006.md" target="_blank">公众号内容拓展学习笔记（2021.10.6）</a>
 </details>
 </pre>
+
 
 
 
