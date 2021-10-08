@@ -3,69 +3,64 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2021.10.6
+更新今日时间：2021.10.8
 
 ------
 
 
 
-
-
 ## :paperclip:  今日要点
 
-1. [霸榜NWPU-Crowd！CCTrans：基于Transformer的人群计数新网络！支持强、弱监督](https://mp.weixin.qq.com/s/glig3jMUwhk82pP1PGVayQ)         :star::star:
-   - Abstract: CCTrans基于 Twins 简化并提升人群计数，支持强、弱监督
-   - Paper: [CCTrans: Simplifying and Improving Crowd Counting with Transformer](https://arxiv.org/abs/2109.14483)
-   - Tips:   CCTrans 能够对全局范围内的尺度、密度差异及光照变化都有更好的处理，也没有将示例中的假人和无关背景识别为真人。
+1. [ICCV-2021 Oral | AdaFocus：利用空间冗余性实现高效视频识别](https://mp.weixin.qq.com/s/zSGLcc75p3VKdMbt-J8lvA)         :star::star:
+   - Abstract: AdaFocus：利用空间冗余性实现高效视频识别
+   - Paper: [Adaptive Focus for Efficient Video Recognition](https://arxiv.org/pdf/2105.03245.pdf)
+   - Code: [https://github.com/blackfeather-wang/AdaFocus](https://github.com/blackfeather-wang/AdaFocus)
+   - Bilibili: [https://www.bilibili.com/video/BV1vb4y1a7sD/](https://www.bilibili.com/video/BV1vb4y1a7sD/)
+   - Tips:   基于强化学习，提出了一种在理论上和实测速度上效果都比较明显的通用框架AdaFocus
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/yNnalkXE7oViahtg08Ddze43F4IIRHGmkLs062TlMKM1ziapyeBveiafvJZc87s0hLIEeHFR5PJxaVx8XUIVpBYxg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfq1DwzMXxOaOGP9EojkzBNXxVRk8JTianMN3W98qgqhpj6asvryJSxJzvSyKtPtWT22SbAY1iaL0iaTg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+2. [谷歌提出最新时序框架--Deep Transformer](https://mp.weixin.qq.com/s/XfSksIPQCZhDwOimDtU2hg)       :star::star:
+   - Abstract: 谷歌提出最新时序框架--Deep Transformer
+   - Paper: [Deep Transformer Models for Time Series Forecasting: The Influenza Prevalence Case](https://arxiv.org/pdf/2001.08317.pdf)
+   - Tips: 基于Transformer的方法动态地学习时间序列数据的复杂模式，并且在时间序列相关的问题上取得了目前最好的效果
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ZQhHsg2x8ficibs3YibaTl14S1p1Cup3klBTeMhmZwyE8GTvZHDFHAtIP7pSRyic7SiaOQe5n5VMPXQm05Vm8t4SLFw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-2. [目标检测新框架：大幅度提升检测精度（附源代码下载）](https://mp.weixin.qq.com/s/NOKMUS6JJOkJTb2SwTSA0w)       :star::star:
-   - Abstract: BorderDet的新型检测架构，它明确利用边界信息进行更强的分类和更准确的定位
-   - Paper: [BorderDet: Border Feature for Dense Object Detection](https://arxiv.org/abs/2007.11056)
-   - Tips: BorderDet优势在于能提取边界极限的特征，且边界极限点的特征对物体的精准定位具有一些帮助
+3. [NeurIPS 2021 | 新的任务范式来了！ProTo：Program-guided Tasks](https://mp.weixin.qq.com/s/gLdiUUaiGneX9RzxBIdDtw)       :star::star:
+   - Abstract: 新的任务范式：Program-guided Tasks
+   - Paper: [ ProTo: Program-Guided Transformer for Program-Guided Tasks](https://arxiv.org/abs/2110.00804)
+   - Tips: program-guided tasks这个任务的要求是给定一个程序+程序的输入（specification），要求得到预期的输出
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwO4eiau2faNydTGCz34pZVMnKdgllo7bicDAZr9ghzUBkVicR4icB9QFulHwdQba2fniaicR8NJmQE6M45w/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/J24zDnPUB9Fe6LDccA1uJC7SS9Hgu0K4AAmpiaJBaCK0curU9RWP3hHS5DXuj3ictEsm0nLyo7UjWpvcRbGoLJtw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-3. [NeurIPS 2021 | 超越gMLP！清华提出GFNet：用于图像分类的全局Filter网络](https://mp.weixin.qq.com/s/5Zfszc3RCoalFuTANceNug)       :star::star:
-   - Abstract: 清华提出GFNet：用于图像分类的全局Filter网络
-   - Paper: [Global Filter Networks for Image Classification](https://arxiv.org/abs/2107.00645)
-   - Code: [https://github.com/raoyongming/GFNet](https://github.com/raoyongming/GFNet)
-   - Tips: 提出了全局滤波器网络(Global Filter Network, GFNet)，一种概念简单且计算高效的架构，它在频域以`log-linear`复杂度学习长距离空间依赖
+4. [EMNLP2021 “Transformer+预训练”再下一城，港科大开源高效的"多模态摘要总结"网络](https://mp.weixin.qq.com/s/S6NasyjITt77Gk-UObXgmg)       :star::star:
+   - Abstract:  “Transformer+预训练”再下一城，港科大开源高效的"多模态摘要总结"网络
+   - Paper: [Vision Guided Generative Pre-trained Language Models for Multimodal Abstractive Summarization](https://arxiv.org/abs/2109.02401)
+   - Code: [https://github.com/HLTCHKUST/VG-GPLMs](https://github.com/HLTCHKUST/VG-GPLMs)
+   - Tips: 作者采用一种简单而高效的方法，通过在预训练的语言模型中插入基于attention的附加层来构建用于多模态摘要总结（MSA）的文本生成模型。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/VvkhdVVVIDjCP7cCB5XnvNamiaHFk2ibaytyC7hh2vGYp4AAj25TANaaXrrJXQAiaXVMrfa3Rcibxaa9abdRuuQwKw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/BJbRvwibeSTt7OqFibM7D8XgWic9dIwTDgICoOYjr36nD7O2ibmoWh3Muvb0ImQmDvQGSsgWFct8JBH5YjUhQNsTicg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
+5. [2021华为DIGIX全球算法精英大赛TOP1开源](https://mp.weixin.qq.com/s/DtLxPqx1VkaANmcwVQXEOQ)       :star::star:
+   - Abstract: 2021华为DIGIX全球算法精英大赛TOP1开源
+   - Tips:  bert+测试集伪标签，这里阈值选取很重要。
 
-4. [CVPR2021 | TransCenter: transformer用于多目标跟踪算法](https://mp.weixin.qq.com/s/3idsff-ayQKYvP1StL0WEA)       :star::star:
-   - Abstract:  TransCenter: transformer用于多目标跟踪算法
-   - Paper: [TransCenter: Transformers with Dense Queries for Multiple-Object Tracking](https://arxiv.org/abs/2103.15145)
-   - Code: [https://github.com/yihongXU/TransCenter](https://github.com/yihongXU/TransCenter)
-   - Tips: 这是首个用于预测密集目标点热力图 （dense center heatmap）Transformer MOT 架构
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gWibTrrCKN2RUM6XOIChKUdpkWCZw6Dvl0ouyVHqoYq3VYYlqmaS3uNzKDchTtsibeW1768ZFHLF9dBw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_png/v4qqsopCD110dbB8YZItYsExrnBbVxQhtibs8x00hyyyEGozwReNzstwFsu3z6dKsH24e5YiaJZCc4S1j7Xiar6cA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
+6. [Deepsort + Yolo 实现行人检测和轨迹追踪](https://mp.weixin.qq.com/s/kot2LxLUFMKZpSMSdRHPNQ)       :star::star:
+   - Abstract: Deepsort + Yolo 实现行人检测和轨迹追踪
+   - Tips: 采用深度学习方法实现YOLO算法行人检测和deepsort算法对人员定位的和轨迹跟踪
 
-5. [港大&南科大提出端到端PDVC，用DETR的方法做Dense Video Captioning！简化训练流程](https://mp.weixin.qq.com/s/NG8F-J7tXLD9pvXXw-UydA)       :star::star:
-   - Abstract: PDVC用DETR的方法做Dense Video Captioning
-   - Paper: [End-to-End Dense Video Captioning with Parallel Decoding](https://arxiv.org/abs/2108.07781)
-   - Code: [https://github.com/ttengwang/pdvc](https://github.com/ttengwang/pdvc)
-   - Tips:  本文提出了一种并行解码的端到端密集视频字幕框架PDVC ，直接生成一组特定于时间片段的句子，而不需要密集到稀疏的proposal生成和选择过程，显著简化了传统的“localize-then-describe” 方式
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/BJbRvwibeSTs2ECmrCYiabng4SpaLPC99F0NBhInFibxias4qWCzWCq28eLokEm210QJ545EWH6NUoNxtEyiaLvvSYw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfrUibF15LufbEotgtCianAANmaDoXmnfkyF8m97okfwQUXAmQNqUBV9j0EicEB06WH2t04REjxSKopCw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-
-6. [CNN网络结构的发展（最全整理）](https://mp.weixin.qq.com/s/im-VZ1BVuaQi7Bh5adZ8kA)       :star::star:
-   - Abstract: CNN网络结构的发展（最全整理)
-   - Tips: CNN网络结构发展历程，都是经典网络
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/gYUsOT36vfrpU5dibTK62MLSYpAV9siaRQE6eWbvMMWD7T6nXv7zbOLiagyu87IA1TS1DsQaSc6PnbgZHD0aQXD2A/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
 
 ## 
 
@@ -147,8 +142,10 @@
     3. <a href="notes/202110/1003.md" target="_blank">公众号内容拓展学习笔记（2021.10.3）</a>
     4. <a href="notes/202110/1004.md" target="_blank">公众号内容拓展学习笔记（2021.10.4）</a>
     5. <a href="notes/202110/1006.md" target="_blank">公众号内容拓展学习笔记（2021.10.6）</a>
+    6. <a href="notes/202110/1008.md" target="_blank">公众号内容拓展学习笔记（2021.10.8）</a>
 </details>
 </pre>
+
 
 
 
