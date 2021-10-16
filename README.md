@@ -3,66 +3,64 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2021.10.8
+更新今日时间：2021.10.16
 
 ------
 
-
-
 ## :paperclip:  今日要点
 
-1. [ICCV-2021 Oral | AdaFocus：利用空间冗余性实现高效视频识别](https://mp.weixin.qq.com/s/zSGLcc75p3VKdMbt-J8lvA)         :star::star:
-   - Abstract: AdaFocus：利用空间冗余性实现高效视频识别
-   - Paper: [Adaptive Focus for Efficient Video Recognition](https://arxiv.org/pdf/2105.03245.pdf)
-   - Code: [https://github.com/blackfeather-wang/AdaFocus](https://github.com/blackfeather-wang/AdaFocus)
-   - Bilibili: [https://www.bilibili.com/video/BV1vb4y1a7sD/](https://www.bilibili.com/video/BV1vb4y1a7sD/)
-   - Tips:   基于强化学习，提出了一种在理论上和实测速度上效果都比较明显的通用框架AdaFocus
+1. [ICCV 2021 | 字节跳动利用单幅图片做三维重建！将NeRF、MPI结合，提出MINE新工作](https://mp.weixin.qq.com/s/kuAjTMYi8c88InAhjcRJ7g)         :star::star:
+   - Abstract: 一种新的三维空间表达方式 MINE利用单幅图片做三维重建
+   - Paper: [MINE: Towards Continuous Depth MPI with NeRF for Novel View Synthesis](https://arxiv.org/pdf/2103.14910.pdf)
+   - Code: [https://github.com/vincentfung13/MINE](https://github.com/vincentfung13/MINE)
+   - Tips:  相比于 MPI 和 NeRF，MINE具有很大的优势。
 
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfq1DwzMXxOaOGP9EojkzBNXxVRk8JTianMN3W98qgqhpj6asvryJSxJzvSyKtPtWT22SbAY1iaL0iaTg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gW8GpMRJicD0IA8JZh07MZ3zNhaKFibDjcrXiat2G0bBLTlMkO8S9lGDnfoOp5G6CicNr6j6iby6ribXuibiag/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-2. [谷歌提出最新时序框架--Deep Transformer](https://mp.weixin.qq.com/s/XfSksIPQCZhDwOimDtU2hg)       :star::star:
-   - Abstract: 谷歌提出最新时序框架--Deep Transformer
-   - Paper: [Deep Transformer Models for Time Series Forecasting: The Influenza Prevalence Case](https://arxiv.org/pdf/2001.08317.pdf)
-   - Tips: 基于Transformer的方法动态地学习时间序列数据的复杂模式，并且在时间序列相关的问题上取得了目前最好的效果
+2. [浙大三维视觉团队提出Animatable NeRF，从RGB视频中重建可驱动人体模型 (ICCV'21)](https://mp.weixin.qq.com/s/BlDaqHdSuHmmGVKHOc-nRA)       :star::star:
+   - Abstract: 浙大三维视觉团队提出Animatable NeRF，从RGB视频中重建可驱动人体模型
+   - Paper: [Animatable Neural Radiance Fields for Modeling Dynamic Human Bodies](https://arxiv.org/abs/2105.02872)
+   - Code: [https://github.com/zju3dv/animatable_nerf](https://github.com/zju3dv/animatable_nerf)
+   - Tips: 当人体模型训练完成后，可以用新的人体骨架进行驱动
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ZQhHsg2x8ficibs3YibaTl14S1p1Cup3klBTeMhmZwyE8GTvZHDFHAtIP7pSRyic7SiaOQe5n5VMPXQm05Vm8t4SLFw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/BJbRvwibeSTtK8Ze1qbeZbfwFDFw9H4w5beia4125t1QEGoBUGoeIBfHibNFcWtM4c1xJF9ibwP3fRP421UKEtckGw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
+3. [CVPR2021 用更好的目标检测器提取视觉特征！微软提出VinVL，基于更好的视觉特征，达到更强的多模态性能](https://mp.weixin.qq.com/s/Arf-ajkmGdze4RWY4Od8pw)       :star::star:
+   - Abstract: 微软提出VinVL，基于更好的视觉特征，达到更强的多模态性能
+   - Paper: [VinVL: Revisiting Visual Representations in Vision-Language Models](https://arxiv.org/abs/2101.00529)
+   - Code: [https://github.com/pzzhang/VinVL](https://github.com/pzzhang/VinVL)
+   - Tips: 作者将新的目标检测模型生成的视觉特征输入到基于Transformer的VL融合模型OSCAR中
 
-3. [NeurIPS 2021 | 新的任务范式来了！ProTo：Program-guided Tasks](https://mp.weixin.qq.com/s/gLdiUUaiGneX9RzxBIdDtw)       :star::star:
-   - Abstract: 新的任务范式：Program-guided Tasks
-   - Paper: [ ProTo: Program-Guided Transformer for Program-Guided Tasks](https://arxiv.org/abs/2110.00804)
-   - Tips: program-guided tasks这个任务的要求是给定一个程序+程序的输入（specification），要求得到预期的输出
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/J24zDnPUB9Fe6LDccA1uJC7SS9Hgu0K4AAmpiaJBaCK0curU9RWP3hHS5DXuj3ictEsm0nLyo7UjWpvcRbGoLJtw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-4. [EMNLP2021 “Transformer+预训练”再下一城，港科大开源高效的"多模态摘要总结"网络](https://mp.weixin.qq.com/s/S6NasyjITt77Gk-UObXgmg)       :star::star:
-   - Abstract:  “Transformer+预训练”再下一城，港科大开源高效的"多模态摘要总结"网络
-   - Paper: [Vision Guided Generative Pre-trained Language Models for Multimodal Abstractive Summarization](https://arxiv.org/abs/2109.02401)
-   - Code: [https://github.com/HLTCHKUST/VG-GPLMs](https://github.com/HLTCHKUST/VG-GPLMs)
-   - Tips: 作者采用一种简单而高效的方法，通过在预训练的语言模型中插入基于attention的附加层来构建用于多模态摘要总结（MSA）的文本生成模型。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/BJbRvwibeSTt7OqFibM7D8XgWic9dIwTDgICoOYjr36nD7O2ibmoWh3Muvb0ImQmDvQGSsgWFct8JBH5YjUhQNsTicg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-5. [2021华为DIGIX全球算法精英大赛TOP1开源](https://mp.weixin.qq.com/s/DtLxPqx1VkaANmcwVQXEOQ)       :star::star:
-   - Abstract: 2021华为DIGIX全球算法精英大赛TOP1开源
-   - Tips:  bert+测试集伪标签，这里阈值选取很重要。
-
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_png/v4qqsopCD110dbB8YZItYsExrnBbVxQhtibs8x00hyyyEGozwReNzstwFsu3z6dKsH24e5YiaJZCc4S1j7Xiar6cA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-6. [Deepsort + Yolo 实现行人检测和轨迹追踪](https://mp.weixin.qq.com/s/kot2LxLUFMKZpSMSdRHPNQ)       :star::star:
-   - Abstract: Deepsort + Yolo 实现行人检测和轨迹追踪
-   - Tips: 采用深度学习方法实现YOLO算法行人检测和deepsort算法对人员定位的和轨迹跟踪
-
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfrUibF15LufbEotgtCianAANmaDoXmnfkyF8m97okfwQUXAmQNqUBV9j0EicEB06WH2t04REjxSKopCw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/BJbRvwibeSTs45gWnNPeic521nq5MFFcZxeNVu2WmvZic2Sn21lZicNRymd9TM6fAQy8iaf9sVaobAP5asyFTBtCkibA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-## 
+4. [全新instruction调优，零样本性能超越小样本，谷歌1370亿参数新模型比GPT-3更强](https://mp.weixin.qq.com/s/Tf7RXgSEbj_9aHFlaBI1yw)       :star::star:
+   - Abstract: 全新instruction调优，零样本性能超越小样本，谷歌1370亿参数新模型比GPT-3更强
+   - Paper: [FINETUNED LANGUAGE MODELS ARE ZERO-SHOT LEARNERS](https://arxiv.org/pdf/2109.01652.pdf)
+   - Code: [https://github.com/google-research/flan](https://github.com/google-research/flan)
+   - Tips: FLAN采用指令调整技术后的模型在自然语言推理、阅读理解和开放域问答等未见过的任务上的零样本性能超越了 GPT-3 的小样本性能。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gWicjIXvroicVtmBzWtRjhulibkFF9X0Qmm11wVLQGEn6y3DLJwTbibrYzSPic9Er7ib69uFMg7gOpfxdbFA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+
+5. [“推荐算法”最新工作，一次让你看个够！](https://mp.weixin.qq.com/s/9ZGR04FfMna4heFlpgOGbQ)       :star::star:
+   - Abstract: 推荐系统最新工作
+   - Tips:  8篇有关推荐系统最新工作的总结。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ibaXaPIy7jV3eWTEvmBTu2tmCWTIh3PGVo2w0ibwGtFIPKs3LCibGvq1zSoU3LicTMLPaMguywgkXAbcLiaYBuZiaLuA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+
+6. [视频理解综述：动作识别、时序动作定位、视频Embedding](https://mp.weixin.qq.com/s/4X521CTcFiitQUHvf60dIQ)       :star::star:
+   - Abstract: 视频理解综述：动作识别、时序动作定位、视频Embedding
+   - Tips: 本文将介绍视频理解中的三大基础领域:动作识别(Action Recognition)、时序动作定位(Temporal Action Localization)和视频 Embedding
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gWicV4sIdrNiaNmxBYnYO4C6E5LfKWicWG6bebdAq30T0Zk8vbe2QZFzH6xMDYwOQP2cgZI6ibdfnVPx2g/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
 
 
 
@@ -143,8 +141,10 @@
     4. <a href="notes/202110/1004.md" target="_blank">公众号内容拓展学习笔记（2021.10.4）</a>
     5. <a href="notes/202110/1006.md" target="_blank">公众号内容拓展学习笔记（2021.10.6）</a>
     6. <a href="notes/202110/1008.md" target="_blank">公众号内容拓展学习笔记（2021.10.8）</a>
+    7. <a href="notes/202110/1016.md" target="_blank">公众号内容拓展学习笔记（2021.10.16）</a>
 </details>
 </pre>
+
 
 
 
