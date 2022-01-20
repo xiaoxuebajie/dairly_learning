@@ -3,66 +3,70 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2021.10.18
+更新今日时间：2022.1.20
 
 ------
 
 ## :paperclip:  今日要点
 
-1. [屠榜多目标跟踪！华科&港大提出ByteTrack：基于数据关联方法BYTE的跟踪器](https://mp.weixin.qq.com/s/bTyvc0TrwTiDldhrXZuY1w)         :star::star:
-   - Abstract: 华科&港大提出ByteTrack：基于数据关联方法BYTE的跟踪器
-   - Paper: [ByteTrack: Multi-Object Tracking by Associating Every Detection Box](http://arxiv.org/abs/2110.06864)
-   - Code: [https://github.com/ifzhang/ByteTrack](https://github.com/ifzhang/ByteTrack)
-   - Tips:  基于BYTE本文提出了一个跟踪方法ByteTrack,首次以30 FPS的运行速度在MOT17上取得80.3 MOTA，77.3 IDF1和63.1 HOTA，目前位居MOTChallenge榜单第一
+1. [全面超越Swin Transformer | Facebook用ResNet思想升级MViT](https://mp.weixin.qq.com/s/38ugtcSQCyNKtLj9jryxog)         :star::star:
+   - Abstract: Facebook用ResNet思想升级MViT
+   - Paper: [Improved Multiscale Vision Transformers for Classification and Detection](https://arxiv.org/abs/2112.01526)
+   - Tips:  作者提出了一个MViT的改进版本，它结合了分解的相对位置嵌入和池化残差连接
 
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfrrAd0bEuib8jvcNPRcM9Etxd3mKQ0iasxA3hicffjehicOBubTej4GXQ4bsmP1ibIfRsWgLDGgvSzOUhA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-
-2. [量化新方法 | 模型压缩6倍，无需重训练](https://mp.weixin.qq.com/s/Ih2BmjMeZ07_CQaJFpMvDQ)       :star::star:
-   - Abstract: 将训练后的神经网络的大小减小六倍，而无需花费更多的资源来对其进行重新训练
-   - Paper: [Animatable Neural Radiance Fields for Modeling Dynamic Human Bodies](https://arxiv.org/abs/2105.02872)
-   - Code: [https://github.com/zju3dv/animatable_nerf](https://github.com/zju3dv/animatable_nerf)
-   - Tips: 该方法基于找到初始系统及其简化版本中神经连接权重之间的相关性
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwNzTIyhUng2AgjLYfseAjhOwcxAyu08VL72LxElpFEOS7Kwpz8EuibSCGexoW7ia3olKrLj6xy90iaxw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-
-3. [2021年迁移学习相关最新论文、会议、视频、竞赛整理分享](https://mp.weixin.qq.com/s/FhZgWhKOj8CxGKmV7hBTZQ)       :star::star:
-   - Abstract: 2021年迁移学习相关最新论文、会议、视频、竞赛整理分享
-   - Code: [https://github.com/yuntaodu/Transfer-learning-materials/blob/master/readme.md](https://github.com/yuntaodu/Transfer-learning-materials/blob/master/readme.md)
-   - Tips: 本资源整理了迁移学习相关的一些资源，本部分内容适合初学者，将一些本领域中的经典论文按照时间线进行分类、梳理，分为浅层域适应、深度域适应、对抗域适应和域适应理论四部分
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1niaDLWmibswcRB4T9OOs7PvUIEhG7cConorw9emiczzjFnM7icSwON4LNdj7lno7BUIyruQMdcMw1NKb0d4mg68ZQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ibaXaPIy7jV1j7ETuGqdRcJ0XVpMmZJsWvXBjh0eoTGVDvyg2HfVJ2BOziaff3q0x7Llb3k8LVXSrW5vhlgbgBAQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
 
-4. [单目3D目标检测论文大盘点](https://mp.weixin.qq.com/s/vp4sFUSoxB6q0KFhX1OjWA)       :star::star:
-   - Abstract: 单目3D目标检测论文大盘点
-   - Tips: 单目3D目标检测论文合集
+2. [零样本目标检测：鲁棒的区域特征合成器用于目标检测（附论文下载）](https://mp.weixin.qq.com/s/tl1sI5jrdw3N7wKJhopqAg)       :star::star:
+   - Abstract: 零样本目标检测：鲁棒的区域特征合成器用于目标检测
+   - Paper: [Robust Region Feature Synthesizer for Zero-Shot Object Detection](https://arxiv.org/pdf/2201.00103.pdf)
+   - Tips: 研究者设计了一个统一的区域特征合成器，用于在现实世界检测场景中进行特征合成，其中包含一个类内语义发散组件和一个类间结构保持组件
 
-<div align=center><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.shangyexinzhi.com%2Fxztest-image%2Farticle%2Fab3c557020d5eb34ae7aa48ef973e449.jpeg&refer=http%3A%2F%2Fimg.shangyexinzhi.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1637133967&t=df3accd5adc7cdac856533778bb6b7e3" style='zoom:100%'>
-</div>
-
-5. [深度学习中的 Attention 机制总结与代码实现（2017-2021年）](https://mp.weixin.qq.com/s/qxHo5-WecYJNxmx-HbqZVw)       :star::star:
-   - Abstract: 深度学习中的 Attention 机制总结与代码实现
-   - Code: [https://github.com/xmu-xiaoma666/External-Attention-pytorch](https://github.com/xmu-xiaoma666/External-Attention-pytorch)
-   - Tips: 由于许多论文中的网络结构通常被嵌入到代码框架中，导致代码比较冗余。本文作者对近几年基于Attention网络的核心代码进行了整理和复现。
-
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfrriaQWesX1KnJspFO0h22I5TbjGKk8GwXr6boXj7lAnBXficn5oLDgfiaD9OvDjPSQWIKtSpUfxicRaQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwPB5kF1zAXzs7ib50d64gCpl0VHibuwypUe41A5z9JzegniavdicS0ibibmOLtnMltlIOZEwqiag1iauRyltg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
+3. [AI 编辑视频！这特效太逆天了！代码开源 SIGGRAPH Asia 2021](https://mp.weixin.qq.com/s/uEEvY6nFQ2zhV3V8N8ZkIA)       :star::star:
+   - Abstract: AI 编辑视频，增加特效
+   - Paper: [Layered Neural Atlases for Consistent Video Editing](https://arxiv.org/abs/2109.11418)
+   - Code: [https://github.com/ykasten/layered-neural-atlases](https://github.com/ykasten/layered-neural-atlases)
+   - Tips: 可以实现的效果包括删除视频中的物体、可以对视频内的物体进行编辑、风格化迁移等等
 
-6. [互联网公司作息大全](https://mp.weixin.qq.com/s/C-NCMEEOphGON_sOY4v7Kg)       :star::star:
-   - Abstract: 互联网公司作息大全
-   - Code: [https://github.com/WorkerLivesMatter/WorkingTime](https://github.com/WorkerLivesMatter/WorkingTime)
-   - Tips: 最近周围的伙伴都在传一个公司作息表的项目，百度搜索了一下感觉非常有意思，基本记录了各大互联网公司大部分部门的上下班时间
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ZQhHsg2x8f8hfjJrRPovgibRtqdEPQKKv9sib8Lib8HyIqBtvFvUO6W0EAOcMr9OnibgNjL1ichuGebmojBJ9lryG7w/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/7jnsg27ZEVG1kON1XHjcXSlibaiaCTxH11n0AUKPYS66dBAfbicAhdD93IWGdCiaAZu0dm0rqPA7PsZE5ribcZnKs3w/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
+
+
+4. [Yolo-Z：改进的YOLOv5用于小目标检测（附原论文下载）](https://mp.weixin.qq.com/s/_fv8SAeE226lIaafjMk0mw)       :star::star:
+   - Abstract: Yolo-Z：改进的YOLOv5用于小目标检测
+   - Paper: [YOLO-Z: Improving small object detection in YOLOv5 for autonomous vehicles](https://arxiv.org/pdf/2112.11798.pdf)
+   - Tips: 聚焦小目标检测，改变了YOLOV5的部分网络结构
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwMyzPkh6n0nFIavGCqOJ7ibh0tbspGWyE38ibJBiaI3BlibneAw4YI3q8ia4a12pv0WMbWj0unZ7o58e6g/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+
+5. [有人用YOLOv5和CLIP做了一个找图神器！搜图、裁剪一步到位！在线可试玩...](https://mp.weixin.qq.com/s/3qtvL3uLsgQ5C_Uw1rLhdw)       :star::star:
+   - Abstract: 用YOLOv5和CLIP做了一个找图神器
+   - Code: [https://github.com/vijishmadhavan/Crop-CLIP](https://github.com/vijishmadhavan/Crop-CLIP)
+   - Demo: [https://huggingface.co/spaces/Vijish/Crop-CLIP](https://huggingface.co/spaces/Vijish/Crop-CLIP)
+   - Tips: 和目标检测器 YOLOv5 相结合之后，CLIP 在语义搜索图像的基础上增加了裁剪能力，变身 Crop-CLIP
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gWicRGVkXRmOBkIczHkT6RbXBpicHNLofqBgxqR65pVjSicibPHQZiaKlDhrTePo0kHcBjFakgW1kNr5ybQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+
+
+
+6. [聊聊我常用的两个可视化工具，Echarts和Tableau](https://mp.weixin.qq.com/s/hErnChNQHSpYzsrtGGJ7Vg)       :star::star:
+   - Abstract: 常用的两个可视化工具，Echarts和Tableau
+   - Echarts: [https://echarts.apache.org/zh/tutorial.html](https://echarts.apache.org/zh/tutorial.html)
+   - Tableau: [https://help.tableau.com/current/pro/desktop/zh-cn/default.htm](https://help.tableau.com/current/pro/desktop/zh-cn/default.htm)
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/g64sbb6Ffmd7BarzlxnXzgAiahm6gIPr2icCwIiaMkBpolXz7o6gNaeGUY4NXWjlHYqWjuxibhYoMR1N48DNHyUL3Q/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
 
 
 ## :paperclip:  历史更新
@@ -146,6 +150,13 @@
     8. <a href="notes/202110/1018.md" target="_blank">公众号内容拓展学习笔记（2021.10.18）</a>
 </details>
 </pre>
+
+<pre><details><summary>2022年</summary>
+<details><summary>1月</summary>
+    1. <a href="notes/202201/0120.md" target="_blank">公众号内容拓展学习笔记（2022.1.20）</a>
+</details>
+</pre>
+
 
 
 
