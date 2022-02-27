@@ -3,67 +3,60 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2022.2.26
+更新今日时间：2022.2.27
 
 ------
 
 ## :paperclip:  今日要点
 
-1. [成功检测远距离目标，将点云与RGB图像结合，谷歌&Waymo提出新算法：4D-Net](https://mp.weixin.qq.com/s/9F3Vhb8EqyhD8niojtUktw)         :star::star:
-   - Abstract: 谷歌&Waymo提出新算法：4D-Net将点云与RGB图像结合成功检测远距离目标
-   - Paper: [4D-Net for Learned Multi-Modal Alignment](https://openaccess.thecvf.com/content/ICCV2021/papers/Piergiovanni_4D-Net_for_Learned_Multi-Modal_Alignment_ICCV_2021_paper.pdf)
-   - Tips:  4D-Net 的优点是，它既利用了 RGB 提供的高分辨率，可以准确地检测到图像上的目标，又利用了点云数据提供的精确深度。
+1. [轻量级目标检测GiraffeDet！阿里最新成果！ICLR2022！性能更优！](https://mp.weixin.qq.com/s/BOVmwERPMNKliKne3b8Pjw)         :star::star:
+   - Abstract: 阿里最新成果轻量级目标检测GiraffeDet
+   - Paper: [GiraffeDet: A Heavy-Neck Paradigm for Object Detection](https://arxiv.org/abs/2202.04256)
+   - Code: [https://github.com/shanglianlm0525/CvPytorch](https://github.com/shanglianlm0525/CvPytorch)
+   - Tips:  GiraffeDet 使用了一个非常轻的主干和一个非常深和大的颈部模块，这种结构可进行不同空间尺度以及不同级别潜在语义的密集信息交换。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/KmXPKA19gWibfVFFCvW8W7iahbnbGiaq4NeG2FUl0a9qhX26EwlTNDjKrj4pQyNeHc3D0B0Z7WFcNBaRoIAlK4kJQ/640?wx_fmt=gif&wxfrom=5&wx_lazy=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/uGWQRhqDh3LOTPpe7Gu48dRScB1ylOQ5fpW3vVW0namTE6QwlCRJY6ZDmlJgYGSzOsic7beMfJctKX3ZEkabCfQ/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
+2. [【源头活水】AAAI 2022：基于transformer的多曝光融合模型TransMEF](https://mp.weixin.qq.com/s/ISkuqLf_PeAEg4E_Is7-wg)       :star::star:
+   - Abstract: 基于transformer的多曝光融合模型TransMEF
+   - Paper: [TransMEF: A Transformer-Based Multi-Exposure Image Fusion Framework via Self-Supervised Multi-Task Learning](https://arxiv.org/abs/2112.01030)
+   - Code: [https://github.com/miccaiif/TransMEF](https://github.com/miccaiif/TransMEF)
+   - Tips: 针对多曝光图像的特点从空域和频域设计了三个高效的自监督重建任务，并通过多任务学习的方式进行训练，性能表现SOTA。
 
-2. [91.2%准确率！ViTAEv2：视觉Transformer新工作！更大模型、更多任务、更高效率](https://mp.weixin.qq.com/s/G7vcrqeSYoFrZkkqRmlTsQ)       :star::star:
-   - Abstract: ViTAEv2：视觉Transformer新工作！更大模型、更多任务、更高效率
-   - Paper: [ ViTAEv2: Vision Transformer Advanced by Exploring Inductive Bias for Image Recognition and Beyond](https://arxiv.org/abs/2202.10108)
-   - Code: [https://github.com/Annbless/ViTAE](https://github.com/Annbless/ViTAE)
-   - Tips: ViTAEv2说明了面对多种下游任务场景，归纳偏置对于提升Vision Transformer模型性能仍然效果显著。目前，主要探索了局部性和尺度不变性归纳偏置在Vision Transformer中的作用，未来还可以探索更多的归纳偏置的影响，如视角不变性等。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/Mcdq8uia1WiadSibRZiakS9Qchh8eJTicFbmoKLB1B7ON42DoR3Ya3Gs2AVdnGLicwDrIuqRVWFnkcHk5BS1CG5nQkRw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/AIR6eRePgjPIEzqoOszDppnSlkPRY43UrjAZ3NL0xSdtyGom1a2yiaicJWPZjWjLicSwGR1icMhEDsApSb5brUpSuw/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
+3. [清华IEEE论文：利用新型训练方法，帮自动驾驶决策摆脱「路侧干扰」](https://mp.weixin.qq.com/s/wdKn3JJ1pens3eqkqfKjvA)       :star::star:
+   - Abstract: 利用新型训练方法，帮自动驾驶决策摆脱「路侧干扰」
+   - Paper: [End-to-End Self-Driving Approach Independent of Irrelevant Roadside Objects With Auto-Encoder](https://ieeexplore.ieee.org/document/9187264)
+   - Tips: 本文提出了一个基于自动编码器实现的新训练方法，使其能够忽略输入图像中的无关特征，同时保留相关特征。与现有的端到端提取方法相比，该方法只需要图像级标签，降低了标记成本。
 
-3. [NeurIPS 2021 | 图像损坏场景下行人重识别新基准](https://mp.weixin.qq.com/s/K0jund_B61q8hsvAVWfhcQ)       :star::star:
-   - Abstract: 图像损坏场景下行人重识别新基准CIL-ReID
-   - Paper: [Benchmarks for Corruption Invariant Person Re-identification](https://arxiv.org/abs/2111.00880)
-   - Code: [https://github.com/MinghuiChen43/CIL-ReID](https://github.com/MinghuiChen43/CIL-ReID)
-   - Tips: 本文提出了一个全新的ReID任务场景，图片损坏场景下的行人重识别。针对21种ReID方法在5个数据集上进行了详尽的损坏鲁棒性评估，同时针对ReID中损坏鲁棒性提出了新的基线方法——CIL，并取得了SOTA的性能。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/yNnalkXE7oWRBYjafstxcEhlrQbP5wiatb6HTxjZ9DzSdU8Nia9ExUXEh0aRXiaYklFUNhpwkYIwZzia3RguhyXv6w/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ibibdyHUhBavEB2UIBic4cWhMHBl6UEPxftuicsbqMo4GEAhLBRyA5Wg5APqT5ZkmhenjoxBEB1xwTEh3cnXEa3LSQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
+4. [基于改进 YOLOV3 的违禁品检测方案](https://mp.weixin.qq.com/s/8-zCyQm0y5SUPv5g9LdGiQ)       :star::star:
+   - Abstract: 基于改进 YOLOV3 的违禁品检测方案
+   - Tips: 本文提出了一种基于 YOLO V3 的改进的违禁品检测算法，通过改进和优化数据增广方式、检测框架的 Loss 函数等方法，较好的提升了模型的检测精度和运行效率。
 
-4. [半监督目标检测相关方法总结](https://mp.weixin.qq.com/s/lBWHHEpL8zI77X5TwViDnA)       :star::star:
-   - Abstract: 半监督目标检测相关方法总结
-   - Tips: 主要两个方向：一致性学习和伪标签。前者利用两个深度卷积神经网络学习同一张 unlabeled 图像不同扰动（比如水平翻转，不同的对比度，亮度等）之间的一致性，充分利用 unlabeled data的信息。后者利用在 labeled data 上学习的预训练模型对 unlabeled data 进行推理，经过 NMS 后减少大量冗余框后，利用一个阈值去挑选伪标签，最后利用伪标签训练模型。
-
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfoeGuReemLtcNg9hSrtqhBk9tYZqxfmjjlvNLdw4BTnBmAMEGMXxaBqibNw6h0OMD5QsiaCS5ELv0Vg/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ZBjVrHIdkOlp6710icaLhopRbsu8v38ZVv6xddTHUythgP0h9icMumYfeD0gZ9vd99LdUic3icSV70rAk4ZCTiadrpA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
+5. [人脸识别常用开源数据集大全](https://mp.weixin.qq.com/s/HM4DjIGs0go7kgoYFAkJsQ)       :star::star:
+   - Abstract: 人脸识别常用开源数据集大全
+   - Tips: 总结整理了10个开源的人脸识别数据集，并附有相关下载链接。
 
-
-
-5. [在Android上部署TF目标检测模型](https://mp.weixin.qq.com/s/eLraSFITgfywbT4I8E5y4w)       :star::star:
-   - Abstract: 在Android上部署TF目标检测模型
-   - Code: [https://github.com/victordibia/handtracking](https://github.com/victordibia/handtracking)
-   - Tips: 通过手检测详细演示如何将TF部署到Android手机上。
-
-<div align=center><img src="https://github.com/victordibia/handtracking/raw/master/images/doodle.gif" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfrgE3LWFzKgB7kpGhbBvPbpfTowiawovicOz7BoaQEbxMrZILsfwKsBRWedUHPWGgNJtQiciaRIl92xibg/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
+6. [PyTorch常用代码段整理合集，建议收藏！](https://mp.weixin.qq.com/s/KsAk7gsWG-Mx1xubGfLQGw)       :star::star:
+   - Abstract: PyTorch常用代码段整理合集
+   - Tips: 涵盖了绝大部分Pytorch常用操作代码
 
-6. [再不用怕Markdown中的绘图了，GitHub官方支持Mermaid图表绘制工具](https://mp.weixin.qq.com/s/eTKH_yDyX8Xou8y12Ekh6g)       :star::star:
-   - Abstract: GitHub官方支持Mermaid图表绘制工具
-   - Tips: 用户可以通过 GitHub 体验到一项原生功能 —— 支持基于 JavaScript 的 Mermaid 图表和流程图生成工具
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gW9uapy6kuaqGaTJpuV1aEMz0uLqYJRL9ueBUF1HfKwpDeLn2XwEIzj7xxBmgsFacpiaERN89AibSxlQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="./notes/202202/images/0227.png" style='zoom:100%'>
 </div>
+
 
 
 
@@ -155,9 +148,9 @@
 <details><summary>2月</summary>
     1. <a href="notes/202202/0225.md" target="_blank">公众号内容拓展学习笔记（2022.2.25）</a>
     2. <a href="notes/202202/0226.md" target="_blank">公众号内容拓展学习笔记（2022.2.26）</a>
+    3. <a href="notes/202202/0227.md" target="_blank">公众号内容拓展学习笔记（2022.2.27）</a>
 </details>
 </pre>
-
 
 
 
