@@ -3,60 +3,66 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2022.2.27
+更新今日时间：2022.2.28
 
 ------
 
 ## :paperclip:  今日要点
 
-1. [轻量级目标检测GiraffeDet！阿里最新成果！ICLR2022！性能更优！](https://mp.weixin.qq.com/s/BOVmwERPMNKliKne3b8Pjw)         :star::star:
-   - Abstract: 阿里最新成果轻量级目标检测GiraffeDet
-   - Paper: [GiraffeDet: A Heavy-Neck Paradigm for Object Detection](https://arxiv.org/abs/2202.04256)
-   - Code: [https://github.com/shanglianlm0525/CvPytorch](https://github.com/shanglianlm0525/CvPytorch)
-   - Tips:  GiraffeDet 使用了一个非常轻的主干和一个非常深和大的颈部模块，这种结构可进行不同空间尺度以及不同级别潜在语义的密集信息交换。
+1. [ICLR 2022 Oral | 港大和商汤开源CycleMLP：用于检测与分割任务的MLP架构](https://mp.weixin.qq.com/s/82krdn9-3qgbL4B7Z8pOKg)         :star::star:
+   - Abstract: 港大和商汤开源CycleMLP：用于检测与分割任务的MLP架构
+   - Paper: [CycleMLP: A MLP-like Architecture for Dense Prediction](https://arxiv.org/abs/2107.10224)
+   - Code: [https://github.com/ShoufaChen/CycleMLP](https://github.com/ShoufaChen/CycleMLP)
+   - Tips:  本文针对MLP-Mixer等已有方案存在的分辨率相关、不便于向下游任务迁移的问题，提出了一种新颖的CycleFC操作，并由此构建了CycleMLP架构。本文非常漂亮的一个操作：通过对ChannelFC的采样点引入更高感受野升级为CycleFC，提升感受野的同时保持计算量不变。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/uGWQRhqDh3LOTPpe7Gu48dRScB1ylOQ5fpW3vVW0namTE6QwlCRJY6ZDmlJgYGSzOsic7beMfJctKX3ZEkabCfQ/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfrPMhYaaNts86Ccg08Q7t1W8kw6CT17ZB5ljsMcehX22I23ybFn8jpOibn6ib4Uf8GaSIc4SHJJrHBA/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-2. [【源头活水】AAAI 2022：基于transformer的多曝光融合模型TransMEF](https://mp.weixin.qq.com/s/ISkuqLf_PeAEg4E_Is7-wg)       :star::star:
-   - Abstract: 基于transformer的多曝光融合模型TransMEF
-   - Paper: [TransMEF: A Transformer-Based Multi-Exposure Image Fusion Framework via Self-Supervised Multi-Task Learning](https://arxiv.org/abs/2112.01030)
-   - Code: [https://github.com/miccaiif/TransMEF](https://github.com/miccaiif/TransMEF)
-   - Tips: 针对多曝光图像的特点从空域和频域设计了三个高效的自监督重建任务，并通过多任务学习的方式进行训练，性能表现SOTA。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/AIR6eRePgjPIEzqoOszDppnSlkPRY43UrjAZ3NL0xSdtyGom1a2yiaicJWPZjWjLicSwGR1icMhEDsApSb5brUpSuw/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+2. [(CVPR 2021)动态区域感知卷积](https://mp.weixin.qq.com/s/_8rzSn6419tjn6xSfs9k4A)       :star::star:
+   - Abstract: 旷视科技发表在CVPR2021的工作动态区域感知卷积DRConv
+   - Paper: [Dynamic Region-Aware Convolution](https://arxiv.org/pdf/2003.12243.pdf)
+   - Tips: DRConv是一种处理复杂多变空间信息分布的有效而优雅的方法。它具有即插即用的特性，可以替代任何现有网络中的标准卷积。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/xT3a9RE17lTNbWibbMoQJFNOEENJGicle2dGrbeqQiaOUPaUfiaL8xae4hS9ppo1l2cqR60UPUHmZyynVVtxtrQ2Fg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-3. [清华IEEE论文：利用新型训练方法，帮自动驾驶决策摆脱「路侧干扰」](https://mp.weixin.qq.com/s/wdKn3JJ1pens3eqkqfKjvA)       :star::star:
-   - Abstract: 利用新型训练方法，帮自动驾驶决策摆脱「路侧干扰」
-   - Paper: [End-to-End Self-Driving Approach Independent of Irrelevant Roadside Objects With Auto-Encoder](https://ieeexplore.ieee.org/document/9187264)
-   - Tips: 本文提出了一个基于自动编码器实现的新训练方法，使其能够忽略输入图像中的无关特征，同时保留相关特征。与现有的端到端提取方法相比，该方法只需要图像级标签，降低了标记成本。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ibibdyHUhBavEB2UIBic4cWhMHBl6UEPxftuicsbqMo4GEAhLBRyA5Wg5APqT5ZkmhenjoxBEB1xwTEh3cnXEa3LSQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+3. [TPAMI 2022 | 国防科大等高校提出光场解耦机制，在超分辨与视差估计任务上取得优异性能](https://mp.weixin.qq.com/s/AeunZC4EBb5rdkYZkYtV9Q)       :star::star:
+   - Abstract: 国防科大等高校提出光场解耦机制，在超分辨与视差估计任务上取得优异性能
+   - Paper: [Disentangling Light Fields for Super-Resolution and Disparity Estimation](https://arxiv.org/pdf/2202.10603.pdf)
+   - Code: [https://yingqianwang.github.io/DistgLF/](https://yingqianwang.github.io/DistgLF/)
+   - Tips: 该文提出了一种通用的光场解耦机制，通过设计一系列的解耦卷积将高维光场解耦至多个低维子空间，实现了光场数据的高效处理。基于所提解耦机制，该文针对空间超分辨、角度超分辨以及视差估计任务分别设计了DistgSSR、DistgASR以及DistgDisp三个网络。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/BJbRvwibeSTu5ssMNv622MZFGHiahS5wlgt02HfAudlOZN4pZiac0UC97mQmOkJF6LnLE95eNKVZSdtcCtRZ5iaKlw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-4. [基于改进 YOLOV3 的违禁品检测方案](https://mp.weixin.qq.com/s/8-zCyQm0y5SUPv5g9LdGiQ)       :star::star:
-   - Abstract: 基于改进 YOLOV3 的违禁品检测方案
-   - Tips: 本文提出了一种基于 YOLO V3 的改进的违禁品检测算法，通过改进和优化数据增广方式、检测框架的 Loss 函数等方法，较好的提升了模型的检测精度和运行效率。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ZBjVrHIdkOlp6710icaLhopRbsu8v38ZVv6xddTHUythgP0h9icMumYfeD0gZ9vd99LdUic3icSV70rAk4ZCTiadrpA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+4. [注意力机制YYDS，AI编辑人脸终于告别P一处而毁全图](https://mp.weixin.qq.com/s/ViVJ4W1jJLaPmJ0n_KR1bQ)       :star::star:
+   - Abstract: FEAT通过在GAN中引入注意力机制，成功解决了编辑人脸时会产生的一些“手抖”问题
+   - Paper: [FEAT: Face Editing with Attention](https://arxiv.org/abs/2202.02713)
+   - Tips: FEAT是在StyleGAN生成器的基础上，引入注意力机制,具体来说就是利用StyleGAN2的潜空间进行人脸编辑。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/Z8w2ExrFgDzC9w2FDqA9tfOm7XiaZ15ibSxXSyphhRjgT9C2V2aJOT5uPlr0r55IuQUWOEKacdDBeQklCJZstEMw/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-5. [人脸识别常用开源数据集大全](https://mp.weixin.qq.com/s/HM4DjIGs0go7kgoYFAkJsQ)       :star::star:
-   - Abstract: 人脸识别常用开源数据集大全
-   - Tips: 总结整理了10个开源的人脸识别数据集，并附有相关下载链接。
 
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfrgE3LWFzKgB7kpGhbBvPbpfTowiawovicOz7BoaQEbxMrZILsfwKsBRWedUHPWGgNJtQiciaRIl92xibg/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+5. [GitHub 7.5k star量，各种视觉Transformer的PyTorch实现合集整理好了](https://mp.weixin.qq.com/s/SruewApFEo6ekH039idsNA)       :star::star:
+   - Abstract: GitHub 7.5k star量，各种视觉Transformer的PyTorch实现合集整理好了
+   - Code: [https://github.com/lucidrains/vit-pytorch](https://github.com/lucidrains/vit-pytorch)
+   - Tips: 该项目名为「vit-pytorch」，它是一个 Vision Transformer 实现，展示了一种在 PyTorch 中仅使用单个 transformer 编码器来实现视觉分类 SOTA 结果的简单方法。除了 Vision Transformer 之外，该项目还提供了 Deep ViT、CaiT、Token-to-Token ViT、PiT 等其他 ViT 变体模型的 PyTorch 实现。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/KmXPKA19gWicr7bCQicQzg3uKibL9p92bbJBFEwWibxNpbApKI7RK3icocHGicLgSqygUqVnFNFsIhk5PRUZtHd3vOMA/640?wx_fmt=gif&wxfrom=5&wx_lazy=1" style='zoom:100%'>
 </div>
 
-6. [PyTorch常用代码段整理合集，建议收藏！](https://mp.weixin.qq.com/s/KsAk7gsWG-Mx1xubGfLQGw)       :star::star:
-   - Abstract: PyTorch常用代码段整理合集
-   - Tips: 涵盖了绝大部分Pytorch常用操作代码
 
-<div align=center><img src="./notes/202202/images/0227.png" style='zoom:100%'>
+6. [Science：为什么越老，睡个好觉就越难](https://mp.weixin.qq.com/s/bJwqkHEcTCsksSDYGM3euQ)       :star::star:
+   - Abstract: 为什么越老，睡个好觉就越难
+   - Tips: 该研究通过小鼠实验，确定了调节睡眠和清醒的大脑回路如何随着时间的推移而退化的，为人类更好的治疗睡眠质量铺平了道路。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/f1HH88jZicVuM3kosx55dnvwcYvhCiaicBNgv0IPcKkeTq77NDHJOuJc721KacrdTL63Arfex3OhhZHWkBTXfwb6g/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
-
 
 
 
@@ -149,8 +155,10 @@
     1. <a href="notes/202202/0225.md" target="_blank">公众号内容拓展学习笔记（2022.2.25）</a>
     2. <a href="notes/202202/0226.md" target="_blank">公众号内容拓展学习笔记（2022.2.26）</a>
     3. <a href="notes/202202/0227.md" target="_blank">公众号内容拓展学习笔记（2022.2.27）</a>
+    4. <a href="notes/202202/0228.md" target="_blank">公众号内容拓展学习笔记（2022.2.28）</a>
 </details>
 </pre>
+
 
 
 
