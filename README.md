@@ -3,66 +3,73 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2022.2.28
+更新今日时间：2022.3.1
 
 ------
 
 ## :paperclip:  今日要点
 
-1. [ICLR 2022 Oral | 港大和商汤开源CycleMLP：用于检测与分割任务的MLP架构](https://mp.weixin.qq.com/s/82krdn9-3qgbL4B7Z8pOKg)         :star::star:
-   - Abstract: 港大和商汤开源CycleMLP：用于检测与分割任务的MLP架构
-   - Paper: [CycleMLP: A MLP-like Architecture for Dense Prediction](https://arxiv.org/abs/2107.10224)
-   - Code: [https://github.com/ShoufaChen/CycleMLP](https://github.com/ShoufaChen/CycleMLP)
-   - Tips:  本文针对MLP-Mixer等已有方案存在的分辨率相关、不便于向下游任务迁移的问题，提出了一种新颖的CycleFC操作，并由此构建了CycleMLP架构。本文非常漂亮的一个操作：通过对ChannelFC的采样点引入更高感受野升级为CycleFC，提升感受野的同时保持计算量不变。
+1. [TTFNet：改进CenterNet，使得训练时间缩短7倍](https://mp.weixin.qq.com/s/E9XCpho0kPF6430rTjqN_Q)         :star::star:
+   - Abstract: TTFNet：改进CenterNet，使得训练时间缩短7倍
+   - Paper: [Training-Time-Friendly Network for Real-Time Object Detection](https://arxiv.org/abs/1909.00700)
+   - Code: [https://github.com/ZJULearning/ttfnet](https://github.com/ZJULearning/ttfnet)
+   - Tips:  本文是对CenterNet的一种改进，主要是增加了训练时参与回归的样本，提升了收敛速度，加快了训练时间，同时使用了椭圆高斯核来代替CenterNet中的圆形高斯核，感觉更加合理。
 
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfrPMhYaaNts86Ccg08Q7t1W8kw6CT17ZB5ljsMcehX22I23ybFn8jpOibn6ib4Uf8GaSIc4SHJJrHBA/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KYSDTmOVZvollhHAJ83ID8UiaptPRHFzqaRAIql1PHUvF3QWVr71XUAyZglZBHZQ9IVRaibZd7VDcEUsszO78HAQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
 
-2. [(CVPR 2021)动态区域感知卷积](https://mp.weixin.qq.com/s/_8rzSn6419tjn6xSfs9k4A)       :star::star:
-   - Abstract: 旷视科技发表在CVPR2021的工作动态区域感知卷积DRConv
-   - Paper: [Dynamic Region-Aware Convolution](https://arxiv.org/pdf/2003.12243.pdf)
-   - Tips: DRConv是一种处理复杂多变空间信息分布的有效而优雅的方法。它具有即插即用的特性，可以替代任何现有网络中的标准卷积。
+2. [SWideRNet：全景分割新标杆！](https://mp.weixin.qq.com/s/eBi8yAJY0YKHh2cp0-ivCA)       :star::star:
+   - Abstract: SWideRNet：全景分割新标杆！
+   - Paper: [Scaling Wide Residual Networks for Panoptic Segmentation](paper: https://arxiv.org/abs/2011.11675)
+   - Tips: 本文是DeepLab系列作者“Liang-Chieh Chen”大神在全景分割领域的又一力作。它在Wide-ResNet的基础上引入SE与"Switchable Atrous Convolution,SAC"两种改进，嵌入到Panoptic-DeepLab框架中并在全景分割领域取得了SOTA性能(在更快、更大模型配置方面均取得了SOTA指标)。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/xT3a9RE17lTNbWibbMoQJFNOEENJGicle2dGrbeqQiaOUPaUfiaL8xae4hS9ppo1l2cqR60UPUHmZyynVVtxtrQ2Fg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfqx7sZxYefZ3p2gRFxsGjabuq9OuxxIzGkNTicqeHItdyW7UdEjrartn8xCu9NZktcEJsnraia1qSdA/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-3. [TPAMI 2022 | 国防科大等高校提出光场解耦机制，在超分辨与视差估计任务上取得优异性能](https://mp.weixin.qq.com/s/AeunZC4EBb5rdkYZkYtV9Q)       :star::star:
-   - Abstract: 国防科大等高校提出光场解耦机制，在超分辨与视差估计任务上取得优异性能
-   - Paper: [Disentangling Light Fields for Super-Resolution and Disparity Estimation](https://arxiv.org/pdf/2202.10603.pdf)
-   - Code: [https://yingqianwang.github.io/DistgLF/](https://yingqianwang.github.io/DistgLF/)
-   - Tips: 该文提出了一种通用的光场解耦机制，通过设计一系列的解耦卷积将高维光场解耦至多个低维子空间，实现了光场数据的高效处理。基于所提解耦机制，该文针对空间超分辨、角度超分辨以及视差估计任务分别设计了DistgSSR、DistgASR以及DistgDisp三个网络。
+3. [谷歌Quoc V. Le团队新作FLASH：高效Transformer新设计！训练成本暴减！](https://mp.weixin.qq.com/s/evNb8bFJJwd4ratif8LgPg)       :star::star:
+   - Abstract: 谷歌Quoc V. Le团队新作FLASH，高效Transformer新设计
+   - Paper: [Transformer Quality in Linear Time](https://arxiv.org/abs/2202.10447)
+   - Code: [https://github.com/DerrickXuNu/OpenCOOD](https://github.com/DerrickXuNu/OpenCOOD)
+   - Tips: : 谷歌的新研究FLASH，让 transformer 模型的效率有了巨大提升，该方法的核心在于减少注意力机制。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/BJbRvwibeSTu5ssMNv622MZFGHiahS5wlgt02HfAudlOZN4pZiac0UC97mQmOkJF6LnLE95eNKVZSdtcCtRZ5iaKlw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gW8oQr96R8fL6nPWOWw8rvSgBLFd5I2PvLB0UPxRUgYfvEkuUSA6s3C8ia1AtphqVDhjriap5hL9riabw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-4. [注意力机制YYDS，AI编辑人脸终于告别P一处而毁全图](https://mp.weixin.qq.com/s/ViVJ4W1jJLaPmJ0n_KR1bQ)       :star::star:
-   - Abstract: FEAT通过在GAN中引入注意力机制，成功解决了编辑人脸时会产生的一些“手抖”问题
-   - Paper: [FEAT: Face Editing with Attention](https://arxiv.org/abs/2202.02713)
-   - Tips: FEAT是在StyleGAN生成器的基础上，引入注意力机制,具体来说就是利用StyleGAN2的潜空间进行人脸编辑。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/Z8w2ExrFgDzC9w2FDqA9tfOm7XiaZ15ibSxXSyphhRjgT9C2V2aJOT5uPlr0r55IuQUWOEKacdDBeQklCJZstEMw/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+
+4. [R-C3D 视频活动检测](https://mp.weixin.qq.com/s/bLpPw1cPTCuarOewYKGFrA)       :star::star:
+   - Abstract: 视频活动检测经典模型 R-C3D
+   - Paper: [R-C3D: Region Convolutional 3D Network for Temporal Activity Detect](https://arxiv.org/pdf/1703.07814.pdf)
+   - Code: [http://ai.bu.edu/r-c3d/](http://ai.bu.edu/r-c3d/)
+   - Tips: 论文提出了活动检测模型，即R-C3D,这是一种端到端活动检测模型，结合活动建议和分类阶段，可以检测任意长度的活动。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/BJbRvwibeSTvY0X0no58EdzS4L2TDopKOcrRAGLNDLoial6l1PW41p4bXswhibrL3ib0hibdE6WbXzZjia4uTINg9m8g/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-5. [GitHub 7.5k star量，各种视觉Transformer的PyTorch实现合集整理好了](https://mp.weixin.qq.com/s/SruewApFEo6ekH039idsNA)       :star::star:
-   - Abstract: GitHub 7.5k star量，各种视觉Transformer的PyTorch实现合集整理好了
-   - Code: [https://github.com/lucidrains/vit-pytorch](https://github.com/lucidrains/vit-pytorch)
-   - Tips: 该项目名为「vit-pytorch」，它是一个 Vision Transformer 实现，展示了一种在 PyTorch 中仅使用单个 transformer 编码器来实现视觉分类 SOTA 结果的简单方法。除了 Vision Transformer 之外，该项目还提供了 Deep ViT、CaiT、Token-to-Token ViT、PiT 等其他 ViT 变体模型的 PyTorch 实现。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/KmXPKA19gWicr7bCQicQzg3uKibL9p92bbJBFEwWibxNpbApKI7RK3icocHGicLgSqygUqVnFNFsIhk5PRUZtHd3vOMA/640?wx_fmt=gif&wxfrom=5&wx_lazy=1" style='zoom:100%'>
+
+5. [AAAI 2022 | RTPB: 针对无偏场景图生成的抵抗训练方法](https://mp.weixin.qq.com/s/cNhszsKdGyDBvsty-RJrPg)       :star::star:
+   - Abstract: RTPB: 针对无偏场景图生成的抵抗训练方法
+   - Paper: [Resistance Training using Prior Bias: toward Unbiased Scene Graph Generation](https://arxiv.org/abs/2201.06794)
+   - Tips: 为抑制数据集长尾分布问题对场景图生成任务的影响，我们提出了一种基于数据集先验偏差的抵抗训练方法，基于训练集的统计信息，调整训练进程，抑制数据长尾分布对模型的影响，实现更加平衡的场景图生成。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/Mcdq8uia1Wiacs5VfsUDEjhyhSFbGsS6becLaiaRu1JJaMc5xKaFMrdcF9IpqQpoWrUvJANa9qKYmyLia2B992QiciaA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-6. [Science：为什么越老，睡个好觉就越难](https://mp.weixin.qq.com/s/bJwqkHEcTCsksSDYGM3euQ)       :star::star:
-   - Abstract: 为什么越老，睡个好觉就越难
-   - Tips: 该研究通过小鼠实验，确定了调节睡眠和清醒的大脑回路如何随着时间的推移而退化的，为人类更好的治疗睡眠质量铺平了道路。
+6. [谷歌和伯克利分校的新工作：规模化大场景的神经绘制方法Block-NeRF](https://mp.weixin.qq.com/s/jq3vo99goqQsltvPDqcT1A)       :star::star:
+   - Abstract: 谷歌和伯克利分校的新工作：规模化大场景的神经绘制方法Block-NeRF
+   - Paper: [Block-NeRF: Scalable Large Scene Neural View Synthesis](https://mp.weixin.qq.com/s/jq3vo99goqQsltvPDqcT1A)
+   - Tips: Block-NeRF，一种可以代表大规模环境的Neural Radiance Fields（NeRF）变型。具体来说，规模化的NeRF渲染跨越多个块（blocks）的城市规模场景时，将场景分解为单独训练的NeRF。这种分解将渲染时间与场景大小分解，使渲染能够扩展到任意大的环境，并允许对环境进行逐块更新。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/f1HH88jZicVuM3kosx55dnvwcYvhCiaicBNgv0IPcKkeTq77NDHJOuJc721KacrdTL63Arfex3OhhZHWkBTXfwb6g/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/E5w2bqqaSwhXwL96K8yWmRjOoTicvCKicrdEmibeUpiamTa72Ch3qib3RuicMw1RKt2g9ACs8Siaqk0db51icNsBXlTYHw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
+
 
 
 
@@ -157,8 +164,10 @@
     3. <a href="notes/202202/0227.md" target="_blank">公众号内容拓展学习笔记（2022.2.27）</a>
     4. <a href="notes/202202/0228.md" target="_blank">公众号内容拓展学习笔记（2022.2.28）</a>
 </details>
+<details><summary>3月</summary>
+    1. <a href="notes/202203/0301.md" target="_blank">公众号内容拓展学习笔记（2022.3.1）</a>
+</details>
 </pre>
-
 
 
 
