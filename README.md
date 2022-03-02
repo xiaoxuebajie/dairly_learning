@@ -3,73 +3,65 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2022.3.1
+更新今日时间：2022.3.2
 
 ------
 
 ## :paperclip:  今日要点
 
-1. [TTFNet：改进CenterNet，使得训练时间缩短7倍](https://mp.weixin.qq.com/s/E9XCpho0kPF6430rTjqN_Q)         :star::star:
-   - Abstract: TTFNet：改进CenterNet，使得训练时间缩短7倍
-   - Paper: [Training-Time-Friendly Network for Real-Time Object Detection](https://arxiv.org/abs/1909.00700)
-   - Code: [https://github.com/ZJULearning/ttfnet](https://github.com/ZJULearning/ttfnet)
-   - Tips:  本文是对CenterNet的一种改进，主要是增加了训练时参与回归的样本，提升了收敛速度，加快了训练时间，同时使用了椭圆高斯核来代替CenterNet中的圆形高斯核，感觉更加合理。
+1. [SFU、阿里提出通用QuadTree Attention，复杂度变线性，性能还更强！ICLR 2022已接收](https://mp.weixin.qq.com/s/GNNcOcTC0WddrhJi7afPSA)         :star::star:
+   - Abstract: SFU、阿里提出通用QuadTree Attention，复杂度变线性，性能还更强！
+   - Paper: [Quadtree Attention for Vision Transformers](https://openreview.net/forum?id=fR-EnKWL_Zb)
+   - Code: [https://github.com/Tangshitao/QuadtreeAttention](https://github.com/Tangshitao/QuadtreeAttention)
+   - Tips:  本文设计了一个高效的视觉Transformer，它可以捕捉精细的图像细节和长期依赖关系。在观察到大多数图像区域是不相关的启发下，构建了Token pyramids，并以从粗到细的方式计算注意力。这样，当对应的粗粒度区域没有前景时，可以快速跳过细粒度的不相关区域。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KYSDTmOVZvollhHAJ83ID8UiaptPRHFzqaRAIql1PHUvF3QWVr71XUAyZglZBHZQ9IVRaibZd7VDcEUsszO78HAQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/5ooHoYt0tglKibodsHREJCyDnTSkZkH5Bkj0tdls0CnIPLibB1fqolew6cbN6bPfzKanqfjbiay7ZiaBygvevIUheA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+
+2. [1000层的Transformer，诞生了！](https://mp.weixin.qq.com/s/Ke8_go0wReLMejhJolnd9Q)       :star::star:
+   - Abstract: 1000层的Transformer，诞生了！
+   - Paper: [DeepNet: Scaling Transformers to 1,000 Layers](https://arxiv.org/pdf/2203.00555.pdf)
+   - Code: [https://github.com/microsoft/unilm](https://github.com/microsoft/unilm)
+   - Tips: 这篇论文最关键的贡献就是提出了一种新的Normalization方式——DeepNorm，有效解决了Transformer训练困难的问题。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/5fknb41ib9qFXgia11bTu5S3ziaOOQ45efTjvqGsnJTE4eS8S20NRLvpMK0zaeF2e4mZriagQ7aP51OLyBgR9qTI5g/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+3. [解决图像分割落地场景真实问题，港中文等提出：开放世界实体分割](https://mp.weixin.qq.com/s/yiaAUCfEEjLXozWV6S9NKg)       :star::star:
+   - Abstract: 解决图像分割落地场景真实问题，港中文等提出：开放世界实体分割
+   - Paper: [Open-World Entity Segmentation](https://arxiv.org/abs/2107.14228)
+   - Code: [https://github.com/dvlab-research/Entity](https://github.com/dvlab-research/Entity)
+   - Tips: : 本文出发点是想解决语义/实例/全景分割在某些落地场景中实际存在的一些问题，因此提出了实体(Entity)分割任务，在图像编辑过程中对图像进行分"块"而无需对这些"块"进行分类识别，经过分割结果衡量和算法设计，取得了较好的图像分割效果。
+
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfptGPkicu977zX1Qs7iaPQODyuRPE4p0k7JicP0yNKQngDoiaep3x29qFANiblLMuGA8bLph03JsicJJw0Q/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+4. [实践教程｜分割mask生成动漫人脸！爆肝数周，从零搭建](https://mp.weixin.qq.com/s/IGacYvj0yGW8C3nAua54uQ)       :star::star:
+   - Abstract: 分割mask生成动漫人脸！爆肝数周，从零搭建
+   - Tips: 论本文分享了国外大佬的从0开始构建分割mask生成动漫人脸的项目，整个思路的搭建阐述的都非常的详细，有兴趣的朋友们可以按照这个流程去尝试自己搭建.
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/7jnsg27ZEVEVhQY9pclicI6dibzJCsNggbwvIh2LKzeoKQCxManolLOzOZWZK7Nk8hBnzkdcSckWq9UuAtphXX7g/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+5. [最近 Github 上爆火的 Chrome 生产力神器 Omni 是什么鬼？](https://mp.weixin.qq.com/s/gbaje_ZkicVWXXbcoXc6Lg)       :star::star:
+   - Abstract: 最近 Github 上爆火的 Chrome 生产力神器 Omni 
+   - Code: [https://github.com/alyssaxuu/omnin](https://github.com/alyssaxuu/omni)
+   - Tips: Omni 是一个浏览器插件，它让你能够想使用 Mac 电脑一样使用你的浏览器，最近 Omni 接连登上 Github 趋势榜与 ProductHunt 榜首，成为大受各种程序员、产品设计师的追捧的生产力工具！
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/YmT5bQSrMy3UOmNgcNPlbq9oOfX8A7N2c5sRG9dtUyWb7dbLgj41ZwYcSs8sVPwTibH1MZorf7U5kddpdcw0IvA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
 
-2. [SWideRNet：全景分割新标杆！](https://mp.weixin.qq.com/s/eBi8yAJY0YKHh2cp0-ivCA)       :star::star:
-   - Abstract: SWideRNet：全景分割新标杆！
-   - Paper: [Scaling Wide Residual Networks for Panoptic Segmentation](paper: https://arxiv.org/abs/2011.11675)
-   - Tips: 本文是DeepLab系列作者“Liang-Chieh Chen”大神在全景分割领域的又一力作。它在Wide-ResNet的基础上引入SE与"Switchable Atrous Convolution,SAC"两种改进，嵌入到Panoptic-DeepLab框架中并在全景分割领域取得了SOTA性能(在更快、更大模型配置方面均取得了SOTA指标)。
+6. [脑力25岁开始走下坡路？百万人数据证实：60岁以后才下降｜Nature子刊新研究](https://mp.weixin.qq.com/s/OuJ3CaM56qQsJPNujta_4A)       :star::star:
+   - Abstract: 百万人数据证实：脑力60岁以后才下降
+   - Paper: [Mental speed is high until age 60 as revealed by analysis of over a million participants](https://www.nature.com/articles/s41562-021-01282-7)
+   - Code: [https://github.com/stefanradev93/DataSizeMatters](https://github.com/stefanradev93/DataSizeMatters)
+   - Tips: 大脑处理信息的速度能从20岁一直保持到60岁。随着年龄增长，人会越来越谨慎。他们试图避免犯错，时间花在了反复考虑追求确定性上。思维速度在30岁左右达到巅峰，在30岁到60岁之间仅有轻微回落，直到60岁以后大脑处理信息的速度才真正开始下降。
 
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfqx7sZxYefZ3p2gRFxsGjabuq9OuxxIzGkNTicqeHItdyW7UdEjrartn8xCu9NZktcEJsnraia1qSdA/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtAKHQPnbLqbjH3OJtBNhYdXiasJfzzicG4kKg0FfhwNeicXrHleLVsdXickG9uLcbeJQsQnTOn0dtOXCw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
-
-
-3. [谷歌Quoc V. Le团队新作FLASH：高效Transformer新设计！训练成本暴减！](https://mp.weixin.qq.com/s/evNb8bFJJwd4ratif8LgPg)       :star::star:
-   - Abstract: 谷歌Quoc V. Le团队新作FLASH，高效Transformer新设计
-   - Paper: [Transformer Quality in Linear Time](https://arxiv.org/abs/2202.10447)
-   - Code: [https://github.com/DerrickXuNu/OpenCOOD](https://github.com/DerrickXuNu/OpenCOOD)
-   - Tips: : 谷歌的新研究FLASH，让 transformer 模型的效率有了巨大提升，该方法的核心在于减少注意力机制。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gW8oQr96R8fL6nPWOWw8rvSgBLFd5I2PvLB0UPxRUgYfvEkuUSA6s3C8ia1AtphqVDhjriap5hL9riabw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-
-
-
-4. [R-C3D 视频活动检测](https://mp.weixin.qq.com/s/bLpPw1cPTCuarOewYKGFrA)       :star::star:
-   - Abstract: 视频活动检测经典模型 R-C3D
-   - Paper: [R-C3D: Region Convolutional 3D Network for Temporal Activity Detect](https://arxiv.org/pdf/1703.07814.pdf)
-   - Code: [http://ai.bu.edu/r-c3d/](http://ai.bu.edu/r-c3d/)
-   - Tips: 论文提出了活动检测模型，即R-C3D,这是一种端到端活动检测模型，结合活动建议和分类阶段，可以检测任意长度的活动。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/BJbRvwibeSTvY0X0no58EdzS4L2TDopKOcrRAGLNDLoial6l1PW41p4bXswhibrL3ib0hibdE6WbXzZjia4uTINg9m8g/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-
-
-
-5. [AAAI 2022 | RTPB: 针对无偏场景图生成的抵抗训练方法](https://mp.weixin.qq.com/s/cNhszsKdGyDBvsty-RJrPg)       :star::star:
-   - Abstract: RTPB: 针对无偏场景图生成的抵抗训练方法
-   - Paper: [Resistance Training using Prior Bias: toward Unbiased Scene Graph Generation](https://arxiv.org/abs/2201.06794)
-   - Tips: 为抑制数据集长尾分布问题对场景图生成任务的影响，我们提出了一种基于数据集先验偏差的抵抗训练方法，基于训练集的统计信息，调整训练进程，抑制数据长尾分布对模型的影响，实现更加平衡的场景图生成。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/Mcdq8uia1Wiacs5VfsUDEjhyhSFbGsS6becLaiaRu1JJaMc5xKaFMrdcF9IpqQpoWrUvJANa9qKYmyLia2B992QiciaA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-
-6. [谷歌和伯克利分校的新工作：规模化大场景的神经绘制方法Block-NeRF](https://mp.weixin.qq.com/s/jq3vo99goqQsltvPDqcT1A)       :star::star:
-   - Abstract: 谷歌和伯克利分校的新工作：规模化大场景的神经绘制方法Block-NeRF
-   - Paper: [Block-NeRF: Scalable Large Scene Neural View Synthesis](https://mp.weixin.qq.com/s/jq3vo99goqQsltvPDqcT1A)
-   - Tips: Block-NeRF，一种可以代表大规模环境的Neural Radiance Fields（NeRF）变型。具体来说，规模化的NeRF渲染跨越多个块（blocks）的城市规模场景时，将场景分解为单独训练的NeRF。这种分解将渲染时间与场景大小分解，使渲染能够扩展到任意大的环境，并允许对环境进行逐块更新。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/E5w2bqqaSwhXwL96K8yWmRjOoTicvCKicrdEmibeUpiamTa72Ch3qib3RuicMw1RKt2g9ACs8Siaqk0db51icNsBXlTYHw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
 
 
 
@@ -166,8 +158,10 @@
 </details>
 <details><summary>3月</summary>
     1. <a href="notes/202203/0301.md" target="_blank">公众号内容拓展学习笔记（2022.3.1）</a>
+    2. <a href="notes/202203/0302.md" target="_blank">公众号内容拓展学习笔记（2022.3.2）</a>
 </details>
 </pre>
+
 
 
 
