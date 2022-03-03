@@ -3,66 +3,66 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2022.3.2
+更新今日时间：2022.3.3
 
 ------
 
 ## :paperclip:  今日要点
 
-1. [SFU、阿里提出通用QuadTree Attention，复杂度变线性，性能还更强！ICLR 2022已接收](https://mp.weixin.qq.com/s/GNNcOcTC0WddrhJi7afPSA)         :star::star:
-   - Abstract: SFU、阿里提出通用QuadTree Attention，复杂度变线性，性能还更强！
-   - Paper: [Quadtree Attention for Vision Transformers](https://openreview.net/forum?id=fR-EnKWL_Zb)
-   - Code: [https://github.com/Tangshitao/QuadtreeAttention](https://github.com/Tangshitao/QuadtreeAttention)
-   - Tips:  本文设计了一个高效的视觉Transformer，它可以捕捉精细的图像细节和长期依赖关系。在观察到大多数图像区域是不相关的启发下，构建了Token pyramids，并以从粗到细的方式计算注意力。这样，当对应的粗粒度区域没有前景时，可以快速跳过细粒度的不相关区域。
+1. [商汤提出cosFormer：在注意力中重新思考Softmax](https://mp.weixin.qq.com/s/fpDKnaJvTWZhRmGRvk4Yvg)         :star::star:
+   - Abstract: 商汤提出cosFormer：在注意力中重新思考Softmax
+   - Paper: [COSFORMER : RETHINKING SOFTMAX IN ATTENTION](https://arxiv.org/pdf/2202.08791.pdf)
+   - Tips:  COSFORMER 的关键思路在于将不可分解非线性 softmax 操作替换为具有可分解非线性重加权机制的线性操作。该模型适用于随机注意力和交叉注意力，并且输入序列长度具有线性时间和空间复杂度，从而在建模长程依赖中显示出强大的能力。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/5ooHoYt0tglKibodsHREJCyDnTSkZkH5Bkj0tdls0CnIPLibB1fqolew6cbN6bPfzKanqfjbiay7ZiaBygvevIUheA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-
-2. [1000层的Transformer，诞生了！](https://mp.weixin.qq.com/s/Ke8_go0wReLMejhJolnd9Q)       :star::star:
-   - Abstract: 1000层的Transformer，诞生了！
-   - Paper: [DeepNet: Scaling Transformers to 1,000 Layers](https://arxiv.org/pdf/2203.00555.pdf)
-   - Code: [https://github.com/microsoft/unilm](https://github.com/microsoft/unilm)
-   - Tips: 这篇论文最关键的贡献就是提出了一种新的Normalization方式——DeepNorm，有效解决了Transformer训练困难的问题。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/5fknb41ib9qFXgia11bTu5S3ziaOOQ45efTjvqGsnJTE4eS8S20NRLvpMK0zaeF2e4mZriagQ7aP51OLyBgR9qTI5g/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-3. [解决图像分割落地场景真实问题，港中文等提出：开放世界实体分割](https://mp.weixin.qq.com/s/yiaAUCfEEjLXozWV6S9NKg)       :star::star:
-   - Abstract: 解决图像分割落地场景真实问题，港中文等提出：开放世界实体分割
-   - Paper: [Open-World Entity Segmentation](https://arxiv.org/abs/2107.14228)
-   - Code: [https://github.com/dvlab-research/Entity](https://github.com/dvlab-research/Entity)
-   - Tips: : 本文出发点是想解决语义/实例/全景分割在某些落地场景中实际存在的一些问题，因此提出了实体(Entity)分割任务，在图像编辑过程中对图像进行分"块"而无需对这些"块"进行分类识别，经过分割结果衡量和算法设计，取得了较好的图像分割效果。
-
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfptGPkicu977zX1Qs7iaPQODyuRPE4p0k7JicP0yNKQngDoiaep3x29qFANiblLMuGA8bLph03JsicJJw0Q/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-4. [实践教程｜分割mask生成动漫人脸！爆肝数周，从零搭建](https://mp.weixin.qq.com/s/IGacYvj0yGW8C3nAua54uQ)       :star::star:
-   - Abstract: 分割mask生成动漫人脸！爆肝数周，从零搭建
-   - Tips: 论本文分享了国外大佬的从0开始构建分割mask生成动漫人脸的项目，整个思路的搭建阐述的都非常的详细，有兴趣的朋友们可以按照这个流程去尝试自己搭建.
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/7jnsg27ZEVEVhQY9pclicI6dibzJCsNggbwvIh2LKzeoKQCxManolLOzOZWZK7Nk8hBnzkdcSckWq9UuAtphXX7g/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-5. [最近 Github 上爆火的 Chrome 生产力神器 Omni 是什么鬼？](https://mp.weixin.qq.com/s/gbaje_ZkicVWXXbcoXc6Lg)       :star::star:
-   - Abstract: 最近 Github 上爆火的 Chrome 生产力神器 Omni 
-   - Code: [https://github.com/alyssaxuu/omnin](https://github.com/alyssaxuu/omni)
-   - Tips: Omni 是一个浏览器插件，它让你能够想使用 Mac 电脑一样使用你的浏览器，最近 Omni 接连登上 Github 趋势榜与 ProductHunt 榜首，成为大受各种程序员、产品设计师的追捧的生产力工具！
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/YmT5bQSrMy3UOmNgcNPlbq9oOfX8A7N2c5sRG9dtUyWb7dbLgj41ZwYcSs8sVPwTibH1MZorf7U5kddpdcw0IvA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gWicoaChsDYzlI4M82sCucRSaMR7lOA8MM1kdxyJOVXA6BUkmxYiaicWzWFylvvNoheiaqiabk6wiaHoVicbw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
 
-6. [脑力25岁开始走下坡路？百万人数据证实：60岁以后才下降｜Nature子刊新研究](https://mp.weixin.qq.com/s/OuJ3CaM56qQsJPNujta_4A)       :star::star:
-   - Abstract: 百万人数据证实：脑力60岁以后才下降
-   - Paper: [Mental speed is high until age 60 as revealed by analysis of over a million participants](https://www.nature.com/articles/s41562-021-01282-7)
-   - Code: [https://github.com/stefanradev93/DataSizeMatters](https://github.com/stefanradev93/DataSizeMatters)
-   - Tips: 大脑处理信息的速度能从20岁一直保持到60岁。随着年龄增长，人会越来越谨慎。他们试图避免犯错，时间花在了反复考虑追求确定性上。思维速度在30岁左右达到巅峰，在30岁到60岁之间仅有轻微回落，直到60岁以后大脑处理信息的速度才真正开始下降。
+2. [一张照片就能生成3D模型，GAN和自动编码器碰撞出奇迹，苏黎世联邦理工学院出品](https://mp.weixin.qq.com/s/i7vBrs1ODVDhU5NkmL3Rmg)       :star::star:
+   - Abstract: 一张照片就能生成3D模型，GAN和自动编码器碰撞出奇迹，苏黎世联邦理工学院出品
+   - Paper: [Pix2NeRF: Unsupervised Conditional π-GAN for Single Image to Neural Radiance Fields Translation](https://arxiv.org/abs/2202.13162)
+   - Code: [https://github.com/sxyu/pixel-nerf](https://github.com/sxyu/pixel-nerf)
+   - Tips: 首先，自动编码器可以通过无监督学习，来获取输入图像的隐藏特征，包括物体姿态和物体形状，并利用学习到的特征重建出原始的数据；然后，再利用GAN来通过姿态和形状数据，重构出与原来的物体形状不同的新视图。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtAKHQPnbLqbjH3OJtBNhYdXiasJfzzicG4kKg0FfhwNeicXrHleLVsdXickG9uLcbeJQsQnTOn0dtOXCw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtBPib0LjLrvUw6IRXqUHfCjznA7icuwCIuIV0Gl6SLVDPEfH8vx1SzDkvSo04GEyvupgia5XAh2epTVQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
+
+3. [CVPR 2022 | 南开程明明团队和天大提出LD：目标检测的定位蒸馏](https://mp.weixin.qq.com/s/dxss8RjJH283h6IbPCT9vg)       :star::star:
+   - Abstract: 南开程明明团队和天大提出LD：目标检测的定位蒸馏
+   - Paper: [Localization Distillation for Dense Object Detection](https://arxiv.org/abs/2102.12252)
+   - Code: [https://github.com/HikariTJU/LD](https://github.com/HikariTJU/LD)
+   - Tips: : 把用于分类head的KD（知识蒸馏），用于目标检测的定位head，即有了LD （Localization Distillation）。LD使得logit mimicking首次战胜了Feature imitation。分类知识与定位知识的蒸馏应分而治之、因地制宜。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/yNnalkXE7oWI8SkLuGDQoictYSoAziaZldNKiagssGQxHTYmXP2TEVs6ibibx2YPRbn1RJ6UjqFuKHHIVfLnmK4bRZA/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+
+4. [新目标检测框架 | 基于改进的one-shot的目标检测](https://mp.weixin.qq.com/s/mEItJ5cZzFC3dr_64vokCQ)       :star::star:
+   - Abstract: 基于改进的one-shot的目标检测OSCD
+   - Paper: [OSCD: A one-shot conditional object detection framework](https://www.sciencedirect.com/science/article/pii/S0925231220306779?via%3Dihub)
+   - Tips: 研究者就提出了将检测问题更好地命名为one-shot条件目标检测。并设计了一个基于可学习度量和two-stages检测模型的通用one-shot条件目标检测框架(OSCD)。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwNlphibB3Rhz9ia1jAjjo8voJbfjiatNCnpM1usUHQWU46CM2Glqg37B6YuVurSK2hOicpkYNxKbHANlA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+
+5. [CVPR 2022放榜！2067篇论文被接收，Masked Autoencoders 能否夺得最佳论文？](https://mp.weixin.qq.com/s/_FOLwn_0IHsme8iQoHBipA)       :star::star:
+   - Abstract: Auto-Sklearn：CVPR 2022放榜！2067篇论文被接收，Masked Autoencoders 能否夺得最佳论文？
+   - Paper: [Masked Autoencoders Are Scalable Vision Learners](https://arxiv.org/abs/2111.06377)
+   - Tips: 这篇论文展示了一种被称为掩蔽自编码器（masked autoencoders，MAE）的新方法，可以用作计算机视觉的可扩展自监督学习器。MAE 基于两个核心理念：研究人员开发了一个非对称编码器 - 解码器架构，其中一个编码器只对可见的 patch 子集进行操作（没有掩蔽 token），另一个简单解码器可以从潜在表征和掩蔽 token 重建原始图像。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gW8Mwx3prCpIEibE9wGzibGXuegLxdwiazpN9OUiazsTTTiaib8qib5qTVmU77UhvSm42BEoWO13ettGnTQyA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+
+6. [最新 955 不加班的公司名单（2022版）](https://mp.weixin.qq.com/s/kNIDs-4baFh1QakSgxCHFg)       :star::star:
+   - Abstract: 最新 955 不加班的公司名单（2022版）
+   - Tips: 以下公司名单，基本不属于 996 的公司，相对接近 955/965 的水平，但是依旧要看部门和地区，不能保证完全准确性。
+
+<div align=center><img src="./notes/202203/images/20220303.jpeg" style='zoom:100%'>
+</div>
 
 
 ## :paperclip:  历史更新
@@ -159,8 +159,10 @@
 <details><summary>3月</summary>
     1. <a href="notes/202203/0301.md" target="_blank">公众号内容拓展学习笔记（2022.3.1）</a>
     2. <a href="notes/202203/0302.md" target="_blank">公众号内容拓展学习笔记（2022.3.2）</a>
+    3. <a href="notes/202203/0303.md" target="_blank">公众号内容拓展学习笔记（2022.3.3）</a>
 </details>
 </pre>
+
 
 
 
