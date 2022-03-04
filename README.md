@@ -3,67 +3,75 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2022.3.3
+更新今日时间：2022.3.4
 
 ------
 
 ## :paperclip:  今日要点
 
-1. [商汤提出cosFormer：在注意力中重新思考Softmax](https://mp.weixin.qq.com/s/fpDKnaJvTWZhRmGRvk4Yvg)         :star::star:
-   - Abstract: 商汤提出cosFormer：在注意力中重新思考Softmax
-   - Paper: [COSFORMER : RETHINKING SOFTMAX IN ATTENTION](https://arxiv.org/pdf/2202.08791.pdf)
-   - Tips:  COSFORMER 的关键思路在于将不可分解非线性 softmax 操作替换为具有可分解非线性重加权机制的线性操作。该模型适用于随机注意力和交叉注意力，并且输入序列长度具有线性时间和空间复杂度，从而在建模长程依赖中显示出强大的能力。
+1. [2022最新！基于深度transformer的时间序列异常检测模型](https://mp.weixin.qq.com/s/oIG87toA1IkLyEVjFsJldw)         :star::star:
+   - Abstract: 2022最新！基于深度transformer的时间序列异常检测模型
+   - Paper: [TranAD: Deep Transformer Networks for Anomaly Detection in Multivariate Time Series Data](https://arxiv.org/abs/2201.07284)
+   - Code: [https://github.com/imperial-qore/tranad](https://github.com/imperial-qore/tranad)
+   - Tips:  这是一种基于深度transformer的异常检测和诊断模型，它使用基于注意力的序列编码器来快速执行推理，并了解数据中更广泛的时间趋势。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gWicoaChsDYzlI4M82sCucRSaMR7lOA8MM1kdxyJOVXA6BUkmxYiaicWzWFylvvNoheiaqiabk6wiaHoVicbw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/Znac0PLV6ymbeAvribQDMOzVzFmJVevLibKPnOjNssGX7052aZO41K5xlQNvqssQzkcOrxibdb00vGvZPdZGoueOg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
 
-2. [一张照片就能生成3D模型，GAN和自动编码器碰撞出奇迹，苏黎世联邦理工学院出品](https://mp.weixin.qq.com/s/i7vBrs1ODVDhU5NkmL3Rmg)       :star::star:
-   - Abstract: 一张照片就能生成3D模型，GAN和自动编码器碰撞出奇迹，苏黎世联邦理工学院出品
-   - Paper: [Pix2NeRF: Unsupervised Conditional π-GAN for Single Image to Neural Radiance Fields Translation](https://arxiv.org/abs/2202.13162)
-   - Code: [https://github.com/sxyu/pixel-nerf](https://github.com/sxyu/pixel-nerf)
-   - Tips: 首先，自动编码器可以通过无监督学习，来获取输入图像的隐藏特征，包括物体姿态和物体形状，并利用学习到的特征重建出原始的数据；然后，再利用GAN来通过姿态和形状数据，重构出与原来的物体形状不同的新视图。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtBPib0LjLrvUw6IRXqUHfCjznA7icuwCIuIV0Gl6SLVDPEfH8vx1SzDkvSo04GEyvupgia5XAh2epTVQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+2. [复旦大学数据智能与社会计算实验室推出大规模跨视觉语言模态预训练模型：MVPTR](https://mp.weixin.qq.com/s/b1EmaVCarQv-OVX7CXxadQ)       :star::star:
+   - Abstract: 复旦大学数据智能与社会计算实验室推出大规模跨视觉语言模态预训练模型：MVPTR
+   - Paper: [MVPTR: Multi-Stage Vision-Language Pre-Training via Multi-Level Semantic Alignment](https://arxiv.org/abs/2201.12596)
+   - Code: [https://github.com/Junction4Nako/mvp_pytorch](https://github.com/Junction4Nako/mvp_pytorch)
+   - Tips: 本文介绍了Fudan DISC实验室提出的一种基于多层次语义对齐的多阶段视觉-语言预训练模型MVPTR，MVPTR是一个多阶段的视觉-语言表征模型和预训练方法，在大规模图片-文本对语料库上预训练的MVPTR模型在下游视觉-语言任务上取得了明显的进展
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/nJZZib3qIQW6tgPNyXlgLB1WeAHoUEID3mNlmiapfZ4fX5wqbbgFwibjnZEOZOIwbvbzbwQAlygRVeF5OLd26YXiaQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-3. [CVPR 2022 | 南开程明明团队和天大提出LD：目标检测的定位蒸馏](https://mp.weixin.qq.com/s/dxss8RjJH283h6IbPCT9vg)       :star::star:
-   - Abstract: 南开程明明团队和天大提出LD：目标检测的定位蒸馏
-   - Paper: [Localization Distillation for Dense Object Detection](https://arxiv.org/abs/2102.12252)
-   - Code: [https://github.com/HikariTJU/LD](https://github.com/HikariTJU/LD)
-   - Tips: : 把用于分类head的KD（知识蒸馏），用于目标检测的定位head，即有了LD （Localization Distillation）。LD使得logit mimicking首次战胜了Feature imitation。分类知识与定位知识的蒸馏应分而治之、因地制宜。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/yNnalkXE7oWI8SkLuGDQoictYSoAziaZldNKiagssGQxHTYmXP2TEVs6ibibx2YPRbn1RJ6UjqFuKHHIVfLnmK4bRZA/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+3. [ICCV2021 | 用于视觉跟踪的学习时空型transformer](https://mp.weixin.qq.com/s/ywpfOC1xX3Eyy-s_1pkwfQ)       :star::star:
+   - Abstract: 用于视觉跟踪的学习时空型transformer
+   - Paper: [Learning Spatio-Temporal Transformer for Visual Tracking](https://arxiv.org/abs/2103.17154)
+   - Code: [https://github.com/researchmm/Stark](https://github.com/researchmm/Stark)
+   - Tips: : 本文介绍了一个端到端的用于视觉跟踪的transformer模型，它能够捕获视频序列中空间和时间信息的全局特征依赖关系。在五个具有挑战性的短期和长期基准上实现了SOTA性能，具有实时性，比Siam R-CNN快6倍。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/V2E1ll6kaTU5IT5HLkC5cGpYmIHVXNiaYmiadFFzRzG1fyW6KVlQQDIbJBedJzTF7AS2d3j34Wxlf5iccdddrwSMQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-4. [新目标检测框架 | 基于改进的one-shot的目标检测](https://mp.weixin.qq.com/s/mEItJ5cZzFC3dr_64vokCQ)       :star::star:
-   - Abstract: 基于改进的one-shot的目标检测OSCD
-   - Paper: [OSCD: A one-shot conditional object detection framework](https://www.sciencedirect.com/science/article/pii/S0925231220306779?via%3Dihub)
-   - Tips: 研究者就提出了将检测问题更好地命名为one-shot条件目标检测。并设计了一个基于可学习度量和two-stages检测模型的通用one-shot条件目标检测框架(OSCD)。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwNlphibB3Rhz9ia1jAjjo8voJbfjiatNCnpM1usUHQWU46CM2Glqg37B6YuVurSK2hOicpkYNxKbHANlA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+4. [Vision Transformer必读系列之图像分类综述：概述](https://mp.weixin.qq.com/s/AZwxtynGeAAGbm8emCfZdw)       :star::star:
+   - Abstract: Vision Transformer必读系列之图像分类综述
+   - Code: [https://github.com/open-mmlab/awesome-vit](https://github.com/open-mmlab/awesome-vit)
+   - Tips: 本文将对 Transformer 和 Vision Transformer (ViT) 进行解读，同时还将对 ViT 后续发展进行系统性概述，方便大家把握方向，是本系列文章的重点内容 (由于图像分类内容众多，本文仅仅是全局概述，不涉及思维导图中每篇论文。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ibaXaPIy7jV3nWYE8dznLXmxjUC8OzbcYZFYpianWAoFqxo8rp008C2dpJftqOpdyUojwYuIjIfvP4ickAQQdGyLA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+5. [轻量级人体姿态估计模型的坎坷修炼之路（附MoveNet复现经验）](https://mp.weixin.qq.com/s/70Lcx9JEU38or-zRenJr_A)       :star::star:
+   - Abstract: 轻量级人体姿态估计模型的坎坷修炼之路（附MoveNet复现经验）
+   - Tips: 本文记录了作者实现轻量级人体姿态估计模型的全过程，从方案的选取到尝试复现等，详细的叙述了一个项目需求完成的整体思路，并附有谷歌开源的MoveNet的复现经验。
+
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfrcxdFycgB2S3JMaREPjxT8uJeG5h9FTB2xxeMq1MRU6XfWyORMGMo6VMgvo7egoVBUNcECmia39aA/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-5. [CVPR 2022放榜！2067篇论文被接收，Masked Autoencoders 能否夺得最佳论文？](https://mp.weixin.qq.com/s/_FOLwn_0IHsme8iQoHBipA)       :star::star:
-   - Abstract: Auto-Sklearn：CVPR 2022放榜！2067篇论文被接收，Masked Autoencoders 能否夺得最佳论文？
-   - Paper: [Masked Autoencoders Are Scalable Vision Learners](https://arxiv.org/abs/2111.06377)
-   - Tips: 这篇论文展示了一种被称为掩蔽自编码器（masked autoencoders，MAE）的新方法，可以用作计算机视觉的可扩展自监督学习器。MAE 基于两个核心理念：研究人员开发了一个非对称编码器 - 解码器架构，其中一个编码器只对可见的 patch 子集进行操作（没有掩蔽 token），另一个简单解码器可以从潜在表征和掩蔽 token 重建原始图像。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gW8Mwx3prCpIEibE9wGzibGXuegLxdwiazpN9OUiazsTTTiaib8qib5qTVmU77UhvSm42BEoWO13ettGnTQyA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+6. [健身环爆打老头环，超高难度，已开源！](https://mp.weixin.qq.com/s/s5HVsFd_8Jt2x5aeVwjNbg)       :star::star:
+   - Abstract: 健身环爆打老头环，超高难度，已开源！
+   - Code: [https://github.com/SuperLouis64/RingFitAdventure-PC-Mods](https://github.com/SuperLouis64/RingFitAdventure-PC-Mods)
+   - Tips: 整体的思想就是，将游戏里的一些操作、技能，映射到健身环上操作，边玩游戏边动起来！
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/v1JN0W4OpXiareWrJ1b4BicTHfI4IPMPLqVmJ7T1JWpIPRvGvibf4dQbWkOSzwuIHOUibm4u0vRPAZuzt3fMR0jBTw/640?wx_fmt=gif&wxfrom=5&wx_lazy=1" style='zoom:100%'>
 </div>
 
 
-6. [最新 955 不加班的公司名单（2022版）](https://mp.weixin.qq.com/s/kNIDs-4baFh1QakSgxCHFg)       :star::star:
-   - Abstract: 最新 955 不加班的公司名单（2022版）
-   - Tips: 以下公司名单，基本不属于 996 的公司，相对接近 955/965 的水平，但是依旧要看部门和地区，不能保证完全准确性。
 
-<div align=center><img src="./notes/202203/images/20220303.jpeg" style='zoom:100%'>
-</div>
 
+## 
 
 ## :paperclip:  历史更新
 
@@ -160,9 +168,9 @@
     1. <a href="notes/202203/0301.md" target="_blank">公众号内容拓展学习笔记（2022.3.1）</a>
     2. <a href="notes/202203/0302.md" target="_blank">公众号内容拓展学习笔记（2022.3.2）</a>
     3. <a href="notes/202203/0303.md" target="_blank">公众号内容拓展学习笔记（2022.3.3）</a>
+    4. <a href="notes/202203/0304.md" target="_blank">公众号内容拓展学习笔记（2022.3.4）</a>
 </details>
 </pre>
-
 
 
 
