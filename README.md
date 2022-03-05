@@ -9,69 +9,68 @@
 
 ## :paperclip:  今日要点
 
-1. [2022最新！基于深度transformer的时间序列异常检测模型](https://mp.weixin.qq.com/s/oIG87toA1IkLyEVjFsJldw)         :star::star:
-   - Abstract: 2022最新！基于深度transformer的时间序列异常检测模型
-   - Paper: [TranAD: Deep Transformer Networks for Anomaly Detection in Multivariate Time Series Data](https://arxiv.org/abs/2201.07284)
-   - Code: [https://github.com/imperial-qore/tranad](https://github.com/imperial-qore/tranad)
-   - Tips:  这是一种基于深度transformer的异常检测和诊断模型，它使用基于注意力的序列编码器来快速执行推理，并了解数据中更广泛的时间趋势。
+1. [上海交大提出CDNet：基于改进YOLOv5的斑马线和汽车过线行为检测](https://mp.weixin.qq.com/s/2F3WBtfN_7DkhERMOH8-QA)         :star::star:
+   - Abstract: 基于改进YOLOv5的斑马线和汽车过线行为检测CDNet
+   - Paper: [CDNet: A Real-Time and Robust Crosswalk Detection Network on Jetson Nano Based on YOLOv5](https://doi.org/10.1007/s00521-022-07007-9)
+   - Code: [https://github.com/zhangzhengde0225/CDNet](https://github.com/zhangzhengde0225/CDNet)
+   - Tips:  本研究提出基于改进YOLOv5的人行横道检测网络（CDNet），实现车载摄像头视觉下快速准确的人行横道检测，并在Jetson nano设备上实现实时检测。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/Znac0PLV6ymbeAvribQDMOzVzFmJVevLibKPnOjNssGX7052aZO41K5xlQNvqssQzkcOrxibdb00vGvZPdZGoueOg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/yNnalkXE7oU8j9ZEEpx4IW7ht8HhQJBIuk41euhbstRB4jPUCUibqrTNInfXIf3k1tcuLJGb3ibKdkibRdeLzqgJg/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-
-
-
-2. [复旦大学数据智能与社会计算实验室推出大规模跨视觉语言模态预训练模型：MVPTR](https://mp.weixin.qq.com/s/b1EmaVCarQv-OVX7CXxadQ)       :star::star:
-   - Abstract: 复旦大学数据智能与社会计算实验室推出大规模跨视觉语言模态预训练模型：MVPTR
+2. [图像自适应YOLO：模糊环境下的目标检测（附源代码）](https://mp.weixin.qq.com/s/QdM6Dx990VhN97MRIP74XA)       :star::star:
+   - Abstract: 一种新颖的图像自适应YOLO (IA-YOLO) 框架
    - Paper: [MVPTR: Multi-Stage Vision-Language Pre-Training via Multi-Level Semantic Alignment](https://arxiv.org/abs/2201.12596)
-   - Code: [https://github.com/Junction4Nako/mvp_pytorch](https://github.com/Junction4Nako/mvp_pytorch)
-   - Tips: 本文介绍了Fudan DISC实验室提出的一种基于多层次语义对齐的多阶段视觉-语言预训练模型MVPTR，MVPTR是一个多阶段的视觉-语言表征模型和预训练方法，在大规模图片-文本对语料库上预训练的MVPTR模型在下游视觉-语言任务上取得了明显的进展
+   - Code: [https://github.com/wenyyu/ImageAdaptive-YOLO](https://github.com/wenyyu/ImageAdaptive-YOLO)
+   - Tips: 研究者提出了一个可微分图像处理 (DIP) 模块来考虑YOLO检测器的不利天气条件，其参数由小型卷积神经网络(CNN-PP)预测。以端到端的方式联合学习CNN-PP和YOLOv3，这确保了CNN-PP可以学习适当的DIP，以弱监督的方式增强图像以进行检测。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/nJZZib3qIQW6tgPNyXlgLB1WeAHoUEID3mNlmiapfZ4fX5wqbbgFwibjnZEOZOIwbvbzbwQAlygRVeF5OLd26YXiaQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-
-
-3. [ICCV2021 | 用于视觉跟踪的学习时空型transformer](https://mp.weixin.qq.com/s/ywpfOC1xX3Eyy-s_1pkwfQ)       :star::star:
-   - Abstract: 用于视觉跟踪的学习时空型transformer
-   - Paper: [Learning Spatio-Temporal Transformer for Visual Tracking](https://arxiv.org/abs/2103.17154)
-   - Code: [https://github.com/researchmm/Stark](https://github.com/researchmm/Stark)
-   - Tips: : 本文介绍了一个端到端的用于视觉跟踪的transformer模型，它能够捕获视频序列中空间和时间信息的全局特征依赖关系。在五个具有挑战性的短期和长期基准上实现了SOTA性能，具有实时性，比Siam R-CNN快6倍。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/V2E1ll6kaTU5IT5HLkC5cGpYmIHVXNiaYmiadFFzRzG1fyW6KVlQQDIbJBedJzTF7AS2d3j34Wxlf5iccdddrwSMQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-
-
-4. [Vision Transformer必读系列之图像分类综述：概述](https://mp.weixin.qq.com/s/AZwxtynGeAAGbm8emCfZdw)       :star::star:
-   - Abstract: Vision Transformer必读系列之图像分类综述
-   - Code: [https://github.com/open-mmlab/awesome-vit](https://github.com/open-mmlab/awesome-vit)
-   - Tips: 本文将对 Transformer 和 Vision Transformer (ViT) 进行解读，同时还将对 ViT 后续发展进行系统性概述，方便大家把握方向，是本系列文章的重点内容 (由于图像分类内容众多，本文仅仅是全局概述，不涉及思维导图中每篇论文。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ibaXaPIy7jV3nWYE8dznLXmxjUC8OzbcYZFYpianWAoFqxo8rp008C2dpJftqOpdyUojwYuIjIfvP4ickAQQdGyLA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-5. [轻量级人体姿态估计模型的坎坷修炼之路（附MoveNet复现经验）](https://mp.weixin.qq.com/s/70Lcx9JEU38or-zRenJr_A)       :star::star:
-   - Abstract: 轻量级人体姿态估计模型的坎坷修炼之路（附MoveNet复现经验）
-   - Tips: 本文记录了作者实现轻量级人体姿态估计模型的全过程，从方案的选取到尝试复现等，详细的叙述了一个项目需求完成的整体思路，并附有谷歌开源的MoveNet的复现经验。
-
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfrcxdFycgB2S3JMaREPjxT8uJeG5h9FTB2xxeMq1MRU6XfWyORMGMo6VMgvo7egoVBUNcECmia39aA/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-
-
-6. [健身环爆打老头环，超高难度，已开源！](https://mp.weixin.qq.com/s/s5HVsFd_8Jt2x5aeVwjNbg)       :star::star:
-   - Abstract: 健身环爆打老头环，超高难度，已开源！
-   - Code: [https://github.com/SuperLouis64/RingFitAdventure-PC-Mods](https://github.com/SuperLouis64/RingFitAdventure-PC-Mods)
-   - Tips: 整体的思想就是，将游戏里的一些操作、技能，映射到健身环上操作，边玩游戏边动起来！
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/v1JN0W4OpXiareWrJ1b4BicTHfI4IPMPLqVmJ7T1JWpIPRvGvibf4dQbWkOSzwuIHOUibm4u0vRPAZuzt3fMR0jBTw/640?wx_fmt=gif&wxfrom=5&wx_lazy=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwOrA3ialY9UktgEcYuuFAZoYsSRTdauoN8X2hJIKoTiaic7gWNKVNnR1oV4SezQUJ0rDRic5tLtfA7VMQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
 
 
-## 
+3. [你玩的音游可能真是AI生成的，Love Live!工作室发了篇论文，用AI节省50%作谱时间](https://mp.weixin.qq.com/s/6av5vex8tl5ODvDepq5ppw)       :star::star:
+   - Abstract: Love Live!工作室发了篇论文，用AI生成音游曲谱节省50%作谱时间
+   - Paper: [GenéLive! Generating Rhythm Actions in Love Live!](https://arxiv.org/abs/2202.12823)
+   - Code: [https://github.com/chrisdonahue/ddc](https://github.com/chrisdonahue/ddc)
+   - Tips: GenéLive利用卷积堆栈进一步提取音频特征，加深AI对乐曲本身的理解，同时增加专门用于分析节拍信息的Bi-LSTM，以便于AI生成更能表达情绪的谱面。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtAicbic3eJVxtxucpiaM0lk2IhogyJEvt28wn3Y6wK3iaMmf7bWic5gCMdiaCnbDH98WicbzY01ic2gY5IsicA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+
+
+
+4. [iFLYTEK 2021高分辨率遥感影像提取方案](https://mp.weixin.qq.com/s/A3b5MFvUmPBZVPWOvXCttQ)       :star::star:
+   - Abstract: iFLYTEK 2021高分辨率遥感影像提取方案
+   - Paper: [The Winning Solution to the iFLYTEK Challenge 2021 Cultivated Land Extraction from High-Resolution Remote Sensing Image](https://arxiv.org/pdf/2202.10974.pdf)
+   - Tips: 本文构建了一条高效的高分辨率遥感图像耕地提取流程，提供了详细的overlap-tile融合策略，以生成无缝和连续的分割结果。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/rqpicxXx8cNk4H8fpw8bqrTr0vVBwnHjgrAicODT1Uq5C8cC5TJM89ic5VL9kgLrPk9r83or6b2wJOcGSP8dU2znw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+
+5. [OCR光学字符识别方法汇总（附开源代码）](https://mp.weixin.qq.com/s/_EIzOl3LmAHyypeZkvNqVw)       :star::star:
+   - Abstract: OCR光学字符识别方法汇总（附开源代码）
+   - Code: [https://github.com/ouyanghuiyu/chineseocr_lite](https://github.com/ouyanghuiyu/chineseocr_lite)
+   - Tips: 目前比较常用的中文OCR开源项目是 chineseocr，最近又有一个新开源的中文OCR项目，登上Github Trending榜单第二——chineseocr_lite
+
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/kOTNkic5gVBEvSNF0OIRQ3QEdS9IsX6L6LYKl8QqTwy311KTQ8vsa2t3pXdsPP78SHLnjrDIPnj2FSdAlfukyAA/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+
+6. [一文看尽 CVPR2022 最新 22 篇论文（附打包下载）](https://mp.weixin.qq.com/s/heXKrF4odeu4g1eLuf4Ssg)       :star::star:
+   - Abstract: 一文看尽 CVPR2022 最新 22 篇论文
+   - Address: [https://bbs.cvmart.net/articles/6124](https://bbs.cvmart.net/articles/6124)
+   - Tips: 本文汇总了22篇最新放出的CVPR 2022网络架构设计、姿态估计、语义分割、动作检测、三维视觉等方向的论文，附文章打包下载地址。
+
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_png/gYUsOT36vfoWp5hpMic2ic3dCrzZuW8H0IMQMtrJykrZkFgziaScpoic4hep1JwAibq9xmvlD34iavuvdMwSf1e21wsg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+
+
+
 
 ## :paperclip:  历史更新
 
@@ -169,6 +168,7 @@
     2. <a href="notes/202203/0302.md" target="_blank">公众号内容拓展学习笔记（2022.3.2）</a>
     3. <a href="notes/202203/0303.md" target="_blank">公众号内容拓展学习笔记（2022.3.3）</a>
     4. <a href="notes/202203/0304.md" target="_blank">公众号内容拓展学习笔记（2022.3.4）</a>
+    5. <a href="notes/202203/0305.md" target="_blank">公众号内容拓展学习笔记（2022.3.5）</a>
 </details>
 </pre>
 
