@@ -3,70 +3,64 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2022.3.4
+更新今日时间：2022.3.6
 
 ------
 
 ## :paperclip:  今日要点
 
-1. [上海交大提出CDNet：基于改进YOLOv5的斑马线和汽车过线行为检测](https://mp.weixin.qq.com/s/2F3WBtfN_7DkhERMOH8-QA)         :star::star:
-   - Abstract: 基于改进YOLOv5的斑马线和汽车过线行为检测CDNet
-   - Paper: [CDNet: A Real-Time and Robust Crosswalk Detection Network on Jetson Nano Based on YOLOv5](https://doi.org/10.1007/s00521-022-07007-9)
-   - Code: [https://github.com/zhangzhengde0225/CDNet](https://github.com/zhangzhengde0225/CDNet)
-   - Tips:  本研究提出基于改进YOLOv5的人行横道检测网络（CDNet），实现车载摄像头视觉下快速准确的人行横道检测，并在Jetson nano设备上实现实时检测。
+1. [CVPR 2022 | 超越Transformer！FAIR重新设计纯卷积架构：ConvNeXt](https://mp.weixin.qq.com/s/Xg5wPYExnvTqRo6s5-2cAw)         :star::star:
+   - Abstract: 超越Transformer！FAIR重新设计纯卷积架构：ConvNeXt
+   - Paper: [A ConvNet for the 2020s](https://arxiv.org/abs/2201.03545)
+   - Code: [https://github.com/facebookresearch/ConvNeXt](https://github.com/facebookresearch/ConvNeXt)
+   - Tips:  完全标准ConvNet模块构建的ConvNeXt取得了优于Transformer的精度87.8%，在COCO检测与ADE20K分割任务上超越了SwinTransformer，同时保持了ConvNet的简单性与高效性。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/yNnalkXE7oU8j9ZEEpx4IW7ht8HhQJBIuk41euhbstRB4jPUCUibqrTNInfXIf3k1tcuLJGb3ibKdkibRdeLzqgJg/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-2. [图像自适应YOLO：模糊环境下的目标检测（附源代码）](https://mp.weixin.qq.com/s/QdM6Dx990VhN97MRIP74XA)       :star::star:
-   - Abstract: 一种新颖的图像自适应YOLO (IA-YOLO) 框架
-   - Paper: [MVPTR: Multi-Stage Vision-Language Pre-Training via Multi-Level Semantic Alignment](https://arxiv.org/abs/2201.12596)
-   - Code: [https://github.com/wenyyu/ImageAdaptive-YOLO](https://github.com/wenyyu/ImageAdaptive-YOLO)
-   - Tips: 研究者提出了一个可微分图像处理 (DIP) 模块来考虑YOLO检测器的不利天气条件，其参数由小型卷积神经网络(CNN-PP)预测。以端到端的方式联合学习CNN-PP和YOLOv3，这确保了CNN-PP可以学习适当的DIP，以弱监督的方式增强图像以进行检测。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwOrA3ialY9UktgEcYuuFAZoYsSRTdauoN8X2hJIKoTiaic7gWNKVNnR1oV4SezQUJ0rDRic5tLtfA7VMQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfpSoBBiaAtdGUOVDmwXWFH5YI5Kq26ibtJNgbIdfjMLibEdNfd7kvY1m1iaaUSkia4XialLeRH8VgDERGLw/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
+2. [YOLOS：通过目标检测重新思考Transformer（附源代码）](https://mp.weixin.qq.com/s/t-la4ZKHm8_3Krl2pD1xSw)       :star::star:
+   - Abstract: YOLOS：通过目标检测重新思考Transformer
+   - Paper: [You Only Look at One Sequence: Rethinking Transformer in Vision through Object Detection](https://arxiv.org/pdf/2106.00666.pdf)
+   - Code: [https://github.com/hustvl/YOLOS](https://github.com/hustvl/YOLOS)
+   - Tips: 我们发现仅在中等大小的ImageNet-1k数据集上预训练的YOLOS已经可以在COCO上实现具有竞争力的目标检测性能，例如直接从BERT-Base中采用的YOLOS-Base可以实现42.0 box AP。研究者还通过目标检测讨论了当前预训练方案和模型缩放策略对Transformer在视觉中的影响和局限性。
 
-
-3. [你玩的音游可能真是AI生成的，Love Live!工作室发了篇论文，用AI节省50%作谱时间](https://mp.weixin.qq.com/s/6av5vex8tl5ODvDepq5ppw)       :star::star:
-   - Abstract: Love Live!工作室发了篇论文，用AI生成音游曲谱节省50%作谱时间
-   - Paper: [GenéLive! Generating Rhythm Actions in Love Live!](https://arxiv.org/abs/2202.12823)
-   - Code: [https://github.com/chrisdonahue/ddc](https://github.com/chrisdonahue/ddc)
-   - Tips: GenéLive利用卷积堆栈进一步提取音频特征，加深AI对乐曲本身的理解，同时增加专门用于分析节拍信息的Bi-LSTM，以便于AI生成更能表达情绪的谱面。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtAicbic3eJVxtxucpiaM0lk2IhogyJEvt28wn3Y6wK3iaMmf7bWic5gCMdiaCnbDH98WicbzY01ic2gY5IsicA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwOmIoXkZicZBNXclhhSba0iaBswxzUDeuvGiccINYWDvuHSOJmoTYPLoCTfddP5jSUIfDxHYCBrAukKQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
+3. [You're AllSet! 以多重集函数角度重新检视超图GNN](https://mp.weixin.qq.com/s/KQcCGDa_80vxaf9-_BEl-A)       :star::star:
+   - Abstract: 以多重集函数角度重新检视超图GNN
+   - Paper: [You are AllSet: A Multiset Learning Framework for Hypergraph Neural Networks.](https://openreview.net/forum?id=hpBTIv2uy_E)
+   - Code: [https://github.com/jianhao2016/AllSet](https://github.com/jianhao2016/AllSet)
+   - Tips: 我们针对超图神经网络提出了一个泛用的框架AllSet，我们证明了大部分现有超图神经网络层的表达能力皆严格弱于AllSet，且证明了AllSet为MPNN的超图推广。我们利用近年深层多重集函数学习的结果，结合AllSet概念设计出可学习的AllSet层AllSSetTransformer。
 
-
-
-4. [iFLYTEK 2021高分辨率遥感影像提取方案](https://mp.weixin.qq.com/s/A3b5MFvUmPBZVPWOvXCttQ)       :star::star:
-   - Abstract: iFLYTEK 2021高分辨率遥感影像提取方案
-   - Paper: [The Winning Solution to the iFLYTEK Challenge 2021 Cultivated Land Extraction from High-Resolution Remote Sensing Image](https://arxiv.org/pdf/2202.10974.pdf)
-   - Tips: 本文构建了一条高效的高分辨率遥感图像耕地提取流程，提供了详细的overlap-tile融合策略，以生成无缝和连续的分割结果。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/rqpicxXx8cNk4H8fpw8bqrTr0vVBwnHjgrAicODT1Uq5C8cC5TJM89ic5VL9kgLrPk9r83or6b2wJOcGSP8dU2znw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ExPPKXgNVtdFDmO8CEI78BqZaXdvhfvCgSGw0vWC94xbTLPXGVeKu4EK4a21qIl9BlH2FIop55NVRplUEeUdQw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
+4. [ETH联合Meta和鲁汶大学 提出视频恢复算法VRT，在视频超分辨率、去模糊和去噪性能达到SOTA](https://mp.weixin.qq.com/s/qDmaVKn4TGu_e4f7kplMzQ)       :star::star:
+   - Abstract: ETH联合Meta和鲁汶大学 提出视频恢复算法VRT，在视频超分辨率、去模糊和去噪性能达到SOTA
+   - Paper: [VRT: A Video Restoration Transformer](https://arxiv.org/pdf/2201.12288.pdf)
+   - Code: [https://github.com/JingyunLiang/VRT](https://github.com/JingyunLiang/VRT)
+   - Tips: 该论文为将Swin Transformer应用于单图超分中的SwinIR的视频扩展版本，在视频复原的各领域中都有很大的提升，本文将从视频超分方向来解读VRT。
 
-5. [OCR光学字符识别方法汇总（附开源代码）](https://mp.weixin.qq.com/s/_EIzOl3LmAHyypeZkvNqVw)       :star::star:
-   - Abstract: OCR光学字符识别方法汇总（附开源代码）
-   - Code: [https://github.com/ouyanghuiyu/chineseocr_lite](https://github.com/ouyanghuiyu/chineseocr_lite)
-   - Tips: 目前比较常用的中文OCR开源项目是 chineseocr，最近又有一个新开源的中文OCR项目，登上Github Trending榜单第二——chineseocr_lite
-
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/kOTNkic5gVBEvSNF0OIRQ3QEdS9IsX6L6LYKl8QqTwy311KTQ8vsa2t3pXdsPP78SHLnjrDIPnj2FSdAlfukyAA/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/BJbRvwibeSTuJsNTNxOUeaUcFnoKXmicJFRsqpw27124h8ZQrtLUWBJFhZ6wSSYzmLauG7DyhIWUib8Wq7jZNNmug/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
+5. [论文解释：SeFa ，在潜在空间中为 GAN 寻找语义向量](https://mp.weixin.qq.com/s/Pmjcl4U5gsF2zD2_3isAGA)       :star::star:
+   - Abstract: SeFa ，在潜在空间中为 GAN 寻找语义向量
+   - Paper: [Closed-Form Factorization of Latent Semantics in GANs](https://arxiv.org/abs/2007.06600)
+   - Tips: 论文提出了一种名为 SeFa 的封闭形式和无监督方法，可以无需数据采样和模型训练并找出这些方向向量来改变输出图像中的不同属性。
 
-6. [一文看尽 CVPR2022 最新 22 篇论文（附打包下载）](https://mp.weixin.qq.com/s/heXKrF4odeu4g1eLuf4Ssg)       :star::star:
-   - Abstract: 一文看尽 CVPR2022 最新 22 篇论文
-   - Address: [https://bbs.cvmart.net/articles/6124](https://bbs.cvmart.net/articles/6124)
-   - Tips: 本文汇总了22篇最新放出的CVPR 2022网络架构设计、姿态估计、语义分割、动作检测、三维视觉等方向的论文，附文章打包下载地址。
-
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_png/gYUsOT36vfoWp5hpMic2ic3dCrzZuW8H0IMQMtrJykrZkFgziaScpoic4hep1JwAibq9xmvlD34iavuvdMwSf1e21wsg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/6wQyVOrkRNLdmx0vlSj2CY9g1PjOZCc1sAxULUspcom3t6gS2eDhciasicDbtZFHP7R41Sxw6PiamEic9HgAV5l8ibg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
+
+6. [开源真实场景图像检测数据集汇总](https://mp.weixin.qq.com/s/pmFxKWR66cufNTYDMQV2rA)       :star::star:
+   - Abstract: 开源真实场景图像检测数据集汇总
+   - Tips: 本文汇总了九个图像检测相关的真实场景数据集，附有下载链接
+
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_png/gYUsOT36vfoWp5hpMic2ic3dCrzZuW8H0IMVYia1bl0xk9QK0waN2L9dG1YWeECpgoVgAv5JhQbNZF4caAZZspcsQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
 
 
 
@@ -169,8 +163,10 @@
     3. <a href="notes/202203/0303.md" target="_blank">公众号内容拓展学习笔记（2022.3.3）</a>
     4. <a href="notes/202203/0304.md" target="_blank">公众号内容拓展学习笔记（2022.3.4）</a>
     5. <a href="notes/202203/0305.md" target="_blank">公众号内容拓展学习笔记（2022.3.5）</a>
+    6. <a href="notes/202203/0306.md" target="_blank">公众号内容拓展学习笔记（2022.3.6）</a>
 </details>
 </pre>
+
 
 
 
