@@ -3,66 +3,66 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2022.3.6
+更新今日时间：2022.3.7
 
 ------
 
 ## :paperclip:  今日要点
 
-1. [CVPR 2022 | 超越Transformer！FAIR重新设计纯卷积架构：ConvNeXt](https://mp.weixin.qq.com/s/Xg5wPYExnvTqRo6s5-2cAw)         :star::star:
-   - Abstract: 超越Transformer！FAIR重新设计纯卷积架构：ConvNeXt
-   - Paper: [A ConvNet for the 2020s](https://arxiv.org/abs/2201.03545)
-   - Code: [https://github.com/facebookresearch/ConvNeXt](https://github.com/facebookresearch/ConvNeXt)
-   - Tips:  完全标准ConvNet模块构建的ConvNeXt取得了优于Transformer的精度87.8%，在COCO检测与ADE20K分割任务上超越了SwinTransformer，同时保持了ConvNet的简单性与高效性。
+1. [MUCNetV2：内存瓶颈和计算负载问题一举突破？分类&检测都有较高性能（附源代码下载）](https://mp.weixin.qq.com/s/0ORxzgOBK2EaICydw2WC2g)         :star::star:
+   - Abstract: MUCNetV2：内存瓶颈和计算负载问题一举突破？分类&检测都有较高性能（附源代码下载）
+   - Paper: [MCUNetV2: Memory-Efficient Patch-based Inference for Tiny Deep Learning](https://arxiv.org/pdf/2110.15352.pdf)
+   - Code: [https://mcunet.mit.edu](https://mcunet.mit.edu)
+   - Tips:  研究者提出一种patch-based inference机制打破初始层的内存瓶颈问题,极大程度上解决了TinyDL的内存瓶颈问题，为图像分类之外的其他视觉应用铺平了道路 。
 
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfpSoBBiaAtdGUOVDmwXWFH5YI5Kq26ibtJNgbIdfjMLibEdNfd7kvY1m1iaaUSkia4XialLeRH8VgDERGLw/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwMrPYfnqvA52o0lj84mRMSmv6Ez4E4xFyybdvibggYra3tYWrhLDaJIPPTw2LXPqqASkoWIMSnpDhA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+2. [一举打败16个同类模型，视频超分比赛冠军算法入选CVPR 2022，来自商汤&南洋理工大学](https://mp.weixin.qq.com/s/dowmz_mI7ZxNSCFjmKwibg)       :star::star:
+   - Abstract: 来自商汤&南洋理工大学视频超分比赛冠军算法BasicVSR++
+   - Paper: [BasicVSR++: Improving Video Super-Resolution with Enhanced Propagation and Alignment](https://arxiv.org/abs/2104.13371)
+   - Code: [https://github.com/ckkelvinchan/RealBasicVSR](https://github.com/ckkelvinchan/RealBasicVSR)
+   - Tips: 加强版的BasicVSR++在传播和对齐方面进行了重新改造，采用了二阶网格传播(second-order grid propagation) 和光流引导可变形对齐 (flow-guided deformable alignment)的设计来改善网络中的信息聚合能力，提升遮挡区域的鲁棒性和有效性。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtCC7Xkc0OYK2GKZgNjRf6IiaIDhN1kvg40G3eSzxYJ0teVAlLxgft6NCibbzFYEBZMcKzVC301wpicdg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-2. [YOLOS：通过目标检测重新思考Transformer（附源代码）](https://mp.weixin.qq.com/s/t-la4ZKHm8_3Krl2pD1xSw)       :star::star:
-   - Abstract: YOLOS：通过目标检测重新思考Transformer
-   - Paper: [You Only Look at One Sequence: Rethinking Transformer in Vision through Object Detection](https://arxiv.org/pdf/2106.00666.pdf)
-   - Code: [https://github.com/hustvl/YOLOS](https://github.com/hustvl/YOLOS)
-   - Tips: 我们发现仅在中等大小的ImageNet-1k数据集上预训练的YOLOS已经可以在COCO上实现具有竞争力的目标检测性能，例如直接从BERT-Base中采用的YOLOS-Base可以实现42.0 box AP。研究者还通过目标检测讨论了当前预训练方案和模型缩放策略对Transformer在视觉中的影响和局限性。
+3. [CVPR 2022 | 即插即用！助力自监督涨点的ContrastiveCrop开源了！](https://mp.weixin.qq.com/s/VTP9D5f7KG9vg30U9kVI2A)       :star::star:
+   - Abstract: 即插即用！助力自监督涨点的ContrastiveCrop开源了！
+   - Paper: [Crafting Better Contrastive Views for Siamese Representation Learning](https://arxiv.org/abs/2202.03278)
+   - Code: [https://github.com/xyupeng/ContrastiveCrop](https://github.com/xyupeng/ContrastiveCrop)
+   - Tips: ContrastiveCrop旨在确保大部分正样本对语义一致的前提下，加大样本之间的差异性，从而通过最小化对比损失学习到更泛化的特征。ContrastiveCrop完全即插即用，且理论上适用于任何孪生网络架构。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwOmIoXkZicZBNXclhhSba0iaBswxzUDeuvGiccINYWDvuHSOJmoTYPLoCTfddP5jSUIfDxHYCBrAukKQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-3. [You're AllSet! 以多重集函数角度重新检视超图GNN](https://mp.weixin.qq.com/s/KQcCGDa_80vxaf9-_BEl-A)       :star::star:
-   - Abstract: 以多重集函数角度重新检视超图GNN
-   - Paper: [You are AllSet: A Multiset Learning Framework for Hypergraph Neural Networks.](https://openreview.net/forum?id=hpBTIv2uy_E)
-   - Code: [https://github.com/jianhao2016/AllSet](https://github.com/jianhao2016/AllSet)
-   - Tips: 我们针对超图神经网络提出了一个泛用的框架AllSet，我们证明了大部分现有超图神经网络层的表达能力皆严格弱于AllSet，且证明了AllSet为MPNN的超图推广。我们利用近年深层多重集函数学习的结果，结合AllSet概念设计出可学习的AllSet层AllSSetTransformer。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ExPPKXgNVtdFDmO8CEI78BqZaXdvhfvCgSGw0vWC94xbTLPXGVeKu4EK4a21qIl9BlH2FIop55NVRplUEeUdQw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-4. [ETH联合Meta和鲁汶大学 提出视频恢复算法VRT，在视频超分辨率、去模糊和去噪性能达到SOTA](https://mp.weixin.qq.com/s/qDmaVKn4TGu_e4f7kplMzQ)       :star::star:
-   - Abstract: ETH联合Meta和鲁汶大学 提出视频恢复算法VRT，在视频超分辨率、去模糊和去噪性能达到SOTA
-   - Paper: [VRT: A Video Restoration Transformer](https://arxiv.org/pdf/2201.12288.pdf)
-   - Code: [https://github.com/JingyunLiang/VRT](https://github.com/JingyunLiang/VRT)
-   - Tips: 该论文为将Swin Transformer应用于单图超分中的SwinIR的视频扩展版本，在视频复原的各领域中都有很大的提升，本文将从视频超分方向来解读VRT。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/BJbRvwibeSTuJsNTNxOUeaUcFnoKXmicJFRsqpw27124h8ZQrtLUWBJFhZ6wSSYzmLauG7DyhIWUib8Wq7jZNNmug/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-5. [论文解释：SeFa ，在潜在空间中为 GAN 寻找语义向量](https://mp.weixin.qq.com/s/Pmjcl4U5gsF2zD2_3isAGA)       :star::star:
-   - Abstract: SeFa ，在潜在空间中为 GAN 寻找语义向量
-   - Paper: [Closed-Form Factorization of Latent Semantics in GANs](https://arxiv.org/abs/2007.06600)
-   - Tips: 论文提出了一种名为 SeFa 的封闭形式和无监督方法，可以无需数据采样和模型训练并找出这些方向向量来改变输出图像中的不同属性。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/6wQyVOrkRNLdmx0vlSj2CY9g1PjOZCc1sAxULUspcom3t6gS2eDhciasicDbtZFHP7R41Sxw6PiamEic9HgAV5l8ibg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-6. [开源真实场景图像检测数据集汇总](https://mp.weixin.qq.com/s/pmFxKWR66cufNTYDMQV2rA)       :star::star:
-   - Abstract: 开源真实场景图像检测数据集汇总
-   - Tips: 本文汇总了九个图像检测相关的真实场景数据集，附有下载链接
-
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_png/gYUsOT36vfoWp5hpMic2ic3dCrzZuW8H0IMVYia1bl0xk9QK0waN2L9dG1YWeECpgoVgAv5JhQbNZF4caAZZspcsQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/yNnalkXE7oXhCL15yhpoXRnPzYOnIgVqM7HAtmBETewLAHvFt0ktwSxDhlR4Yy5q4LhbdjNOSM0Y1qLDT49fFw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
+4. [女娲算法，杀疯了！](https://mp.weixin.qq.com/s/v_hB5BGuzRTBqQfrHb4OlA)       :star::star:
+   - Abstract: 多模态算法NÜWA（女娲）
+   - Paper: [NÜWA: Visual Synthesis Pre-training for Neural visUal World creAtion](https://arxiv.org/abs/2111.12417)
+   - Code: [https://github.com/microsoft/NUWA](https://github.com/microsoft/NUWA)
+   - Tips: NÜWA模型的整体架构包含一个支持多种条件的 adaptive 编码器和一个预训练的解码器，能够同时使图像和视频的信息。对于图像补全、视频预测、图像处理和视频处理任务，将输入的部分图像或视频直接送入解码器即可。
 
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/v1JN0W4OpXjKxdrh3FDZeCbe2ZnbF12X9hhAPVWLgJbxfDsQYibLiaeX0IQeWeAicR34iac4bib8JWlf5Q8Gqo9EichQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+
+5. [ICRA 2022 | 基于多模态变分自编码器的任意时刻三维物体重建](https://mp.weixin.qq.com/s/5U4GN76q7uR-mHN79fKFkw)       :star::star:
+   - Abstract: 基于多模态变分自编码器的任意时刻三维物体重建
+   - Paper: [Anytime3D Object Reconstruction Using Multi-Modal Variational Autoencoder](https://arxiv.org/abs/2101.10391)
+   - Tips: 为了实现类别级的插补和完整的三维形状重建，研究人员利用了潜在空间的多模态先验分布思想。与普通VAE不同，该方法中的每个模态都是在训练时自动确定的，并且包含特定类别的信息。利用这种先验分布，研究人员仅利用潜在空间中的传输元素来确定潜在变量的模式。通过从所选模型中输入采样变量，研究人员可以稳健地实现潜在向量检索和三维形状重建。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/Q0FNTB1XHiczXF0P0oEzB6XCMib6yz4MOiaDTICm6icOxhj17uTIUp4dfpoCObIR6TaK0qmT3XL2KcZ2vNeswTaB1A/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+
+6. [基于大尺寸图像的小目标检测竞赛经验总结](https://mp.weixin.qq.com/s/qbbd5FdyKKk7UI3mmGBt4Q)       :star::star:
+   - Abstract: 基于大尺寸图像的小目标检测竞赛经验总结
+   - Tips: 本文为作者参加目标检测比赛总结的数据分析，比赛思路、模型、Tricks以及分享的一些相关资料。附有详细的模型总结以及anchor的设置总结图。
+
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfrqgczsQvHuFU02XwN3KL28ichBLll8Ku0bfC59fFlDBmFbPSBv488kaEWicBLDLeHbd4UJOu0ZshPw/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
 
 
 
@@ -164,9 +164,9 @@
     4. <a href="notes/202203/0304.md" target="_blank">公众号内容拓展学习笔记（2022.3.4）</a>
     5. <a href="notes/202203/0305.md" target="_blank">公众号内容拓展学习笔记（2022.3.5）</a>
     6. <a href="notes/202203/0306.md" target="_blank">公众号内容拓展学习笔记（2022.3.6）</a>
+    7. <a href="notes/202203/0307.md" target="_blank">公众号内容拓展学习笔记（2022.3.7）</a>
 </details>
 </pre>
-
 
 
 
