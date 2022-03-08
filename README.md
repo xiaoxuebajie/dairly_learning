@@ -3,66 +3,61 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2022.3.7
+更新今日时间：2022.3.8
 
 ------
 
-## :paperclip:  今日要点
+1. - 。
 
-1. [MUCNetV2：内存瓶颈和计算负载问题一举突破？分类&检测都有较高性能（附源代码下载）](https://mp.weixin.qq.com/s/0ORxzgOBK2EaICydw2WC2g)         :star::star:
-   - Abstract: MUCNetV2：内存瓶颈和计算负载问题一举突破？分类&检测都有较高性能（附源代码下载）
-   - Paper: [MCUNetV2: Memory-Efficient Patch-based Inference for Tiny Deep Learning](https://arxiv.org/pdf/2110.15352.pdf)
-   - Code: [https://mcunet.mit.edu](https://mcunet.mit.edu)
-   - Tips:  研究者提出一种patch-based inference机制打破初始层的内存瓶颈问题,极大程度上解决了TinyDL的内存瓶颈问题，为图像分类之外的其他视觉应用铺平了道路 。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwMrPYfnqvA52o0lj84mRMSmv6Ez4E4xFyybdvibggYra3tYWrhLDaJIPPTw2LXPqqASkoWIMSnpDhA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-2. [一举打败16个同类模型，视频超分比赛冠军算法入选CVPR 2022，来自商汤&南洋理工大学](https://mp.weixin.qq.com/s/dowmz_mI7ZxNSCFjmKwibg)       :star::star:
-   - Abstract: 来自商汤&南洋理工大学视频超分比赛冠军算法BasicVSR++
-   - Paper: [BasicVSR++: Improving Video Super-Resolution with Enhanced Propagation and Alignment](https://arxiv.org/abs/2104.13371)
-   - Code: [https://github.com/ckkelvinchan/RealBasicVSR](https://github.com/ckkelvinchan/RealBasicVSR)
-   - Tips: 加强版的BasicVSR++在传播和对齐方面进行了重新改造，采用了二阶网格传播(second-order grid propagation) 和光流引导可变形对齐 (flow-guided deformable alignment)的设计来改善网络中的信息聚合能力，提升遮挡区域的鲁棒性和有效性。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtCC7Xkc0OYK2GKZgNjRf6IiaIDhN1kvg40G3eSzxYJ0teVAlLxgft6NCibbzFYEBZMcKzVC301wpicdg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KYSDTmOVZvrtUnGl4ib7iaup21jHMhtZtBXibM8PPZE9dlYeFbewEBUEMJ3LNN1KYszPOeVKicT8Cibug5wsv4vtfAA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-3. [CVPR 2022 | 即插即用！助力自监督涨点的ContrastiveCrop开源了！](https://mp.weixin.qq.com/s/VTP9D5f7KG9vg30U9kVI2A)       :star::star:
-   - Abstract: 即插即用！助力自监督涨点的ContrastiveCrop开源了！
-   - Paper: [Crafting Better Contrastive Views for Siamese Representation Learning](https://arxiv.org/abs/2202.03278)
-   - Code: [https://github.com/xyupeng/ContrastiveCrop](https://github.com/xyupeng/ContrastiveCrop)
-   - Tips: ContrastiveCrop旨在确保大部分正样本对语义一致的前提下，加大样本之间的差异性，从而通过最小化对比损失学习到更泛化的特征。ContrastiveCrop完全即插即用，且理论上适用于任何孪生网络架构。
+2. [多尺度特征融合：为检测学习更好的语义信息（附论文下载）](https://mp.weixin.qq.com/s/eMXyOSH5rCJOCmKlaBNiNg)       :star::star:
+   - Abstract: 多尺度特征融合：为检测学习更好的语义信息
+   - Paper: [MULTI-SCALE FEATURE FUSION: LEARNING BETTER SEMANTIC SEGMENTATION FOR ROAD POTHOLE DETECTION](https://arxiv.org/pdf/2112.13082.pdf)
+   - Tips: 本文提出了一种基于单模态语义分割的新型坑洼检测方法。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/yNnalkXE7oXhCL15yhpoXRnPzYOnIgVqM7HAtmBETewLAHvFt0ktwSxDhlR4Yy5q4LhbdjNOSM0Y1qLDT49fFw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwMWWxUm6Hz5BnfzgJwibXlSJWLDVq6XUl10PDEvN7527icy21B6AvSyBtXWj0V9uPZutI05vpVGlo2g/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+3. [AI大一统：阿里达摩院发布多任务、多模态统一模型OFA](https://mp.weixin.qq.com/s/8pPdtOhB_5gFwDvTsumo3Q)       :star::star:
+   - Abstract: AI大一统：阿里达摩院发布多任务、多模态统一模型OFA
+   - Paper: [Unifying Architectures, Tasks, and Modalities Through a Simple Sequence-to-Sequence Learning Framework](https://arxiv.org/pdf/2202.03052.pdf)
+   - Code: [https://github.com/OFA-Sys/OFA](https://github.com/OFA-Sys/OFA)
+   - Tips: 本文介绍的统一模型OFA是一个与任务无关、模态无关的综合性、大一统模型，能够实现多模态和单模态理解和生成，无需在附加层或任务中指定。
+
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_png/8GhSlicxMkHIN0gJm7yqUYyIGSrliatGPHwwlGjeHkYWDfueaGHicRN5y6C5FfotcZYlypUR8cJ0OlaD20BciaX4Mg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+4. [打打字就能指挥算法视频抠图，Transformer掌握跨模态新技能，精度优于现有模型丨CVPR 2022](https://mp.weixin.qq.com/s/l21phg2EEVuUrs29ZKVeOQ)       :star::star:
+   - Abstract: Transformer掌握跨模态新技能，实现视频抠图
+   - Paper: [End-to-End Referring Video Object Segmentation with Multimodal Transformers](https://arxiv.org/abs/2111.14821)
+   - Code: [https://github.com/mttr2021/MTTR](https://github.com/mttr2021/MTTR)
+   - Demo: [https://huggingface.co/spaces/akhaliq/MTTR](https://huggingface.co/spaces/akhaliq/MTTR)
+   - Tips: 研究人员意识到，视频和文本可以同时通过单个多模态Transformer模型进行有效处理。因此提出了这个叫做MTTR （Multimodal Tracking Transformer）的新架构，将RVOS任务建模为序列（sequence）预测问题。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtC2BKRqz92L69gypZ2ib9eFqrncicKgU7mqTehcIQSpfibofZ64MEumjw4sD1U9QhwAQFNGXr88tMxJw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+5. [ACM MM 2021 | FedUReID：联邦无监督行人重识别训练](https://mp.weixin.qq.com/s/vg16EDSiBW5XRB7le0UNHQ)       :star::star:
+   - Abstract: FedUReID：联邦无监督行人重识别训练
+   - Paper: [Joint Optimization in Edge-Cloud Continuum for Federated Unsupervised Person Re-identification](https://arxiv.org/abs/2108.06493)
+   - Tips: 本文提出了联邦无监督行人重识别系统 FedUReID，实现了使用无标注行人重识别数据进行分布式联邦学习，同时还保护了数据隐私。不仅如此，我们采用边云联合优化的方法进一步解决了数据异构性的问题。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ibaXaPIy7jV0p5RIZPibVYIap1lnoFjXCrhheMIic3tu3M2QWwBDOl53WEoYrbOkfghgBzXFBMHibyLyCpPsBsicQyA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-4. [女娲算法，杀疯了！](https://mp.weixin.qq.com/s/v_hB5BGuzRTBqQfrHb4OlA)       :star::star:
-   - Abstract: 多模态算法NÜWA（女娲）
-   - Paper: [NÜWA: Visual Synthesis Pre-training for Neural visUal World creAtion](https://arxiv.org/abs/2111.12417)
-   - Code: [https://github.com/microsoft/NUWA](https://github.com/microsoft/NUWA)
-   - Tips: NÜWA模型的整体架构包含一个支持多种条件的 adaptive 编码器和一个预训练的解码器，能够同时使图像和视频的信息。对于图像补全、视频预测、图像处理和视频处理任务，将输入的部分图像或视频直接送入解码器即可。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/v1JN0W4OpXjKxdrh3FDZeCbe2ZnbF12X9hhAPVWLgJbxfDsQYibLiaeX0IQeWeAicR34iac4bib8JWlf5Q8Gqo9EichQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+6. [提升精度 | 新的小样本学习算法提升物体识别精度（附论文地址）](https://mp.weixin.qq.com/s/IarPk-DRLAM-vur4F57AUg)       :star::star:
+   - Abstract: 新的小样本学习算法提升物体识别精度
+   - Paper: [DeepEMD: Differentiable Earth Mover’s Distance for Few-Shot Learning](https://arxiv.org/abs/2003.06777)
+   - Tips: 而本文将图片拆分成多个图块，然后引入一种新的距离度量方式陆地移动距离（Earth Mover’s Distance，EMD），计算查询集和支持集图像的各个图块之间的最佳匹配代价来表示二者之间的相似程度。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwM3eVkjpCsNBElLYf8JoWyvW0aM1n10aqDpm4frWoNku8QTjBrvaWkA8fgKETR1yicQPvxEicE5d0dA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-
-5. [ICRA 2022 | 基于多模态变分自编码器的任意时刻三维物体重建](https://mp.weixin.qq.com/s/5U4GN76q7uR-mHN79fKFkw)       :star::star:
-   - Abstract: 基于多模态变分自编码器的任意时刻三维物体重建
-   - Paper: [Anytime3D Object Reconstruction Using Multi-Modal Variational Autoencoder](https://arxiv.org/abs/2101.10391)
-   - Tips: 为了实现类别级的插补和完整的三维形状重建，研究人员利用了潜在空间的多模态先验分布思想。与普通VAE不同，该方法中的每个模态都是在训练时自动确定的，并且包含特定类别的信息。利用这种先验分布，研究人员仅利用潜在空间中的传输元素来确定潜在变量的模式。通过从所选模型中输入采样变量，研究人员可以稳健地实现潜在向量检索和三维形状重建。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/Q0FNTB1XHiczXF0P0oEzB6XCMib6yz4MOiaDTICm6icOxhj17uTIUp4dfpoCObIR6TaK0qmT3XL2KcZ2vNeswTaB1A/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-
-6. [基于大尺寸图像的小目标检测竞赛经验总结](https://mp.weixin.qq.com/s/qbbd5FdyKKk7UI3mmGBt4Q)       :star::star:
-   - Abstract: 基于大尺寸图像的小目标检测竞赛经验总结
-   - Tips: 本文为作者参加目标检测比赛总结的数据分析，比赛思路、模型、Tricks以及分享的一些相关资料。附有详细的模型总结以及anchor的设置总结图。
-
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfrqgczsQvHuFU02XwN3KL28ichBLll8Ku0bfC59fFlDBmFbPSBv488kaEWicBLDLeHbd4UJOu0ZshPw/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
 
 
 
@@ -165,8 +160,10 @@
     5. <a href="notes/202203/0305.md" target="_blank">公众号内容拓展学习笔记（2022.3.5）</a>
     6. <a href="notes/202203/0306.md" target="_blank">公众号内容拓展学习笔记（2022.3.6）</a>
     7. <a href="notes/202203/0307.md" target="_blank">公众号内容拓展学习笔记（2022.3.7）</a>
+    8. <a href="notes/202203/0308.md" target="_blank">公众号内容拓展学习笔记（2022.3.8）</a>
 </details>
 </pre>
+
 
 
 
