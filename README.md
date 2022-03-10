@@ -3,72 +3,66 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2022.3.9
+更新今日时间：2022.3.10
 
 ------
 
 ## :paperclip:  今日要点
 
-1. [【YOLOP 解读】基于YOLO改进的全景驾驶感知网络，可同时处理三大视觉任务！](https://mp.weixin.qq.com/s/OsNsw9Sg_dd9ivx3-lqI7g)         :star::star:
-   - Abstract: YOLOP基于YOLO改进的全景驾驶感知网络，可同时处理三大视觉任务！
-   - Paper: [YOLOP: You Only Look Once for Panoptic Driving Perception](https://arxiv.org/abs/2108.11250)
-   - Code: [https://github.com/hustvl/YOLOP](https://github.com/hustvl/YOLOP)
-   - Tips:  我们提出了一个高效的多任务网络，可以共同处理自动驾驶中的三个关键任务：物体检测、可行驶区域分割和车道检测，以节省计算成本，减少推理时间以提高每项任务的性能。
+1. [U2PL: 使用不可靠伪标签的半监督语义分割 (CVPR'22)](https://mp.weixin.qq.com/s/ruOIXZ8lMImKnzgcE0d6vQ)         :star::star:
+   - Abstract: U2PL: 使用不可靠伪标签的半监督语义分割 
+   - Paper: [Semi-Supervised Semantic Segmentation Using Unreliable Pseudo-Labels](https://arxiv.org/pdf/2203.03884.pdf)
+   - Code: [https://github.com/Haochen-Wang409/U2PL](https://github.com/Haochen-Wang409/U2PL)
+   - Tips:  半监督任务的关键在于充分利用无标签数据，本文基于「 Every Pixel Matters」的理念，有效利用了包括不可靠样本在内的全部无标签数据，大幅提升算法精度。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/RszMGpUQZjeZpibn2NLuP2iaus5QgPZicOrAicNkuQOzEwUpibcopq0tDcQnR3pYrOa1odjMGicubrpHfE3ukuyLS7hQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-2. [CVPR 2022 | 清华&字节提出FGD：针对目标检测的重点与全局知识蒸馏](https://mp.weixin.qq.com/s/yDkreTudC8JL2V2ETsADwQ)       :star::star:
-   - Abstract: 清华&字节提出FGD：针对目标检测的重点与全局知识蒸馏
-   - Paper: [Focal and Global Knowledge Distillation for Detectors](https://arxiv.org/abs/2111.11837)
-   - Code: [https://github.com/yzd-v/FGD](https://github.com/yzd-v/FGD)
-   - Tips:  FGD仅需要获取学生与教师的特征图，便可完成重点蒸馏损失与全局蒸馏损失的计算，可以很方便的应用到各种类型的检测器上。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/yNnalkXE7oUkO5p0VgUZn2dPeicTt1FqMgG0RM2OWc7iaACwzr2DSVYjPITZdhoqp1C8TvycYTWlLtjOh1dOSPKQ/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfpqGQBBp2Dibm5CuMZC4Z1JKA9JNsBUaoj9SySVQ0kibic3jlXM4paYiaM0oDaqvdPmYPewp0FgdzLHzg/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-3. [CVPR 2022 | 南大&腾出提出ST++: 半监督语义分割中更优的自训练范式](https://mp.weixin.qq.com/s/knSnlebdtEnmrkChGM_0CA)       :star::star:
-   - Abstract: 南大&腾出提出ST++: 半监督语义分割中更优的自训练范式
-   - Paper: [ST++: Make Self-training Work Better for Semi-supervised Semantic Segmentation](https://arxiv.org/abs/2106.05095)
-   - Code: [https://github.com/LiheYoung/ST-PlusPlus](https://github.com/LiheYoung/ST-PlusPlus)
-   - Tips: 本文提出了两个关键的改进策略，分别是在无标签图像上注入强数据增广和基于图像级别选择的渐进式重训练策略。结合了上述改进策略后，传统的self-traininig范式可以同时享有entropy minimization和consistency regularization的优点，并且可以取得优于最新的采用端到端训练的方法的结果。
+2. [ICLR 2022 Oral | PiCO：基于对比消歧的偏标签学习](https://mp.weixin.qq.com/s/H8igvPdhIPZv82CBAhNI2Q)       :star::star:
+   - Abstract: PiCO：基于对比消歧的偏标签学习
+   - Paper: [PiCO: Contrastive Label Disambiguation for Partial Label Learning](https://arxiv.org/abs/2201.08984)
+   - Tips:  本文提出一个协同的框架解决 PLL 中的两个关键研究挑战——表征学习和标签消歧。具体来说PiCO 由一个对比学习模块和一个新颖的基于类原型的标签消歧算法组成。PiCO 为来自同一类的样本生成紧密对齐的表示，同时促进标签消歧。从理论上讲，我们表明这两个组件能够互相促进，并且可以从期望最大化 (EM) 算法的角度得到严格证明
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/yNnalkXE7oVwUuUxNaotZFFpxIVb2RibiaZIOzbNcox2pYic7K1Tmr8DNEzhYNIwfggUiakJ0nYfpgic4Bib5WIe410g/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-
-4. [AAAI2022 | SITVOS: 探索transformer在VOS中的隐式目标表征和信息传播](https://mp.weixin.qq.com/s/LCDsqmmCcPHKPwMNoIpqNA)       :star::star:
-   - Abstract: SITVOS: 探索transformer在VOS中的隐式目标表征和信息传播
-   - Paper: [Siamese Network with Interactive Transformer for Video Object Segmentation](https://arxiv.org/abs/2112.13983)
-   - Tips: 在这篇论文中，我们为SVOS任务构建了一个基于孪生网络的高效架构，并设计了交互式transformer来实现目标表征的隐式增强和目标信息传递，从而完成对整个视频序列指定目标的分割。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/Mcdq8uia1WiadqH3UzzqWYCuZbzEbjcj8RXxGD5OdUXR7TzznphcoSaxIBkRmwlTwch6mLaqxa0sT2Sdhib5icHW8g/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-
-5. [CVPR 2022 | CNN自监督预训练新SOTA：上交、Mila、字节联合提出具有层级结构的图像表征自学习新框架](https://mp.weixin.qq.com/s/CUa4ZAccoXFLvy00QFYCWQ)       :star::star:
-   - Abstract: CNN自监督预训练新SOTA：上交、Mila、字节联合提出具有层级结构的图像表征自学习新框架
-   - Paper: [HCSC: Hierarchical Contrastive Selective Coding](https://arxiv.org/abs/2202.00455)
-   - Code: [https://github.com/gyfastas/HCSC](https://github.com/gyfastas/HCSC)
-   - Tips: 这一框架通过将图像表征进行层级聚类，构造具有层级结构的原型向量 (hierarhcical prototypes)，并通过这些原型向量选择更加符合语义结构的负样本进行对比学习，由此将层级化的语义信息融入到图像表征中。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gWicib656vCpnTtDwiaUHVicYQ3ibKicTrpp5ibpu0vysPfNKKugtia4TwJXXOZRjER5MQ86jqkB21PJPEokkA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-
-6. [新突破！华为诺亚开源首个亿级中文多模态数据集-悟空！](https://mp.weixin.qq.com/s/5o94Ncx5lAw9i_HC0hntMQ)       :star::star:
-   - Abstract: 华为诺亚开源首个亿级中文多模态数据集-悟空！
-   - Paper: [Wukong: 100 Million Large-scale Chinese Cross-modal Pre-training Dataset and A Foundation Framework](https://arxiv.org/pdf/2202.06767.pdf)
-   - Dataset: [](https://wukong-dataset.github.io/wukong-dataset/benchmark.html)
-   - Tips: 除了发布大型中文跨模态数据集悟空以外，还进一步发布了一组使用不同架构（ResNet/ViT/SwinT）和不同方法（CLIP、FILIP 和 LiT）大型预训练模型。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/KmXPKA19gWibFK8ZbARmc5zE6YSWmm0UAZZVJNlia45t5xiaVLrRibXrhsVdrC7qxcGSNaTMCJpGnJia7aK3gWOeRIQ/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ibaXaPIy7jV1tNHdJpayNO1SaOf4Pia790v4Q9N5iaVVAryZQ6q1QULO59FibiakmAeILfgcVNY0YicaUDuOPl8HpaDw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
 
-## 
+3. [骗人还是文字强！MIT最新研究：DeepFake换脸还不如编辑动动笔](https://mp.weixin.qq.com/s/0iL4fwL43xHgZzsvkeD73g)       :star::star:
+   - Abstract: MIT最新研究：DeepFake换脸还不如编辑动动笔
+   - Paper: [Human detection of political deepfakes across transcripts, audio, and video](https://arxiv.org/pdf/2202.12883.pdf)
+   - Tips: 伪造的政治演讲视频比伪造的文字记录更容易识别，这一发现强调了重新让人们忆起常被遗忘的『眼见为实』格言的必要性。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/UicQ7HgWiaUb0umeKaXU2mIcLD96efib8FEajQRXu1VEDJWEzoialgyu2mQfLQJLz7YIicJK5etzXVTBOzBDTibNGv0A/640?wx_fmt=gif&wxfrom=5&wx_lazy=1" style='zoom:100%'>
+</div>
+
+
+
+4. [Detectors for the 2020s 目标检测算法最新进展](https://mp.weixin.qq.com/s/NJhE3Psvp-DHeZverfJxng)       :star::star:
+   - Abstract: 目标检测算法最新进展
+   - Tips: 近几年目标检测的落地越发成熟，新的sota网络同样层出不穷，不断刷新着coco的记录。本文盘点截止2019-2021年，在coco test-dev上霸榜，且知名度较广的目标检测网络。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/SdQCib1UzF3uViau2OJXatzYic5e17ibhibnxujWib66ZddibLD6Fg51lV3wial9EIhfwHedoX7L5z0vFsUq7S6lvGO9Pw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+5. [目标检测最少训练数据量及类别不平衡的实战研究](https://mp.weixin.qq.com/s/iZYmst7GuWPpEr4s-rTsqg)       :star::star:
+   - Abstract: 目标检测最少训练数据量及类别不平衡的实战研究
+   - Tips: 本文采用Yolov5进行测试，从实验中得出训练时所需图像数据的最少数据量，数据不平衡问题的解决方式，以及模型更新的最优方法。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/VvkhdVVVIDhicEs3IeDbRDWKicfuRRbwgjtFnMXvoiaGItMrsLyMsibw2Wm00ZpuL973ZS2Vvl3gzQulL9jMianAcdA/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+
+
+6. [你一定从未看过如此通俗易懂的YOLO系列（从V1到V5）模型解读！](https://mp.weixin.qq.com/s/EAONLOEIuexJBqbUvvb07g)       :star::star:
+   - Abstract: 通俗易懂的YOLO系列（从V1到V5）模型解读！
+   - Tips: 本文采用生动有趣的语言和案例，对YOLO系列模型的原理、设计及改进思路进行了详细解读，干货满满，不仅适合新手入门阅读，也能帮助大家进一步加深理解。
+
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfp0Y6EQc74RUsLKenPy1Bg14z5yHQVKgnnOg3xfFQTicfBUtLhQtsCsiaqBGfpyAcSPxAIUhBIGZHcw/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+
 
 ## :paperclip:  历史更新
 
@@ -171,10 +165,9 @@
     7. <a href="notes/202203/0307.md" target="_blank">公众号内容拓展学习笔记（2022.3.7）</a>
     8. <a href="notes/202203/0308.md" target="_blank">公众号内容拓展学习笔记（2022.3.8）</a>
     9. <a href="notes/202203/0309.md" target="_blank">公众号内容拓展学习笔记（2022.3.9）</a>
+    10. <a href="notes/202203/0310.md" target="_blank">公众号内容拓展学习笔记（2022.3.10）</a>
 </details>
 </pre>
-
-
 
 
 ## :paperclip:  Others
