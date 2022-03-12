@@ -3,71 +3,67 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2022.3.11
+更新今日时间：2022.3.12
 
 ------
 
 ## :paperclip:  今日要点
 
-1. [CVPR | Facebook提出FP-NAS：搜索速度更快、分类精度更高、性能更好](https://mp.weixin.qq.com/s/4v0grlvv7wARd_Dh5_uD_g)         :star::star:
-   - Abstract: Facebook提出FP-NAS：搜索速度更快、分类精度更高、性能更好
-   - Paper: [FP-NAS: Fast Probabilistic Neural Architecture Search](https://arxiv.org/abs/2011.10949)
-   - Tips:  该算法采用自适应架构概率分布熵的架构采样，能够减少采样样本达 60%，加速搜索快 1.8 倍。此外，该算法还包括一种新的基于分解概率分布的由粗到细的搜索策略，进一步加速搜索快达 1.2 倍。
+1. [DINO：目标检测benchmark COCO屠榜的正确姿势](https://mp.weixin.qq.com/s/gX_YEEpBlbEPBL0mTNrFGg)         :star::star:
+   - Abstract: DINO：目标检测benchmark COCO屠榜的正确姿势
+   - Paper: [DINO: DETR with Improved DeNoising Anchor Boxes for End-to-End Object Detection](https://arxiv.org/abs/2203.03605)
+   - Code: [https://github.com/IDEACVR/DINO](https://github.com/IDEACVR/DINO)
+   - Tips:  DINO改善了one-to-one匹配问题，训练的时候正样本和负样本同时加了噪声，提出mixed query selection method，有助于改善queries的初始化，引入非临近层的特征，更像是增加感受一下，提高小目标的表达能力。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwPxfJIiaWYwh2arlsxvdZLDtQYeiapticwXfSjUolTu56HXccKaPA4FArwVffqvoTEIn7WwcQXXptRrQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-2. [CVPR最有趣论文 | 再模糊的照片AI都可以可以恢复](https://mp.weixin.qq.com/s/KmizgnGOfirFh08UFX_G7Q)       :star::star:
-   - Abstract: 再模糊的照片AI都可以可以恢复
-   - Paper: [Towards Real-World Blind Face Restoration with Generative Facial Prior](https://arxiv.org/pdf/2101.04061.pdf)
-   - Code: [https://github.com/TencentARC/GFPGAN](https://github.com/TencentARC/GFPGAN)
-   - Tips:  GFP-GAN框架的概述：它包括一个degradation removal模块和一个预先训练好的face GAN作为 facial prior。它们由latent code映射和几个Channel-Split Spatial Feature Transform(CSSFT)层。所提出的CS-SFT调制实现了良好的保真度和保真度平衡。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwPxfJIiaWYwh2arlsxvdZLDtgGm8wGl9SwWy2ZWM4Flmyr0hUoo9uzp7sxagDT9j8slJwfkd4eAMyQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfot2j3EflmEpbeLhx2Lb3pYhjrXqGPJZZmlTNI87ZHvDn61msTIv2wp26F13QC5GoNERypFEic0nxg/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
+2. [难度炸裂！DeepChange：一个新的超大规模的换衣行人再识别数据集](https://mp.weixin.qq.com/s/3ZgXvRsQrdMBSn23-z2mJQ)       :star::star:
+   - Abstract: DeepChange：一个新的超大规模的换衣行人再识别数据集
+   - Paper: [DeepChange: A Large Long-Term Person Re-Identification Benchmark with Clothes Change](https://arxiv.org/abs/2105.14685)
+   - Code: [https://github.com/PengBoXiangShang/deepchange](https://github.com/PengBoXiangShang/deepchange)
+   - Tips:  17个监控摄像头（多种分辨率），1121个person ID，17万余个bbox，时间覆盖12个月，这几项主要指标，均是目前该领域数据集中的最大值。
 
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/BJbRvwibeSTviaRCkhrZDOSQiaI5fDuPcibfzn1v3Pc1UibgjVUXFopic3sxUBGYvvCdPzL5HMhh3lS0x5qKU5HBxTicw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
 
-3. [ZippyPoint: 一种基于学习的特征点提取+二进制描述子，速度提升5倍+，为移动平台提供一种ORB的替代方案](https://mp.weixin.qq.com/s/1Kw3j6yT7koZdJ0HDUm93g)       :star::star:
-   - Abstract: MIT最新研究：ZippyPoint: 一种基于学习的特征点提取+二进制描述子，速度提升5倍+，为移动平台提供一种ORB的替代方案
-   - Paper: [ZippyPoint: Fast Interest Point Detection, Description, and Matching through Mixed Precision Discretization](https://arxiv.org/abs/2203.03610)
-   - Tips: 本文设计了ZippyPoint，它是一个用于特征点提取的网络。与ORB的描述子类似，ZippyPoint得到的也是二进制描述子。该特征点可以获得与基于学习的特征匹配以及视觉定位性能，同时速度提升5倍。
+3. [人脸随意编辑！Adobe祭出新一代GAN神器：最多支持35个人脸属性变化](https://mp.weixin.qq.com/s/jYWGF2k8uWKZVUkT-wDB6g)       :star::star:
+   - Abstract: Adobe祭出新一代GAN神器：最多支持35个人脸属性变化
+   - Paper: [Latent to Latent: A Learned Mapper for Identity Preserving Editing of Multiple Face Attributes in StyleGAN-generated Images](https://openaccess.thecvf.com/content/WACV2022/papers/Khodadadeh_Latent_to_Latent_A_Learned_Mapper_for_Identity_Preserving_Editing_WACV_2022_paper.pdf)
+   - Tips: 用GAN模型进行图像合成有一个显著缺点，就是生成的图像不可控制，经常是摘个眼睛把性别都变了。最近Adobe提出新一代GAN模型，能够自由控制35个人脸属性的变化，而不会互相干扰。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/RkDHyHvXvJ6yBlr3JfYhXF9GSagyDaWxIDrlA5QjG8fNkhhGZ2tmiasQ3iau6QutoEnUfhtIpiaOLd7ww76WAkmiaw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/UicQ7HgWiaUb31cG3UkPQq4n9NUubY9ZISl0HVbbQKxibz6kpSZz1zfsIVzbU2LqZfSb4Mdsp4uiaK7pqR7PnzMD5Q/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+4. [CVPR 2022 | 高分论文！港科大/IDEA/清华提出DN-DETR: 加速DETR收敛的去噪训练](https://mp.weixin.qq.com/s/xdMfZ_L628Ru1d1iaMny0w)       :star::star:
+   - Abstract: 港科大/IDEA/清华提出DN-DETR: 加速DETR收敛的去噪训练
+   - Paper: [DN-DETR: Accelerate DETR Training by Introducing Query DeNoising](https://arxiv.org/abs/2203.01305)
+   - Address: [https://github.com/FengLi-ust/DN-DETR](https://github.com/FengLi-ust/DN-DETR)
+   - Tips: 第一次提出了全新的去噪训练(DeNoising training)解决DETR decoder二分图匹配 （bipartite graph matching）不稳定的问题，可以让模型收敛速度翻倍，并对检测结果带来显著提升
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/yNnalkXE7oXyfKwzFmDkr2qwZOftNFTM87nj0PNAzFUCDya1vWORPzzHNps0PYtXm9RLlqrzaQ7b1U08nuVhIw/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+5. [ECCV 2020 Oral | 可逆图像缩放：完美恢复降采样后的高清图片](https://mp.weixin.qq.com/s/YWbJUco2PBy5kA3d6IZ_Bw)       :star::star:
+   - Abstract: 可逆图像缩放：完美恢复降采样后的高清图片
+   - Paper: [Invertible Image Rescaling](https://arxiv.org/pdf/2005.05650.pdf)
+   - Code: [https://github.com/pkuxmq/Invertible-Image-Rescaling](https://github.com/pkuxmq/Invertible-Image-Rescaling)
+   - Tips: 本文使用可逆神经网络对解决这一对逆任务进行了初步的尝试，沿着这条思路仍有很多值得发掘的点。同时，信息丢失(Information Loss)所导致的ill-posed问题在现实中也大量存在，本文提供的对Lost Information进行建模的视角，相信可以对类似任务有一定的参考价值。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/cNFA8C0uVPsBOQBLj8MChIxGicfWeo1Pib385zBXywjvKDYBSU6QuIVxwV9NPkjcia9UFf3zyXazmBByu7XCw5MOA/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+6. [超级干货 | 用万字文章总结25种正则化方法](https://mp.weixin.qq.com/s/adPMorv80Gx3LrpuyxU2jQ)       :star::star:
+   - Abstract: 用万字文章总结25种正则化方法
+   - Paper: [Avoiding Overfitting: A Survey on Regularization Methods for Convolutional Neural Networks](https://arxiv.org/abs/2201.03299v1)
+   - Tips: 训练中的一个关键因素是网络的正则化，它可以防止模型在训练的过程中出现过拟合的现象。本文分析了过去几年发展起来的几种正则化方法，显示了不同CNN模型的显著改进。
+
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfpqGQBBp2Dibm5CuMZC4Z1JKic0vsiaDg4oSl9fTzGzDx4e3xpvwB9SyznaqwVVnefo6NTnXISF2u1eg/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-
-
-4. [CVPR 2022 最新 65 篇论文分方向整理｜包含目标检测、动作识别、人群计数等方向（附打包下载）](https://mp.weixin.qq.com/s/TAMflTf8RBtHBknom9F6yw)       :star::star:
-   - Abstract: CVPR 2022 最新 65 篇论文分方向整理｜包含目标检测、动作识别、人群计数等方向
-   - Address: [https://bbs.cvmart.net/articles/6124](https://bbs.cvmart.net/articles/6124)
-   - Tips: 65 篇 CVPR 2022 论文，包含目标检测、异常检测、超分辨率、姿态估计、三维重建、医学影像、动作识别、人群计数、视觉预测、图像特征匹配等方向。
-
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfo3T7brEa3n6ropDWL85EHYQFBicwQpdUH7LExY7qUSv6qE40thCehaSfoHNrxicclk3vRdj6d42mHg/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-
-5. [YOLOv5-Lite 详解教程 | 嚼碎所有原理、训练自己数据集、TensorRT部署落地应有尽有](https://mp.weixin.qq.com/s/CuLuoaGaN8AaXj67Y1Y21A)       :star::star:
-   - Abstract: YOLOv5-Lite 详解教程
-   - Tips: YOLOv5 Lite在YOLOv5的基础上进行一系列消融实验，使其更轻（Flops更小，内存占用更低，参数更少），更快（加入shuffle channel，yolov5 head进行通道裁剪，在320的input_size至少能在树莓派4B上的推理速度可以达到10+FPS），更易部署（摘除Focus层和4次slice操作，让模型量化精度下降在可接受范围内）。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/5ooHoYt0tgnkY0YNkpaibu2ZxNOjEdtOMA75WP85XzHicdFzCSJcibMmfLIia6yaTBcF7Ux5VH4zThrlO2YGDFQjRw/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-
-
-
-6. [模型量化技巧及在低功耗IOT设备的应用实践](https://mp.weixin.qq.com/s/KWyM3mgvZhtlcuXaodNJ3A)       :star::star:
-   - Abstract: 模型量化技巧及在低功耗IOT设备的应用实践
-   - Tips: 本文介绍了神经网络模型在轻量级设备的部署技巧，具体内容包括神经网络模型量化的基本原理和主要方法，以及部分低功耗IOT设备上模型部署的实例与技巧。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/xm3mwmQ97RcWfJt9Zonu6uzOY7RzOUkoAbS0M73icWY6sATPMbenPxib9IJTQebFYpiaXOA2ElqytjFDPmwVm9Zdw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-
-
+## 
 
 ## :paperclip:  历史更新
 
@@ -172,6 +168,7 @@
     9. <a href="notes/202203/0309.md" target="_blank">公众号内容拓展学习笔记（2022.3.9）</a>
     10. <a href="notes/202203/0310.md" target="_blank">公众号内容拓展学习笔记（2022.3.10）</a>
     11. <a href="notes/202203/0311.md" target="_blank">公众号内容拓展学习笔记（2022.3.11）</a>
+    12. <a href="notes/202203/0312.md" target="_blank">公众号内容拓展学习笔记（2022.3.12）</a>
 </details>
 </pre>
 
