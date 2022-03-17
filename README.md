@@ -3,65 +3,68 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2022.3.16
+更新今日时间：2022.3.17
 
 ------
 
 ## :paperclip:  今日要点
 
-1. [CVPR 2022｜MPViT：用于密集预测的多路径视觉Transformer](https://mp.weixin.qq.com/s/D0u1th6g1OhuSphGdXvVJg)         :star::star:
-   - Abstract: MPViT：用于密集预测的多路径视觉Transformer
-   - Paper: [MPViT: Multi-Path Vision Transformer for Dense Prediction](https://arxiv.org/abs/2112.11010)
-   - Code: [https://github.com/youngwanLEE/MPViT](https://github.com/youngwanLEE/MPViT)
-   - Tips:  作者们以与现有 Transformer 不同的视角，探索多尺度path embedding与multi-path结构结构，构建多路径视觉 Transformer (MPViT)。大量的实验也表明表明 MPViT 可以作为各种视觉任务的多功能骨干网络。
+1. [一个框架统一Siamese自监督学习，清华、商汤提出简洁、有效梯度形式，实现SOTA](https://mp.weixin.qq.com/s/OZ3iROiuOI1lRuYdmBa7yg)         :star::star:
+   - Abstract: 一个框架统一Siamese自监督学习，清华、商汤提出简洁、有效梯度形式，实现SOTA
+   - Paper: [Exploring the Equivalence of Siamese Self-Supervised Learning via A Unified Gradient Framework](https://arxiv.org/pdf/2112.05141.pdf)
+   - Tips:  来自清华大学、商汤科技等机构的研究者们提出一种简洁而有效的梯度形式——UniGrad，不需要复杂的 memory bank 或者 predictor 网络设计，也能给出 SOTA 的性能表现。
 
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfoCmqzibQ9WAY8qTEcOeN7sToE8G8deX8tPL4zN9sHn6o5BxB3gVjeXsg6utjEhpBkFP0EI5fzVwIQ/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-2. [即插即用 | S-FPN全新的金字塔网络，更适合轻量化模型的FPN](https://mp.weixin.qq.com/s/sDuBN3qVxlRth5vlOUoEjg)       :star::star:
-   - Abstract: S-FPN全新的金字塔网络，更适合轻量化模型的FPN
-   - Paper: [SFPN: Synthetic FPN for Object Detection](https://arxiv.org/abs/2203.02445)
-   - Tips:  本文提出了一种新的金字塔网络，SFPN（合成融合金字塔网络），该结构在原始FPN层之间创建各种合成层，以提高轻量CNN Backbone的精度，更准确地提取目标的视觉特征。最后，实验证明了SFPN架构对于各种Backbone的有效性。 
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/5ooHoYt0tgmo0B76XacyYrTiayXLYNWBo2KAcPCFd9WJgZSjFFk5RvQKN8icbJImMRMgyEznTxPOxicVQeicgnSr3w/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gW9YloxSWmwN1w6SEWrKqFFWaFm59UjmmJvowMkSjDAtT8pwkMibmL0nWG9Uclgj7iaMaGoHnDFgTmhw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-3. [CVPR 2022｜群核前沿院等提出首个基于数据驱动的面检测算法](https://mp.weixin.qq.com/s/BGVp__Ku12yKtElkfaPm3w)       :star::star:
-   - Abstract: 首个基于数据驱动的面检测算法
-   - Paper: [Neural Face Identification in a 2D Wireframe Projection of a Manifold Object](https://arxiv.org/abs/2203.04229)
-   - Code: [https://github.com/manycore-research/faceformer](https://github.com/manycore-research/faceformer)
-   - Tips: 本文从数据驱动的角度重新审视从线框图中检测面这一经典问题，将其建模为序列生成问题：从任意一条开始，采用流行的基于Transformer的模型，以自然顺序预测属于同一个面的其他边。
+2. [CVPR 2022 | 图像也是德布罗意波！华为诺亚&北大提出量子启发MLP，性能超越Swin Transfomer](https://mp.weixin.qq.com/s/Orcol_8ABtVNhxzcpcS70A)       :star::star:
+   - Abstract: 华为诺亚&北大提出量子启发MLP，性能超越Swin Transfomer
+   - Paper: [An Image Patch is a Wave: Quantum Inspired Vision MLP](https://arxiv.org/abs/2111.12294)
+   - Code: [https://github.com/huawei-noah/CV-Backbones/tree/master/wavemlp_pytorch](https://github.com/huawei-noah/CV-Backbones/tree/master/wavemlp_pytorch)
+   - Tips:  来自华为诺亚方舟实验室、北京大学、悉尼大学的研究者提出了一种受量子力学启发的视觉 MLP 新架构。
 
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfombIxb5PGBOufibaSlBlomgHibhicshicMlDiaIy5FjewTQqxCow2CfHiaN8szQdf3JReCRrF23N7vmecw/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfqIQ9ibx7sQkHhlgDiafuB9AibhK7CSwTkV1WZ9XTUhX3nO5xv5ejjpleCGAr1uyCjJTYZnhIYHpWmIQ/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-4. [RepLKNet作者解读：超大卷积核，大到31x31，越大越暴力，涨点又高效！（CVPR 2022）](https://mp.weixin.qq.com/s/DSXBgB4Ry1Tvu6JsOiaCeQ)       :star::star:
-   - Abstract: RepLKNet作者解读：超大卷积核，大到31x31，越大越暴力，涨点又高效！
-   - Paper: [Scaling Up Your Kernels to 31x31: Revisiting Large Kernel Design in CNNs](https://arxiv.org/abs/2203.06717)
-   - Code: [https://github.com/DingXiaoH/RepLKNet-pytorch](https://github.com/DingXiaoH/RepLKNet-pytorch)
-   - Tips: CNN中的kernel size是一个非常重要但总是被人忽略的设计维度，在现代模型设计的加持下，卷积核越大越暴力，既涨点又高效，甚至大到31x31都非常work，即便在大体量下游任务上，我们提出的超大卷积核模型RepLKNet与Swin等Transformer相比，性能也更好或相当！
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/SjQAYGc0mKGqMnA9XpJMbXaD3g8pNZb4wTnfLich6NwPE6ic3tUsA8nhyfFkdBNr8yXKSu4bAAVD8qLRP0VJCQTQ/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+3. [AAAI 2022 | RTPB：针对无偏场景图生成的抵抗训练方法](https://mp.weixin.qq.com/s/iROn5U-7PbSN2Pv9PnkF6g)       :star::star:
+   - Abstract: RTPB：针对无偏场景图生成的抵抗训练方法
+   - Paper: [Resistance Training using Prior Bias: toward Unbiased Scene Graph Generation](https://arxiv.org/abs/2201.06794)
+   - Code: [https://github.com/ChCh1999/RTPB](https://github.com/ChCh1999/RTPB)
+   - Tips: 本工作由京东探索研究院，武汉大学，悉尼大学联合完成。为抑制数据集长尾分布问题对场景图生成任务的影响，我们提出了一种基于数据集先验偏差的抵抗训练方法，基于训练集的统计信息，调整训练进程，抑制数据长尾分布对模型的影响，实现更加平衡的场景图生成。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ibaXaPIy7jV1CPIom0ayibU5ic5PXnTTAW8MYVca9FyVcgVfUyyoWAwSWU2Cy0j76HqS37Zwg5JmhddicccK26icU1Q/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-5. [CVPR2022 做语义分割不用任何像素标签，UCSD、英伟达在ViT中加入分组模块](https://mp.weixin.qq.com/s/P1vHiMVS93vo_KRUi6GUKw)       :star::star:
-   - Abstract: 做语义分割不用任何像素标签，UCSD、英伟达在ViT中加入分组模块
-   - Paper: [GroupViT: Semantic Segmentation Emerges from Text Supervision](https://arxiv.org/pdf/2202.11094.pdf)
-   - Tips: 该研究的关键思想是利用视觉 Transformer（ViT）在其中加入新的视觉分组模块，研究者将新模型称为 GroupViT（分组视觉 Transformer）。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gWib6UUVmR1ScTBB62bgBesic0umuK9dtyqgowkAVKr3zv2gIGQGqdPxxcJ4kjoCbUkjRVzzGVdicibd5Q/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+4. [利用生成对抗网络生成海洋塑料合成图像](https://mp.weixin.qq.com/s/ZE3U4BvBHEYXXPDvRF3t6Q)       :star::star:
+   - Abstract: 利用生成对抗网络生成海洋塑料合成图像
+   - Tips: 在本文中，我们讨论了使用深度卷积生成对抗网络生成海洋塑料的合成图像，研究人员可以使用这些图像来扩展他们当前的海洋塑料数据集。这有助于让研究人员能够通过混合真实和合成图像来扩展他们的数据集。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ABvEnMciauWv1MwgBCnIcuFqRSRLQsbaHbTM1ny7REgTq5EALSKSKZsXG8TC47vibsDuOsiczpquJpQqx43FfibfQg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-6. [短袖短裤识别算法冠军方案总结 | 极市打榜](https://mp.weixin.qq.com/s/Z0-lMwTRLwM-HaqNT0gQtQ)       :star::star:
-   - Abstract: 短袖短裤识别算法冠军方案总结
-   - Tips: 本文为短裤短袖识别算法的冠军tourist，总结了他当时参珠港澳人工智能算法大赛和最近参与打榜的一些技术细节和经验
 
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfombIxb5PGBOufibaSlBlomg4RfLX6Qrv3gtFbAgk0jNoAcSG1Tc5YSfztKAicpdAAXUhQIErqQzPiaQ/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+5. [自监督学习的知识点总结](https://mp.weixin.qq.com/s/NFHxU-MK9e1kn1o_DxfQeA)       :star::star:
+   - Abstract: 自监督学习的知识点总结
+   - Tips: 本文总结了监督学习与自监督学习，对比学习与非对比学习等内容
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/6wQyVOrkRNK9ZnoQpCEtZDTekJL10icTamtXBfwNpT0mw4qq9KTlGvuAkom1kkwKfwonc40oREvw9tAc92RSPvw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
+
+
+
+6. [2022年了博士待遇如何？八卦不同专业的毕业生的薪酬待遇现状！](https://mp.weixin.qq.com/s/8GnDsGD5OzmFw6mb5nwqaA)       :star::star:
+   - Abstract: 2022年了博士待遇如何？八卦不同专业的毕业生的薪酬待遇现状！
+   - Tips: 我们国家的博士毕业生数量整体还不是很多，总数目前不会超过100W人，而大部分博士的薪资待遇还是比较客观的，无论是进入高校还是从政还是进入科研院所，博士待遇几乎可以秒超本科生。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/LGl6h5JnrsFwQnsargHIiaFKR29cLdIjgWkPx7es6XWIbNroGfgPj4NKPWAX5WRvq2lz64SwgMatr8l7zm9zVXQ/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
 
 
 
@@ -172,6 +175,7 @@
     13. <a href="notes/202203/0313.md" target="_blank">公众号内容拓展学习笔记（2022.3.13）</a>
     14. <a href="notes/202203/0314.md" target="_blank">公众号内容拓展学习笔记（2022.3.14）</a>
     15. <a href="notes/202203/0316.md" target="_blank">公众号内容拓展学习笔记（2022.3.16）</a>
+    16. <a href="notes/202203/0317.md" target="_blank">公众号内容拓展学习笔记（2022.3.17）</a>
 </details>
 </pre>
 
