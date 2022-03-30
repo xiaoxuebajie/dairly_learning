@@ -3,68 +3,67 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2022.3.17
+更新今日时间：2022.3.30
 
 ------
 
 ## :paperclip:  今日要点
 
-1. [一个框架统一Siamese自监督学习，清华、商汤提出简洁、有效梯度形式，实现SOTA](https://mp.weixin.qq.com/s/OZ3iROiuOI1lRuYdmBa7yg)         :star::star:
-   - Abstract: 一个框架统一Siamese自监督学习，清华、商汤提出简洁、有效梯度形式，实现SOTA
-   - Paper: [Exploring the Equivalence of Siamese Self-Supervised Learning via A Unified Gradient Framework](https://arxiv.org/pdf/2112.05141.pdf)
-   - Tips:  来自清华大学、商汤科技等机构的研究者们提出一种简洁而有效的梯度形式——UniGrad，不需要复杂的 memory bank 或者 predictor 网络设计，也能给出 SOTA 的性能表现。
+1. [CVPR 2022｜基于GAN逆映射的高保真图像编辑算法 by 港科大&腾讯AI Lab开源](https://mp.weixin.qq.com/s/AYQWrbdIynwglxFUz_Ri5Q)         :star::star:
+   - Abstract: 基于GAN逆映射的高保真图像编辑算法
+   - Paper: [High-Fidelity GAN Inversion for Image Attribute Editing](https://arxiv.org/abs/2109.06590)
+   - Code: [https://github.com/Tengfei-Wang/HFGI](https://github.com/Tengfei-Wang/HFGI)
+   - Tips:  本文提出了一种名为信息参照（information consultation）的方法，同时利用low-rate和high-rate隐编码。该模型包括两个编码器，基础编码器压缩低率隐编码，用于保证图像的可编辑性；参照编码器对低率重建图像的失真信息进行补充编码，得到一个高率的隐编码，补充丢失的细节信息。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gW9YloxSWmwN1w6SEWrKqFFWaFm59UjmmJvowMkSjDAtT8pwkMibmL0nWG9Uclgj7iaMaGoHnDFgTmhw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_png/gYUsOT36vfo2EXh31yIPtb0f44V0uEcUq88NU7TwRHa7rCrMK99bVC0SkDasTicWoHJgvCKJvZCLo7X8IuOdOcA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+2. [CVPR 2022 | 华南理工提出VISTA：双跨视角空间注意力机制实现3D目标检测SOTA，即插即用](https://mp.weixin.qq.com/s/QJmqRk0tqZd-4Io1TBM-9g)       :star::star:
+   - Abstract: 华南理工提出VISTA：双跨视角空间注意力机制实现3D目标检测SOTA，即插即用
+   - Paper: [VISTA: Boosting 3D Object Detection via Dual Cross-VIew SpaTial Attention](https://arxiv.org/abs/2203.09704)
+   - Code: [https://github.com/Gorilla-Lab-SCUT/VISTA](https://github.com/Gorilla-Lab-SCUT/VISTA)
+   - Tips:  本文提出了 VISTA，一种新颖的即插即用多视角融合策略，用于准确的 3D 对象检测。为了使 VISTA 能够关注特定目标而不是一般点，研究者提出限制学习的注意力权重的方差。将分类和回归任务解耦以处理不平衡训练问题。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gW8ibFhOLCfAmFN6s8icGW9WYkibMvSwHicF5Wcwp7k2OOmE7Z1JnoNkHChPfmu4gsH7ribe6rF6y4hatcw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-2. [CVPR 2022 | 图像也是德布罗意波！华为诺亚&北大提出量子启发MLP，性能超越Swin Transfomer](https://mp.weixin.qq.com/s/Orcol_8ABtVNhxzcpcS70A)       :star::star:
-   - Abstract: 华为诺亚&北大提出量子启发MLP，性能超越Swin Transfomer
-   - Paper: [An Image Patch is a Wave: Quantum Inspired Vision MLP](https://arxiv.org/abs/2111.12294)
-   - Code: [https://github.com/huawei-noah/CV-Backbones/tree/master/wavemlp_pytorch](https://github.com/huawei-noah/CV-Backbones/tree/master/wavemlp_pytorch)
-   - Tips:  来自华为诺亚方舟实验室、北京大学、悉尼大学的研究者提出了一种受量子力学启发的视觉 MLP 新架构。
+3. [CVPR 2022｜Adobe提出InsetGAN！ 全身都生成，这可太GAN了](https://mp.weixin.qq.com/s/4sR6IDlhYKAu8T4g05hzcg)       :star::star:
+   - Abstract: Adobe提出InsetGAN！ 全身都生成，这可太GAN了
+   - Paper: [InsetGAN for Full-Body Image Generation](https://arxiv.org/abs/2203.07293)
+   - Tips: 他们首先引入了一个边界框检测器，检测部分GAN生成的特定区域在底层画布，也就是全身GAN生成的区域中的位置，经过裁剪后再将特定区域嵌入。
 
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfqIQ9ibx7sQkHhlgDiafuB9AibhK7CSwTkV1WZ9XTUhX3nO5xv5ejjpleCGAr1uyCjJTYZnhIYHpWmIQ/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfo1C6AbudEABOxOdvicXC5icGM3FoT7uUfMHZxqqOvia2UxFDibAAeiaJl9y0aOaSnSKQdodWY9ZUglncw/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
+4. [Swim-Transform V2：用于目标检测，视觉大模型不再是难题（附源代码）](https://mp.weixin.qq.com/s/8ItDlfkQfTrdpJc9A2luuQ)       :star::star:
+   - Abstract: Swim-Transform V2：用于目标检测，视觉大模型不再是难题（附源代码）
+   - Paper: [Swin Transformer V2: Scaling Up Capacity and Resolution](https://arxiv.org/pdf/2111.09883.pdf)
+   - Code: [https://github.com/microsoft/Swin-Transformer](https://github.com/microsoft/Swin-Transformer)
+   - Tips: MSRA时隔大半年放出了Swin Transformer 2.0版本，在1.0版本的基础上做了改动，使得模型规模更大并且能适配不同分辨率的图片和不同尺寸的窗口！这也证实了，Transformer将是视觉领域的研究趋势！
 
-3. [AAAI 2022 | RTPB：针对无偏场景图生成的抵抗训练方法](https://mp.weixin.qq.com/s/iROn5U-7PbSN2Pv9PnkF6g)       :star::star:
-   - Abstract: RTPB：针对无偏场景图生成的抵抗训练方法
-   - Paper: [Resistance Training using Prior Bias: toward Unbiased Scene Graph Generation](https://arxiv.org/abs/2201.06794)
-   - Code: [https://github.com/ChCh1999/RTPB](https://github.com/ChCh1999/RTPB)
-   - Tips: 本工作由京东探索研究院，武汉大学，悉尼大学联合完成。为抑制数据集长尾分布问题对场景图生成任务的影响，我们提出了一种基于数据集先验偏差的抵抗训练方法，基于训练集的统计信息，调整训练进程，抑制数据长尾分布对模型的影响，实现更加平衡的场景图生成。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ibaXaPIy7jV1CPIom0ayibU5ic5PXnTTAW8MYVca9FyVcgVfUyyoWAwSWU2Cy0j76HqS37Zwg5JmhddicccK26icU1Q/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwPafgZwmXyn9YJVUPgaIroNicficOibzZmqTToVC7Zm7vKmY8DbicVENCl2Au3pHX7oDBKWG2usc8s22A/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
+5. [CVPR 2022 | 天大本科生论文入选！深度学习长尾分类新SOTA](https://mp.weixin.qq.com/s/n7jloECjzmhftMeZBwfWdA)       :star::star:
+   - Abstract: 深度学习长尾分类新SOTA
+   - Paper: [Trustworthy Long-Tailed Classification](https://arxiv.org/abs/2111.09030)
+   - Tips: 通过引入不确定性集成，来实现对尾部类别样本的自动感知。在此基础上，提出为尾部类别样本动态分配比头部样本更多的模型资源（experts），以兼顾性能与效率。
 
-4. [利用生成对抗网络生成海洋塑料合成图像](https://mp.weixin.qq.com/s/ZE3U4BvBHEYXXPDvRF3t6Q)       :star::star:
-   - Abstract: 利用生成对抗网络生成海洋塑料合成图像
-   - Tips: 在本文中，我们讨论了使用深度卷积生成对抗网络生成海洋塑料的合成图像，研究人员可以使用这些图像来扩展他们当前的海洋塑料数据集。这有助于让研究人员能够通过混合真实和合成图像来扩展他们的数据集。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ABvEnMciauWv1MwgBCnIcuFqRSRLQsbaHbTM1ny7REgTq5EALSKSKZsXG8TC47vibsDuOsiczpquJpQqx43FfibfQg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/5fknb41ib9qFQcBXEhW2NFnD8ZibVJAavpxoviaqUyicibEth2icXXicAGar7fLGbPyPzokOEIh1Ob0z9dKLWKHOHoNaw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
+6. [刷新4个SOTA！港大&字节开源ReferFormer: 语言作为查询的视频目标分割框架](https://mp.weixin.qq.com/s/MsEBgLRJ8TxTS6opeewNyw)       :star::star:
+   - Abstract: 港大&字节开源ReferFormer: 语言作为查询的视频目标分割框架
+   - Paper: [Language as Queries for Referring Video Object Segmentation](https://arxiv.org/abs/2201.00487)
+   - Code: [https://github.com/wjn922/ReferFormer](https://github.com/wjn922/ReferFormer)
+   - Tips: 研究者们提出了一种基于Transformer的参考视频目标分割新框架ReferFormer。其将语言描述视为查询条件，直接在视频中查找目标对象，除此之外，通过实例序列的整体输出自然地完成目标物体的跟踪，无需进行任何后处理。
 
-5. [自监督学习的知识点总结](https://mp.weixin.qq.com/s/NFHxU-MK9e1kn1o_DxfQeA)       :star::star:
-   - Abstract: 自监督学习的知识点总结
-   - Tips: 本文总结了监督学习与自监督学习，对比学习与非对比学习等内容
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/6wQyVOrkRNK9ZnoQpCEtZDTekJL10icTamtXBfwNpT0mw4qq9KTlGvuAkom1kkwKfwonc40oREvw9tAc92RSPvw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/yNnalkXE7oUEGwNWCu09LOic1W2uZbblYpsndsxhTMucEG9E6VcYmPJoYAq9I5MibOnQxbTKOnpGPgkUvUhSSXyg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
-
-
-
-6. [2022年了博士待遇如何？八卦不同专业的毕业生的薪酬待遇现状！](https://mp.weixin.qq.com/s/8GnDsGD5OzmFw6mb5nwqaA)       :star::star:
-   - Abstract: 2022年了博士待遇如何？八卦不同专业的毕业生的薪酬待遇现状！
-   - Tips: 我们国家的博士毕业生数量整体还不是很多，总数目前不会超过100W人，而大部分博士的薪资待遇还是比较客观的，无论是进入高校还是从政还是进入科研院所，博士待遇几乎可以秒超本科生。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/LGl6h5JnrsFwQnsargHIiaFKR29cLdIjgWkPx7es6XWIbNroGfgPj4NKPWAX5WRvq2lz64SwgMatr8l7zm9zVXQ/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
 
 
 
@@ -176,8 +175,10 @@
     14. <a href="notes/202203/0314.md" target="_blank">公众号内容拓展学习笔记（2022.3.14）</a>
     15. <a href="notes/202203/0316.md" target="_blank">公众号内容拓展学习笔记（2022.3.16）</a>
     16. <a href="notes/202203/0317.md" target="_blank">公众号内容拓展学习笔记（2022.3.17）</a>
+    17. <a href="notes/202203/0330.md" target="_blank">公众号内容拓展学习笔记（2022.3.30）</a>
 </details>
 </pre>
+
 
 
 
