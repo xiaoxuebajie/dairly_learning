@@ -3,67 +3,62 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2022.3.30
+更新今日时间：2022.4.2
 
 ------
 
 ## :paperclip:  今日要点
 
-1. [CVPR 2022｜基于GAN逆映射的高保真图像编辑算法 by 港科大&腾讯AI Lab开源](https://mp.weixin.qq.com/s/AYQWrbdIynwglxFUz_Ri5Q)         :star::star:
-   - Abstract: 基于GAN逆映射的高保真图像编辑算法
-   - Paper: [High-Fidelity GAN Inversion for Image Attribute Editing](https://arxiv.org/abs/2109.06590)
-   - Code: [https://github.com/Tengfei-Wang/HFGI](https://github.com/Tengfei-Wang/HFGI)
-   - Tips:  本文提出了一种名为信息参照（information consultation）的方法，同时利用low-rate和high-rate隐编码。该模型包括两个编码器，基础编码器压缩低率隐编码，用于保证图像的可编辑性；参照编码器对低率重建图像的失真信息进行补充编码，得到一个高率的隐编码，补充丢失的细节信息。
+1. [CVPR2022 | 港城大&微软新算法！让老电影重获新生！效果惊艳！](https://mp.weixin.qq.com/s/3_kf52_R6r_2crf6JLyZ3Q)         :star::star:
+   - Abstract: 港城大&微软新算法让以前的老电影恢复成高清的画质并且还能够进行上色
+   - Paper: [Bringing Old Films Back to Life](https://arxiv.org/pdf/2203.17276.pdf)
+   - Code: [https://github.com/DWCTOD/CVPR2022-Papers-with-Code-Demo](https://github.com/DWCTOD/CVPR2022-Papers-with-Code-Demo)
+   - Tips:  我们的方法不是执行逐帧恢复，而是基于从相邻帧中学习到的隐藏知识，这些知识包含大量关于遮挡的信息，这有利于恢复每个帧的具有挑战性的伪影，同时确保时间一致性。
 
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_png/gYUsOT36vfo2EXh31yIPtb0f44V0uEcUq88NU7TwRHa7rCrMK99bVC0SkDasTicWoHJgvCKJvZCLo7X8IuOdOcA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-2. [CVPR 2022 | 华南理工提出VISTA：双跨视角空间注意力机制实现3D目标检测SOTA，即插即用](https://mp.weixin.qq.com/s/QJmqRk0tqZd-4Io1TBM-9g)       :star::star:
-   - Abstract: 华南理工提出VISTA：双跨视角空间注意力机制实现3D目标检测SOTA，即插即用
-   - Paper: [VISTA: Boosting 3D Object Detection via Dual Cross-VIew SpaTial Attention](https://arxiv.org/abs/2203.09704)
-   - Code: [https://github.com/Gorilla-Lab-SCUT/VISTA](https://github.com/Gorilla-Lab-SCUT/VISTA)
-   - Tips:  本文提出了 VISTA，一种新颖的即插即用多视角融合策略，用于准确的 3D 对象检测。为了使 VISTA 能够关注特定目标而不是一般点，研究者提出限制学习的注意力权重的方差。将分类和回归任务解耦以处理不平衡训练问题。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gW8ibFhOLCfAmFN6s8icGW9WYkibMvSwHicF5Wcwp7k2OOmE7Z1JnoNkHChPfmu4gsH7ribe6rF6y4hatcw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/7jnsg27ZEVEAbxeaotdIP6aRPHkLWf3ZIxfeuwup2uIxBHPgyKcLFic2LDtkkzZ0eUEjABuG98wgklkHKxB5w0A/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-3. [CVPR 2022｜Adobe提出InsetGAN！ 全身都生成，这可太GAN了](https://mp.weixin.qq.com/s/4sR6IDlhYKAu8T4g05hzcg)       :star::star:
-   - Abstract: Adobe提出InsetGAN！ 全身都生成，这可太GAN了
-   - Paper: [InsetGAN for Full-Body Image Generation](https://arxiv.org/abs/2203.07293)
-   - Tips: 他们首先引入了一个边界框检测器，检测部分GAN生成的特定区域在底层画布，也就是全身GAN生成的区域中的位置，经过裁剪后再将特定区域嵌入。
+2. [何恺明组新论文：只用ViT做主干也可以做好目标检测](https://mp.weixin.qq.com/s/JuZbAckHz1IHyg58WoLO4g)       :star::star:
+   - Abstract: 何恺明组新论文：只用ViT做主干也可以做好目标检测
+   - Paper: [Exploring Plain Vision Transformer Backbones](https://arxiv.org/pdf/2203.16527.pdf)
+   - Tips: 该研究的目标是消除对主干网络的分层约束，并使用普通主干网络进行目标检测。因此，该研究的目标是用最少的改动，让简单的主干网络在微调期间适应目标检测任务。
 
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfo1C6AbudEABOxOdvicXC5icGM3FoT7uUfMHZxqqOvia2UxFDibAAeiaJl9y0aOaSnSKQdodWY9ZUglncw/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfqxgF9vuT5CibseOVW6GYWYfBoMseCLuOia3Dyjiam7Y9LLiagIpt1wJ11iauVlXMib3T6bgYh4wtCoQgSQ/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
+3. [（附链接）图像修复神器！带上口罩都能还原！DDPM：用去噪扩散概率模型极限修复图像，效果太牛了！](https://mp.weixin.qq.com/s/18Y5QaARMnw101QXAvR1sw)       :star::star:
+   - Abstract: RePaint网络利用用去噪扩散概率模型极限修复图像
+   - Paper: [RePaint: Inpainting using Denoising Diffusion Probabilistic Models](https://arxiv.org/pdf/2201.09865.pdf)
+   - Code: [https://github.com/andreas128/RePaint](https://github.com/andreas128/RePaint)
+   - Tips: : 近日，来自苏黎世联邦理工学院计算机视觉实验室（CVL）的研究者提出了 RePaint，这是一种基于 DDPM（Denoising Diffusion Probabilistic Model，去噪扩散概率模型）的修复方法，该方法还可以适用于极端情况下的蒙版。
 
-4. [Swim-Transform V2：用于目标检测，视觉大模型不再是难题（附源代码）](https://mp.weixin.qq.com/s/8ItDlfkQfTrdpJc9A2luuQ)       :star::star:
-   - Abstract: Swim-Transform V2：用于目标检测，视觉大模型不再是难题（附源代码）
-   - Paper: [Swin Transformer V2: Scaling Up Capacity and Resolution](https://arxiv.org/pdf/2111.09883.pdf)
-   - Code: [https://github.com/microsoft/Swin-Transformer](https://github.com/microsoft/Swin-Transformer)
-   - Tips: MSRA时隔大半年放出了Swin Transformer 2.0版本，在1.0版本的基础上做了改动，使得模型规模更大并且能适配不同分辨率的图片和不同尺寸的窗口！这也证实了，Transformer将是视觉领域的研究趋势！
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwPafgZwmXyn9YJVUPgaIroNicficOibzZmqTToVC7Zm7vKmY8DbicVENCl2Au3pHX7oDBKWG2usc8s22A/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gW9nItLPCleibr8Toql9NE6O9E89PH8yH67BicVw1PUibNu8jtTQdlhvow5peXEAZe8r4Zl9VftpJTA3Q/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
+4. [解决Transformer固有缺陷：复旦大学等提出线性复杂度SOFT](https://mp.weixin.qq.com/s/EB9teXnQaTeAHp88eYxdtA)       :star::star:
+   - Abstract: 解决Transformer固有缺陷：复旦大学等提出线性复杂度SOFT
+   - Paper: [SOFT: Softmax-free Transformer with Linear Complexity](https://arxiv.org/abs/2110.11945)
+   - Code: [https://github.com/fudan-zvg/SOFT](https://github.com/fudan-zvg/SOFT)
+   - Tips: 本文提出了一种具有线性空间和时间复杂度的新型 softmax-free Transformer。
 
-5. [CVPR 2022 | 天大本科生论文入选！深度学习长尾分类新SOTA](https://mp.weixin.qq.com/s/n7jloECjzmhftMeZBwfWdA)       :star::star:
-   - Abstract: 深度学习长尾分类新SOTA
-   - Paper: [Trustworthy Long-Tailed Classification](https://arxiv.org/abs/2111.09030)
-   - Tips: 通过引入不确定性集成，来实现对尾部类别样本的自动感知。在此基础上，提出为尾部类别样本动态分配比头部样本更多的模型资源（experts），以兼顾性能与效率。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/5fknb41ib9qFQcBXEhW2NFnD8ZibVJAavpxoviaqUyicibEth2icXXicAGar7fLGbPyPzokOEIh1Ob0z9dKLWKHOHoNaw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gWicD6a0oPFjsNptPcHiaibiay8IZk3c9ick4GkEXyouxuYexAbNkcEbUnV6L9ObgkgGzD8yVUpbMXD8Txg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
+5. [CVPR 2022 workshop算法竞赛详细汇总](https://mp.weixin.qq.com/s/N-rOunbdaYjrf0dLeMatsA)       :star::star:
+   - Abstract: CVPR 2022 workshop算法竞赛详细汇总
+   - Tips: 本文汇总所有CVPR 2022中所有的竞赛，总计29个，大部分竞赛在进行中或者还未开始，其中不乏特别有商业价值、解决实际问题的比赛，仅其中数据集就非常有价值，不少比赛还提供丰厚奖金，欢迎感兴趣的朋友参赛！
 
-6. [刷新4个SOTA！港大&字节开源ReferFormer: 语言作为查询的视频目标分割框架](https://mp.weixin.qq.com/s/MsEBgLRJ8TxTS6opeewNyw)       :star::star:
-   - Abstract: 港大&字节开源ReferFormer: 语言作为查询的视频目标分割框架
-   - Paper: [Language as Queries for Referring Video Object Segmentation](https://arxiv.org/abs/2201.00487)
-   - Code: [https://github.com/wjn922/ReferFormer](https://github.com/wjn922/ReferFormer)
-   - Tips: 研究者们提出了一种基于Transformer的参考视频目标分割新框架ReferFormer。其将语言描述视为查询条件，直接在视频中查找目标对象，除此之外，通过实例序列的整体输出自然地完成目标物体的跟踪，无需进行任何后处理。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/yNnalkXE7oUEGwNWCu09LOic1W2uZbblYpsndsxhTMucEG9E6VcYmPJoYAq9I5MibOnQxbTKOnpGPgkUvUhSSXyg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/BJbRvwibeSTsWXTuOla2FyfQ84P92J5jy5QqgR2VCuuBvf2pp9ViaOAO41YialuOvhSwXvyDtP7K0T7cmjCoibib9vg/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
+
+6. [一份热力图可视化代码使用教程](https://mp.weixin.qq.com/s/22tlc8E-yKxixZ0rT2wJkQ)       :star::star:
+   - Abstract: 一份热力图可视化代码使用教程
+   - Tips: 本文介绍了CAM、GradCAM的原理和缺陷，介绍了如何使用GradCAM算法实现热力图可视化，介绍了目标检测、语义分割、transformer模型等其它类型任务的热力图可视化。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/V2E1ll6kaTVoT9H4X5LVCnnIy0zntRyFe4cCoeKpiapGLXX2wKwd23oBJJWVSibDj6b99AjvibmWtNbjJJrle3KwA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
 
 
 
@@ -177,8 +172,10 @@
     16. <a href="notes/202203/0317.md" target="_blank">公众号内容拓展学习笔记（2022.3.17）</a>
     17. <a href="notes/202203/0330.md" target="_blank">公众号内容拓展学习笔记（2022.3.30）</a>
 </details>
+<details><summary>4月</summary>
+    1. <a href="notes/202204/0402.md" target="_blank">公众号内容拓展学习笔记（2022.4.2）</a>
+</details>
 </pre>
-
 
 
 
