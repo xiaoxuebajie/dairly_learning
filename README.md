@@ -3,62 +3,71 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2022.4.2
+更新今日时间：2022.4.14
 
 ------
 
 ## :paperclip:  今日要点
 
-1. [CVPR2022 | 港城大&微软新算法！让老电影重获新生！效果惊艳！](https://mp.weixin.qq.com/s/3_kf52_R6r_2crf6JLyZ3Q)         :star::star:
-   - Abstract: 港城大&微软新算法让以前的老电影恢复成高清的画质并且还能够进行上色
-   - Paper: [Bringing Old Films Back to Life](https://arxiv.org/pdf/2203.17276.pdf)
-   - Code: [https://github.com/DWCTOD/CVPR2022-Papers-with-Code-Demo](https://github.com/DWCTOD/CVPR2022-Papers-with-Code-Demo)
-   - Tips:  我们的方法不是执行逐帧恢复，而是基于从相邻帧中学习到的隐藏知识，这些知识包含大量关于遮挡的信息，这有利于恢复每个帧的具有挑战性的伪影，同时确保时间一致性。
+1. [CVPR 2022｜Self-Attention和CNN的优雅集成！清华大学等提出ACmix，性能速度全面提升！](https://mp.weixin.qq.com/s/rJHR-C4Hos6G9_tL3OCS6w)         :star::star:
+   - Abstract: 清华大学等提出ACmix，Self-Attention和CNN的优雅集成，性能速度全面提升
+   - Paper: [On the Integration of Self-Attention and Convolution](https://arxiv.org/pdf/2111.14556.pdf)
+   - Code: [https://github.com/Panxuran/ACmix](https://github.com/Panxuran/ACmix)
+   - Tips:  清华大学等提出了一个混合模型ACmix：它既兼顾Self-Attention和Convolution的优点，同时与Convolution或Self-Attention对应的模型相比，具有更小的计算开销。实验表明，本文方法在图像识别和下游任务上取得了持续改进的结果
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/7jnsg27ZEVEAbxeaotdIP6aRPHkLWf3ZIxfeuwup2uIxBHPgyKcLFic2LDtkkzZ0eUEjABuG98wgklkHKxB5w0A/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfq41B6oVLgoJ5JFgLPjFyVTm3q803luhObhj9CQ09XR2PYmXGfymBQTkrf4Lj4c9MDaw2ibr3ibh0bQ/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-2. [何恺明组新论文：只用ViT做主干也可以做好目标检测](https://mp.weixin.qq.com/s/JuZbAckHz1IHyg58WoLO4g)       :star::star:
-   - Abstract: 何恺明组新论文：只用ViT做主干也可以做好目标检测
-   - Paper: [Exploring Plain Vision Transformer Backbones](https://arxiv.org/pdf/2203.16527.pdf)
-   - Tips: 该研究的目标是消除对主干网络的分层约束，并使用普通主干网络进行目标检测。因此，该研究的目标是用最少的改动，让简单的主干网络在微调期间适应目标检测任务。
 
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfqxgF9vuT5CibseOVW6GYWYfBoMseCLuOia3Dyjiam7Y9LLiagIpt1wJ11iauVlXMib3T6bgYh4wtCoQgSQ/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+2. [CVPR 2022 Oral | MetaFormer：证明Transformer的威力源自其整体架构！颜水成团队工作！](https://mp.weixin.qq.com/s/2WIhkOGKRv4TOlBnaKmEsw)       :star::star:
+   - Abstract: MetaFormer：证明Transformer的威力源自其整体架构
+   - Paper: [MetaFormer is Actually What You Need for Vision](https://arxiv.org/abs/2111.11418)
+   - Code: [https://github.com/sail-sg/poolformer](https://github.com/sail-sg/poolformer)
+   - Tips: 作者认为`MetaFormer`是为最近的Transformer和类似MLP的视觉任务模型获得优越结果的关键。这项工作需要更多的未来研究，致力于改进`MetaFormer`，而不是专注于`token mixer module`。此外，作者提出的PoolFormer可以作为未来`MetaFormer`设计的Baseline。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/5ooHoYt0tgnITQrfYicacJtGytOgAU3uG510bbx5jTH8ianZCHkmXZEPbFCpvFpgjiaibXGOpAvINRZrokxTv6GDZA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-3. [（附链接）图像修复神器！带上口罩都能还原！DDPM：用去噪扩散概率模型极限修复图像，效果太牛了！](https://mp.weixin.qq.com/s/18Y5QaARMnw101QXAvR1sw)       :star::star:
-   - Abstract: RePaint网络利用用去噪扩散概率模型极限修复图像
-   - Paper: [RePaint: Inpainting using Denoising Diffusion Probabilistic Models](https://arxiv.org/pdf/2201.09865.pdf)
-   - Code: [https://github.com/andreas128/RePaint](https://github.com/andreas128/RePaint)
-   - Tips: : 近日，来自苏黎世联邦理工学院计算机视觉实验室（CVL）的研究者提出了 RePaint，这是一种基于 DDPM（Denoising Diffusion Probabilistic Model，去噪扩散概率模型）的修复方法，该方法还可以适用于极端情况下的蒙版。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gW9nItLPCleibr8Toql9NE6O9E89PH8yH67BicVw1PUibNu8jtTQdlhvow5peXEAZe8r4Zl9VftpJTA3Q/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+3. [视频生成无需GAN、VAE，谷歌用扩散模型联合训练视频、图像，实现新SOTA](https://mp.weixin.qq.com/s/VlQVhBJCzn9yei8ZtWPrWA)       :star::star:
+   - Abstract: 谷歌用扩散模型联合训练视频、图像，实现新SOTA
+   - Paper: [Video Diffusion Models](https://arxiv.org/pdf/2204.03458.pdf)
+   - Code: [https://video-diffusion.github.io/](https://video-diffusion.github.io/)
+   - Tips: : 首先谷歌展示了使用扩散模型生成视频的首个结果，包括无条件和有条件设置。其次该研究表明，可以通过高斯扩散模型的标准公式来生成高质量的视频，除了直接的架构更改以适应深度学习加速器的内存限制外，几乎不需要其他修改。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/KmXPKA19gWibJGtFAALicxXwtgjHz4EhbjicVJw0fdbZCGcAI3LOlWEKlPtmbLFs5D120PzzJU4aGfIHqfdpZ9yrA/640?wx_fmt=gif&wxfrom=5&wx_lazy=1" style='zoom:100%'>
 </div>
 
-4. [解决Transformer固有缺陷：复旦大学等提出线性复杂度SOFT](https://mp.weixin.qq.com/s/EB9teXnQaTeAHp88eYxdtA)       :star::star:
-   - Abstract: 解决Transformer固有缺陷：复旦大学等提出线性复杂度SOFT
-   - Paper: [SOFT: Softmax-free Transformer with Linear Complexity](https://arxiv.org/abs/2110.11945)
-   - Code: [https://github.com/fudan-zvg/SOFT](https://github.com/fudan-zvg/SOFT)
-   - Tips: 本文提出了一种具有线性空间和时间复杂度的新型 softmax-free Transformer。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gWicD6a0oPFjsNptPcHiaibiay8IZk3c9ick4GkEXyouxuYexAbNkcEbUnV6L9ObgkgGzD8yVUpbMXD8Txg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+4. [CVPR | 浙大小姐姐提出了秃头生成器，完美保留五官，让程序员简历大加分？](https://mp.weixin.qq.com/s/zurx_rIP2ec5hYPGr4s1PA)       :star::star:
+   - Abstract: 浙大小姐姐提出了秃头生成器，完美保留五官
+   - Paper: [HairMapper: Removing Hair from Portraits Using GANs](http://www.cad.zju.edu.cn/home/jin/cvpr2022/HairMapper.pdf)
+   - Code: [https://github.com/oneThousand1000/non-hair-FFHQ](https://github.com/oneThousand1000/non-hair-FFHQ)
+   - Tips: HairMapper的原理一共分为三步，生成秃头→保留五官→合并头像。首先，作者们利用StyleGAN，做出一个与原头型相近的秃头效果；接下来，就是利用InterFaceGAN，抠出一个头发以外的脸型和五官形象，同时也保留四周的风景；最后，将前两步生成的效果合成，就做出了一个完美的“光头”。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtDD4P7eGZsOShpoPT09e8H8ribg2Sc9gYtkTm3S2zNLiba5sMUhSry2LtpQib7mn6Bib9Iv6XTVGMdudw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-5. [CVPR 2022 workshop算法竞赛详细汇总](https://mp.weixin.qq.com/s/N-rOunbdaYjrf0dLeMatsA)       :star::star:
-   - Abstract: CVPR 2022 workshop算法竞赛详细汇总
-   - Tips: 本文汇总所有CVPR 2022中所有的竞赛，总计29个，大部分竞赛在进行中或者还未开始，其中不乏特别有商业价值、解决实际问题的比赛，仅其中数据集就非常有价值，不少比赛还提供丰厚奖金，欢迎感兴趣的朋友参赛！
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/BJbRvwibeSTsWXTuOla2FyfQ84P92J5jy5QqgR2VCuuBvf2pp9ViaOAO41YialuOvhSwXvyDtP7K0T7cmjCoibib9vg/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+5. [CVPR 2022 | 南大提出：Structured Sparse R-CNN：单阶段端到端场景图生成器](https://mp.weixin.qq.com/s/fTT8N7UcrDhyy6CmZ-Fbhw)       :star::star:
+   - Abstract: 南大提出：Structured Sparse R-CNN：单阶段端到端场景图生成器
+   - Paper: [Structured Sparse R-CNN for Direct Scene Graph Generation](https://arxiv.org/abs/2106.10815)
+   - Code: [https://github.com/MCG-NJU/Structured-Sparse-RCNN](https://github.com/MCG-NJU/Structured-Sparse-RCNN)
+   - Tips: 本工作将端到端稀疏目标检测器引入场景图生成领域，并提出了相应的关系建模组件和训练策略。该模型在 Visual Genome, Open Image V4/V6 数据集上取得了 SOTA 效果。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/yNnalkXE7oWyibL6R9xZ20yAfZFAZIMJxzib8tn1b5UPpOicsPo8kNQzlzib3k6VGy1SW45nUFpoc79cPyovyjd63Q/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-6. [一份热力图可视化代码使用教程](https://mp.weixin.qq.com/s/22tlc8E-yKxixZ0rT2wJkQ)       :star::star:
-   - Abstract: 一份热力图可视化代码使用教程
-   - Tips: 本文介绍了CAM、GradCAM的原理和缺陷，介绍了如何使用GradCAM算法实现热力图可视化，介绍了目标检测、语义分割、transformer模型等其它类型任务的热力图可视化。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/V2E1ll6kaTVoT9H4X5LVCnnIy0zntRyFe4cCoeKpiapGLXX2wKwd23oBJJWVSibDj6b99AjvibmWtNbjJJrle3KwA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+6. [CVPR 2022｜打破传统的跟踪范式！南大开源MixFormer：端到端目标检测新模型](https://mp.weixin.qq.com/s/VI4SOEsD7VxEaa-PhLgd4g)       :star::star:
+   - Abstract: 打破传统的跟踪范式！南大开源MixFormer：端到端目标检测新模型
+   - Paper: [MixFormer: End-to-End Tracking with Iterative Mixed Attention](https://arxiv.org/abs/2203.11082)
+   - Code: [https://github.com/MCG-NJU/MixFormer](https://github.com/MCG-NJU/MixFormer)
+   - Tips: 本文介绍了一篇单目标跟踪(VOT)领域的新工作-基于 transformer 的简洁的端到端模型 MixFormer，该工作已经被CVPR 2022收录。该工作打破了传统的跟踪范式，通过模板与测试样本混合的backbone加上一个简单的回归头直接出跟踪结果，并且不使用框的后处理、多尺度特征融合策略等。
+
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfo2EXh31yIPtb0f44V0uEcUsq3BQV6UXD3cNGh9iaibY0icJB0rvK9vDxeBT2BBAy2zaGnf5OnBQmtyg/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
-
 
 
 
@@ -174,6 +183,7 @@
 </details>
 <details><summary>4月</summary>
     1. <a href="notes/202204/0402.md" target="_blank">公众号内容拓展学习笔记（2022.4.2）</a>
+    2. <a href="notes/202204/0414.md" target="_blank">公众号内容拓展学习笔记（2022.4.14）</a>
 </details>
 </pre>
 
