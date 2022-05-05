@@ -3,72 +3,65 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2022.4.14
+更新今日时间：2022.5.5
 
 ------
 
 ## :paperclip:  今日要点
 
-1. [CVPR 2022｜Self-Attention和CNN的优雅集成！清华大学等提出ACmix，性能速度全面提升！](https://mp.weixin.qq.com/s/rJHR-C4Hos6G9_tL3OCS6w)         :star::star:
-   - Abstract: 清华大学等提出ACmix，Self-Attention和CNN的优雅集成，性能速度全面提升
-   - Paper: [On the Integration of Self-Attention and Convolution](https://arxiv.org/pdf/2111.14556.pdf)
-   - Code: [https://github.com/Panxuran/ACmix](https://github.com/Panxuran/ACmix)
-   - Tips:  清华大学等提出了一个混合模型ACmix：它既兼顾Self-Attention和Convolution的优点，同时与Convolution或Self-Attention对应的模型相比，具有更小的计算开销。实验表明，本文方法在图像识别和下游任务上取得了持续改进的结果
+1. [CVPR 2022 Oral｜OGM-GE：基于动态梯度调节的平衡化多模态学习](https://mp.weixin.qq.com/s/exByMjiFm45egOgVTD4UMA)         :star::star:
+   - Abstract: OGM-GE：基于动态梯度调节的平衡化多模态学习
+   - Paper: [Balanced Multimodal Learning via On-the-fly Gradient Modulation](https://arxiv.org/abs/2203.15332)
+   - Code: [https://github.com/GeWu-Lab/OGM-GE_CVPR2022](https://github.com/GeWu-Lab/OGM-GE_CVPR2022)
+   - Tips:  我们针对在某些多模态模型的训练过程中，性能更好的模态（主导模态）会对其他模态的优化产生抑制作用，提出了泛化增强的动态梯度调制 (OGM-GE)算法，使得多模态模型可以被训练地更加平衡。
 
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfq41B6oVLgoJ5JFgLPjFyVTm3q803luhObhj9CQ09XR2PYmXGfymBQTkrf4Lj4c9MDaw2ibr3ibh0bQ/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/yNnalkXE7oVwGvoibuwqDu7c1ENOibrCQ1oSq5rHMBqu0eTV1AzHlKK1yjt0y4raFc0agZt3icIwPllym3ZvnbpIA/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+2. [ICLR 2022 | 超越Focal Loss！PolyLoss用1行代码+1个超参完成超车！](https://mp.weixin.qq.com/s/4Zig1wXNDHEjmK1afnBw4A)       :star::star:
+   - Abstract: 超越Focal Loss！PolyLoss用1行代码+1个超参完成超车！
+   - Paper: [PolyLoss: A Polynomial Expansion Perspective of Classification Loss Functions](https://openreview.net/forum?id=gSdSJoenupI)
+   - Tips: 提出了一个统一的损失函数框架，名为PolyLoss，以重新思考和重新设计损失函数。这个框架有助于将Cross-entropy loss和Focal loss解释为多损失族的2种特殊情况（通过水平移动多项式系数），这是以前没有被认识到的
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/5ooHoYt0tgn2HKulyoeicAQxwKl9H7qy6osX865G9KQpQlWf7PtybMtxqmGH6o1ThAcGQLv0S2hPM3czkPbaMgQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
+3. [让移动设备用上轻量级、低延迟的视觉Transformer，苹果搞了个MobileViT（ICLR 2022）](https://mp.weixin.qq.com/s/OoXGZ5pHLMSPZjyriWYstA)       :star::star:
+   - Abstract: 苹果搞了个MobileViT，让移动设备用上轻量级、低延迟的视觉Transformer
+   - Paper: [MOBILEVIT: LIGHT-WEIGHT, GENERAL-PURPOSE, AND MOBILE-FRIENDLY VISION TRANSFORMER](https://arxiv.org/pdf/2110.02178.pdf)
+   - Code: [https://github.com/apple/ml-cvnets](https://github.com/apple/ml-cvnets)
+   - Tips: 作者提出了 MobileViT——一种用于移动设备的轻量级通用视觉 transformer。MobileViT 从另一个角度介绍了使用 transformer 进行全局信息处理的方法。
 
-2. [CVPR 2022 Oral | MetaFormer：证明Transformer的威力源自其整体架构！颜水成团队工作！](https://mp.weixin.qq.com/s/2WIhkOGKRv4TOlBnaKmEsw)       :star::star:
-   - Abstract: MetaFormer：证明Transformer的威力源自其整体架构
-   - Paper: [MetaFormer is Actually What You Need for Vision](https://arxiv.org/abs/2111.11418)
-   - Code: [https://github.com/sail-sg/poolformer](https://github.com/sail-sg/poolformer)
-   - Tips: 作者认为`MetaFormer`是为最近的Transformer和类似MLP的视觉任务模型获得优越结果的关键。这项工作需要更多的未来研究，致力于改进`MetaFormer`，而不是专注于`token mixer module`。此外，作者提出的PoolFormer可以作为未来`MetaFormer`设计的Baseline。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/5ooHoYt0tgnITQrfYicacJtGytOgAU3uG510bbx5jTH8ianZCHkmXZEPbFCpvFpgjiaibXGOpAvINRZrokxTv6GDZA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gW8pZB3UpeBcv4WM1tO6EHOHYkpH48Ff6beCNbGf9RQlv1GyvT4F0JXqb2MCTHV384Q0n1Ud6sdsKQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-3. [视频生成无需GAN、VAE，谷歌用扩散模型联合训练视频、图像，实现新SOTA](https://mp.weixin.qq.com/s/VlQVhBJCzn9yei8ZtWPrWA)       :star::star:
-   - Abstract: 谷歌用扩散模型联合训练视频、图像，实现新SOTA
-   - Paper: [Video Diffusion Models](https://arxiv.org/pdf/2204.03458.pdf)
-   - Code: [https://video-diffusion.github.io/](https://video-diffusion.github.io/)
-   - Tips: : 首先谷歌展示了使用扩散模型生成视频的首个结果，包括无条件和有条件设置。其次该研究表明，可以通过高斯扩散模型的标准公式来生成高质量的视频，除了直接的架构更改以适应深度学习加速器的内存限制外，几乎不需要其他修改。
+4. [[CVPR 2022] TATT：用于场景文本图像超分辨率的文本注意力网络](https://mp.weixin.qq.com/s/SUcrZmnXuGfS858fJwUKCw)       :star::star:
+   - Abstract: TATT：用于场景文本图像超分辨率的文本注意力网络
+   - Paper: [A Text Attention Network for Spatial Deformation Robust Scene Text Image Super-resolution](https://arxiv.org/abs/2203.09388)
+   - Tips: 该工作提出了一个新的用于场景文本图像超分的文本注意力网络， 利用文本先验知识来指导整个超分过程；现有基于CNN的场景文本超分方法难以为空间形变文本重建高分辨率图像，针对这一问题，该工作提出了一个基于Transformer架构的TP Interpreter模块，利用全局注意力机制将文本先验和图像特征进行对齐，以实现更好的SR恢复。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/KmXPKA19gWibJGtFAALicxXwtgjHz4EhbjicVJw0fdbZCGcAI3LOlWEKlPtmbLFs5D120PzzJU4aGfIHqfdpZ9yrA/640?wx_fmt=gif&wxfrom=5&wx_lazy=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ZCA5VES1atAIpmt3IS3owxnOXbxHZBtNbKlXxLM2NMHKaZE7mbwIkTLzRH6R5kicLIPQozCCtjuYibDfLxyPibcrA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-4. [CVPR | 浙大小姐姐提出了秃头生成器，完美保留五官，让程序员简历大加分？](https://mp.weixin.qq.com/s/zurx_rIP2ec5hYPGr4s1PA)       :star::star:
-   - Abstract: 浙大小姐姐提出了秃头生成器，完美保留五官
-   - Paper: [HairMapper: Removing Hair from Portraits Using GANs](http://www.cad.zju.edu.cn/home/jin/cvpr2022/HairMapper.pdf)
-   - Code: [https://github.com/oneThousand1000/non-hair-FFHQ](https://github.com/oneThousand1000/non-hair-FFHQ)
-   - Tips: HairMapper的原理一共分为三步，生成秃头→保留五官→合并头像。首先，作者们利用StyleGAN，做出一个与原头型相近的秃头效果；接下来，就是利用InterFaceGAN，抠出一个头发以外的脸型和五官形象，同时也保留四周的风景；最后，将前两步生成的效果合成，就做出了一个完美的“光头”。
+5. [一文讲透鱼眼相机畸变矫正，及目标检测项目应用](https://mp.weixin.qq.com/s/V5D_9kurlGCT-AdPfPgkUQ)       :star::star::star::star:
+   - Abstract: 一文讲透鱼眼相机畸变矫正，及目标检测项目应用
+   - Tips: 本文是《AI未来星球》潘大强老师的行业内部分享，希望对于大家鱼眼相机项目落地会有帮助！
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtDD4P7eGZsOShpoPT09e8H8ribg2Sc9gYtkTm3S2zNLiba5sMUhSry2LtpQib7mn6Bib9Iv6XTVGMdudw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/Zibun5D7npIN1DlUbTIgVOPus9tvweictl9JnBLBJZhObiatYrwhyO9IHwgpT0qTYcLia9baGMs6sapus0SwicicDZ8Q/640?wx_fmt=gif&wxfrom=5&wx_lazy=1" style='zoom:100%'>
 </div>
 
 
-5. [CVPR 2022 | 南大提出：Structured Sparse R-CNN：单阶段端到端场景图生成器](https://mp.weixin.qq.com/s/fTT8N7UcrDhyy6CmZ-Fbhw)       :star::star:
-   - Abstract: 南大提出：Structured Sparse R-CNN：单阶段端到端场景图生成器
-   - Paper: [Structured Sparse R-CNN for Direct Scene Graph Generation](https://arxiv.org/abs/2106.10815)
-   - Code: [https://github.com/MCG-NJU/Structured-Sparse-RCNN](https://github.com/MCG-NJU/Structured-Sparse-RCNN)
-   - Tips: 本工作将端到端稀疏目标检测器引入场景图生成领域，并提出了相应的关系建模组件和训练策略。该模型在 Visual Genome, Open Image V4/V6 数据集上取得了 SOTA 效果。
+6. [武功秘籍 | 京东科技算法岗求职必看秘籍](https://mp.weixin.qq.com/s/3z-tbWluTUxMNhCiU2tOWA)       :star::star:
+   - Abstract: 京东科技算法岗求职必看秘籍
+   - Tips: 大白产生构建一套算法岗武林秘籍的想法，将江湖中各个大厂可以搜集到的面试资料，按照逻辑框架，每个大厂都整理成一篇面经。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/yNnalkXE7oWyibL6R9xZ20yAfZFAZIMJxzib8tn1b5UPpOicsPo8kNQzlzib3k6VGy1SW45nUFpoc79cPyovyjd63Q/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/Zibun5D7npIM8HicS0N4KL9TG2k22DchYCianKKtx6X03yQiaa4ibCsr6A3k20utehmulj4kHibx3ZyH6ib9zAudqO69g/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-
-6. [CVPR 2022｜打破传统的跟踪范式！南大开源MixFormer：端到端目标检测新模型](https://mp.weixin.qq.com/s/VI4SOEsD7VxEaa-PhLgd4g)       :star::star:
-   - Abstract: 打破传统的跟踪范式！南大开源MixFormer：端到端目标检测新模型
-   - Paper: [MixFormer: End-to-End Tracking with Iterative Mixed Attention](https://arxiv.org/abs/2203.11082)
-   - Code: [https://github.com/MCG-NJU/MixFormer](https://github.com/MCG-NJU/MixFormer)
-   - Tips: 本文介绍了一篇单目标跟踪(VOT)领域的新工作-基于 transformer 的简洁的端到端模型 MixFormer，该工作已经被CVPR 2022收录。该工作打破了传统的跟踪范式，通过模板与测试样本混合的backbone加上一个简单的回归头直接出跟踪结果，并且不使用框的后处理、多尺度特征融合策略等。
-
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfo2EXh31yIPtb0f44V0uEcUsq3BQV6UXD3cNGh9iaibY0icJB0rvK9vDxeBT2BBAy2zaGnf5OnBQmtyg/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
+## 
 
 
 ## :paperclip:  历史更新
@@ -185,7 +178,11 @@
     1. <a href="notes/202204/0402.md" target="_blank">公众号内容拓展学习笔记（2022.4.2）</a>
     2. <a href="notes/202204/0414.md" target="_blank">公众号内容拓展学习笔记（2022.4.14）</a>
 </details>
+<details><summary>5月</summary>
+    1. <a href="notes/202205/0505.md" target="_blank">公众号内容拓展学习笔记（2022.5.5）</a>
+</details>
 </pre>
+
 
 
 
