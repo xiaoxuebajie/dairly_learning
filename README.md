@@ -3,65 +3,78 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2022.5.5
+更新今日时间：2022.5.7
 
 ------
 
+
+
 ## :paperclip:  今日要点
 
-1. [CVPR 2022 Oral｜OGM-GE：基于动态梯度调节的平衡化多模态学习](https://mp.weixin.qq.com/s/exByMjiFm45egOgVTD4UMA)         :star::star:
-   - Abstract: OGM-GE：基于动态梯度调节的平衡化多模态学习
-   - Paper: [Balanced Multimodal Learning via On-the-fly Gradient Modulation](https://arxiv.org/abs/2203.15332)
-   - Code: [https://github.com/GeWu-Lab/OGM-GE_CVPR2022](https://github.com/GeWu-Lab/OGM-GE_CVPR2022)
-   - Tips:  我们针对在某些多模态模型的训练过程中，性能更好的模态（主导模态）会对其他模态的优化产生抑制作用，提出了泛化增强的动态梯度调制 (OGM-GE)算法，使得多模态模型可以被训练地更加平衡。
+1. [CVPR 2022｜未标注视频也能训练目标检测？微软提出时空目标蒸馏框架STUD](https://mp.weixin.qq.com/s/JNfHqH09byZ5JSfQ8BuUhA)         :star::star:
+   - Abstract: 微软提出时空目标蒸馏框架STUD
+   - Paper: [Unknown-Aware Object Detection: Learning What You Don't Know from Videos in the Wild](https://arxiv.org/abs/2203.03800)
+   - Code: [https://github.com/deeplearning-wisc/stud](https://github.com/deeplearning-wisc/stud)
+   - Tips:  本文来自威斯康星大学麦迪逊分校和微软研究院，提出了一种时空未知目标蒸馏框架（Spatial-Temporal Unknown Distillation，STUD），其可以在大量未标注视频中提取未知目标，并对原有目标检测模型的决策边界进行规范化。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/yNnalkXE7oVwGvoibuwqDu7c1ENOibrCQ1oSq5rHMBqu0eTV1AzHlKK1yjt0y4raFc0agZt3icIwPllym3ZvnbpIA/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-2. [ICLR 2022 | 超越Focal Loss！PolyLoss用1行代码+1个超参完成超车！](https://mp.weixin.qq.com/s/4Zig1wXNDHEjmK1afnBw4A)       :star::star:
-   - Abstract: 超越Focal Loss！PolyLoss用1行代码+1个超参完成超车！
-   - Paper: [PolyLoss: A Polynomial Expansion Perspective of Classification Loss Functions](https://openreview.net/forum?id=gSdSJoenupI)
-   - Tips: 提出了一个统一的损失函数框架，名为PolyLoss，以重新思考和重新设计损失函数。这个框架有助于将Cross-entropy loss和Focal loss解释为多损失族的2种特殊情况（通过水平移动多项式系数），这是以前没有被认识到的
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/5ooHoYt0tgn2HKulyoeicAQxwKl9H7qy6osX865G9KQpQlWf7PtybMtxqmGH6o1ThAcGQLv0S2hPM3czkPbaMgQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ibaXaPIy7jV10vZ2WZibxcTF80j2qX8URQoFXtHsEHeOoGLd2KHNnQNhTDG736J7Z7iblIQ43hxcnzUyIzb27UJkA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-3. [让移动设备用上轻量级、低延迟的视觉Transformer，苹果搞了个MobileViT（ICLR 2022）](https://mp.weixin.qq.com/s/OoXGZ5pHLMSPZjyriWYstA)       :star::star:
-   - Abstract: 苹果搞了个MobileViT，让移动设备用上轻量级、低延迟的视觉Transformer
-   - Paper: [MOBILEVIT: LIGHT-WEIGHT, GENERAL-PURPOSE, AND MOBILE-FRIENDLY VISION TRANSFORMER](https://arxiv.org/pdf/2110.02178.pdf)
-   - Code: [https://github.com/apple/ml-cvnets](https://github.com/apple/ml-cvnets)
-   - Tips: 作者提出了 MobileViT——一种用于移动设备的轻量级通用视觉 transformer。MobileViT 从另一个角度介绍了使用 transformer 进行全局信息处理的方法。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gW8pZB3UpeBcv4WM1tO6EHOHYkpH48Ff6beCNbGf9RQlv1GyvT4F0JXqb2MCTHV384Q0n1Ud6sdsKQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+
+2. [只需要十分之一数据，就能通关四大视觉任务，居然还开源了！](https://mp.weixin.qq.com/s/7R8DgOvqxlcjCYhgAqrd2g)       :star::star:
+   - Abstract: OpenGVLab开源超高性能预训练模型，节省90%数据量！分类、目标检测、语义分割、深度估计，四大任务一网打尽！
+   - Paper: [INTERN: A New Learning Paradigm Towards General Vision](arxiv.org/abs/2111.08687)
+   - Code: [https://github.com/opengvlab](https://github.com/opengvlab)
+   - Tips: 上海人工智能实验室联合商汤科技、香港中文大学、上海交通大学发布通用视觉技术体系“书生”INTERN，一套持续学习框架，用于系统化解决当下人工智能视觉领域中存在的任务通用、场景泛化和数据效率等一系列瓶颈问题。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/cNFA8C0uVPsNMYMVjuI9CJjjx6SibFTbnjibEqgN3dA0DWfUXE9zhRL45mZIHydozklgmXMeiaXetic7g8UAzSb2DA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-4. [[CVPR 2022] TATT：用于场景文本图像超分辨率的文本注意力网络](https://mp.weixin.qq.com/s/SUcrZmnXuGfS858fJwUKCw)       :star::star:
-   - Abstract: TATT：用于场景文本图像超分辨率的文本注意力网络
-   - Paper: [A Text Attention Network for Spatial Deformation Robust Scene Text Image Super-resolution](https://arxiv.org/abs/2203.09388)
-   - Tips: 该工作提出了一个新的用于场景文本图像超分的文本注意力网络， 利用文本先验知识来指导整个超分过程；现有基于CNN的场景文本超分方法难以为空间形变文本重建高分辨率图像，针对这一问题，该工作提出了一个基于Transformer架构的TP Interpreter模块，利用全局注意力机制将文本先验和图像特征进行对齐，以实现更好的SR恢复。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ZCA5VES1atAIpmt3IS3owxnOXbxHZBtNbKlXxLM2NMHKaZE7mbwIkTLzRH6R5kicLIPQozCCtjuYibDfLxyPibcrA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+3. [EdgeFormer: 向视觉 Transformer 学习，构建一个比 MobileViT 更好更快的卷积网络](https://mp.weixin.qq.com/s/R53VtsmH7sAkPQ6UXvw4LQ)       :star::star:
+   - Abstract: EdgeFormer: 向视觉 Transformer 学习，构建一个比 MobileViT 更好更快的卷积网络
+   - Paper: [EdgeFormer: Improving Light-weight ConvNets by Learning from Vision Transformers](https://arxiv.org/abs/2203.03952)
+   - Code: [https://github.com/hkzhang91/EdgeFormer](https://github.com/hkzhang91/EdgeFormer)
+   - Tips: 本文提出的核心算子，即 global circular convolution (GCC)，是一个卷积操作，但是会引入位置嵌入，同时还具有全局的感受野。另一个改进点是使用提出的 GCC 和 SE 操作构建了类似于 Vision Transformer 的基础操作单元。借助于 SE 引入了样本相关的注意力机制。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/V2E1ll6kaTWg50IKKplAickSELFnEHvzJmgyjsLn4sNc9WppZiaRhMzzOiawwU0frhLxA9GyjACfypVCmOaFC1hGg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-5. [一文讲透鱼眼相机畸变矫正，及目标检测项目应用](https://mp.weixin.qq.com/s/V5D_9kurlGCT-AdPfPgkUQ)       :star::star::star::star:
-   - Abstract: 一文讲透鱼眼相机畸变矫正，及目标检测项目应用
-   - Tips: 本文是《AI未来星球》潘大强老师的行业内部分享，希望对于大家鱼眼相机项目落地会有帮助！
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/Zibun5D7npIN1DlUbTIgVOPus9tvweictl9JnBLBJZhObiatYrwhyO9IHwgpT0qTYcLia9baGMs6sapus0SwicicDZ8Q/640?wx_fmt=gif&wxfrom=5&wx_lazy=1" style='zoom:100%'>
+4. [LSTM在CV领域杀出一条血路！Sequencer：完美超越Swin与ConvNeXt等前沿算法](https://mp.weixin.qq.com/s/gv9TTnk84AOGwECUBqRjsg)       :star::star:
+   - Abstract: Sequencer：完美超越Swin与ConvNeXt等前沿算法
+   - Paper: [Sequencer: Deep LSTM for Image Classification](https://arxiv.org/abs/2205.01972)
+   - Tips: 本文提出Sequencer，一个全新且具有竞争性的架构，可以替代ViT，为分类问题提供了一个全新的视角。作者还提出了一个二维的Sequencer模块，其中一个LSTM被分解成垂直和水平的LSTM，以提高性能。
+
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfraib0TMLNymB7s3Fcpd7KSHxZDX3ib5Wa3mUnhAXhYb7omhNMiczfhjMPKlCoqsLqQBcMYrQDzKktXA/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-6. [武功秘籍 | 京东科技算法岗求职必看秘籍](https://mp.weixin.qq.com/s/3z-tbWluTUxMNhCiU2tOWA)       :star::star:
-   - Abstract: 京东科技算法岗求职必看秘籍
-   - Tips: 大白产生构建一套算法岗武林秘籍的想法，将江湖中各个大厂可以搜集到的面试资料，按照逻辑框架，每个大厂都整理成一篇面经。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/Zibun5D7npIM8HicS0N4KL9TG2k22DchYCianKKtx6X03yQiaa4ibCsr6A3k20utehmulj4kHibx3ZyH6ib9zAudqO69g/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+5. [视觉Transformer的复仇！Meta AI提出DeiT III：ViT训练的全新baseline](https://mp.weixin.qq.com/s/hhSY5qv6mCDlBmNgu-VWUw)       :star::star::star::star:
+   - Abstract: Meta AI提出DeiT III：ViT训练的全新baseline
+   - Paper: [DeiT III: Revenge of the ViT](https://arxiv.org/abs/2204.07118)
+   - Tips: 本文提出了训练视觉 Transformer（ViT）的三种数据增强方法：灰度、过度曝光、高斯模糊，以及一种简单的随机剪枝方法 (SRC)。实验结果表明，这些新方法在效果上大大优于 ViT 此前的全监督训练方法。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gW9JnGBvutVGOzsvCtYyHib8Zicfr3RBYjWFDMKczdE5X0X5Jx2DW3xlYj2gDogHWNDXVgFnicVic2YrMA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-## 
+
+
+6. [引入特征空间，显著降低计算量：双边局部注意力ViT性能媲美全局注意力](https://mp.weixin.qq.com/s/487MBvfsy6s4chLCTD3MYQ)       :star::star:
+   - Abstract: 引入特征空间，显著降低计算量：双边局部注意力ViT性能媲美全局注意力
+   - Paper: [BOAT: Bilateral Local Attention Vision Transformer](https://arxiv.org/pdf/2201.13027v1.pdf)
+   - Code: [https://github.com/mahaoyuHKU/pytorch-boat](https://github.com/mahaoyuHKU/pytorch-boat)
+   - Tips: 作者提出了双边局部注意力 ViT （简称 BOAT)，把特征空间局部注意力模块加入到现有的基于窗口的局部注意力视觉 Transformer 模型中，作为图像空间局部注意力的补充，大大提升了针对远距离特征依赖的建模能力，在几个基准数据集上的大量实验表明结合了特征空间局部注意力的模型明显优于现有的 ConvNet 和 ViT 模型。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gWicLY3WEsU1F8x72suaCqRMdsV0Hrp9gbQBsd66fEIo6Kib4MD4rt7SI0DtfQ5XJsmI3Fsqb7Bh2odw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+
 
 
 ## :paperclip:  历史更新
@@ -180,9 +193,9 @@
 </details>
 <details><summary>5月</summary>
     1. <a href="notes/202205/0505.md" target="_blank">公众号内容拓展学习笔记（2022.5.5）</a>
+    2. <a href="notes/202205/0507.md" target="_blank">公众号内容拓展学习笔记（2022.5.7）</a>
 </details>
 </pre>
-
 
 
 
