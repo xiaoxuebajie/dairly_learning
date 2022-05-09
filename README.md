@@ -3,7 +3,7 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2022.5.7
+更新今日时间：2022.5.9
 
 ------
 
@@ -11,69 +11,68 @@
 
 ## :paperclip:  今日要点
 
-1. [CVPR 2022｜未标注视频也能训练目标检测？微软提出时空目标蒸馏框架STUD](https://mp.weixin.qq.com/s/JNfHqH09byZ5JSfQ8BuUhA)         :star::star:
-   - Abstract: 微软提出时空目标蒸馏框架STUD
-   - Paper: [Unknown-Aware Object Detection: Learning What You Don't Know from Videos in the Wild](https://arxiv.org/abs/2203.03800)
-   - Code: [https://github.com/deeplearning-wisc/stud](https://github.com/deeplearning-wisc/stud)
-   - Tips:  本文来自威斯康星大学麦迪逊分校和微软研究院，提出了一种时空未知目标蒸馏框架（Spatial-Temporal Unknown Distillation，STUD），其可以在大量未标注视频中提取未知目标，并对原有目标检测模型的决策边界进行规范化。
+1. [CVPR 2022 | 北大、腾讯提出文字logo生成模型，脑洞大开](https://mp.weixin.qq.com/s/UDkE-tHvahrAVGZGn7_6vQ)         :star::star:
+   - Abstract: 北大、腾讯提出文字logo生成模型
+   - Paper: [Aesthetic Text Logo Synthesis via Content-aware Layout Inferring](https://arxiv.org/abs/2204.02701)
+   - Code: [https://github.com/yizhiwang96/TextLogoLayout](https://github.com/yizhiwang96/TextLogoLayout)
+   - Tips:  本模型基于 Conditional GAN 来生成文字 logo，创新性地使用双判别器结构（序列判别器和图像判别器），对字形的轨迹序列和整体 logo 图像分别做判别；同时借助可微分拼接(Differentiable Composition)，构建位置坐标到 logo 图像的可微分渲染过程。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ibaXaPIy7jV10vZ2WZibxcTF80j2qX8URQoFXtHsEHeOoGLd2KHNnQNhTDG736J7Z7iblIQ43hxcnzUyIzb27UJkA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gWibqentvzSlBUfic9MTjYhj8jfgaicBOqeFdYxVSibrbgJ9gZxJQfvpS57UibZ7bzGYViaLt7ojZah9SSNg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+
+
+2. [CVPR2022 Oral：GAN监督的密集视觉对齐，代码开源](https://mp.weixin.qq.com/s/YI3CRFeSQwvnfYWFY2OQMg)       :star::star:
+   - Abstract: GAN监督的密集视觉对齐，代码开源
+   - Paper: [GAN-Supervised Dense Visual Alignment](https://arxiv.org/abs/2112.05143)
+   - Code: [https://www.github.com/wpeebles/gangealing](https://www.github.com/wpeebles/gangealing)
+   - Tips: 在该论文中作者提出了一种用于端到端联合学习的GAN生成数据的框架。受到经典方法的启发，论文中作者联合训练一个空间变换器，将随机样本从基于未对齐数据训练的GAN映射到共同的、联合学习的目标模式。
+
+<video id="video" controls=""src="http://mpvideo.qpic.cn/0bc3iiaa4aaa4qao57dpnnrfaqwdbzbaadqa.f10003.mp4?dis_k=85b8fb229280fbf356d366dec7e53593&dis_t=1652058067&vid=wxv_2380802778538688513&format_id=10003&support_redirect=0&mmversion=false" preload="none">
+
+
+3. [ACL'22 | 陈丹琦提出CoFi模型剪枝，加速10倍，精度几乎无损](https://mp.weixin.qq.com/s/0VO036qHI8JYfYu_r-3Tgw)       :star::star:
+   - Abstract: 陈丹琦提出CoFi模型剪枝，加速10倍，精度几乎无损
+   - Paper: [Structured Pruning Learns Compact and Accurate Models](https://arxiv.org/pdf/2204.00408.pdf)
+   - Code: [https://github.com/princeton-nlp/CoFiPruning](https://github.com/princeton-nlp/CoFiPruning)
+   - Tips: 作者提出的结构化剪枝方法 CoFi 在几乎没有太多精度损失的情况下，达到了 10 倍以上的加速比，同时，和常规的蒸馏做法相比，避免了因使用大量无标签数据预训练模型而带来的训练成本过高的问题，按作者的话来说，该方法可以是蒸馏的一个有效替代品。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/5fknb41ib9qEqBFibgRXqh8zdwZ3TIbOqUWO2GJpFnStnqzicibsUkfoUhvhL2Evl3RvAsxBa97Hk5nBTZj6gvRTmA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
 
 
-2. [只需要十分之一数据，就能通关四大视觉任务，居然还开源了！](https://mp.weixin.qq.com/s/7R8DgOvqxlcjCYhgAqrd2g)       :star::star:
-   - Abstract: OpenGVLab开源超高性能预训练模型，节省90%数据量！分类、目标检测、语义分割、深度估计，四大任务一网打尽！
-   - Paper: [INTERN: A New Learning Paradigm Towards General Vision](arxiv.org/abs/2111.08687)
-   - Code: [https://github.com/opengvlab](https://github.com/opengvlab)
-   - Tips: 上海人工智能实验室联合商汤科技、香港中文大学、上海交通大学发布通用视觉技术体系“书生”INTERN，一套持续学习框架，用于系统化解决当下人工智能视觉领域中存在的任务通用、场景泛化和数据效率等一系列瓶颈问题。
+4. [MAGIC: 一个即插即用、无需训练的图像-文本生成框架](https://mp.weixin.qq.com/s/bCeALWVmPZnNvfMN7xOrLQ)       :star::star:
+   - Abstract: MAGIC: 一个即插即用、无需训练的图像-文本生成框架
+   - Paper: [LanguageModels Can See: Plugging Visual Controls in Text Generation](https://arxiv.org/abs/2205.02655)
+   - Code: [https://github.com/yxuansu/MAGIC](https://github.com/yxuansu/MAGIC)
+   - Tips: 本文提出了一个全新的MAGIC框架。该框架可以使用图片模态的信息指导预训练语言模型完成一系列跨模态生成任务与其他方法不同的是，MAGIC框架无需多模态的训练数据，只需利用现成的语言模型和图文匹配模型就能够以zero-shot的方式高质量地完成多模态生成任务。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/cNFA8C0uVPsNMYMVjuI9CJjjx6SibFTbnjibEqgN3dA0DWfUXE9zhRL45mZIHydozklgmXMeiaXetic7g8UAzSb2DA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/nJZZib3qIQW7M5v7ChRYa7Gol6z2VC4WficogWcOwms9VA7l0icqZkqbjn9gKsKAxbohU242ribtCDvjCxrW1pfic6g/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
 
-3. [EdgeFormer: 向视觉 Transformer 学习，构建一个比 MobileViT 更好更快的卷积网络](https://mp.weixin.qq.com/s/R53VtsmH7sAkPQ6UXvw4LQ)       :star::star:
-   - Abstract: EdgeFormer: 向视觉 Transformer 学习，构建一个比 MobileViT 更好更快的卷积网络
-   - Paper: [EdgeFormer: Improving Light-weight ConvNets by Learning from Vision Transformers](https://arxiv.org/abs/2203.03952)
-   - Code: [https://github.com/hkzhang91/EdgeFormer](https://github.com/hkzhang91/EdgeFormer)
-   - Tips: 本文提出的核心算子，即 global circular convolution (GCC)，是一个卷积操作，但是会引入位置嵌入，同时还具有全局的感受野。另一个改进点是使用提出的 GCC 和 SE 操作构建了类似于 Vision Transformer 的基础操作单元。借助于 SE 引入了样本相关的注意力机制。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/V2E1ll6kaTWg50IKKplAickSELFnEHvzJmgyjsLn4sNc9WppZiaRhMzzOiawwU0frhLxA9GyjACfypVCmOaFC1hGg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+5. [多模态理解与生成，西南交大&MSRA提出统一的"视频和语言预训练"模型：UniVL！](https://mp.weixin.qq.com/s/P3WiKQmboTrgad2JzIAvgA)       :star::star::star::star:
+   - Abstract: 西南交大&MSRA提出统一的"视频和语言预训练"模型：UniVL
+   - Paper: [UniVL: A Uniﬁed Video and Language Pre-Training Model for Multimodal Understanding and Generation](https://arxiv.org/abs/2002.06353)
+   - Code: [https://github.com/microsoft/UniVL](https://github.com/microsoft/UniVL)
+   - Tips: 本文提出了一种基于自监督学习的大规模视频语言表示方法UniVL。UniVL设计有四个模块和五个目标，用于视频语言理解和生成任务。它是一个灵活的模型，适用于大多数多模态下游任务，同时考虑效率和有效性。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/BJbRvwibeSTtUnlibcGGfdY7DlpgcicSf5iafNHcZJCCm1DuQDTLXCxtQvPpXm09CzxyroZCup5Uh4xZ2sM8RWDwsA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
 
-4. [LSTM在CV领域杀出一条血路！Sequencer：完美超越Swin与ConvNeXt等前沿算法](https://mp.weixin.qq.com/s/gv9TTnk84AOGwECUBqRjsg)       :star::star:
-   - Abstract: Sequencer：完美超越Swin与ConvNeXt等前沿算法
-   - Paper: [Sequencer: Deep LSTM for Image Classification](https://arxiv.org/abs/2205.01972)
-   - Tips: 本文提出Sequencer，一个全新且具有竞争性的架构，可以替代ViT，为分类问题提供了一个全新的视角。作者还提出了一个二维的Sequencer模块，其中一个LSTM被分解成垂直和水平的LSTM，以提高性能。
 
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfraib0TMLNymB7s3Fcpd7KSHxZDX3ib5Wa3mUnhAXhYb7omhNMiczfhjMPKlCoqsLqQBcMYrQDzKktXA/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+6. [小样本学习只是一场学术界自嗨吗？](https://mp.weixin.qq.com/s/GyRxJ47HDpz2JZatWxPnOg)       :star::star:
+   - Abstract: 小样本学习只是一场学术界自嗨吗？
+   - Tips: 这两年看见很多人，都在批评few-shot learning，觉得是学术界在自high，思考良久，感觉有必要给这个领域正个名～（注意，本文仅关注few-shot image classification）
+
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfqMsywC0jhRXchnH1jh4dIsdgbCRuYGuhPkQgcopJ4mS9Veerq4pD5MicXHBDntrAkvMtuv7ebGicOQ/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
-
-
-
-5. [视觉Transformer的复仇！Meta AI提出DeiT III：ViT训练的全新baseline](https://mp.weixin.qq.com/s/hhSY5qv6mCDlBmNgu-VWUw)       :star::star::star::star:
-   - Abstract: Meta AI提出DeiT III：ViT训练的全新baseline
-   - Paper: [DeiT III: Revenge of the ViT](https://arxiv.org/abs/2204.07118)
-   - Tips: 本文提出了训练视觉 Transformer（ViT）的三种数据增强方法：灰度、过度曝光、高斯模糊，以及一种简单的随机剪枝方法 (SRC)。实验结果表明，这些新方法在效果上大大优于 ViT 此前的全监督训练方法。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gW9JnGBvutVGOzsvCtYyHib8Zicfr3RBYjWFDMKczdE5X0X5Jx2DW3xlYj2gDogHWNDXVgFnicVic2YrMA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-
-
-6. [引入特征空间，显著降低计算量：双边局部注意力ViT性能媲美全局注意力](https://mp.weixin.qq.com/s/487MBvfsy6s4chLCTD3MYQ)       :star::star:
-   - Abstract: 引入特征空间，显著降低计算量：双边局部注意力ViT性能媲美全局注意力
-   - Paper: [BOAT: Bilateral Local Attention Vision Transformer](https://arxiv.org/pdf/2201.13027v1.pdf)
-   - Code: [https://github.com/mahaoyuHKU/pytorch-boat](https://github.com/mahaoyuHKU/pytorch-boat)
-   - Tips: 作者提出了双边局部注意力 ViT （简称 BOAT)，把特征空间局部注意力模块加入到现有的基于窗口的局部注意力视觉 Transformer 模型中，作为图像空间局部注意力的补充，大大提升了针对远距离特征依赖的建模能力，在几个基准数据集上的大量实验表明结合了特征空间局部注意力的模型明显优于现有的 ConvNet 和 ViT 模型。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gWicLY3WEsU1F8x72suaCqRMdsV0Hrp9gbQBsd66fEIo6Kib4MD4rt7SI0DtfQ5XJsmI3Fsqb7Bh2odw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
 
 
 
@@ -194,8 +193,10 @@
 <details><summary>5月</summary>
     1. <a href="notes/202205/0505.md" target="_blank">公众号内容拓展学习笔记（2022.5.5）</a>
     2. <a href="notes/202205/0507.md" target="_blank">公众号内容拓展学习笔记（2022.5.7）</a>
+    3. <a href="notes/202205/0509.md" target="_blank">公众号内容拓展学习笔记（2022.5.9）</a>
 </details>
 </pre>
+
 
 
 
