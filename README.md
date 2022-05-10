@@ -3,7 +3,7 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2022.5.9
+更新今日时间：2022.5.10
 
 ------
 
@@ -11,68 +11,65 @@
 
 ## :paperclip:  今日要点
 
-1. [CVPR 2022 | 北大、腾讯提出文字logo生成模型，脑洞大开](https://mp.weixin.qq.com/s/UDkE-tHvahrAVGZGn7_6vQ)         :star::star:
-   - Abstract: 北大、腾讯提出文字logo生成模型
-   - Paper: [Aesthetic Text Logo Synthesis via Content-aware Layout Inferring](https://arxiv.org/abs/2204.02701)
-   - Code: [https://github.com/yizhiwang96/TextLogoLayout](https://github.com/yizhiwang96/TextLogoLayout)
-   - Tips:  本模型基于 Conditional GAN 来生成文字 logo，创新性地使用双判别器结构（序列判别器和图像判别器），对字形的轨迹序列和整体 logo 图像分别做判别；同时借助可微分拼接(Differentiable Composition)，构建位置坐标到 logo 图像的可微分渲染过程。
+1. [CVPR 2022 | 涨点显著！AMD提出：动态Sparse R-CNN](https://mp.weixin.qq.com/s/YBNbWdiW6tQGPCoJF8LMCw)         :star::star:
+   - Abstract: 涨点显著！AMD提出：动态Sparse R-CNN
+   - Paper: [Dynamic Sparse R-CNN](https://arxiv.org/abs/2205.02101)
+   - Tips:  `Sparse R-CNN`是最近的一种强目标检测`Baseline`，通过对稀疏的、可学习的`proposal boxes`和`proposal features`进行集合预测。在这项工作中提出了2个动态设计来改进`Sparse R-CNN`。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gWibqentvzSlBUfic9MTjYhj8jfgaicBOqeFdYxVSibrbgJ9gZxJQfvpS57UibZ7bzGYViaLt7ojZah9SSNg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/5ooHoYt0tgl3MMndmrCICD9kwr9oggwAKMIMMia8HsNJMNeibu5icSeppfuPbJnSkKK2qX46UYegZOcwY60j0fBZg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
 
-2. [CVPR2022 Oral：GAN监督的密集视觉对齐，代码开源](https://mp.weixin.qq.com/s/YI3CRFeSQwvnfYWFY2OQMg)       :star::star:
-   - Abstract: GAN监督的密集视觉对齐，代码开源
-   - Paper: [GAN-Supervised Dense Visual Alignment](https://arxiv.org/abs/2112.05143)
-   - Code: [https://www.github.com/wpeebles/gangealing](https://www.github.com/wpeebles/gangealing)
-   - Tips: 在该论文中作者提出了一种用于端到端联合学习的GAN生成数据的框架。受到经典方法的启发，论文中作者联合训练一个空间变换器，将随机样本从基于未对齐数据训练的GAN映射到共同的、联合学习的目标模式。
 
-<video id="video" controls=""src="http://mpvideo.qpic.cn/0bc3iiaa4aaa4qao57dpnnrfaqwdbzbaadqa.f10003.mp4?dis_k=85b8fb229280fbf356d366dec7e53593&dis_t=1652058067&vid=wxv_2380802778538688513&format_id=10003&support_redirect=0&mmversion=false" preload="none">
+2. [CVPR2022｜小样本行为识别最新进展STRM框架，时空关系建模仍是重中之重](https://mp.weixin.qq.com/s/-HpMEGG4kMWIBfM2SrMk8A)       :star::star:
+   - Abstract: 小样本行为识别最新进展STRM框架，时空关系建模仍是重中之重
+   - Paper: [Spatio-temporal Relation Modeling for Few-shot Action Recognition](https://arxiv.org/abs/2112.05132)
+   - Code: [https://github.com/Anirudh257/strm](https://github.com/Anirudh257/strm)
+   - Tips: 本文的出发点是解决小样本行为识别领域中的时空关系建模问题，提出了一种新颖的时空信息增强模块，分别从局部和全局的角度对视频中的对象特征和时空上下文进行捕捉。此外，作者还设计了一种查询类相似性分类器来增强网络对特定行为类的特征辨别能力。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ibaXaPIy7jV34gGB02tibuoaMJnkf8icp4CyL04nSA3odWicVNkN9cfpvEibzmVrB2pXsH25kkzBzS9vibdnfxTraZBQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
 
 
-3. [ACL'22 | 陈丹琦提出CoFi模型剪枝，加速10倍，精度几乎无损](https://mp.weixin.qq.com/s/0VO036qHI8JYfYu_r-3Tgw)       :star::star:
-   - Abstract: 陈丹琦提出CoFi模型剪枝，加速10倍，精度几乎无损
+
+3. [CVPR 2022 | 从自注意力中学习语义Affinity用于端到端弱监督语义分割](https://mp.weixin.qq.com/s/0WoMvQbb0KRjBoLAFjcJzA)       :star::star:
+   - Abstract: 从自注意力中学习语义Affinity用于端到端弱监督语义分割
    - Paper: [Structured Pruning Learns Compact and Accurate Models](https://arxiv.org/pdf/2204.00408.pdf)
    - Code: [https://github.com/princeton-nlp/CoFiPruning](https://github.com/princeton-nlp/CoFiPruning)
-   - Tips: 作者提出的结构化剪枝方法 CoFi 在几乎没有太多精度损失的情况下，达到了 10 倍以上的加速比，同时，和常规的蒸馏做法相比，避免了因使用大量无标签数据预训练模型而带来的训练成本过高的问题，按作者的话来说，该方法可以是蒸馏的一个有效替代品。
+   - Tips: 本文提出了一个Affinity from Attention（AFA）模块，从Transformer的注意力矩阵中学习高质量的语义Affinity信息，用于对初始伪标签进行改善。为了进一步补充伪标签的局部细节信息，同时保证端到端训练的效率，本文基于像素自适应卷积设计了一个高效的处理模块。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/5fknb41ib9qEqBFibgRXqh8zdwZ3TIbOqUWO2GJpFnStnqzicibsUkfoUhvhL2Evl3RvAsxBa97Hk5nBTZj6gvRTmA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/Mcdq8uia1WiacLyFJwpup4N51FibnoHicqiaefKOKLPF27JzKu20hLhmPxuWVpANUGg3Fl2R4EcIqd2z45pElqHU5CA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
 
+4. [GitHub 20000+ Star，这个超轻量OCR系统效果再提升5% - 11%！](https://mp.weixin.qq.com/s/uoh_PMVEf_NYU8Z-9NdY7g)       :star::star:
+   - Abstract: 这个超轻量OCR系统效果再提升5% - 11%
+   - Code: [https://github.com/PaddlePaddle/PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR)
+   - Tips: 本次PaddleOCR最新发版，带来四大重磅升级，发布超轻量OCR系统PP-OCRv3；发布半自动标注工具PPOCRLabelv2；发布OCR产业落地工具集；发布业界首个交互式OCR开源电子书《动手学OCR》。
 
-4. [MAGIC: 一个即插即用、无需训练的图像-文本生成框架](https://mp.weixin.qq.com/s/bCeALWVmPZnNvfMN7xOrLQ)       :star::star:
-   - Abstract: MAGIC: 一个即插即用、无需训练的图像-文本生成框架
-   - Paper: [LanguageModels Can See: Plugging Visual Controls in Text Generation](https://arxiv.org/abs/2205.02655)
-   - Code: [https://github.com/yxuansu/MAGIC](https://github.com/yxuansu/MAGIC)
-   - Tips: 本文提出了一个全新的MAGIC框架。该框架可以使用图片模态的信息指导预训练语言模型完成一系列跨模态生成任务与其他方法不同的是，MAGIC框架无需多模态的训练数据，只需利用现成的语言模型和图文匹配模型就能够以zero-shot的方式高质量地完成多模态生成任务。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/nJZZib3qIQW7M5v7ChRYa7Gol6z2VC4WficogWcOwms9VA7l0icqZkqbjn9gKsKAxbohU242ribtCDvjCxrW1pfic6g/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/ByEtV06HvDia9P9pCfviaUsic9AsDXrlw5ylu1tAhExcThppkqRvibhGibyXgrFQTvPFRxrdvAm8ibOjlTBLcmPaCyicw/640?wx_fmt=gif&wxfrom=5&wx_lazy=1" style='zoom:100%'>
 </div>
 
 
 
+5. [使用PyTorch复现ConvNext：从Resnet到ConvNext的完整步骤详解](https://mp.weixin.qq.com/s/PTBAXkMAOGHIs_pQt3gfJg)       :star::star:
+   - Abstract: 使用PyTorch复现ConvNext：从Resnet到ConvNext的完整步骤详解
+   - Tips: ConvNext论文提出了一种新的基于卷积的架构，不仅超越了基于 Transformer 的模型（如 Swin），而且可以随着数据量的增加而扩展！本文通过Pytorch对其进行复现。
 
-5. [多模态理解与生成，西南交大&MSRA提出统一的"视频和语言预训练"模型：UniVL！](https://mp.weixin.qq.com/s/P3WiKQmboTrgad2JzIAvgA)       :star::star::star::star:
-   - Abstract: 西南交大&MSRA提出统一的"视频和语言预训练"模型：UniVL
-   - Paper: [UniVL: A Uniﬁed Video and Language Pre-Training Model for Multimodal Understanding and Generation](https://arxiv.org/abs/2002.06353)
-   - Code: [https://github.com/microsoft/UniVL](https://github.com/microsoft/UniVL)
-   - Tips: 本文提出了一种基于自监督学习的大规模视频语言表示方法UniVL。UniVL设计有四个模块和五个目标，用于视频语言理解和生成任务。它是一个灵活的模型，适用于大多数多模态下游任务，同时考虑效率和有效性。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/BJbRvwibeSTtUnlibcGGfdY7DlpgcicSf5iafNHcZJCCm1DuQDTLXCxtQvPpXm09CzxyroZCup5Uh4xZ2sM8RWDwsA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/6wQyVOrkRNJUe2VOzQQOcrgWKtPqdI5pOjZIhMGiaSkpYz48qQN3rpU2ZNeTsDZHommMuyiaXHEr3Ek7kGfw2a0w/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
 
+6. [视频目标跟踪从0到1，概念与方法](https://mp.weixin.qq.com/s/1N3B1tt-bMivln7AMOWeiA)       :star::star:
+   - Abstract: 视频目标跟踪从0到1，概念与方法
+   - Tips: 从目标跟踪的应用场景，底层模型，组件，类型和具体算法几个方面对目标跟踪做了全方面的介绍，非常好的入门文章。
 
-6. [小样本学习只是一场学术界自嗨吗？](https://mp.weixin.qq.com/s/GyRxJ47HDpz2JZatWxPnOg)       :star::star:
-   - Abstract: 小样本学习只是一场学术界自嗨吗？
-   - Tips: 这两年看见很多人，都在批评few-shot learning，觉得是学术界在自high，思考良久，感觉有必要给这个领域正个名～（注意，本文仅关注few-shot image classification）
-
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfqMsywC0jhRXchnH1jh4dIsdgbCRuYGuhPkQgcopJ4mS9Veerq4pD5MicXHBDntrAkvMtuv7ebGicOQ/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KYSDTmOVZvriag9o7IEOJvg6XlutFXY00espFtjXypeObSXlibFFMIW4azAtA35FZnuJN02h7KynpWiaX1EA7LTIg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
+
 
 
 
@@ -194,10 +191,9 @@
     1. <a href="notes/202205/0505.md" target="_blank">公众号内容拓展学习笔记（2022.5.5）</a>
     2. <a href="notes/202205/0507.md" target="_blank">公众号内容拓展学习笔记（2022.5.7）</a>
     3. <a href="notes/202205/0509.md" target="_blank">公众号内容拓展学习笔记（2022.5.9）</a>
+    4. <a href="notes/202205/0510.md" target="_blank">公众号内容拓展学习笔记（2022.5.10）</a>
 </details>
 </pre>
-
-
 
 
 ## :paperclip:  Others
