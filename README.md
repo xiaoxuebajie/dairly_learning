@@ -3,7 +3,7 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2022.5.10
+更新今日时间：2022.5.11
 
 ------
 
@@ -11,65 +11,57 @@
 
 ## :paperclip:  今日要点
 
-1. [CVPR 2022 | 涨点显著！AMD提出：动态Sparse R-CNN](https://mp.weixin.qq.com/s/YBNbWdiW6tQGPCoJF8LMCw)         :star::star:
-   - Abstract: 涨点显著！AMD提出：动态Sparse R-CNN
-   - Paper: [Dynamic Sparse R-CNN](https://arxiv.org/abs/2205.02101)
-   - Tips:  `Sparse R-CNN`是最近的一种强目标检测`Baseline`，通过对稀疏的、可学习的`proposal boxes`和`proposal features`进行集合预测。在这项工作中提出了2个动态设计来改进`Sparse R-CNN`。
+1. [CVPR 2022 | 微软提出MiniViT：极致压缩视觉Transformer](https://mp.weixin.qq.com/s/QuO-AT6cs7o8tNvLsfuhOQ)         :star::star:
+   - Abstract: 微软提出MiniViT：极致压缩视觉Transformer
+   - Paper: [MiniViT: Compressing Vision Transformers with Weight Multiplexing](https://arxiv.org/abs/2204.07154)
+   - Code: [https://github.com/microsoft/Cream](https://github.com/microsoft/Cream)
+   - Tips: `MiniViT`的核心思想是将连续`Vision TRansformer Block`的权重相乘。更具体地说，使权重跨层共享，同时对权重进行转换以增加多样性。`Weight distillation`也被应用于将知识从`Large-scale ViT`模型转移到权重复用的紧凑模型。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/5ooHoYt0tgl3MMndmrCICD9kwr9oggwAKMIMMia8HsNJMNeibu5icSeppfuPbJnSkKK2qX46UYegZOcwY60j0fBZg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/5ooHoYt0tgnvf7jP2TsbstfBoMklUhroYb0uwlmkqoLFrVn0xUt3VokptCG3aicJYTf6ZcGyQiaCM3s8DRkibzKCA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+2. [精度更高，速度更快！锚点 DETR：基于 transformer 目标检测的查询设计（AAAI 2022）](https://mp.weixin.qq.com/s/X1R4O5vY-niKUgfeTW27vg)       :star::star:
+   - Abstract: 精度更高，速度更快！锚点 DETR：基于 transformer 目标检测的查询设计
+   - Paper: [Anchor DETR: Query Design for Transformer-Based Object Detection](https://arxiv.org/abs/2109.07107)
+   - Tips: 本文提出了一个基于 transformer 的检测算法，其实现简单，且比 DETR 精度更高，消耗显存更少，速度更快，且收敛更快。
+
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_png/UQF4ptZHf9oStgwgPXL6nfmQYdvQaZ1ibg9fU5DcYlh559GQOxmY2EbmRsickyxud5EXicmPh33r8SahkBmvgA1AQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
+3. [即插即用全新FAN，鲁棒性和高效性超越ConvNeXt、Swin](https://mp.weixin.qq.com/s/m58tTiLUlNEL8s_n2rNGWg)       :star::star:
+   - Abstract: 即插即用全新FAN，鲁棒性和高效性超越ConvNeXt、Swin
+   - Paper: [Understanding The Robustness in Vision Transformers](https://arxiv.org/abs/2204.12451)
+   - Tips: 本文作者研究了Self-Attention在学习鲁棒表征中的作用。在Self-Attention的基础上进一步提出了一系列的Fully Attentional Networks(FANs)，通过结合注意力通道来加强鲁棒性。
 
-
-2. [CVPR2022｜小样本行为识别最新进展STRM框架，时空关系建模仍是重中之重](https://mp.weixin.qq.com/s/-HpMEGG4kMWIBfM2SrMk8A)       :star::star:
-   - Abstract: 小样本行为识别最新进展STRM框架，时空关系建模仍是重中之重
-   - Paper: [Spatio-temporal Relation Modeling for Few-shot Action Recognition](https://arxiv.org/abs/2112.05132)
-   - Code: [https://github.com/Anirudh257/strm](https://github.com/Anirudh257/strm)
-   - Tips: 本文的出发点是解决小样本行为识别领域中的时空关系建模问题，提出了一种新颖的时空信息增强模块，分别从局部和全局的角度对视频中的对象特征和时空上下文进行捕捉。此外，作者还设计了一种查询类相似性分类器来增强网络对特定行为类的特征辨别能力。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ibaXaPIy7jV34gGB02tibuoaMJnkf8icp4CyL04nSA3odWicVNkN9cfpvEibzmVrB2pXsH25kkzBzS9vibdnfxTraZBQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/5ooHoYt0tgkEKcia59r8wyYeDZ2PxbwD1nusLMwy7aibWvUh7tKv4xD49MkCvtj8HxsTicob3PvZV1sdKTOj3yX6A/640?wx_fmt=gif&wxfrom=5&wx_lazy=1" style='zoom:100%'>
 </div>
 
 
+4. [一键瘦脸！浙大提出：人脸视频编辑新技术](https://mp.weixin.qq.com/s/c0uBnRA4fdo3A6pTTRZuWg)       :star::star:
+   - Abstract: 一键瘦脸！浙大提出：人脸视频编辑新技术
+   - Paper: [Parametric Reshaping of Portraits in Videos](https://arxiv.org/abs/2205.02538)
+   - Tips: 研究的目标是根据现实世界中的自然面部变形，通过编辑肖像面部的整体形状，生成高质量的肖像视频重塑结果。OpenCV的光流法负责运动映射，并由StructureFlow框架进行平滑处理。人脸对齐网络（FAN）负责特征点估计，而Ceres Solver用于解决优化问题。
 
-3. [CVPR 2022 | 从自注意力中学习语义Affinity用于端到端弱监督语义分割](https://mp.weixin.qq.com/s/0WoMvQbb0KRjBoLAFjcJzA)       :star::star:
-   - Abstract: 从自注意力中学习语义Affinity用于端到端弱监督语义分割
-   - Paper: [Structured Pruning Learns Compact and Accurate Models](https://arxiv.org/pdf/2204.00408.pdf)
-   - Code: [https://github.com/princeton-nlp/CoFiPruning](https://github.com/princeton-nlp/CoFiPruning)
-   - Tips: 本文提出了一个Affinity from Attention（AFA）模块，从Transformer的注意力矩阵中学习高质量的语义Affinity信息，用于对初始伪标签进行改善。为了进一步补充伪标签的局部细节信息，同时保证端到端训练的效率，本文基于像素自适应卷积设计了一个高效的处理模块。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/Mcdq8uia1WiacLyFJwpup4N51FibnoHicqiaefKOKLPF27JzKu20hLhmPxuWVpANUGg3Fl2R4EcIqd2z45pElqHU5CA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/UicQ7HgWiaUb3pVdRpogx0MaaEmUL0TyooA8xzbDyIwX3oMfickhiaGc9xpHKlbFA3MKaQ5uqNbQc3Oe1icibpqQ8n2Q/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
+5. [自监督学习效果差？Meta AI 提出 Q-score 快速过滤错误样本！](https://mp.weixin.qq.com/s/f4QRfLZEq-q1Z-MJv2kNaA)       :star::star:
+   - Abstract: 自监督学习效果差？Meta AI 提出 Q-score 快速过滤错误样本！
+   - Paper: [Understanding Failure Modes of Self-Supervised Learning](https://arxiv.org/pdf/2203.01881.pdf)
+   - Tips: 作者提出的Q分数可以在无监督的方式下预估自监督模型得到的特征表示在下游任务中正确分类的可能性，同时Q分数正则化也可以一定程度上改善低质量的特征表示，有助于提高下游任务的分类准确率。
 
-4. [GitHub 20000+ Star，这个超轻量OCR系统效果再提升5% - 11%！](https://mp.weixin.qq.com/s/uoh_PMVEf_NYU8Z-9NdY7g)       :star::star:
-   - Abstract: 这个超轻量OCR系统效果再提升5% - 11%
-   - Code: [https://github.com/PaddlePaddle/PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR)
-   - Tips: 本次PaddleOCR最新发版，带来四大重磅升级，发布超轻量OCR系统PP-OCRv3；发布半自动标注工具PPOCRLabelv2；发布OCR产业落地工具集；发布业界首个交互式OCR开源电子书《动手学OCR》。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/ByEtV06HvDia9P9pCfviaUsic9AsDXrlw5ylu1tAhExcThppkqRvibhGibyXgrFQTvPFRxrdvAm8ibOjlTBLcmPaCyicw/640?wx_fmt=gif&wxfrom=5&wx_lazy=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfoC8KcOfibASzA3Spmykg7bBItXIeUzm3kbGoicbuhicR5zgLttTEGrNds0LO0ibibAyp3FEtWFyNOm9iaA/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
+6. [使用 Mediapipe 和 Yolov5 进行多人姿态估计](https://mp.weixin.qq.com/s/Hg84g9-e2cNxYPmzvUmB_g)       :star::star:
+   - Abstract: 使用 Mediapipe 和 Yolov5 进行多人姿态估计
+   - Tips: 在大多数情况下，使用 MediaPipe 的姿势估计效果非常好，但是当单个帧上有多个人时就会出现问题。解决此问题的一种灵活方法是使用对象检测模型并获取帧中存在的多个人，然后估计每个人的姿势，最后将图像聚合到单个帧中。
 
-5. [使用PyTorch复现ConvNext：从Resnet到ConvNext的完整步骤详解](https://mp.weixin.qq.com/s/PTBAXkMAOGHIs_pQt3gfJg)       :star::star:
-   - Abstract: 使用PyTorch复现ConvNext：从Resnet到ConvNext的完整步骤详解
-   - Tips: ConvNext论文提出了一种新的基于卷积的架构，不仅超越了基于 Transformer 的模型（如 Swin），而且可以随着数据量的增加而扩展！本文通过Pytorch对其进行复现。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/6wQyVOrkRNJUe2VOzQQOcrgWKtPqdI5pOjZIhMGiaSkpYz48qQN3rpU2ZNeTsDZHommMuyiaXHEr3Ek7kGfw2a0w/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ABvEnMciauWuGjLFxBJzszzGHibpNd7Dib60Qztg8L8VKlOsNFoeSfcZFQceTzn7miaSa7GcSaib0dTs63CpypewHhQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
-
-
-
-6. [视频目标跟踪从0到1，概念与方法](https://mp.weixin.qq.com/s/1N3B1tt-bMivln7AMOWeiA)       :star::star:
-   - Abstract: 视频目标跟踪从0到1，概念与方法
-   - Tips: 从目标跟踪的应用场景，底层模型，组件，类型和具体算法几个方面对目标跟踪做了全方面的介绍，非常好的入门文章。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KYSDTmOVZvriag9o7IEOJvg6XlutFXY00espFtjXypeObSXlibFFMIW4azAtA35FZnuJN02h7KynpWiaX1EA7LTIg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
 
 
 
@@ -192,8 +184,10 @@
     2. <a href="notes/202205/0507.md" target="_blank">公众号内容拓展学习笔记（2022.5.7）</a>
     3. <a href="notes/202205/0509.md" target="_blank">公众号内容拓展学习笔记（2022.5.9）</a>
     4. <a href="notes/202205/0510.md" target="_blank">公众号内容拓展学习笔记（2022.5.10）</a>
+    5. <a href="notes/202205/0511.md" target="_blank">公众号内容拓展学习笔记（2022.5.11）</a>
 </details>
 </pre>
+
 
 
 ## :paperclip:  Others
