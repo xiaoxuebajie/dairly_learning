@@ -3,7 +3,7 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2022.5.11
+更新今日时间：2022.5.17
 
 ------
 
@@ -11,57 +11,54 @@
 
 ## :paperclip:  今日要点
 
-1. [CVPR 2022 | 微软提出MiniViT：极致压缩视觉Transformer](https://mp.weixin.qq.com/s/QuO-AT6cs7o8tNvLsfuhOQ)         :star::star:
-   - Abstract: 微软提出MiniViT：极致压缩视觉Transformer
-   - Paper: [MiniViT: Compressing Vision Transformers with Weight Multiplexing](https://arxiv.org/abs/2204.07154)
-   - Code: [https://github.com/microsoft/Cream](https://github.com/microsoft/Cream)
-   - Tips: `MiniViT`的核心思想是将连续`Vision TRansformer Block`的权重相乘。更具体地说，使权重跨层共享，同时对权重进行转换以增加多样性。`Weight distillation`也被应用于将知识从`Large-scale ViT`模型转移到权重复用的紧凑模型。
+1. [李飞飞团队提出零样本泛化的技术，性能超越SOTA！](https://mp.weixin.qq.com/s/CdwpToIQJoMwNYyPT5QzwQ)         :star::star:
+   - Abstract: 李飞飞团队提出零样本泛化的技术，性能超越SOTA！
+   - Paper: [SECANT: Self-Expert Cloning for Zero-Shot Generalization of Visual Policies](https://arxiv.org/abs/2106.09678)
+   - Tips: 提出了SECANT模型，可以依次解决策略学习和鲁棒性表征学习问题，从而实现了对未见过的视觉环境的强大零样本泛化性能；在自动驾驶、机器人操作和室内物体导航四个领域中，设计并制定了一套多样化的基准测试
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/5ooHoYt0tgnvf7jP2TsbstfBoMklUhroYb0uwlmkqoLFrVn0xUt3VokptCG3aicJYTf6ZcGyQiaCM3s8DRkibzKCA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-2. [精度更高，速度更快！锚点 DETR：基于 transformer 目标检测的查询设计（AAAI 2022）](https://mp.weixin.qq.com/s/X1R4O5vY-niKUgfeTW27vg)       :star::star:
-   - Abstract: 精度更高，速度更快！锚点 DETR：基于 transformer 目标检测的查询设计
-   - Paper: [Anchor DETR: Query Design for Transformer-Based Object Detection](https://arxiv.org/abs/2109.07107)
-   - Tips: 本文提出了一个基于 transformer 的检测算法，其实现简单，且比 DETR 精度更高，消耗显存更少，速度更快，且收敛更快。
-
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_png/UQF4ptZHf9oStgwgPXL6nfmQYdvQaZ1ibg9fU5DcYlh559GQOxmY2EbmRsickyxud5EXicmPh33r8SahkBmvgA1AQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/UicQ7HgWiaUb2FurX4cbJs64CTiaRvZQORvEOMEmsWJDPPwq2oicOzn5gSmlEGy2Fr2PRGA7LMUQ9YhdXibx3Fp1jQg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-3. [即插即用全新FAN，鲁棒性和高效性超越ConvNeXt、Swin](https://mp.weixin.qq.com/s/m58tTiLUlNEL8s_n2rNGWg)       :star::star:
-   - Abstract: 即插即用全新FAN，鲁棒性和高效性超越ConvNeXt、Swin
-   - Paper: [Understanding The Robustness in Vision Transformers](https://arxiv.org/abs/2204.12451)
-   - Tips: 本文作者研究了Self-Attention在学习鲁棒表征中的作用。在Self-Attention的基础上进一步提出了一系列的Fully Attentional Networks(FANs)，通过结合注意力通道来加强鲁棒性。
+2. [浙大蔡登团队：基于序列对比学习的长视频逐帧动作表征](https://mp.weixin.qq.com/s/n7bpcKZL_QJbl8RND3144Q)       :star::star:
+   - Abstract: 浙大蔡登团队：基于序列对比学习的长视频逐帧动作表征
+   - Paper: [Frame-wise Action Representations for Long Videos via Sequence Contrastive Learning](https://arxiv.org/pdf/2203.14957.pdf)
+   - Tips: 浙大蔡登团队携手微软亚洲研究院，提出了一个新的对比动作表征学习（CARL）框架，以自监督的方式学习逐帧动作表征，尤其是针对长视频；它考虑了时空上下文来提取逐帧表征，是一种基于Transformer的简单而高效的视频编码器。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/5ooHoYt0tgkEKcia59r8wyYeDZ2PxbwD1nusLMwy7aibWvUh7tKv4xD49MkCvtj8HxsTicob3PvZV1sdKTOj3yX6A/640?wx_fmt=gif&wxfrom=5&wx_lazy=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/cNFA8C0uVPsoX5eOX4VUha5cflWbDibYu5C1c2cU7FRjmYDsVUmNdafzhMzvmhoDGyFMkuHdiaQNUzCAfNJicnnZw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
+3. [实时图像增强，基于“间距自适应查找表”的方法（CVPR 2022）](https://mp.weixin.qq.com/s/GPVRPyj5wsePLUh2_6tdxQ)       :star::star:
+   - Abstract: 实时图像增强，基于“间距自适应查找表”的方法
+   - Paper: [AdaInt: Learning Adaptive Intervals for 3D Lookup Tables on Real-time Image Enhancement](https://arxiv.org/abs/2204.13983)
+   - Code: [https://github.com/ImCharlesY/AdaInt](https://github.com/ImCharlesY/AdaInt)
+   - Tips: 首次提出了通过深度学习对输入图像自适应地学习具有非均匀布局的三维颜色查找表，从而对输入图像进行高效色彩增强的创新性技术，并在学术界公开仿真数据集上取得了最优客观指标（PSNR）的同时做到了当前运行速度最快。
 
-4. [一键瘦脸！浙大提出：人脸视频编辑新技术](https://mp.weixin.qq.com/s/c0uBnRA4fdo3A6pTTRZuWg)       :star::star:
-   - Abstract: 一键瘦脸！浙大提出：人脸视频编辑新技术
-   - Paper: [Parametric Reshaping of Portraits in Videos](https://arxiv.org/abs/2205.02538)
-   - Tips: 研究的目标是根据现实世界中的自然面部变形，通过编辑肖像面部的整体形状，生成高质量的肖像视频重塑结果。OpenCV的光流法负责运动映射，并由StructureFlow框架进行平滑处理。人脸对齐网络（FAN）负责特征点估计，而Ceres Solver用于解决优化问题。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/UicQ7HgWiaUb3pVdRpogx0MaaEmUL0TyooA8xzbDyIwX3oMfickhiaGc9xpHKlbFA3MKaQ5uqNbQc3Oe1icibpqQ8n2Q/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/33P2FdAnju8vCRfEib17iashXliaTjvWMXvEw2WLoRrxGBFkKzzu5kibrNYE7tS9Q3cFwTGLe8iaOkiaibT0MYrcYkpEA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
+4. [CVPR 2022 | 看谷歌的单张图片人体重建效果如何？](https://mp.weixin.qq.com/s/p3-GBwElqpjuIq9xNFf10A)       :star::star:
+   - Abstract: 看谷歌的单张图片人体重建效果如何？
+   - Paper: [Photorealistic Monocular 3D Reconstruction of Humans Wearing Clothing](https://arxiv.org/abs/2204.08906)
+   - Tips: 提出了一个端到端的高质量人体重建方法，能够取得比当前 SOTA 更加准确、更多细节的重建结果；首次计算出人体的albedo和shading信息；提出了渲染损失，极大改善了预测的外观的真实性。
 
-5. [自监督学习效果差？Meta AI 提出 Q-score 快速过滤错误样本！](https://mp.weixin.qq.com/s/f4QRfLZEq-q1Z-MJv2kNaA)       :star::star:
-   - Abstract: 自监督学习效果差？Meta AI 提出 Q-score 快速过滤错误样本！
-   - Paper: [Understanding Failure Modes of Self-Supervised Learning](https://arxiv.org/pdf/2203.01881.pdf)
-   - Tips: 作者提出的Q分数可以在无监督的方式下预估自监督模型得到的特征表示在下游任务中正确分类的可能性，同时Q分数正则化也可以一定程度上改善低质量的特征表示，有助于提高下游任务的分类准确率。
-
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfoC8KcOfibASzA3Spmykg7bBItXIeUzm3kbGoicbuhicR5zgLttTEGrNds0LO0ibibAyp3FEtWFyNOm9iaA/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/vwMhFCxvECgmFk0TIFSShM9rjulFC0HClYB5q9HibrdUvajZEnKRP3QARfW1D8WhwDYThcGohNnCicj3y74TUJBQ/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
+5. [硕博都在用的高校论文工具：科研工具推荐大合集！](https://mp.weixin.qq.com/s/y7ZB0_rwFSqvfMXWk4uJBQ)       :star::star:
+   - Abstract: 硕博都在用的高校论文工具：科研工具推荐大合集！
+   - Tips: 作者作为一个平时就很辛苦的科研er，本着能用工具解决的问题绝对不花苦力的原则，收集了很多科研利器，现在分享给大家，相信大家看完以后科研效率都能够得到质的提升！ 
 
-6. [使用 Mediapipe 和 Yolov5 进行多人姿态估计](https://mp.weixin.qq.com/s/Hg84g9-e2cNxYPmzvUmB_g)       :star::star:
-   - Abstract: 使用 Mediapipe 和 Yolov5 进行多人姿态估计
-   - Tips: 在大多数情况下，使用 MediaPipe 的姿势估计效果非常好，但是当单个帧上有多个人时就会出现问题。解决此问题的一种灵活方法是使用对象检测模型并获取帧中存在的多个人，然后估计每个人的姿势，最后将图像聚合到单个帧中。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ABvEnMciauWuGjLFxBJzszzGHibpNd7Dib60Qztg8L8VKlOsNFoeSfcZFQceTzn7miaSa7GcSaib0dTs63CpypewHhQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfqZSUYOO95jXVcBOkn4iaaOe0wENESNZHnV4wLQNvIbTzQcnzuy575H1urkTd9IZUtj88fyhTKXDnQ/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
+
+6. [多目标追踪小抄：快速了解MOT的基本概念](https://mp.weixin.qq.com/s/uXAe9rNAmsQsvUNBPQ803g)       :star::star:
+   - Abstract: 多目标追踪小抄：快速了解MOT的基本概念
+   - Tips: 有关多目标跟踪的相关基本概念，基础教学
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/6wQyVOrkRNLicEmR6G42CAUicyNwNFrU9hWoVWZ8QWzibPaYDTFcVqNlyUG0ibjSf6XPVvvraqaOOVkYf1SMlLjuKg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
 
 
 
@@ -185,8 +182,10 @@
     3. <a href="notes/202205/0509.md" target="_blank">公众号内容拓展学习笔记（2022.5.9）</a>
     4. <a href="notes/202205/0510.md" target="_blank">公众号内容拓展学习笔记（2022.5.10）</a>
     5. <a href="notes/202205/0511.md" target="_blank">公众号内容拓展学习笔记（2022.5.11）</a>
+    6. <a href="notes/202205/0517.md" target="_blank">公众号内容拓展学习笔记（2022.5.17）</a>
 </details>
 </pre>
+
 
 
 
