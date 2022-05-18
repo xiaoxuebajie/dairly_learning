@@ -3,7 +3,7 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2022.5.17
+更新今日时间：2022.5.18
 
 ------
 
@@ -11,54 +11,59 @@
 
 ## :paperclip:  今日要点
 
-1. [李飞飞团队提出零样本泛化的技术，性能超越SOTA！](https://mp.weixin.qq.com/s/CdwpToIQJoMwNYyPT5QzwQ)         :star::star:
-   - Abstract: 李飞飞团队提出零样本泛化的技术，性能超越SOTA！
-   - Paper: [SECANT: Self-Expert Cloning for Zero-Shot Generalization of Visual Policies](https://arxiv.org/abs/2106.09678)
-   - Tips: 提出了SECANT模型，可以依次解决策略学习和鲁棒性表征学习问题，从而实现了对未见过的视觉环境的强大零样本泛化性能；在自动驾驶、机器人操作和室内物体导航四个领域中，设计并制定了一套多样化的基准测试
+1. [CVPR 2022 | DAFormer：使用Transformer进行语义分割无监督域自适应的开篇之作](https://mp.weixin.qq.com/s/NAvNG-ketcCXHA7c2W-oLg)         :star::star:
+   - Abstract: DAFormer：使用Transformer进行语义分割无监督域自适应的开篇之作
+   - Paper: [DAFormer: Improving Network Architectures and Training Strategies for Domain-Adaptive Semantic Segmentation](https://arxiv.org/abs/2111.14887)
+   - Code: [https://github.com/lhoyer/DAFormer](https://github.com/lhoyer/DAFormer)
+   - Tips: `DAFormer`的网络结构包括一个`Transformer`编码器和一个`多级上下文感知特征融合解码器`。通过3个简单但很关键的训练策略来稳定训练和避免对源域的过拟合。`DAFormer`代表了`UDA`的一个重大进步。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/UicQ7HgWiaUb2FurX4cbJs64CTiaRvZQORvEOMEmsWJDPPwq2oicOzn5gSmlEGy2Fr2PRGA7LMUQ9YhdXibx3Fp1jQg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/5ooHoYt0tgnZlg3VVRGYtpwY85I5XVnibfGXjDj1QCiciaUaTLkAibvb7nPlqZeDJvJj1aafPDg3H4qniavN0mTnxTg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+2. [CVPR 2022 | 只需2张照片就能2D变3D，这个AI脑补蜡烛吹灭过程](https://mp.weixin.qq.com/s/jxWlMbXw8nuP2QCczYcyaw)       :star::star:
+   - Abstract: 只需2张照片就能2D变3D，这个AI脑补蜡烛吹灭过程
+   - Paper: [3D Moments from Near-Duplicate Photos](https://arxiv.org/abs/2205.06255)
+   - Tips: 方法的关键在于将2张图片转换为一对基于特征的分层深度图像 （LDI），并通过场景流进行增强。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtCtMKibm9UuDseAyy5GzTUNtV3ZrZZ5HLbLs4iaQraSttIcHcnnTWzF0trUovJ470KlQbZXm0mgR7QQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-2. [浙大蔡登团队：基于序列对比学习的长视频逐帧动作表征](https://mp.weixin.qq.com/s/n7bpcKZL_QJbl8RND3144Q)       :star::star:
-   - Abstract: 浙大蔡登团队：基于序列对比学习的长视频逐帧动作表征
-   - Paper: [Frame-wise Action Representations for Long Videos via Sequence Contrastive Learning](https://arxiv.org/pdf/2203.14957.pdf)
-   - Tips: 浙大蔡登团队携手微软亚洲研究院，提出了一个新的对比动作表征学习（CARL）框架，以自监督的方式学习逐帧动作表征，尤其是针对长视频；它考虑了时空上下文来提取逐帧表征，是一种基于Transformer的简单而高效的视频编码器。
+3. [(CVPR 2021) SE-SSD](https://mp.weixin.qq.com/s/bWNv0pEpmvFctceUmtNjuA)       :star::star:
+   - Abstract: 室外3D点云的新型自集成单级目标检测器SE-SSD
+   - Paper: [SE-SSD: Self-Ensembling Single-Stage Object Detector From Point Cloud](https://arxiv.org/abs/2104.09804)
+   - Code: [https://github.com/Vegeta2020/SE-SSD](https://github.com/Vegeta2020/SE-SSD)
+   - Tips: 本文提出了一种用于室外3D点云的新型自集成单级目标检测器。主要贡献包括通过我们制定的具有软目标的一致性约束优化的SE-SSD框架，用于监督具有hard target的网络的ODIoU损失，以及用于扩大训练样本多样性的形状感知数据增强方案。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/cNFA8C0uVPsoX5eOX4VUha5cflWbDibYu5C1c2cU7FRjmYDsVUmNdafzhMzvmhoDGyFMkuHdiaQNUzCAfNJicnnZw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/xT3a9RE17lSNPQVjFX7d3kR7v0xN9Mgwnjw6SlIgiagKgY5ywwGmu6qf0AjKia92WYexrVLVeXEUHeZvQzfAEia9A/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-3. [实时图像增强，基于“间距自适应查找表”的方法（CVPR 2022）](https://mp.weixin.qq.com/s/GPVRPyj5wsePLUh2_6tdxQ)       :star::star:
-   - Abstract: 实时图像增强，基于“间距自适应查找表”的方法
-   - Paper: [AdaInt: Learning Adaptive Intervals for 3D Lookup Tables on Real-time Image Enhancement](https://arxiv.org/abs/2204.13983)
-   - Code: [https://github.com/ImCharlesY/AdaInt](https://github.com/ImCharlesY/AdaInt)
-   - Tips: 首次提出了通过深度学习对输入图像自适应地学习具有非均匀布局的三维颜色查找表，从而对输入图像进行高效色彩增强的创新性技术，并在学术界公开仿真数据集上取得了最优客观指标（PSNR）的同时做到了当前运行速度最快。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/33P2FdAnju8vCRfEib17iashXliaTjvWMXvEw2WLoRrxGBFkKzzu5kibrNYE7tS9Q3cFwTGLe8iaOkiaibT0MYrcYkpEA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+4. [ConvMAE：当Masked卷积遇见何恺明的MAE](https://mp.weixin.qq.com/s/01uageua7IkYDHMqw8EIqA)       :star::star:
+   - Abstract: ConvMAE：当Masked卷积遇见何恺明的MAE
+   - Paper: [ConvMAE: Masked Convolution Meets Masked Autoencoders](https://arxiv.org/pdf/2205.03892)
+   - Code: [https://github.com/Alpha-VL/ConvMAE](https://github.com/Alpha-VL/ConvMAE)
+   - Tips: ConvMAE 简而言之就是：多尺度的金字塔式架构 + 局部的归纳偏置的模型，使用 MAE 的 Self-supervised Learning 的训练方式。
+
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfrSmN9tViap5mx7SZUZx71fUK9Tld5V018NnNILRibUvlovdk9yMYXT1A1XTygicIob15ceoniaHW7nrw/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-4. [CVPR 2022 | 看谷歌的单张图片人体重建效果如何？](https://mp.weixin.qq.com/s/p3-GBwElqpjuIq9xNFf10A)       :star::star:
-   - Abstract: 看谷歌的单张图片人体重建效果如何？
-   - Paper: [Photorealistic Monocular 3D Reconstruction of Humans Wearing Clothing](https://arxiv.org/abs/2204.08906)
-   - Tips: 提出了一个端到端的高质量人体重建方法，能够取得比当前 SOTA 更加准确、更多细节的重建结果；首次计算出人体的albedo和shading信息；提出了渲染损失，极大改善了预测的外观的真实性。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/vwMhFCxvECgmFk0TIFSShM9rjulFC0HClYB5q9HibrdUvajZEnKRP3QARfW1D8WhwDYThcGohNnCicj3y74TUJBQ/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+5. [美国老姐看完200+中国学生SCI论文，怒写超详细“中国人英文论文写作指南”，还被推上了B站热门…](https://mp.weixin.qq.com/s/FYMGVLu2-e442QxHHTk9mA)       :star::star:
+   - Abstract: 超详细“中国人英文论文写作指南”
+   - Paper: [The Most Common Habits from more than 200 English Papers written by Graduate Chinese Engineering Students ](https://www.chrisyttang.org/assets/misc/The%20Most%20Common%20Habits%20from%20more%20than%20200%20English%20Papers%20written.pdf)
+   - Tips: 作者Felicia Brittman（下文简称费姐）曾在上海交通大学做过访问学者。而这份“写作指南”，是她在编辑了200多篇中国工科研究生的SCI论文之后，精心总结之作。 
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/hN1l83J6PhibKnjP2rLCzrsKMicoFTlpLTMoISu2D3omzBWXYkYTUcOJl1ovQ70tY6GCOFakVWdkRKq191ibibwb4w/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-5. [硕博都在用的高校论文工具：科研工具推荐大合集！](https://mp.weixin.qq.com/s/y7ZB0_rwFSqvfMXWk4uJBQ)       :star::star:
-   - Abstract: 硕博都在用的高校论文工具：科研工具推荐大合集！
-   - Tips: 作者作为一个平时就很辛苦的科研er，本着能用工具解决的问题绝对不花苦力的原则，收集了很多科研利器，现在分享给大家，相信大家看完以后科研效率都能够得到质的提升！ 
 
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfqZSUYOO95jXVcBOkn4iaaOe0wENESNZHnV4wLQNvIbTzQcnzuy575H1urkTd9IZUtj88fyhTKXDnQ/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+6. [快速写出高质量IEEE论文的经验总结](https://mp.weixin.qq.com/s/_3VuL2BIwEylx3X8fegfYA)       :star::star:
+   - Abstract: 快速写出高质量IEEE论文的经验总结
+   - Tips: 对于很多读者而言，写一篇高质量论文一直是一个很头疼问题，这篇文章摘自知乎问答，希望作者们提出的意见能对读者们有所帮助。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/ABvEnMciauWvCTnmCpwyhiaGzViaibScLNmF6WMXbEr9ujz7cXZiacicklyVNQGnBbUwnnlrc2XGySiagNgBOBs4DI4CA/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
-
-6. [多目标追踪小抄：快速了解MOT的基本概念](https://mp.weixin.qq.com/s/uXAe9rNAmsQsvUNBPQ803g)       :star::star:
-   - Abstract: 多目标追踪小抄：快速了解MOT的基本概念
-   - Tips: 有关多目标跟踪的相关基本概念，基础教学
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/6wQyVOrkRNLicEmR6G42CAUicyNwNFrU9hWoVWZ8QWzibPaYDTFcVqNlyUG0ibjSf6XPVvvraqaOOVkYf1SMlLjuKg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
 
 
 
@@ -183,10 +188,9 @@
     4. <a href="notes/202205/0510.md" target="_blank">公众号内容拓展学习笔记（2022.5.10）</a>
     5. <a href="notes/202205/0511.md" target="_blank">公众号内容拓展学习笔记（2022.5.11）</a>
     6. <a href="notes/202205/0517.md" target="_blank">公众号内容拓展学习笔记（2022.5.17）</a>
+    7. <a href="notes/202205/0518.md" target="_blank">公众号内容拓展学习笔记（2022.5.18）</a>
 </details>
 </pre>
-
-
 
 
 ## :paperclip:  Others
