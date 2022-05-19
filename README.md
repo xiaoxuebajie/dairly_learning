@@ -3,7 +3,7 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2022.5.18
+更新今日时间：2022.5.19
 
 ------
 
@@ -11,59 +11,60 @@
 
 ## :paperclip:  今日要点
 
-1. [CVPR 2022 | DAFormer：使用Transformer进行语义分割无监督域自适应的开篇之作](https://mp.weixin.qq.com/s/NAvNG-ketcCXHA7c2W-oLg)         :star::star:
-   - Abstract: DAFormer：使用Transformer进行语义分割无监督域自适应的开篇之作
-   - Paper: [DAFormer: Improving Network Architectures and Training Strategies for Domain-Adaptive Semantic Segmentation](https://arxiv.org/abs/2111.14887)
-   - Code: [https://github.com/lhoyer/DAFormer](https://github.com/lhoyer/DAFormer)
-   - Tips: `DAFormer`的网络结构包括一个`Transformer`编码器和一个`多级上下文感知特征融合解码器`。通过3个简单但很关键的训练策略来稳定训练和避免对源域的过拟合。`DAFormer`代表了`UDA`的一个重大进步。
+1. [CVPR 2022 | 在星空下起舞，伯克利联合Intel Labs提出极弱光环境下的视频降噪方案](https://mp.weixin.qq.com/s/yNmSsrkm1Tv70_SEVPDZWQ)         :star::star:
+   - Abstract: 伯克利联合Intel Labs提出极弱光环境下的视频降噪方案
+   - Paper: [Dancing under the stars: video denoising in starlight](https://arxiv.org/abs/2204.04210)
+   - Code: [https://github.com/monakhova/starlight_denoising](https://github.com/monakhova/starlight_denoising)
+   - Tips: 本文针对极弱光环境下的图像和视频降噪问题发起了挑战，通过结合相机硬件本身涵盖的物理参数和基于深度学习的图像噪声建模手段提出了一种物理启发的噪声生成器，并根据该生成器构建了一系列具有特殊用途的数据集，有力的推动了后续视频降噪网络的训练。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/5ooHoYt0tgnZlg3VVRGYtpwY85I5XVnibfGXjDj1QCiciaUaTLkAibvb7nPlqZeDJvJj1aafPDg3H4qniavN0mTnxTg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-2. [CVPR 2022 | 只需2张照片就能2D变3D，这个AI脑补蜡烛吹灭过程](https://mp.weixin.qq.com/s/jxWlMbXw8nuP2QCczYcyaw)       :star::star:
-   - Abstract: 只需2张照片就能2D变3D，这个AI脑补蜡烛吹灭过程
-   - Paper: [3D Moments from Near-Duplicate Photos](https://arxiv.org/abs/2205.06255)
-   - Tips: 方法的关键在于将2张图片转换为一对基于特征的分层深度图像 （LDI），并通过场景流进行增强。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtCtMKibm9UuDseAyy5GzTUNtV3ZrZZ5HLbLs4iaQraSttIcHcnnTWzF0trUovJ470KlQbZXm0mgR7QQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ibaXaPIy7jV1AV0HQXG6HkvUEFx19Pb6VfJYTicaRlo3EvHdch1U0MLk9lJAiayq2OzbsB7wvOibNMgkianiaibEOx8GQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-3. [(CVPR 2021) SE-SSD](https://mp.weixin.qq.com/s/bWNv0pEpmvFctceUmtNjuA)       :star::star:
-   - Abstract: 室外3D点云的新型自集成单级目标检测器SE-SSD
-   - Paper: [SE-SSD: Self-Ensembling Single-Stage Object Detector From Point Cloud](https://arxiv.org/abs/2104.09804)
-   - Code: [https://github.com/Vegeta2020/SE-SSD](https://github.com/Vegeta2020/SE-SSD)
-   - Tips: 本文提出了一种用于室外3D点云的新型自集成单级目标检测器。主要贡献包括通过我们制定的具有软目标的一致性约束优化的SE-SSD框架，用于监督具有hard target的网络的ODIoU损失，以及用于扩大训练样本多样性的形状感知数据增强方案。
+2. [CVPR 2022 Oral | 回归标签不平衡? 试试Balanced MSE](https://mp.weixin.qq.com/s/qFINrezDfzgiQLO5pH-0nQ)       :star::star:
+   - Abstract: 回归标签不平衡? 试试Balanced MSE
+   - Paper: [Balanced MSE for Imbalanced Visual Regression](http://arxiv.org/pdf/2203.16427)
+   - Code: [https://github.com/jiawei-ren/BalancedMSE](https://github.com/jiawei-ren/BalancedMSE)
+   - Tips: 为了填补不平衡回归方法的空白，作者提出了Balanced MSE损失函数，从统计的视角解决标签的不平衡。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/xT3a9RE17lSNPQVjFX7d3kR7v0xN9Mgwnjw6SlIgiagKgY5ywwGmu6qf0AjKia92WYexrVLVeXEUHeZvQzfAEia9A/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfpKXnhicULP8q7cd1yMs953pc0BVzf07ZjIibQFEAqFYBej2S3libGQRum5D06hI8MmcrBlRhQz5looQ/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
+3. [CVPR2022《BridgeFormer》港大&腾讯&伯克利提出带有多项选择任务的视频文本检索模型，性能SOTA！](https://mp.weixin.qq.com/s/MUwlACyQEcrA9Chw4it7iA)       :star::star:
+   - Abstract: 港大&腾讯&伯克利提出带有多项选择任务的视频文本检索模型，性能SOTA！
+   - Paper: [Bridging Video-text Retrieval with Multiple Choice Questions](https://arxiv.org/abs/2201.04850)
+   - Code: [https://github.com/TencentARC/MCQ](https://github.com/TencentARC/MCQ)
+   - Tips: 作者为视频文本预训练引入了一种新的借口任务——多项选择题（MCQ），它加强了局部视频和文本特征之间的细粒度语义关联，同时保持了较高的检索效率。参数化模块BridgeFormer经过训练，能够通过借助视频特征来回答由文本特征构建的问题，并且可以很容易地在下游任务中移除。
 
-4. [ConvMAE：当Masked卷积遇见何恺明的MAE](https://mp.weixin.qq.com/s/01uageua7IkYDHMqw8EIqA)       :star::star:
-   - Abstract: ConvMAE：当Masked卷积遇见何恺明的MAE
-   - Paper: [ConvMAE: Masked Convolution Meets Masked Autoencoders](https://arxiv.org/pdf/2205.03892)
-   - Code: [https://github.com/Alpha-VL/ConvMAE](https://github.com/Alpha-VL/ConvMAE)
-   - Tips: ConvMAE 简而言之就是：多尺度的金字塔式架构 + 局部的归纳偏置的模型，使用 MAE 的 Self-supervised Learning 的训练方式。
-
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfrSmN9tViap5mx7SZUZx71fUK9Tld5V018NnNILRibUvlovdk9yMYXT1A1XTygicIob15ceoniaHW7nrw/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/BJbRvwibeSTvKFBZNxJ0grOjVrvGJmoFQsvGzQc1JcsSZ0NSdPo8chlQof8HtBoBXkiac8XyTLD8wFwLV94chA8g/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
+4. [全新数据增强方式KeepAugment，简单高效提升模型精度！](https://mp.weixin.qq.com/s/ydPyNeaHhiBaSK55h0nDdw)       :star::star:
+   - Abstract: 全新数据增强方式KeepAugment，简单高效提升模型精度！
+   - Paper: [KeepAugment: A Simple Information-Preserving Data Augmentation Approach](https://arxiv.org/abs/2011.11778)
+   - Tips: 本文提出了一种简单有效的增强方式，KeepAugment，控制数据增强的保真度，从而减少干扰因素的错误信息。在图像分类、半监督图像分类、多视点多摄像机跟踪和目标检测等方面，都取得了不错的效果。
 
-5. [美国老姐看完200+中国学生SCI论文，怒写超详细“中国人英文论文写作指南”，还被推上了B站热门…](https://mp.weixin.qq.com/s/FYMGVLu2-e442QxHHTk9mA)       :star::star:
-   - Abstract: 超详细“中国人英文论文写作指南”
-   - Paper: [The Most Common Habits from more than 200 English Papers written by Graduate Chinese Engineering Students ](https://www.chrisyttang.org/assets/misc/The%20Most%20Common%20Habits%20from%20more%20than%20200%20English%20Papers%20written.pdf)
-   - Tips: 作者Felicia Brittman（下文简称费姐）曾在上海交通大学做过访问学者。而这份“写作指南”，是她在编辑了200多篇中国工科研究生的SCI论文之后，精心总结之作。 
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/hN1l83J6PhibKnjP2rLCzrsKMicoFTlpLTMoISu2D3omzBWXYkYTUcOJl1ovQ70tY6GCOFakVWdkRKq191ibibwb4w/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwNEBqGkDOyUqpUrZo2saDnwh9LH6Q7PHaPyLN1zBue4ia0Nuw3ug64LlBLZ6s0eWF5E5vKwCdtnT7Q/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
+5. [视频P图新SOTA：推理速度快近15倍，任意分辨率均可上演人像消失大法，来自南开大学｜CVPR 2022](https://mp.weixin.qq.com/s/FnBdHmW7BfOSKtYVY12XRg)       :star::star:
+   - Abstract: 视频P图新SOTA：推理速度快近15倍，任意分辨率均可上演人像消失大法
+   - Paper: [Towards An End-to-End Framework for Flow-Guided Video Inpainting](https://arxiv.org/abs/2204.02663)
+   - Code: [https://github.com/MCG-NKU/E2FGVI](https://github.com/MCG-NKU/E2FGVI)
+   - Tips: 研究人员设计了三个可训练模块，分别为流完成 （flow completion）、特征传播 （feature propagation）和内容幻想（content hallucination），提出了一个流引导（flow-guided）的端到端视频修复框架：E2FGVI
 
-6. [快速写出高质量IEEE论文的经验总结](https://mp.weixin.qq.com/s/_3VuL2BIwEylx3X8fegfYA)       :star::star:
-   - Abstract: 快速写出高质量IEEE论文的经验总结
-   - Tips: 对于很多读者而言，写一篇高质量论文一直是一个很头疼问题，这篇文章摘自知乎问答，希望作者们提出的意见能对读者们有所帮助。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/ABvEnMciauWvCTnmCpwyhiaGzViaibScLNmF6WMXbEr9ujz7cXZiacicklyVNQGnBbUwnnlrc2XGySiagNgBOBs4DI4CA/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtDjEnqUX1Cm6nsmAiaqRRVDNiccjK6dmmfnhtEk8Wfs5MPW4fQ7icUCIEiafMS5tPjqwYDnYdzuvJBdmQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
+
+6. [CVPR 2022 Oral | 南洋理工大学S-Lab等提出基于GPT的3D舞蹈生成框架Bailando](https://mp.weixin.qq.com/s/hH5M-Iyl8oMuudDKZF0ECw)       :star::star:
+   - Abstract: 南洋理工大学S-Lab等提出基于GPT的3D舞蹈生成框架Bailando
+   - Paper: [Bailando: 3D Dance Generation by Actor-Critic GPT with Choreographic Memory](https://arxiv.org/abs/2203.13055)
+   - Code: [https://github.com/lisiyao21/Bailando](https://github.com/lisiyao21/Bailando)
+   - Tips: “两阶段”的编舞框架Bailando：在第一阶段，我们利用量化自编码器（VQ-VAE）将符合空间标准的舞姿编码和量化到一个名为“舞蹈记忆”的编码本中；在第二阶段，我们利用生成预训练Transformer（GPT）将音乐转换为视觉上令人满意的舞蹈。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ibaXaPIy7jV1AV0HQXG6HkvUEFx19Pb6VNhaPwBjjcRov43B5bXicKmHNbAVAZEIgwkAWbqbjrOXkRUpYRdusySw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
 
 
 
@@ -189,8 +190,10 @@
     5. <a href="notes/202205/0511.md" target="_blank">公众号内容拓展学习笔记（2022.5.11）</a>
     6. <a href="notes/202205/0517.md" target="_blank">公众号内容拓展学习笔记（2022.5.17）</a>
     7. <a href="notes/202205/0518.md" target="_blank">公众号内容拓展学习笔记（2022.5.18）</a>
+    8. <a href="notes/202205/0519.md" target="_blank">公众号内容拓展学习笔记（2022.5.19）</a>
 </details>
 </pre>
+
 
 
 ## :paperclip:  Others
