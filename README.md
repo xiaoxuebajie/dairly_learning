@@ -3,68 +3,65 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2022.5.19
+更新今日时间：2022.5.20
 
 ------
 
-
-
 ## :paperclip:  今日要点
 
-1. [CVPR 2022 | 在星空下起舞，伯克利联合Intel Labs提出极弱光环境下的视频降噪方案](https://mp.weixin.qq.com/s/yNmSsrkm1Tv70_SEVPDZWQ)         :star::star:
-   - Abstract: 伯克利联合Intel Labs提出极弱光环境下的视频降噪方案
-   - Paper: [Dancing under the stars: video denoising in starlight](https://arxiv.org/abs/2204.04210)
-   - Code: [https://github.com/monakhova/starlight_denoising](https://github.com/monakhova/starlight_denoising)
-   - Tips: 本文针对极弱光环境下的图像和视频降噪问题发起了挑战，通过结合相机硬件本身涵盖的物理参数和基于深度学习的图像噪声建模手段提出了一种物理启发的噪声生成器，并根据该生成器构建了一系列具有特殊用途的数据集，有力的推动了后续视频降噪网络的训练。
+1. [CVPR 2022 | 图像修复！中科大&微软提出PUT：减少Transformer在图像修复应用中的信息损失](https://mp.weixin.qq.com/s/If6NqBUQ3BGoGveGzwy14Q)         :star::star:
+   - Abstract: 中科大&微软提出PUT：减少Transformer在图像修复应用中的信息损失
+   - Paper: [Reduce Information Loss in Transformers for Pluralistic Image Inpainting](https://arxiv.org/pdf/2205.05076)
+   - Code: [https://github.com/liuqk3/PUT](https://github.com/liuqk3/PUT)
+   - Tips: 本文工作是基于当前流行的Transformer实现的，目的是减少Transformer在应用到图像修复过程中的一些信息损失，从而提升模型修复图片的质量。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ibaXaPIy7jV1AV0HQXG6HkvUEFx19Pb6VfJYTicaRlo3EvHdch1U0MLk9lJAiayq2OzbsB7wvOibNMgkianiaibEOx8GQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/yNnalkXE7oUJANgnIAthFjlT7LIkCPic41C3HaXHEkYCBjzC4UKFFstk9uMzE5gdoS6BT3ssNLcvVCTHPxFa4Qw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+2. [CVPR 2022丨无监督预训练下的视频场景分割](https://mp.weixin.qq.com/s/tcHV6JEpeaR3cOc5PGb6ig)       :star::star:
+   - Abstract: 无监督预训练下的视频场景分割
+   - Paper: [Scene Consistency Representation Learning for Video Scene Segmentation](https://arxiv.org/abs/2205.05487)
+   - Code: [https://github.com/TencentYoutuResearch/SceneSegmentation-SCRL](https://github.com/TencentYoutuResearch/SceneSegmentation-SCRL)
+   - Tips: 作者提出了一种基于场景一致性自监督表征学习方案（SCRL），使得相似场景的镜头表征在特征空间中分布得更为紧凑，同时采用归纳偏置更低的时序建模方法对特征质量进行评估，并对视频场景分割任务进行建模。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/Q5Uzqox7CF9a7jgiax6OJeianX8gl43ZslDjY8st6FdwYUYYO7EIjO6pqhWr4eRYuOaRvicP3omxVQa0lYO69Avgw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-2. [CVPR 2022 Oral | 回归标签不平衡? 试试Balanced MSE](https://mp.weixin.qq.com/s/qFINrezDfzgiQLO5pH-0nQ)       :star::star:
-   - Abstract: 回归标签不平衡? 试试Balanced MSE
-   - Paper: [Balanced MSE for Imbalanced Visual Regression](http://arxiv.org/pdf/2203.16427)
-   - Code: [https://github.com/jiawei-ren/BalancedMSE](https://github.com/jiawei-ren/BalancedMSE)
-   - Tips: 为了填补不平衡回归方法的空白，作者提出了Balanced MSE损失函数，从统计的视角解决标签的不平衡。
+3. [CVPR2022| BodyMap可用于换装，Vision Transformers 又立功！](https://mp.weixin.qq.com/s/wFr-QnS4EQfFw9H_tR93og)       :star::star:
+   - Abstract: BodyMap可用于换装，Vision Transformers 又立功！
+   - Paper: [BodyMap: Learning Full-Body Dense Correspondence Map](http://arxiv.org/pdf/2205.09111)
+   - Tips: 作者提出了 BodyMap，这是一个新的框架，用于在穿着衣服的人的自然图像和 3D 模板模型的表面之间获得高清全身和连续密集对应关系。
 
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfpKXnhicULP8q7cd1yMs953pc0BVzf07ZjIibQFEAqFYBej2S3libGQRum5D06hI8MmcrBlRhQz5looQ/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/7jnsg27ZEVH0pBwDDMU5mtDia5jZISBQQuMfLBMYgFLJicSaYyv4EXro8dHK1uicptMpicPfR5B2LfbcH0rUyiabqiaQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-3. [CVPR2022《BridgeFormer》港大&腾讯&伯克利提出带有多项选择任务的视频文本检索模型，性能SOTA！](https://mp.weixin.qq.com/s/MUwlACyQEcrA9Chw4it7iA)       :star::star:
-   - Abstract: 港大&腾讯&伯克利提出带有多项选择任务的视频文本检索模型，性能SOTA！
-   - Paper: [Bridging Video-text Retrieval with Multiple Choice Questions](https://arxiv.org/abs/2201.04850)
-   - Code: [https://github.com/TencentARC/MCQ](https://github.com/TencentARC/MCQ)
-   - Tips: 作者为视频文本预训练引入了一种新的借口任务——多项选择题（MCQ），它加强了局部视频和文本特征之间的细粒度语义关联，同时保持了较高的检索效率。参数化模块BridgeFormer经过训练，能够通过借助视频特征来回答由文本特征构建的问题，并且可以很容易地在下游任务中移除。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/BJbRvwibeSTvKFBZNxJ0grOjVrvGJmoFQsvGzQc1JcsSZ0NSdPo8chlQof8HtBoBXkiac8XyTLD8wFwLV94chA8g/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+4. [DeepMind出手了！多模态少样本打败精调](https://mp.weixin.qq.com/s/Ov-COlOhuCJzc7hmuoJPEQ)       :star::star:
+   - Abstract: DeepMind出手了！多模态少样本打败精调
+   - Paper: [Training Compute-Optimal Large Language Models](https://arxiv.org/pdf/2203.15556.pdf)
+   - Tips: 本文是一篇DeepMind的Flamingo模型，使多模态进入了大模型+少样本打败精调的时代，同时弥补了纯文本大模型在多模态应用场景的不足，可以直接做端到端的多模态任务。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/AzuXfeINxjUreW6ib5F8p4y52ndxySFYbm08HQUAppGKkibTFpgia9RtX8bxkM4dUkicWHu4BZRoab8INCBTWha3BQ/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-4. [全新数据增强方式KeepAugment，简单高效提升模型精度！](https://mp.weixin.qq.com/s/ydPyNeaHhiBaSK55h0nDdw)       :star::star:
-   - Abstract: 全新数据增强方式KeepAugment，简单高效提升模型精度！
-   - Paper: [KeepAugment: A Simple Information-Preserving Data Augmentation Approach](https://arxiv.org/abs/2011.11778)
-   - Tips: 本文提出了一种简单有效的增强方式，KeepAugment，控制数据增强的保真度，从而减少干扰因素的错误信息。在图像分类、半监督图像分类、多视点多摄像机跟踪和目标检测等方面，都取得了不错的效果。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwNEBqGkDOyUqpUrZo2saDnwh9LH6Q7PHaPyLN1zBue4ia0Nuw3ug64LlBLZ6s0eWF5E5vKwCdtnT7Q/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+5. [霸榜第一框架：工业检测，基于差异和共性的半监督方法用于图像表面缺陷检测](https://mp.weixin.qq.com/s/uSyWmpfHeW_JHxZOfaI8BA)       :star::star:
+   - Abstract: 工业检测，基于差异和共性的半监督方法用于图像表面缺陷检测
+   - Paper: [MemSeg: A semi-supervised method for image surface defect detection using differences and commonalities](https://arxiv.org/ftp/arxiv/papers/2205/2205.00908.pdf)
+   - Tips: 研究者提出了一种端到端的基于内存的分割网络（MemSeg）来检测工业产品的表面缺陷。考虑到同一生产线产品的类内差异较小，从差异和共性的角度出发，MemSeg引入了人工模拟的异常样本和记忆样本来辅助网络的学习。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwP4r2vd2WAqO3XToibdn1ianG0PQU95fHgME2AA0Ut5NyeVFwyHF7w7VuvhDd7hbvhxfvBjgiboJ5hKg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-5. [视频P图新SOTA：推理速度快近15倍，任意分辨率均可上演人像消失大法，来自南开大学｜CVPR 2022](https://mp.weixin.qq.com/s/FnBdHmW7BfOSKtYVY12XRg)       :star::star:
-   - Abstract: 视频P图新SOTA：推理速度快近15倍，任意分辨率均可上演人像消失大法
-   - Paper: [Towards An End-to-End Framework for Flow-Guided Video Inpainting](https://arxiv.org/abs/2204.02663)
-   - Code: [https://github.com/MCG-NKU/E2FGVI](https://github.com/MCG-NKU/E2FGVI)
-   - Tips: 研究人员设计了三个可训练模块，分别为流完成 （flow completion）、特征传播 （feature propagation）和内容幻想（content hallucination），提出了一个流引导（flow-guided）的端到端视频修复框架：E2FGVI
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtDjEnqUX1Cm6nsmAiaqRRVDNiccjK6dmmfnhtEk8Wfs5MPW4fQ7icUCIEiafMS5tPjqwYDnYdzuvJBdmQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+6. [工业检测：基于密集尺度特征融合&像素级不平衡学习框架（论文下载）](https://mp.weixin.qq.com/s/7QiOjsLvkaIzWVz0QDU0zw)       :star::star:
+   - Abstract: 基于密集尺度特征融合&像素级不平衡学习框架
+   - Paper: [One-Stage Deep Edge Detection Based on Dense-Scale Feature Fusion and Pixel-Level Imbalance Learning](https://arxiv.org/pdf/2203.09387v1.pdf)
+   - Tips: 研究者旨在提出一种无需后处理即可生成高质量边缘图像的单阶段神经网络模型。所提出的模型采用经典的编码器-解码器框架，其中使用预训练的神经模型作为编码器，并且将每个级别的特征相互融合的多特征融合机制作为可学习的解码器。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwNVLXKYUvMziaibticJXJKQRjq5u14libAiaUiaFbB1HQG6BLXk11icwicphZpjNSBeAQK4y9XZSBuwxyD0ibQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
-
-6. [CVPR 2022 Oral | 南洋理工大学S-Lab等提出基于GPT的3D舞蹈生成框架Bailando](https://mp.weixin.qq.com/s/hH5M-Iyl8oMuudDKZF0ECw)       :star::star:
-   - Abstract: 南洋理工大学S-Lab等提出基于GPT的3D舞蹈生成框架Bailando
-   - Paper: [Bailando: 3D Dance Generation by Actor-Critic GPT with Choreographic Memory](https://arxiv.org/abs/2203.13055)
-   - Code: [https://github.com/lisiyao21/Bailando](https://github.com/lisiyao21/Bailando)
-   - Tips: “两阶段”的编舞框架Bailando：在第一阶段，我们利用量化自编码器（VQ-VAE）将符合空间标准的舞姿编码和量化到一个名为“舞蹈记忆”的编码本中；在第二阶段，我们利用生成预训练Transformer（GPT）将音乐转换为视觉上令人满意的舞蹈。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ibaXaPIy7jV1AV0HQXG6HkvUEFx19Pb6VNhaPwBjjcRov43B5bXicKmHNbAVAZEIgwkAWbqbjrOXkRUpYRdusySw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
 
 
 
@@ -191,8 +188,10 @@
     6. <a href="notes/202205/0517.md" target="_blank">公众号内容拓展学习笔记（2022.5.17）</a>
     7. <a href="notes/202205/0518.md" target="_blank">公众号内容拓展学习笔记（2022.5.18）</a>
     8. <a href="notes/202205/0519.md" target="_blank">公众号内容拓展学习笔记（2022.5.19）</a>
+    9. <a href="notes/202205/0520.md" target="_blank">公众号内容拓展学习笔记（2022.5.20）</a>
 </details>
 </pre>
+
 
 
 
