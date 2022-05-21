@@ -3,65 +3,61 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2022.5.20
+更新今日时间：2022.5.21
 
 ------
 
 ## :paperclip:  今日要点
 
-1. [CVPR 2022 | 图像修复！中科大&微软提出PUT：减少Transformer在图像修复应用中的信息损失](https://mp.weixin.qq.com/s/If6NqBUQ3BGoGveGzwy14Q)         :star::star:
-   - Abstract: 中科大&微软提出PUT：减少Transformer在图像修复应用中的信息损失
-   - Paper: [Reduce Information Loss in Transformers for Pluralistic Image Inpainting](https://arxiv.org/pdf/2205.05076)
-   - Code: [https://github.com/liuqk3/PUT](https://github.com/liuqk3/PUT)
-   - Tips: 本文工作是基于当前流行的Transformer实现的，目的是减少Transformer在应用到图像修复过程中的一些信息损失，从而提升模型修复图片的质量。
+1. [CVPR2022Mask Modeling在视频任务中也有效？复旦&微软提出Video版本BEVT，在多个视频数据集上SOTA！](https://mp.weixin.qq.com/s/5Ai5pDYO_Xm03ml1ZrVgLA)         :star::star:
+   - Abstract: 复旦&微软提出Video版本BEVT，在多个视频数据集上SOTA！
+   - Paper: [BEVT: BERT Pretraining of Video Transformers](https://arxiv.org/abs/2112.01529)
+   - Code: [https://github.com/xyzforever/BEVT](https://github.com/xyzforever/BEVT)
+   - Tips: 作者提出了BEVT，它将视频表示学习解耦为空间表示学习和时间动态学习。具体来说，BEVT首先对图像数据进行mask图像建模，然后对视频数据进行mask图像建模和mask视频建模。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/yNnalkXE7oUJANgnIAthFjlT7LIkCPic41C3HaXHEkYCBjzC4UKFFstk9uMzE5gdoS6BT3ssNLcvVCTHPxFa4Qw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-2. [CVPR 2022丨无监督预训练下的视频场景分割](https://mp.weixin.qq.com/s/tcHV6JEpeaR3cOc5PGb6ig)       :star::star:
-   - Abstract: 无监督预训练下的视频场景分割
-   - Paper: [Scene Consistency Representation Learning for Video Scene Segmentation](https://arxiv.org/abs/2205.05487)
-   - Code: [https://github.com/TencentYoutuResearch/SceneSegmentation-SCRL](https://github.com/TencentYoutuResearch/SceneSegmentation-SCRL)
-   - Tips: 作者提出了一种基于场景一致性自监督表征学习方案（SCRL），使得相似场景的镜头表征在特征空间中分布得更为紧凑，同时采用归纳偏置更低的时序建模方法对特征质量进行评估，并对视频场景分割任务进行建模。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/Q5Uzqox7CF9a7jgiax6OJeianX8gl43ZslDjY8st6FdwYUYYO7EIjO6pqhWr4eRYuOaRvicP3omxVQa0lYO69Avgw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/BJbRvwibeSTu62OxibZUKOxHytYdEOeFpUBJ9kp965BbWFsyjPqUDEYicFrVpKGiazdwtvFicpfWic2unH9r7OBw6PMw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-3. [CVPR2022| BodyMap可用于换装，Vision Transformers 又立功！](https://mp.weixin.qq.com/s/wFr-QnS4EQfFw9H_tR93og)       :star::star:
-   - Abstract: BodyMap可用于换装，Vision Transformers 又立功！
-   - Paper: [BodyMap: Learning Full-Body Dense Correspondence Map](http://arxiv.org/pdf/2205.09111)
-   - Tips: 作者提出了 BodyMap，这是一个新的框架，用于在穿着衣服的人的自然图像和 3D 模板模型的表面之间获得高清全身和连续密集对应关系。
+2. [TPAMI 2022｜基于最优传输理论的无监督图像重建学习](https://mp.weixin.qq.com/s/wEQZlddW6muMdndBNSKO7A)       :star::star:
+   - Abstract: 基于最优传输理论的无监督图像重建学习
+   - Paper: [Optimal Transport for Unsupervised Denoising Learning](https://ieeexplore.ieee.org/document/9763342)
+   - Code: [https://github.com/wangweiSJTU/OTUR](https://github.com/wangweiSJTU/OTUR)
+   - Tips: 本项工作在不对退化模型做任何先验假设的条件下，提出了一种基于最优传输理论的无监督图像重建学习准则。该准则可在实现高感知质量重建的同时，最大程度保留原始图像信息。此外，我们在理论上证明了，实际应用中使用的该准则的松弛形式与原始准则具有相同的最优解。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/7jnsg27ZEVH0pBwDDMU5mtDia5jZISBQQuMfLBMYgFLJicSaYyv4EXro8dHK1uicptMpicPfR5B2LfbcH0rUyiabqiaQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfoz3kMiaJH816gjqlictvy6SPsEn8NyVQiaEu7S6wgvfwfWzO1CcVVWsGPGiaTtm0IrNlrGqJkraUkhow/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
+3. [厨艺速成「秘籍」—— 跨模态菜谱检索](https://mp.weixin.qq.com/s/ANUBuons4zgKXRMQ-golNg)       :star::star:
+   - Abstract: 跨模态菜谱检索
+   - Video: [Cross-modal  Cooking Recipe Retrieval](https://event.baai.ac.cn/activities/346)
+   - Tips: 本文介绍了基于识别的菜谱检索、基于跨模态学习的菜谱检索、跨域食物迁移等方面的相关工作。早期的基于识别的菜谱检索要求我们显式的标注食材，需要耗费大量的人力标注成本，难以处理无法在图片中观察到的食材原料和被遮挡的食材原料。基于跨模态学习的菜谱检索方法能够更好地扩展到大规模集上，需要的标注工作更少，可以得到更好的检索性能。
 
-4. [DeepMind出手了！多模态少样本打败精调](https://mp.weixin.qq.com/s/Ov-COlOhuCJzc7hmuoJPEQ)       :star::star:
-   - Abstract: DeepMind出手了！多模态少样本打败精调
-   - Paper: [Training Compute-Optimal Large Language Models](https://arxiv.org/pdf/2203.15556.pdf)
-   - Tips: 本文是一篇DeepMind的Flamingo模型，使多模态进入了大模型+少样本打败精调的时代，同时弥补了纯文本大模型在多模态应用场景的不足，可以直接做端到端的多模态任务。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/AzuXfeINxjUreW6ib5F8p4y52ndxySFYbm08HQUAppGKkibTFpgia9RtX8bxkM4dUkicWHu4BZRoab8INCBTWha3BQ/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ZkgfUziaPIO3rSMI7ofOWMG9VFRLly58TaDNSrvtbv4uKUia7vEpn6tAiaMNEq7ibJ4C3m1q9cXbiblb1TPTZcddxNA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
+4. [非视线成像：基于飞秒摄影技术](https://mp.weixin.qq.com/s/sv_KWrKHA4k8lD9YpNjp6g)       :star::star:
+   - Abstract: 非视线成像：基于飞秒摄影技术
+   - Paper: [Recovering three-dimensional shape around a corner using ultrafast time-of-flight imaging](https://www.nature.com/articles/ncomms1747)
+   - Tips: 利用飞秒摄影技术，第一次实现了对视线外的物体进行三维成像。
 
-5. [霸榜第一框架：工业检测，基于差异和共性的半监督方法用于图像表面缺陷检测](https://mp.weixin.qq.com/s/uSyWmpfHeW_JHxZOfaI8BA)       :star::star:
-   - Abstract: 工业检测，基于差异和共性的半监督方法用于图像表面缺陷检测
-   - Paper: [MemSeg: A semi-supervised method for image surface defect detection using differences and commonalities](https://arxiv.org/ftp/arxiv/papers/2205/2205.00908.pdf)
-   - Tips: 研究者提出了一种端到端的基于内存的分割网络（MemSeg）来检测工业产品的表面缺陷。考虑到同一生产线产品的类内差异较小，从差异和共性的角度出发，MemSeg引入了人工模拟的异常样本和记忆样本来辅助网络的学习。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwP4r2vd2WAqO3XToibdn1ianG0PQU95fHgME2AA0Ut5NyeVFwyHF7w7VuvhDd7hbvhxfvBjgiboJ5hKg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/NvxfnOcAvPWzS62Tuo7IiaChgQjEDrIk3gOsyLehzZ2n99M6nVREyOXZNmM3sNH0YCfngmJA1DTT9EflNUEloeQ/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
+5. [SCI写作高频词、词组系列——结果部分](https://mp.weixin.qq.com/s/b7VHk20C6kYT98RLqgk89A)       :star::star:
+   - Abstract: SCI写作高频词、词组系列——结果部分
+   - Tips: 作者总结了SCI论文中“结果”(Results) 部分的词和词组。
 
-6. [工业检测：基于密集尺度特征融合&像素级不平衡学习框架（论文下载）](https://mp.weixin.qq.com/s/7QiOjsLvkaIzWVz0QDU0zw)       :star::star:
-   - Abstract: 基于密集尺度特征融合&像素级不平衡学习框架
-   - Paper: [One-Stage Deep Edge Detection Based on Dense-Scale Feature Fusion and Pixel-Level Imbalance Learning](https://arxiv.org/pdf/2203.09387v1.pdf)
-   - Tips: 研究者旨在提出一种无需后处理即可生成高质量边缘图像的单阶段神经网络模型。所提出的模型采用经典的编码器-解码器框架，其中使用预训练的神经模型作为编码器，并且将每个级别的特征相互融合的多特征融合机制作为可学习的解码器。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwNVLXKYUvMziaibticJXJKQRjq5u14libAiaUiaFbB1HQG6BLXk11icwicphZpjNSBeAQK4y9XZSBuwxyD0ibQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fstatic.paperpass.com%2Fcms%2F2020%2F07%2F27%2F202007275f1ef5a046c0318110.png&refer=http%3A%2F%2Fstatic.paperpass.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1655693757&t=a51e828229da6281bdb041ae2926acaa" style='zoom:100%'>
 </div>
+
+6. [收藏！最强目标检测、行人检测算法思维导图](https://mp.weixin.qq.com/s/t59nVCzSIG7_NjlyGfQGVg)       :star::star:
+   - Abstract: 收藏！最强目标检测、行人检测算法思维导图
+   - Tips: 目标检测、行人检测算法思维导图，很好的相关领域知识点的梳理。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/uGWQRhqDh3I1u0WeUEg9ZZicdqhJApXfnmhUibOuq5tP4vib6IJnLBwcsu60bPMuovq9usxSXQfvHkicPEicY0jgiaRQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
 
 
 
@@ -189,10 +185,9 @@
     7. <a href="notes/202205/0518.md" target="_blank">公众号内容拓展学习笔记（2022.5.18）</a>
     8. <a href="notes/202205/0519.md" target="_blank">公众号内容拓展学习笔记（2022.5.19）</a>
     9. <a href="notes/202205/0520.md" target="_blank">公众号内容拓展学习笔记（2022.5.20）</a>
+    10. <a href="notes/202205/0521.md" target="_blank">公众号内容拓展学习笔记（2022.5.21）</a>
 </details>
 </pre>
-
-
 
 
 ## :paperclip:  Others
