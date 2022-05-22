@@ -9,55 +9,56 @@
 
 ## :paperclip:  今日要点
 
-1. [CVPR2022Mask Modeling在视频任务中也有效？复旦&微软提出Video版本BEVT，在多个视频数据集上SOTA！](https://mp.weixin.qq.com/s/5Ai5pDYO_Xm03ml1ZrVgLA)         :star::star:
-   - Abstract: 复旦&微软提出Video版本BEVT，在多个视频数据集上SOTA！
-   - Paper: [BEVT: BERT Pretraining of Video Transformers](https://arxiv.org/abs/2112.01529)
-   - Code: [https://github.com/xyzforever/BEVT](https://github.com/xyzforever/BEVT)
-   - Tips: 作者提出了BEVT，它将视频表示学习解耦为空间表示学习和时间动态学习。具体来说，BEVT首先对图像数据进行mask图像建模，然后对视频数据进行mask图像建模和mask视频建模。
+1. [如何拥有一个兼具CNN的速度、Transformer精度的模型？字节甩出TRT-ViT教你](https://mp.weixin.qq.com/s/pmYHOoFwc90LRIHiFhd-jA)         :star::star:
+   - Abstract: 如何拥有一个兼具CNN的速度、Transformer精度的模型？字节甩出TRT-ViT教你
+   - Paper: [TRT-ViT: TensorRT-oriented Vision Transformer](https://arxiv.org/abs/2205.09579)
+   - Tips: 字节设计了一系列面向TensorRT的Transformer（缩写为TRT-ViT），由具有ConvNets和Transformers的混合网络组成。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/BJbRvwibeSTu62OxibZUKOxHytYdEOeFpUBJ9kp965BbWFsyjPqUDEYicFrVpKGiazdwtvFicpfWic2unH9r7OBw6PMw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_png/gYUsOT36vfoz3kMiaJH816gjqlictvy6SP6ia36Mg9emIJdTuGoRaY9WkvvHxyNMsmY611xHbk07nV8IXWGDfjsnA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+2. [NTIRE2022-ESR 冠军方案RLFN解析](https://mp.weixin.qq.com/s/JPoWDjDCSZvsX38yTts7Fg)       :star::star:
+   - Abstract: NTIRE2022-ESR 冠军方案RLFN解析
+   - Paper: [Residual Local Feature Network for Efficient Super-Resolution](https://arxiv.org/abs/2205.07514)
+   - Tips: 本文提出了一种新的ESR方案RLFN，它采用三个卷积层进行残差局部特征学习以简化特征聚合，这种处理机制有助于达成更优的性能-推理耗时均衡。与此同时，本文对主流的对比损失进行回顾并发现：特征提取器的中间特征选择对于性能有极大影响，其中浅层特征可以保持更精确的细节与纹理。此外，本文提出一种新颖的多阶段热启动训练策略。
+
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfoz3kMiaJH816gjqlictvy6SPl97zS83ThuMeibLYuicMkuCFicpr4Rgg5rPVm6ys4jbIf9fCBWzQURzhA/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-2. [TPAMI 2022｜基于最优传输理论的无监督图像重建学习](https://mp.weixin.qq.com/s/wEQZlddW6muMdndBNSKO7A)       :star::star:
-   - Abstract: 基于最优传输理论的无监督图像重建学习
-   - Paper: [Optimal Transport for Unsupervised Denoising Learning](https://ieeexplore.ieee.org/document/9763342)
-   - Code: [https://github.com/wangweiSJTU/OTUR](https://github.com/wangweiSJTU/OTUR)
-   - Tips: 本项工作在不对退化模型做任何先验假设的条件下，提出了一种基于最优传输理论的无监督图像重建学习准则。该准则可在实现高感知质量重建的同时，最大程度保留原始图像信息。此外，我们在理论上证明了，实际应用中使用的该准则的松弛形式与原始准则具有相同的最优解。
+3. [ACL 2022 | 基于多语言语义解耦表示的跨语言迁移方法实现多语言阅读理解](https://mp.weixin.qq.com/s/vZGOo5dFMAbi2zbFFWYGYA)       :star::star:
+   - Abstract: 基于多语言语义解耦表示的跨语言迁移方法实现多语言阅读理解
+   - Paper: [Learning Disentangled Semantic Representations for Zero-Shot Cross-Lingual Transfer in Multilingual Machine Reading Comprehension](http://arxiv.org/abs/2204.00996)
+   - Code: [https://github.com/wulinjuan/SSDM_MRC](https://github.com/wulinjuan/SSDM_MRC)
+   - Tips: 作者提出了一种新的多语言机器阅读理解框架，该框架配备了孪生语义解耦模型（Siamese Semantic Disentanglement Model,  ），实现在多语言预训练模型学习的表示中将语义与语法分离。为了显式地将丰富的语义知识迁移到目标语言，作者还提出了两组针对语义和句法编码和解开的损失。
 
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfoz3kMiaJH816gjqlictvy6SPsEn8NyVQiaEu7S6wgvfwfWzO1CcVVWsGPGiaTtm0IrNlrGqJkraUkhow/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/GNpj5fw72EquerTXnJ2f0Hk96Svy8NAXn9wdiafhsnUTwuiabzjlUmeSkDbch04Ls3aibtlfQlkpnPH5icBLuY4UXw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-3. [厨艺速成「秘籍」—— 跨模态菜谱检索](https://mp.weixin.qq.com/s/ANUBuons4zgKXRMQ-golNg)       :star::star:
-   - Abstract: 跨模态菜谱检索
-   - Video: [Cross-modal  Cooking Recipe Retrieval](https://event.baai.ac.cn/activities/346)
-   - Tips: 本文介绍了基于识别的菜谱检索、基于跨模态学习的菜谱检索、跨域食物迁移等方面的相关工作。早期的基于识别的菜谱检索要求我们显式的标注食材，需要耗费大量的人力标注成本，难以处理无法在图片中观察到的食材原料和被遮挡的食材原料。基于跨模态学习的菜谱检索方法能够更好地扩展到大规模集上，需要的标注工作更少，可以得到更好的检索性能。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ZkgfUziaPIO3rSMI7ofOWMG9VFRLly58TaDNSrvtbv4uKUia7vEpn6tAiaMNEq7ibJ4C3m1q9cXbiblb1TPTZcddxNA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+4. [Yolo-Fastest：轻量级yolo系列网络在各硬件实现工业级检测效果](https://mp.weixin.qq.com/s/7C20_jOXIBCJmbsbzF6fPw)       :star::star:
+   - Abstract: Yolo-Fastest：轻量级yolo系列网络在各硬件实现工业级检测效果
+   - Code: [https://github.com/dog-qiuqiu/Yolo-Fastest](https://github.com/dog-qiuqiu/Yolo-Fastest)
+   - Tips: Yolo-Fastest是现在已知开源最快的最轻量的改进版yolo通用目标检测算法（貌似也是现在通用目标检测算法中最快最轻量的），其实初衷就是打破算力的瓶颈，能在更多的低成本的边缘端设备实时运行目标检测算法。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/1MtnAxmWSwPNLRtxjurlSJt3UkgicRjickwHvJj565YgFRBFMM732kdu3mj3vvb1VlgDFG9UaU59HGK8IibuXkiagA/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-4. [非视线成像：基于飞秒摄影技术](https://mp.weixin.qq.com/s/sv_KWrKHA4k8lD9YpNjp6g)       :star::star:
-   - Abstract: 非视线成像：基于飞秒摄影技术
-   - Paper: [Recovering three-dimensional shape around a corner using ultrafast time-of-flight imaging](https://www.nature.com/articles/ncomms1747)
-   - Tips: 利用飞秒摄影技术，第一次实现了对视线外的物体进行三维成像。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/NvxfnOcAvPWzS62Tuo7IiaChgQjEDrIk3gOsyLehzZ2n99M6nVREyOXZNmM3sNH0YCfngmJA1DTT9EflNUEloeQ/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+5. [YOLO算法最全综述：从YOLOv1到YOLOv5](https://mp.weixin.qq.com/s/Y-4LRt08g-S1ZOpj3nVW3g)       :star::star:
+   - Abstract: YOLO算法最全综述：从YOLOv1到YOLOv5
+   - Tips: 从YOLOv1到YOLOv5，算法详细讲解，很好的入门综述。
+
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfrVPO5dCS8SFFLceGUMkGDW16A2YIr3qplYq4xohhcjicUPqSOiaVtCxUStAEJAUWvpCJzwJfzsEibjQ/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-5. [SCI写作高频词、词组系列——结果部分](https://mp.weixin.qq.com/s/b7VHk20C6kYT98RLqgk89A)       :star::star:
-   - Abstract: SCI写作高频词、词组系列——结果部分
-   - Tips: 作者总结了SCI论文中“结果”(Results) 部分的词和词组。
 
-<div align=center><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fstatic.paperpass.com%2Fcms%2F2020%2F07%2F27%2F202007275f1ef5a046c0318110.png&refer=http%3A%2F%2Fstatic.paperpass.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1655693757&t=a51e828229da6281bdb041ae2926acaa" style='zoom:100%'>
+6. [NLP数据标注工具汇总](https://mp.weixin.qq.com/s/lKsnUG4hmfuDBeyKlqugPA)       :star::star:
+   - Abstract:NLP数据标注工具汇总
+   - Tips: 在调研如何造轮子时，发现有些开源工具或许可以用，可以避免不必要的标注工具开发时间。这篇文章就对调研到的开源工具做一个简要汇总。
+
+<div align=center><img src="https://github.com/deepwel/Chinese-Annotator/raw/master/docs/images/chinese_annotator_arch.png" style='zoom:100%'>
 </div>
-
-6. [收藏！最强目标检测、行人检测算法思维导图](https://mp.weixin.qq.com/s/t59nVCzSIG7_NjlyGfQGVg)       :star::star:
-   - Abstract: 收藏！最强目标检测、行人检测算法思维导图
-   - Tips: 目标检测、行人检测算法思维导图，很好的相关领域知识点的梳理。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/uGWQRhqDh3I1u0WeUEg9ZZicdqhJApXfnmhUibOuq5tP4vib6IJnLBwcsu60bPMuovq9usxSXQfvHkicPEicY0jgiaRQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
 
 
 
@@ -186,6 +187,7 @@
     8. <a href="notes/202205/0519.md" target="_blank">公众号内容拓展学习笔记（2022.5.19）</a>
     9. <a href="notes/202205/0520.md" target="_blank">公众号内容拓展学习笔记（2022.5.20）</a>
     10. <a href="notes/202205/0521.md" target="_blank">公众号内容拓展学习笔记（2022.5.21）</a>
+    11. <a href="notes/202205/0522.md" target="_blank">公众号内容拓展学习笔记（2022.5.22）</a>
 </details>
 </pre>
 
