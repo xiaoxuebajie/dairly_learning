@@ -3,62 +3,65 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2022.5.23
+更新今日时间：2022.5.24
 
 ------
 
 ## :paperclip:  今日要点
 
-1. [CLCNet：用分类置信网络重新思考集成建模（附源代码下载）](https://mp.weixin.qq.com/s/_h_FYThsiuHcNvSkl5bj0A)         :star::star:
-   - Abstract: CLCNet：用分类置信网络重新思考集成建模
-   - Paper: [CLCNet: Rethinking of Ensemble Modeling with Classification Confidence Network](https://arxiv.org/pdf/2205.09612.pdf)
-   - Tips: 分类置信网络（CLCNet）可以获取任意维度的向量形式的分类结果，并返回一个置信度分数作为输出，它代表了一个实例被正确分类的概率。这是一种新型的集成建模。与通用集成建模一样，它可以实现比单一分类模型更高的性能，但新的系统比通用集成建模需要更少的计算量。
+1. [屠榜语义分割！ViT-Adapter：用于密集预测的视觉Transformer适配器](https://mp.weixin.qq.com/s/_nKUt6rExaac93GCBKVrlQ)         :star::star:
+   - Abstract: ViT-Adapter：用于密集预测的视觉Transformer适配器
+   - Paper: [Vision Transformer Adapter for Dense Predictions](https://arxiv.org/abs/2205.08534)
+   - Code: [https://github.com/czczup/ViT-Adapter](https://github.com/czczup/ViT-Adapter)
+   - Tips: `ViT-Adapter`中的`Backbone`是一个普通的`Transformer`，可以用多模态数据进行预训练。在对下游任务进行微调时，使用特定于模态的适配器将数据和任务的先验信息引入模型，使其适用于这些任务。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwOM9W1Vzibrg9lXtw5xTV5CFkpgEKGjbBNDbPZYAibyaSkMUfHGkibve3H8NGCicEFDQmxxVkBgcElMDQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/5ooHoYt0tgldGOVfsLc65GwPSagzGEAWo6sZQ7c1A8skfIelSQzJwWyH2NHlImlG6YwSYrtwEASicRRWkvcgNkg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+2. [CVPR 2022 | 关注文本阅读顺序，蚂蚁集团、上海交大提出多模态文档理解模型](https://mp.weixin.qq.com/s/hSfxgkabieLNpRgY-SbzYw)       :star::star:
+   - Abstract: 关注文本阅读顺序，蚂蚁集团、上海交大提出多模态文档理解模型
+   - Paper: [XYLayoutLM: Towards Layout-Aware Multimodal Networks For Visually-Rich Document Understanding](https://arxiv.org/abs/2203.06947)
+   - Tips: 本文提出一个创新的 Augmented XY Cut 算法作为 augmentation 策略来对文本框进行排序生成合理的阅读顺序，从而改进模型性能；基于空洞卷积的思想，提出了可以处理变长输入序列的空洞条件位置编码 DCPE 生成模块。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/KmXPKA19gW9bTHG3kH8Qq0KibpxRAeC56Y4PBNLria1WNM1iaEicYJibk1MfXicX5Tdr1uAmJtBngXK5xo8jYwkIfaaQ/640?wx_fmt=gif&wxfrom=5&wx_lazy=1" style='zoom:100%'>
 </div>
 
 
-2. [CVPR 2022 | Vision Transformer模型在out-of-distribution数据上的泛化性能研究](https://mp.weixin.qq.com/s/WFqZKMKpCVGwl0QRlmDOKg)       :star::star:
-   - Abstract: Vision Transformer模型在out-of-distribution数据上的泛化性能研究
-   - Paper: [Delving Deep into the Generalization of Vision Transformers under Distribution Shifts](https://arxiv.org/abs/2106.07617)
-   - Code: [https://github.com/Phoenix1153/ViT_OOD_generalization](https://github.com/Phoenix1153/ViT_OOD_generalization)
-   - Tips: 通过将这三种泛化增强的ViT与它们对应的CNN模型进行综合比较，得到以下结论：对于泛化增强的ViT，模型结构越庞大，其对于OOD数据的泛化能力得到的增益更多；与相应的CNN模型相比，泛化增强的ViT对超参数更敏感。
+3. [ICLR 2022 TAdaConv：空间卷积也能进行时序推理，高效的视频理解模型TAdaConvNeXt出炉！](https://mp.weixin.qq.com/s/z6mbgFQvp_yX4ABycGj4Og)       :star::star:
+   - Abstract: TAdaConv：空间卷积也能进行时序推理，高效的视频理解模型TAdaConvNeXt出炉！
+   - Paper: [TADA! TEMPORALLY-ADAPTIVE CONVOLUTIONS FOR VIDEO UNDERSTANDING](https://arxiv.org/pdf/2110.06178.pdf)
+   - Code: [https://github.com/alibaba-mmai-research/TAdaConv](https://github.com/alibaba-mmai-research/TAdaConv)
+   - Tips: 本文作者提出时序自适应卷积（TAdaConv），自适应地对卷积核沿着时间维度进行调整，从而使空间卷积能够进行时序推理，在几乎没有额外计算量的情况下有效提升模型的时序推理能力。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ibaXaPIy7jV3HfvzcW2ANFKOAraEBdpHbqzBP4ghmeVZTWIm7fsn7TbxCmrG1uH1ichLjQFdhADPAQj6rXszc6Ig/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/BJbRvwibeSTvNwqE03o5I178lF4gxoOm36xCe82xiaPIUBS3Bicg2MCh8wFgdKibasLHZzfyd9lqKhuow0SSaGle3Q/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-3. [HAT | 探究SwinIR优于RCAN的背后机理，挖掘预训练策略潜能！](https://mp.weixin.qq.com/s/4zIMR6QmJlkdPXy6rdyCZA)       :star::star:
-   - Abstract: 探究SwinIR优于RCAN的背后机理，挖掘预训练策略潜能！
-   - Paper: [Activating More Pixels in Image Super-Resolution Transformer](https://arxiv.org/abs/2205.04437)
-   - Tips: 本文提出了一种新颖Hybrid Attention Transformer(HAT)方案，它同时利用了通道注意力与自注意力机制。此外，更好的进行跨窗口信息聚合，本文提出一种Overlapping Cross-Attention模块以增强相邻窗口之间的信息交互。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/ibaXaPIy7jV3HfvzcW2ANFKOAraEBdpHb5uxUzUzE04uQ7Hr7XVtm87a8jBY2LMnN15jInM7cqPPCEQwiclNeMag/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+4. [BEVerse：自动驾驶视觉为中心的BEV统一感知和预测框架](https://mp.weixin.qq.com/s/CJ9n0doq_nC74UR_hDUEzQ)       :star::star:
+   - Abstract: BEVerse：自动驾驶视觉为中心的BEV统一感知和预测框架
+   - Code: [BEVerse: Unified Perception and Prediction in Birds-Eye-View for Vision-Centric Autonomous Driving](https://arxiv.org/abs/2205.09743)
+   - Code: [https://github.com/zhangyp15/BEVerse](https://github.com/zhangyp15/BEVerse)
+   - Tips: 本文提出了基于多摄像机系统的3D感知和预测的统一框架**BEVerse**。与现有研究专注于改进单任务方法不同，BEVerse的特点是从多摄像头视频中生成BEV表征，并对多个任务进行联合推理，实现以视觉为中心的自动驾驶。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/E5w2bqqaSwhqxvs7AnVlhsJcuJhfuChuLBkWmI58Fen8eALLvTlmkkTlmzhxHtqWa2auxghcT0VwdxGhhXgRqA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-4. [8个token能学到什么？谷歌提出《TokenLearner》，用8个token就可以达到优于数百个token的结果！](https://mp.weixin.qq.com/s/tNYDQ0cqCSwCzq1GkZ62KQ)       :star::star:
-   - Abstract: 谷歌提出《TokenLearner》，用8个token就可以达到优于数百个token的结果！
-   - Code: [TokenLearner: What Can 8 Learned Tokens Do for Images and Videos?](https://arxiv.org/abs/2106.11297)
-   - Code: [https://github.com/google-research/scenic/tree/main/scenic/projects/token_learner](https://github.com/google-research/scenic/tree/main/scenic/projects/token_learner)
-   - Tips: 本文提出了一种新的视觉表征学习方法TokenLearner，它可以自适应地tokenize输入。目标是学习从图像和视频帧中提取重要的token，用于识别任务。与目前工作相比，本文的方法更为有效，因为作者发现了一些重要的时空token，可以对图像和视频的视觉表征进行建模。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/BJbRvwibeSTu62OxibZUKOxHytYdEOeFpUJ5wsp8UCh8Y7DYoUFj9UGndgwvuTWQiarrDV0W3NVcsYa3aicM2EFO6g/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+5. [CVPR 2022 NTIRE 高动态范围成像（HDR）比赛冠军方案](https://mp.weixin.qq.com/s/5F2PzSdC88wtFwB8tpX8DQ)       :star::star:
+   - Abstract: CVPR 2022 NTIRE 高动态范围成像（HDR）比赛冠军方案
+   - Tips: 网易互娱 AI Lab 凭借以往对 low-level 视觉任务和轻量化网络设计的经验积累，在基线模型的基础上，提出了一个 Efficient HDR 网络，包括高效的多帧对齐和特征提取模块两个模块，同时优化了模型的训练方法。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gWibNQxdlxh8C6cmSSUWI36dmH6L9lFBWy8WSvy5zX0kGZkAiaKVGPnhqXvhficaaWcNEEeN9Qrjcp84w/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-5. [多模态学习工具包PaddleMM](https://mp.weixin.qq.com/s/SREn-X0Jta9Rv83XgyyhcA)       :star::star:
-   - Abstract: 多模态学习工具包PaddleMM
-   - Code: [https://github.com/njustkmg/PaddleMM](https://github.com/njustkmg/PaddleMM)
-   - Tips: 多模态学习工具包兼容PaddlePaddle平台和PyTorch平台，提供模态联合学习和跨模态学习算法模型库，为处理图片文本等多模态数据提供高效的解决方案，助力多模态学习应用落地。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/RKzhFqs0jAagTNviajSs4iaz8ea5PTkyHiavhaLL08vqF9lHibXKWH5ShP83FvkvqLnWVW4CqcWb8JqedDLeIc4sjw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+6. [“YoloV7”？目标检测算法终结篇：正式开源](https://mp.weixin.qq.com/s/GDPOUrnzjNSigMtzt1SLeQ)       :star::star:
+   - Abstract: “YoloV7”？目标检测算法终结篇：正式开源
+   - Code: [https://github.com/jinfagang/yolov7](https://github.com/jinfagang/yolov7)
+   - Tips: 这里7只代表一种幸运代码，它的目的是让YOLO全面开花，不仅仅只是做目标检测。也不是简单的加一个semantic head做分割，而是做一个体系的目标检测积木模块，即插即用，使之能够更简单的做复杂的上层任务，比如多个分类head，实例分割，甚至是加上姿态检测等等。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwMiaU29NJ4icrtbY1oopN7upOwKm2tFLQm4gsh5GMbXNLyCYd3Yt5XzPNCuuOB4IWFcEocCu7HLwibeg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
-
-6. [人工智能如何助力市政垃圾清洁？垃圾检测全流程方案详解](https://mp.weixin.qq.com/s/tsG7mpRtMuwbDEA35mGDXg)       :star::star:
-   - Abstract: 人工智能如何助力市政垃圾清洁？垃圾检测全流程方案详解
-   - Tips: 基于飞桨目标检测开发套件PaddleDetection提供了一套完整的智慧城市垃圾检测方案，通过在市政车辆上安装摄像头对路面垃圾检测并分析，实现对路面遗撒的垃圾进行监控，记录并通知环卫人员清理，大大提升了环卫人效。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/sKia1FKFiafgiaNjkBJnXia79AjBZypvNa2QicvJXKVic06g0RXOzXXpqwUHFExIiaDnl5lKz0odCsvX8GYPtqEHLDI6w/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
 
 
 
@@ -189,6 +192,7 @@
     10. <a href="notes/202205/0521.md" target="_blank">公众号内容拓展学习笔记（2022.5.21）</a>
     11. <a href="notes/202205/0522.md" target="_blank">公众号内容拓展学习笔记（2022.5.22）</a>
     12. <a href="notes/202205/0523.md" target="_blank">公众号内容拓展学习笔记（2022.5.23）</a>
+    13. <a href="notes/202205/0524.md" target="_blank">公众号内容拓展学习笔记（2022.5.24）</a>
 </details>
 </pre>
 
