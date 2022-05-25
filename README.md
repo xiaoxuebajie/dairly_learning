@@ -3,65 +3,62 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2022.5.24
+更新今日时间：2022.5.25
 
 ------
 
 ## :paperclip:  今日要点
 
-1. [屠榜语义分割！ViT-Adapter：用于密集预测的视觉Transformer适配器](https://mp.weixin.qq.com/s/_nKUt6rExaac93GCBKVrlQ)         :star::star:
-   - Abstract: ViT-Adapter：用于密集预测的视觉Transformer适配器
-   - Paper: [Vision Transformer Adapter for Dense Predictions](https://arxiv.org/abs/2205.08534)
-   - Code: [https://github.com/czczup/ViT-Adapter](https://github.com/czczup/ViT-Adapter)
-   - Tips: `ViT-Adapter`中的`Backbone`是一个普通的`Transformer`，可以用多模态数据进行预训练。在对下游任务进行微调时，使用特定于模态的适配器将数据和任务的先验信息引入模型，使其适用于这些任务。
+1. [CVPR 2022 | FAIR提出MaskFeat：自监督视觉预训练新方法！灵感之一来自16年前CVPR论文](https://mp.weixin.qq.com/s/dU14B0Hmary-q_2Qg278oA)         :star::star:
+   - Abstract: FAIR提出MaskFeat：自监督视觉预训练新方法！
+   - Paper: [Masked Feature Prediction for Self-Supervised Visual Pre-Training](https://arxiv.org/abs/2112.09133)
+   - Tips: MaskFeat最核心的改变就是将MAE对图像像素（pixel）的直接预测，替换成对图像的方向梯度直方图（HOG）的预测。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/5ooHoYt0tgldGOVfsLc65GwPSagzGEAWo6sZQ7c1A8skfIelSQzJwWyH2NHlImlG6YwSYrtwEASicRRWkvcgNkg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-2. [CVPR 2022 | 关注文本阅读顺序，蚂蚁集团、上海交大提出多模态文档理解模型](https://mp.weixin.qq.com/s/hSfxgkabieLNpRgY-SbzYw)       :star::star:
-   - Abstract: 关注文本阅读顺序，蚂蚁集团、上海交大提出多模态文档理解模型
-   - Paper: [XYLayoutLM: Towards Layout-Aware Multimodal Networks For Visually-Rich Document Understanding](https://arxiv.org/abs/2203.06947)
-   - Tips: 本文提出一个创新的 Augmented XY Cut 算法作为 augmentation 策略来对文本框进行排序生成合理的阅读顺序，从而改进模型性能；基于空洞卷积的思想，提出了可以处理变长输入序列的空洞条件位置编码 DCPE 生成模块。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/KmXPKA19gW9bTHG3kH8Qq0KibpxRAeC56Y4PBNLria1WNM1iaEicYJibk1MfXicX5Tdr1uAmJtBngXK5xo8jYwkIfaaQ/640?wx_fmt=gif&wxfrom=5&wx_lazy=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/UicQ7HgWiaUb3hicLBCn12AYLhQIAZboH07MmVn00upqukxPe7zGrFGaBYJe4SmIH7uX8CMjsJGGWyRAAWhobTqsA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-3. [ICLR 2022 TAdaConv：空间卷积也能进行时序推理，高效的视频理解模型TAdaConvNeXt出炉！](https://mp.weixin.qq.com/s/z6mbgFQvp_yX4ABycGj4Og)       :star::star:
-   - Abstract: TAdaConv：空间卷积也能进行时序推理，高效的视频理解模型TAdaConvNeXt出炉！
-   - Paper: [TADA! TEMPORALLY-ADAPTIVE CONVOLUTIONS FOR VIDEO UNDERSTANDING](https://arxiv.org/pdf/2110.06178.pdf)
-   - Code: [https://github.com/alibaba-mmai-research/TAdaConv](https://github.com/alibaba-mmai-research/TAdaConv)
-   - Tips: 本文作者提出时序自适应卷积（TAdaConv），自适应地对卷积核沿着时间维度进行调整，从而使空间卷积能够进行时序推理，在几乎没有额外计算量的情况下有效提升模型的时序推理能力。
+2. [GAN掉人脸识别系统？GAN模型「女扮男装」](https://mp.weixin.qq.com/s/SC7iEVfyI2G69OJc4IryEQ)       :star::star:
+   - Abstract: GAN掉人脸识别系统？GAN模型「女扮男装」
+   - Paper: [Face Verification Bypass](https://arxiv.org/pdf/2203.15068.pdf)
+   - Tips: 用对抗生成网络GAN生成一个面部图像来模仿目标人脸，看看人脸识别系统能否正确验证。因为人脸的关键特征信息都保留了下来，所以论文的结果显示，生成的人脸图像仍然可以通过人脸验证。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/BJbRvwibeSTvNwqE03o5I178lF4gxoOm36xCe82xiaPIUBS3Bicg2MCh8wFgdKibasLHZzfyd9lqKhuow0SSaGle3Q/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/UicQ7HgWiaUb17O0YMJxNwVpWdMFA5d6YhyL86sGPFKoLwC4sJASB96xcjXlsH2EOmUiab1s0oiciciaQQGWqOXbSSQA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
+3. [CVPR 2022 | TCTrack: 用于空中跟踪的时序信息框架](https://mp.weixin.qq.com/s/4UgyAwg1MJJH9Aajl35q9w)       :star::star:
+   - Abstract: TCTrack: 用于空中跟踪的时序信息框架
+   - Paper: [TCTrack: Temporal Contexts for Aerial Tracking](https://arxiv.org/abs/2203.01885)
+   - Code: [https://github.com/vision4robotics/TCTrack](https://github.com/vision4robotics/TCTrack)
+   - Tips: TCTrack通过特征维度及相似度图维度连续整合时序信息。在特征提取过程中，作者通过使用改进的Online TAdaConv在特征维度高效引入时序信息；而在特征图维度，本文使用了更加高效的时序信息策略，通过不断积累的时序信息修正特征图。
 
-4. [BEVerse：自动驾驶视觉为中心的BEV统一感知和预测框架](https://mp.weixin.qq.com/s/CJ9n0doq_nC74UR_hDUEzQ)       :star::star:
-   - Abstract: BEVerse：自动驾驶视觉为中心的BEV统一感知和预测框架
-   - Code: [BEVerse: Unified Perception and Prediction in Birds-Eye-View for Vision-Centric Autonomous Driving](https://arxiv.org/abs/2205.09743)
-   - Code: [https://github.com/zhangyp15/BEVerse](https://github.com/zhangyp15/BEVerse)
-   - Tips: 本文提出了基于多摄像机系统的3D感知和预测的统一框架**BEVerse**。与现有研究专注于改进单任务方法不同，BEVerse的特点是从多摄像头视频中生成BEV表征，并对多个任务进行联合推理，实现以视觉为中心的自动驾驶。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/E5w2bqqaSwhqxvs7AnVlhsJcuJhfuChuLBkWmI58Fen8eALLvTlmkkTlmzhxHtqWa2auxghcT0VwdxGhhXgRqA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/BJbRvwibeSTubGWibia4L1a3j2oAK5IXDrIfmLMhUvtPibXlSaTbicOIhC8zWpexPvPRhvYos8kTlmSpmktcxKaGLfA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
+4. [CVPR 2022 | 清华开源DAT：具有可变形注意力的视觉Transformer](https://mp.weixin.qq.com/s/GydO8rBctduBbVcUKcdIRg)       :star::star:
+   - Abstract: 清华开源DAT：具有可变形注意力的视觉Transformer
+   - Code: [Vision Transformer with Deformable Attention](https://arxiv.org/abs/2201.00520)
+   - Code: [https://github.com/LeapLabTHU/DAT](https://github.com/LeapLabTHU/DAT)
+   - Tips: 本文提出了一种新的可变形的自注意力模块，该模块以数据依赖的方式选择了自注意力中的key和value对的位置。这种灵活的方案使自注意力模块能够聚焦于相关区域并捕获更多信息。在此基础上，提出了一种可变形注意力Transformer(Deformable Attention Transformer)模型，该模型具有可变形注意力，适用于图像分类和密集预测任务。
 
-5. [CVPR 2022 NTIRE 高动态范围成像（HDR）比赛冠军方案](https://mp.weixin.qq.com/s/5F2PzSdC88wtFwB8tpX8DQ)       :star::star:
-   - Abstract: CVPR 2022 NTIRE 高动态范围成像（HDR）比赛冠军方案
-   - Tips: 网易互娱 AI Lab 凭借以往对 low-level 视觉任务和轻量化网络设计的经验积累，在基线模型的基础上，提出了一个 Efficient HDR 网络，包括高效的多帧对齐和特征提取模块两个模块，同时优化了模型的训练方法。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gWibNQxdlxh8C6cmSSUWI36dmH6L9lFBWy8WSvy5zX0kGZkAiaKVGPnhqXvhficaaWcNEEeN9Qrjcp84w/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/5ooHoYt0tgkqhY0ZfBzXZuRNCg3boLickg7ZRvQOoq0bWhobg10evDISHQOdwmWyCBytiaHW77pql15koT68ibJ3A/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
+5. [新加坡国立大学&哈工大提出《Incremental-DETR》，基于自监督学习的增量 Few-Shot 目标检测，性能SOTA！](https://mp.weixin.qq.com/s/8EAxkoDxJXzggS12PJx9rg)       :star::star:
+   - Abstract: 新加坡国立大学&哈工大提出《Incremental-DETR》，基于自监督学习的增量 Few-Shot 目标检测
+   - Paper: [Incremental-DETR: Incremental Few-Shot Object Detection via Self-Supervised Learning](https://arxiv.org/abs/2205.04042)
+   - Tips: 在本文中，作者提出了一种新的增量few-shot目标检测框架：针对更具挑战性和现实性的场景，在训练数据集中没有来自基类的样本，只有来自新类的少量样本。作者提出使用两阶段微调策略和自监督学习来保留基类的知识，并学习更好的泛化表示。然后，作者利用知识提取策略，使用新类中的少量样本，将知识从基础转移到新模型。
 
-6. [“YoloV7”？目标检测算法终结篇：正式开源](https://mp.weixin.qq.com/s/GDPOUrnzjNSigMtzt1SLeQ)       :star::star:
-   - Abstract: “YoloV7”？目标检测算法终结篇：正式开源
-   - Code: [https://github.com/jinfagang/yolov7](https://github.com/jinfagang/yolov7)
-   - Tips: 这里7只代表一种幸运代码，它的目的是让YOLO全面开花，不仅仅只是做目标检测。也不是简单的加一个semantic head做分割，而是做一个体系的目标检测积木模块，即插即用，使之能够更简单的做复杂的上层任务，比如多个分类head，实例分割，甚至是加上姿态检测等等。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwMiaU29NJ4icrtbY1oopN7upOwKm2tFLQm4gsh5GMbXNLyCYd3Yt5XzPNCuuOB4IWFcEocCu7HLwibeg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/BJbRvwibeSTvNwqE03o5I178lF4gxoOm3pp7em23Xtk8DJG0KUk3XocicyNvUGY8acbwfYCuQ7GlF64sjKhB5K6g/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
+
+6. [大规模模型训练tricks集锦](https://mp.weixin.qq.com/s/p99u10YOODDmZQPN0lc03w)       :star::star:
+   - Abstract: 大规模模型训练tricks集锦
+   - Tips: 大规模模型训练其实就是在和计算、存储和通信玩的过程，所以作者列一下跟这些相关的文章。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/5fknb41ib9qHGHDgutwHQTnMn7RfH4eANVKkSoMy2leXmRI2Y7NPJqtkIsHYqY9qQibS3WxR17ibIGu3S5icvXCRSA/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
 
 
 
@@ -193,6 +190,7 @@
     11. <a href="notes/202205/0522.md" target="_blank">公众号内容拓展学习笔记（2022.5.22）</a>
     12. <a href="notes/202205/0523.md" target="_blank">公众号内容拓展学习笔记（2022.5.23）</a>
     13. <a href="notes/202205/0524.md" target="_blank">公众号内容拓展学习笔记（2022.5.24）</a>
+    14. <a href="notes/202205/0525.md" target="_blank">公众号内容拓展学习笔记（2022.5.25）</a>
 </details>
 </pre>
 
