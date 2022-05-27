@@ -3,62 +3,65 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2022.5.25
+更新今日时间：2022.5.27
 
 ------
 
 ## :paperclip:  今日要点
 
-1. [CVPR 2022 | FAIR提出MaskFeat：自监督视觉预训练新方法！灵感之一来自16年前CVPR论文](https://mp.weixin.qq.com/s/dU14B0Hmary-q_2Qg278oA)         :star::star:
-   - Abstract: FAIR提出MaskFeat：自监督视觉预训练新方法！
-   - Paper: [Masked Feature Prediction for Self-Supervised Visual Pre-Training](https://arxiv.org/abs/2112.09133)
-   - Tips: MaskFeat最核心的改变就是将MAE对图像像素（pixel）的直接预测，替换成对图像的方向梯度直方图（HOG）的预测。
+1. [实时风格迁移，移动端运行，人脸特效又有了新玩法](https://mp.weixin.qq.com/s/fZEKZDd9D4lPbYHoRNDtfQ)         :star::star:
+   - Abstract: 实时风格迁移，移动端运行，人脸特效又有了新玩法
+   - Paper: [FaceBlit: Instant Real-time Example-based Style Transfer to Facial Videos](https://ondrejtexler.github.io/res/faceblit-paper.pdf)
+   - Tips: 研究者提出了一种基于实例的实时视频人脸风格迁移框架 FaceBlit，该框架通过语义上有意义的方式保留了风格的纹理细节，也就是说，用于描绘特定风格特征的笔画出现在目标图像的适当位置。该框架不仅保留了目标对象（target subject）的身份，而且不需要大型数据集和冗长训练周期即可实现实时运行。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/UicQ7HgWiaUb3hicLBCn12AYLhQIAZboH07MmVn00upqukxPe7zGrFGaBYJe4SmIH7uX8CMjsJGGWyRAAWhobTqsA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/KmXPKA19gWicicHw8jEjFTy6JjeXKmI9GViaWGlW1WvMibAdxzDYPOCjtqawKw4XvcnbR8C7f4FiboJaewFpAVsrF6A/640?wx_fmt=gif&wxfrom=5&wx_lazy=1" style='zoom:100%'>
+</div>
+
+2. [CVPR 2022 | 结合短期动态、长期一致性，视频伪装物体检测框架，大幅超越SOTA](https://mp.weixin.qq.com/s/ZbjKIJUnLC9LzJ4jfctksA)       :star::star:
+   - Abstract: 结合短期动态、长期一致性，视频伪装物体检测框架
+   - Paper: [Implicit Motion Handling for Video Camouflaged Object Detection](https://xueliancheng.github.io/SLT-Net-project)
+   - Tips: 本文提出了 SLT-Net，一个用于解决 VCOD 任务的新模型。该模型利用短期动态与长期一致性信息，在视频中检测伪装物体。SLT-Net 是由 Transformer 与 CNN 组件组合而成的混合模型。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ibaXaPIy7jV0bjpzAegDKwS8icod5cK289ibOJURIcqloVPFbwvib02Esve722iasXhGZDjQwquBrHR8EXafZEiamDnw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-2. [GAN掉人脸识别系统？GAN模型「女扮男装」](https://mp.weixin.qq.com/s/SC7iEVfyI2G69OJc4IryEQ)       :star::star:
-   - Abstract: GAN掉人脸识别系统？GAN模型「女扮男装」
-   - Paper: [Face Verification Bypass](https://arxiv.org/pdf/2203.15068.pdf)
-   - Tips: 用对抗生成网络GAN生成一个面部图像来模仿目标人脸，看看人脸识别系统能否正确验证。因为人脸的关键特征信息都保留了下来，所以论文的结果显示，生成的人脸图像仍然可以通过人脸验证。
+3. [CVPR22 Oral｜图像质量和推理速度都要！字节提出轻量级高效图像超分辨率架构RLFN](https://mp.weixin.qq.com/s/MbQy_pTnLyHstyf_rJyFRg)       :star::star:
+   - Abstract: 图像质量和推理速度都要！字节提出轻量级高效图像超分辨率架构RLFN
+   - Paper: [Residual Local Feature Network for Efficient Super-Resolution](https://arxiv.org/abs/2205.07514)
+   - Code: [https://github.com/fyan111/RLFN](https://github.com/fyan111/RLFN)
+   - Tips: 本文针对单幅图像超分辨率（SISR）领域难部署于资源受限设备上的问题，提出一种轻量级的残差局部特征网络（RLFN），简单有效且在重建图像质量与推理速度之间取得良好权衡，同时本文采用多阶段热启动训练策略来提升模型性能。 
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/UicQ7HgWiaUb17O0YMJxNwVpWdMFA5d6YhyL86sGPFKoLwC4sJASB96xcjXlsH2EOmUiab1s0oiciciaQQGWqOXbSSQA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfrNvYeyIzOk34aibddDR58ZkQ46PFPKGyPSbWPzkHDkGAWxH2ib9aT0H0zansdTZNaaBG0Y4gMhGX0w/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-3. [CVPR 2022 | TCTrack: 用于空中跟踪的时序信息框架](https://mp.weixin.qq.com/s/4UgyAwg1MJJH9Aajl35q9w)       :star::star:
-   - Abstract: TCTrack: 用于空中跟踪的时序信息框架
-   - Paper: [TCTrack: Temporal Contexts for Aerial Tracking](https://arxiv.org/abs/2203.01885)
-   - Code: [https://github.com/vision4robotics/TCTrack](https://github.com/vision4robotics/TCTrack)
-   - Tips: TCTrack通过特征维度及相似度图维度连续整合时序信息。在特征提取过程中，作者通过使用改进的Online TAdaConv在特征维度高效引入时序信息；而在特征图维度，本文使用了更加高效的时序信息策略，通过不断积累的时序信息修正特征图。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/BJbRvwibeSTubGWibia4L1a3j2oAK5IXDrIfmLMhUvtPibXlSaTbicOIhC8zWpexPvPRhvYos8kTlmSpmktcxKaGLfA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+4. [超越Mixup的数据增强方法！RandomMix 集百家之长](https://mp.weixin.qq.com/s/bXBiGJXcPCln16KWgn4ROw)       :star::star:
+   - Abstract: 超越Mixup的数据增强方法！RandomMix 集百家之长
+   - Paper: [RandomMix: A mixed sample data augmentation method with multiple mixed modes](https://arxiv.org/abs/2205.08728)
+   - Tips: `RandomMix`的主要目标是通过整合以前的工作来提高模型的鲁棒性并增加训练数据的多样性。此外，`RandomMix`可以实现更好的性能，并且可以很容易地插入到现有的训练管道中。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/5ooHoYt0tgkyKr7nnF1diaa4x47dKlemCr3RUJjZtMpquUYlPibGh0uibgbiaegIHbYiaGL7KM68XuTBk0nuYSF3v2A/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-4. [CVPR 2022 | 清华开源DAT：具有可变形注意力的视觉Transformer](https://mp.weixin.qq.com/s/GydO8rBctduBbVcUKcdIRg)       :star::star:
-   - Abstract: 清华开源DAT：具有可变形注意力的视觉Transformer
-   - Code: [Vision Transformer with Deformable Attention](https://arxiv.org/abs/2201.00520)
-   - Code: [https://github.com/LeapLabTHU/DAT](https://github.com/LeapLabTHU/DAT)
-   - Tips: 本文提出了一种新的可变形的自注意力模块，该模块以数据依赖的方式选择了自注意力中的key和value对的位置。这种灵活的方案使自注意力模块能够聚焦于相关区域并捕获更多信息。在此基础上，提出了一种可变形注意力Transformer(Deformable Attention Transformer)模型，该模型具有可变形注意力，适用于图像分类和密集预测任务。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/5ooHoYt0tgkqhY0ZfBzXZuRNCg3boLickg7ZRvQOoq0bWhobg10evDISHQOdwmWyCBytiaHW77pql15koT68ibJ3A/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+5. [用Transformer思想的分类器进行小样本分割](https://mp.weixin.qq.com/s/YVg8aupmAxiu5lGTYrhpCg)       :star::star:
+   - Abstract: 用Transformer思想的分类器进行小样本分割
+   - Paper: [Simpler is Better: Few-shot Semantic Segmentation with Classifier Weight Transformer](https://arxiv.org/pdf/2108.03032.pdf)
+   - Code: [https://github.com/lixiang007666/CWT-for-FSS](https://github.com/lixiang007666/CWT-for-FSS)
+   - Tips: 作者介绍了一种新的元学习训练范式来解决小样本语义分割问题。相比于现有的方法，这种方法更加简洁有效，只对分类器进行元学习。重要的是，为了解决类内差异问题，提出 Classifier Weight Transformer 利用 Query 特征信息来迭代训练分类器，从而获得更加鲁棒和精准的分割效果。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/SdQCib1UzF3txLSRgEed7o8OA9VLhohEk7icP09DNrtnwLwwE9Y6pFLnEmvcNgDCDkeFicGLMSvwR1icIo9UsUOibmQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-5. [新加坡国立大学&哈工大提出《Incremental-DETR》，基于自监督学习的增量 Few-Shot 目标检测，性能SOTA！](https://mp.weixin.qq.com/s/8EAxkoDxJXzggS12PJx9rg)       :star::star:
-   - Abstract: 新加坡国立大学&哈工大提出《Incremental-DETR》，基于自监督学习的增量 Few-Shot 目标检测
-   - Paper: [Incremental-DETR: Incremental Few-Shot Object Detection via Self-Supervised Learning](https://arxiv.org/abs/2205.04042)
-   - Tips: 在本文中，作者提出了一种新的增量few-shot目标检测框架：针对更具挑战性和现实性的场景，在训练数据集中没有来自基类的样本，只有来自新类的少量样本。作者提出使用两阶段微调策略和自监督学习来保留基类的知识，并学习更好的泛化表示。然后，作者利用知识提取策略，使用新类中的少量样本，将知识从基础转移到新模型。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/BJbRvwibeSTvNwqE03o5I178lF4gxoOm3pp7em23Xtk8DJG0KUk3XocicyNvUGY8acbwfYCuQ7GlF64sjKhB5K6g/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+6. [labelGo：基于 YOLOv5 的辅助标注工具](https://mp.weixin.qq.com/s/RalSgyNu6EcuomhsEaCzRQ)       :star::star:
+   - Abstract: labelGo：基于 YOLOv5 的辅助标注工具
+   - Code: [https://github.com/cnyvfang/labelGo-Yolov5AutoLabelImg](https://github.com/cnyvfang/labelGo-Yolov5AutoLabelImg)
+   - Tips: 这是一个基于 labelImg与 YOLOv5 的半自动标注工具，通过现有的YOLOv5 PyTorch模型对数据集进行半自动标注。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/b6P5kstO2jbmxl69jqibDNV11p7cHlU879KJu7RlLBYpIrwr6ar8KRjU8DvjKqW6TlPdy1TW1dTPV96Hua6dJzA/640?wx_fmt=gif&wxfrom=5&wx_lazy=1" style='zoom:100%'>
 </div>
-
-6. [大规模模型训练tricks集锦](https://mp.weixin.qq.com/s/p99u10YOODDmZQPN0lc03w)       :star::star:
-   - Abstract: 大规模模型训练tricks集锦
-   - Tips: 大规模模型训练其实就是在和计算、存储和通信玩的过程，所以作者列一下跟这些相关的文章。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/5fknb41ib9qHGHDgutwHQTnMn7RfH4eANVKkSoMy2leXmRI2Y7NPJqtkIsHYqY9qQibS3WxR17ibIGu3S5icvXCRSA/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
 
 
 
@@ -191,6 +194,7 @@
     12. <a href="notes/202205/0523.md" target="_blank">公众号内容拓展学习笔记（2022.5.23）</a>
     13. <a href="notes/202205/0524.md" target="_blank">公众号内容拓展学习笔记（2022.5.24）</a>
     14. <a href="notes/202205/0525.md" target="_blank">公众号内容拓展学习笔记（2022.5.25）</a>
+    15. <a href="notes/202205/0527.md" target="_blank">公众号内容拓展学习笔记（2022.5.27）</a>
 </details>
 </pre>
 
