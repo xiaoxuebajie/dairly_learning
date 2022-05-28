@@ -3,65 +3,62 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2022.5.27
+更新今日时间：2022.5.28
 
 ------
 
-## :paperclip:  今日要点
+## :paperclip::paperclip:  今日要点
 
-1. [实时风格迁移，移动端运行，人脸特效又有了新玩法](https://mp.weixin.qq.com/s/fZEKZDd9D4lPbYHoRNDtfQ)         :star::star:
-   - Abstract: 实时风格迁移，移动端运行，人脸特效又有了新玩法
-   - Paper: [FaceBlit: Instant Real-time Example-based Style Transfer to Facial Videos](https://ondrejtexler.github.io/res/faceblit-paper.pdf)
-   - Tips: 研究者提出了一种基于实例的实时视频人脸风格迁移框架 FaceBlit，该框架通过语义上有意义的方式保留了风格的纹理细节，也就是说，用于描绘特定风格特征的笔画出现在目标图像的适当位置。该框架不仅保留了目标对象（target subject）的身份，而且不需要大型数据集和冗长训练周期即可实现实时运行。
+1. [CVPR最佳检测：不再是方方正正的目标检测输出（附源码）](https://mp.weixin.qq.com/s/4Pa0sjmMCF02SKHtbY0v9w)         :star::star:
+   - Abstract: CVPR最佳检测：不再是方方正正的目标检测输出（附源码）
+   - Paper: [ReDet: A Rotation-equivariant Detector for Aerial Object Detection](https://openaccess.thecvf.com/content/CVPR2021/papers/Han_ReDet_A_Rotation-Equivariant_Detector_for_Aerial_Object_Detection_CVPR_2021_paper.pdf)
+   - Code: [https: //github.com/csuhan/ReDet](https: //github.com/csuhan/ReDet)
+   - Tips: 研究者提出了一种旋转等变检测器（ReDet），该检测器对旋转等变和旋转不变性进行了显式编码。在检测器中加入旋转等变网络来提取旋转等变特征，这样可以准确地预测方向，并大大减小模型尺寸。在旋转等变特征的基础上，提出了旋转不变RoI-Align（RiRoI-Align），该算法根据RoI的方向自适应地从等变特征中提取旋转不变特征
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/KmXPKA19gWicicHw8jEjFTy6JjeXKmI9GViaWGlW1WvMibAdxzDYPOCjtqawKw4XvcnbR8C7f4FiboJaewFpAVsrF6A/640?wx_fmt=gif&wxfrom=5&wx_lazy=1" style='zoom:100%'>
-</div>
-
-2. [CVPR 2022 | 结合短期动态、长期一致性，视频伪装物体检测框架，大幅超越SOTA](https://mp.weixin.qq.com/s/ZbjKIJUnLC9LzJ4jfctksA)       :star::star:
-   - Abstract: 结合短期动态、长期一致性，视频伪装物体检测框架
-   - Paper: [Implicit Motion Handling for Video Camouflaged Object Detection](https://xueliancheng.github.io/SLT-Net-project)
-   - Tips: 本文提出了 SLT-Net，一个用于解决 VCOD 任务的新模型。该模型利用短期动态与长期一致性信息，在视频中检测伪装物体。SLT-Net 是由 Transformer 与 CNN 组件组合而成的混合模型。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ibaXaPIy7jV0bjpzAegDKwS8icod5cK289ibOJURIcqloVPFbwvib02Esve722iasXhGZDjQwquBrHR8EXafZEiamDnw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwOCicxD7GX6losbkDFgia5XHf0pbkw9yjl2lxXmDxnyccs6d8KQhAsORMsfwR5S86uVD6sAvbq0kd1g/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-3. [CVPR22 Oral｜图像质量和推理速度都要！字节提出轻量级高效图像超分辨率架构RLFN](https://mp.weixin.qq.com/s/MbQy_pTnLyHstyf_rJyFRg)       :star::star:
-   - Abstract: 图像质量和推理速度都要！字节提出轻量级高效图像超分辨率架构RLFN
-   - Paper: [Residual Local Feature Network for Efficient Super-Resolution](https://arxiv.org/abs/2205.07514)
-   - Code: [https://github.com/fyan111/RLFN](https://github.com/fyan111/RLFN)
-   - Tips: 本文针对单幅图像超分辨率（SISR）领域难部署于资源受限设备上的问题，提出一种轻量级的残差局部特征网络（RLFN），简单有效且在重建图像质量与推理速度之间取得良好权衡，同时本文采用多阶段热启动训练策略来提升模型性能。 
+2. [新的目标检测损失函数SIoU：速度完美超越YoloV5、YoloX](https://mp.weixin.qq.com/s/8UtMqdT0I19pF3rVLGByYg)       :star::star:
+   - Abstract: 新的目标检测损失函数SIoU：速度完美超越YoloV5、YoloX
+   - Paper: [SIoU Loss: More Powerful Learning for Bounding Box Regression](https://arxiv.org/abs/2205.12740)
+   - Tips: 迄今为止提出和使用的方法都没有考虑到所需真实框与预测框之间不匹配的方向。这种不足导致收敛速度较慢且效率较低。本文中，提出了一种新的损失函数SIoU，其中考虑到所需回归之间的向量角度，重新定义了惩罚指标。
 
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfrNvYeyIzOk34aibddDR58ZkQ46PFPKGyPSbWPzkHDkGAWxH2ib9aT0H0zansdTZNaaBG0Y4gMhGX0w/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfojmL7BstBLPD7DH66iaAyGS3kt0CJPurLmU7lSpcDLZxIxQzaWLanFvDVjoPVgD0Y2uto5ygTlrPg/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
+3. [谷歌新作Imagen：用Transformer和扩散模型把"文字到图像生成"卷上天！](https://mp.weixin.qq.com/s/OpK8jhQKz9hC7HY5YZHCkA)       :star::star:
+   - Abstract: 谷歌新作Imagen：用Transformer和扩散模型把"文字到图像生成"卷上天！
+   - Paper: [Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding](https://arxiv.org/abs/2205.11487)
+   - Code: [https://github.com/lucidrains/DALLE2-pytorch](https://github.com/lucidrains/DALLE2-pytorch)
+   - Tips: Imagen 结合了 Transformer 语言模型和高保真扩散模型的强大功能，在文本到图像的合成中提供前所未有的逼真度和语言理解能力。与仅使用图像 - 文本数据进行模型训练的先前工作相比，Imagen 的关键突破在于：谷歌的研究者发现在纯文本语料库上预训练的大型 LM 的文本嵌入对文本到图像的合成显著有效。Imagen 的文本到图像生成可谓天马行空，能生成多种奇幻却逼真的有趣图像。
 
-4. [超越Mixup的数据增强方法！RandomMix 集百家之长](https://mp.weixin.qq.com/s/bXBiGJXcPCln16KWgn4ROw)       :star::star:
-   - Abstract: 超越Mixup的数据增强方法！RandomMix 集百家之长
-   - Paper: [RandomMix: A mixed sample data augmentation method with multiple mixed modes](https://arxiv.org/abs/2205.08728)
-   - Tips: `RandomMix`的主要目标是通过整合以前的工作来提高模型的鲁棒性并增加训练数据的多样性。此外，`RandomMix`可以实现更好的性能，并且可以很容易地插入到现有的训练管道中。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/5ooHoYt0tgkyKr7nnF1diaa4x47dKlemCr3RUJjZtMpquUYlPibGh0uibgbiaegIHbYiaGL7KM68XuTBk0nuYSF3v2A/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gWicVaJLaqSzuGYzoibUsRy11QmpVFBib8GgNJzeicrsFA9pKB3tkQlvbMg7ycgf5ptT3N1GP0icicOATG6Q/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
+4. [Fire-YOLO：一种用于火灾检测的小目标检测方法](https://mp.weixin.qq.com/s/jdt_hi4Chovg1c1tzVo7nA)       :star::star:
+   - Abstract: Fire-YOLO：一种用于火灾检测的小目标检测方法
+   - Paper: [Fire-YOLO: A Small Target Object Detection Method for Fire Inspection](https://www.mdpi.com/2071-1050/14/9/4930/htm)
+   - Tips: 文章结合火灾探测的effentnet方法，对YOLO-V3检测模型进行改进。新提出的模型可用于探测火焰和烟雾。文章提出的Fire-YOLO模型使用effecentnet对输入图像进行特征提取，促进了模型的特征学习，提高了网络性能，优化了YOLO-V3模型对极小目标的检测过程。
 
-5. [用Transformer思想的分类器进行小样本分割](https://mp.weixin.qq.com/s/YVg8aupmAxiu5lGTYrhpCg)       :star::star:
-   - Abstract: 用Transformer思想的分类器进行小样本分割
-   - Paper: [Simpler is Better: Few-shot Semantic Segmentation with Classifier Weight Transformer](https://arxiv.org/pdf/2108.03032.pdf)
-   - Code: [https://github.com/lixiang007666/CWT-for-FSS](https://github.com/lixiang007666/CWT-for-FSS)
-   - Tips: 作者介绍了一种新的元学习训练范式来解决小样本语义分割问题。相比于现有的方法，这种方法更加简洁有效，只对分类器进行元学习。重要的是，为了解决类内差异问题，提出 Classifier Weight Transformer 利用 Query 特征信息来迭代训练分类器，从而获得更加鲁棒和精准的分割效果。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/SdQCib1UzF3txLSRgEed7o8OA9VLhohEk7icP09DNrtnwLwwE9Y6pFLnEmvcNgDCDkeFicGLMSvwR1icIo9UsUOibmQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfrJG8MjnzwDxCOicMmZ4Jn0s55LtMaLhgKmB6pUDAoUDtuROLz6leUtghMFqYISqiaz2vbEo5OK81HA/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
+5. [微软黄学东团队发布 i-Code 成为多模态视频理解模型新标杆！](https://mp.weixin.qq.com/s/W8dM9DSUAlDMeDvokpIiYw)       :star::star:
+   - Abstract: 微软黄学东团队发布 i-Code 成为多模态视频理解模型新标杆！
+   - Paper: [i-Code: An Integrative and Composable Multimodal Learning Framework](https://arxiv.org/abs/2205.01818)
+   - Tips: 作者提出了一种多模态自监督预训练框架「i-Code」，用户可以灵活地将视觉、语音和语言的形式组合成统一的通用的向量表征。在该框架下，我们首先将各个模态的数据输入给预训练的单模态编码器。接着，我们通过多模态融合网络集成各单模态编码器的输出，该网络使用新型注意力机制等架构创新，有效地融合了不同模态的信息。
 
-6. [labelGo：基于 YOLOv5 的辅助标注工具](https://mp.weixin.qq.com/s/RalSgyNu6EcuomhsEaCzRQ)       :star::star:
-   - Abstract: labelGo：基于 YOLOv5 的辅助标注工具
-   - Code: [https://github.com/cnyvfang/labelGo-Yolov5AutoLabelImg](https://github.com/cnyvfang/labelGo-Yolov5AutoLabelImg)
-   - Tips: 这是一个基于 labelImg与 YOLOv5 的半自动标注工具，通过现有的YOLOv5 PyTorch模型对数据集进行半自动标注。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/b6P5kstO2jbmxl69jqibDNV11p7cHlU879KJu7RlLBYpIrwr6ar8KRjU8DvjKqW6TlPdy1TW1dTPV96Hua6dJzA/640?wx_fmt=gif&wxfrom=5&wx_lazy=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/cNFA8C0uVPvVVpXswXWfxJbBsIa5vTZzdTibSbKqyN6x9ocGey8QbONTb8CVxnxjH1sqAqQcaG3MAyk0QbJsHQQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
+
+6. [你关心的「自动驾驶目标检测算法」组团来了！| Paper连击vol.5](https://mp.weixin.qq.com/s/rYQhC8ptWI85hZRXldqE7g)       :star::star:
+   - Abstract: 你关心的「自动驾驶目标检测算法」组团来了！
+   - Tips: 8篇自动驾驶场景下的目标检测算法供大家探讨研究。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ibaXaPIy7jV0ibSItc6ysyQibIAFZJeKn2icLSXHkLrqqmlWo2eTt1GzkMpukth10gIoejt9Wclk3hqQw7X8J82dkg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
 
 
 
@@ -195,8 +192,10 @@
     13. <a href="notes/202205/0524.md" target="_blank">公众号内容拓展学习笔记（2022.5.24）</a>
     14. <a href="notes/202205/0525.md" target="_blank">公众号内容拓展学习笔记（2022.5.25）</a>
     15. <a href="notes/202205/0527.md" target="_blank">公众号内容拓展学习笔记（2022.5.27）</a>
+    16. <a href="notes/202205/0528.md" target="_blank">公众号内容拓展学习笔记（2022.5.28）</a>
 </details>
 </pre>
+
 
 
 
