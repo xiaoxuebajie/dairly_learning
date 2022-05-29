@@ -3,62 +3,66 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2022.5.28
+更新今日时间：2022.5.29
 
 ------
 
-## :paperclip::paperclip:  今日要点
+## :paperclip:  今日要点
 
-1. [CVPR最佳检测：不再是方方正正的目标检测输出（附源码）](https://mp.weixin.qq.com/s/4Pa0sjmMCF02SKHtbY0v9w)         :star::star:
-   - Abstract: CVPR最佳检测：不再是方方正正的目标检测输出（附源码）
-   - Paper: [ReDet: A Rotation-equivariant Detector for Aerial Object Detection](https://openaccess.thecvf.com/content/CVPR2021/papers/Han_ReDet_A_Rotation-Equivariant_Detector_for_Aerial_Object_Detection_CVPR_2021_paper.pdf)
-   - Code: [https: //github.com/csuhan/ReDet](https: //github.com/csuhan/ReDet)
-   - Tips: 研究者提出了一种旋转等变检测器（ReDet），该检测器对旋转等变和旋转不变性进行了显式编码。在检测器中加入旋转等变网络来提取旋转等变特征，这样可以准确地预测方向，并大大减小模型尺寸。在旋转等变特征的基础上，提出了旋转不变RoI-Align（RiRoI-Align），该算法根据RoI的方向自适应地从等变特征中提取旋转不变特征
+1. [基于跨模态元迁移，美图&大连理工的参考视频目标分割方法只需单阶段](https://mp.weixin.qq.com/s/7GPy-WmIki0X8WLtCfgliA)         :star::star:
+   - Abstract: 基于跨模态元迁移，美图&大连理工的参考视频目标分割方法只需单阶段
+   - Paper: [You Only Infer Once: Cross-Modal Meta-Transfer for Referring Video Object Segmentation](https://www.aaai.org/AAAI22Papers/AAAI-1100.LiD.pdf)
+   - Tips: 该研究提出了一种跨模态元迁移的端到端 RVOS 框架 ——YOFO，只需单阶段推理，即可实现利用参考文本信息直接得到视频目标的分割结果；提出了一个元迁移（Meta-Transfer）模块来增强时序信息，从而实现了更聚焦于目标的特征学习；提出了一个多尺度跨模态特征挖掘（Multi-Scale Cross-Modal Feature Mining）模块，能够充分融合语言、图片中的有用特征。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwOCicxD7GX6losbkDFgia5XHf0pbkw9yjl2lxXmDxnyccs6d8KQhAsORMsfwR5S86uVD6sAvbq0kd1g/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/KmXPKA19gWibFORd1PPiaLxnibStokSaqwgGLgTicStvSuAGymYtoQHfMHlqmXOLick784YhL4yGcGwJO59txYXIRkA/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+2. [3D车道线单目检测方法ONCE-3DLanes](https://mp.weixin.qq.com/s/dWu8hCuSe5i9sDQvRLGo7g)       :star::star:
+   - Abstract: 3D车道线单目检测方法ONCE-3DLanes
+   - Paper: [ONCE-3DLanes: Building Monocular 3D Lane Detection](https://arxiv.org/abs/2205.00301)
+   - Code: [https://github.com/once-3dlanes/once_3dlanes_benchmark](https://github.com/once-3dlanes/once_3dlanes_benchmark)
+   - Tips: 该文提出一个真实世界的自动驾驶数据集，ONCE-3DLanes，具有3-D空间的车道线布局标注。通过点云和图像像素之间的显式关系，文章设计了该数据集标注流水线，从211K个道路场景的2D车道线标注，自动生成高质量的3D车道线位置。此外，作者还提出一种无外参、无锚点的方法，称为SALAD，在图像视图中回归车道线的3D坐标，而无需将特征地图转换为BEV。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/E5w2bqqaSwgPFZfItoJRIU8WyUMP2DxicZEk8gl2d7tkeadNZvkNEdUYthoIYqpdHWo2y5FWEFdRof5U2tf59CQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-2. [新的目标检测损失函数SIoU：速度完美超越YoloV5、YoloX](https://mp.weixin.qq.com/s/8UtMqdT0I19pF3rVLGByYg)       :star::star:
-   - Abstract: 新的目标检测损失函数SIoU：速度完美超越YoloV5、YoloX
-   - Paper: [SIoU Loss: More Powerful Learning for Bounding Box Regression](https://arxiv.org/abs/2205.12740)
-   - Tips: 迄今为止提出和使用的方法都没有考虑到所需真实框与预测框之间不匹配的方向。这种不足导致收敛速度较慢且效率较低。本文中，提出了一种新的损失函数SIoU，其中考虑到所需回归之间的向量角度，重新定义了惩罚指标。
+3. [浙大提出神经3D重建新工作！收录图形学顶会SIGGRAPH 2022](https://mp.weixin.qq.com/s/NQ-_AgFB0UXqxLDOGDgrWA)       :star::star:
+   - Abstract: 浙大提出神经3D重建新工作！收录图形学顶会SIGGRAPH 2022
+   - Paper: [Neural 3D Reconstruction in the Wild](https://arxiv.org/abs/2205.12955)
+   - Code: [https://zju3dv.github.io/neuralrecon-w](https://zju3dv.github.io/neuralrecon-w)
+   - Tips: 这项研究的基本框架借鉴了NeurIPS 2021上的NeuS，一种把隐式神经标准和体积渲染结合起来的方法。考虑NeuS的一些不足，研究人员提出体素引导（Voxel-guided）和表面引导（Surface-guided）混合的新采样方法。
 
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfojmL7BstBLPD7DH66iaAyGS3kt0CJPurLmU7lSpcDLZxIxQzaWLanFvDVjoPVgD0Y2uto5ygTlrPg/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/YicUhk5aAGtDWs05CiaLVxqH1BfJr4fUvSGh8kvicswd4eK9Al4fON2yHJibrqaBwl1evXzowUv8NUbIeKeLV6U3Dw/640?wx_fmt=gif&wxfrom=5&wx_lazy=1" style='zoom:100%'>
 </div>
 
-3. [谷歌新作Imagen：用Transformer和扩散模型把"文字到图像生成"卷上天！](https://mp.weixin.qq.com/s/OpK8jhQKz9hC7HY5YZHCkA)       :star::star:
-   - Abstract: 谷歌新作Imagen：用Transformer和扩散模型把"文字到图像生成"卷上天！
-   - Paper: [Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding](https://arxiv.org/abs/2205.11487)
-   - Code: [https://github.com/lucidrains/DALLE2-pytorch](https://github.com/lucidrains/DALLE2-pytorch)
-   - Tips: Imagen 结合了 Transformer 语言模型和高保真扩散模型的强大功能，在文本到图像的合成中提供前所未有的逼真度和语言理解能力。与仅使用图像 - 文本数据进行模型训练的先前工作相比，Imagen 的关键突破在于：谷歌的研究者发现在纯文本语料库上预训练的大型 LM 的文本嵌入对文本到图像的合成显著有效。Imagen 的文本到图像生成可谓天马行空，能生成多种奇幻却逼真的有趣图像。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gWicVaJLaqSzuGYzoibUsRy11QmpVFBib8GgNJzeicrsFA9pKB3tkQlvbMg7ycgf5ptT3N1GP0icicOATG6Q/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+4. [CVPR 2022 | 图森未来提出小目标检测工作QueryDet：使用级联稀疏query加速高分辨率下的小目标检测](https://mp.weixin.qq.com/s/jyE_73f0oSWiV70LRHi0Fg)       :star::star:
+   - Abstract: 图森未来提出小目标检测工作QueryDet：使用级联稀疏query加速高分辨率下的小目标检测
+   - Paper: [QueryDet: Cascaded Sparse Query for Accelerating High-Resolution Small Object Detection](https://arxiv.org/abs/2103.09136)
+   - Code: [https://github.com/ChenhongyiYang/QueryDet-PyTorch](https://github.com/ChenhongyiYang/QueryDet-PyTorch)
+   - Tips: QueryDet利用high-resolution feature来提升小目标检测性能的同时，通过CSQ机制，利用高层低分辨率特征初筛含有小目标的区域，在高分辨特征层上利用初筛获得的位置，使用sparse convolution，极大地节约了计算消耗。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/yNnalkXE7oWwLqLCO7nbYE9PWOnDv7wvNicsicxhYcWNZvrAosZh9no6yWlo7GQNjxWpPY9weKYTXwic7V3517ZlA/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-4. [Fire-YOLO：一种用于火灾检测的小目标检测方法](https://mp.weixin.qq.com/s/jdt_hi4Chovg1c1tzVo7nA)       :star::star:
-   - Abstract: Fire-YOLO：一种用于火灾检测的小目标检测方法
-   - Paper: [Fire-YOLO: A Small Target Object Detection Method for Fire Inspection](https://www.mdpi.com/2071-1050/14/9/4930/htm)
-   - Tips: 文章结合火灾探测的effentnet方法，对YOLO-V3检测模型进行改进。新提出的模型可用于探测火焰和烟雾。文章提出的Fire-YOLO模型使用effecentnet对输入图像进行特征提取，促进了模型的特征学习，提高了网络性能，优化了YOLO-V3模型对极小目标的检测过程。
 
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfrJG8MjnzwDxCOicMmZ4Jn0s55LtMaLhgKmB6pUDAoUDtuROLz6leUtghMFqYISqiaz2vbEo5OK81HA/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+5. [Science：睡眠医学的突破，大脑会在梦境中巩固积极情绪](https://mp.weixin.qq.com/s/xFdR-3hd0xpD96RvCqu38Q)       :star::star:
+   - Abstract: 睡眠医学的突破，大脑会在梦境中巩固积极情绪
+   - Paper: [Paradoxical somatodendritic decoupling supports cortical plasticity during REM sleep](https://www.science.org/doi/10.1126/science.abk2734)
+   - Tips: 在这项研究中，科学家们发现大脑会在梦境睡眠中对情绪进行分类，并巩固积极情绪的储存，同时抑制消极情绪。研究人员表示，这项工作强调了睡眠在心理健康中的重要性，并开辟了新的治疗策略。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/5qv5QsBmI9Cf6zzjVoM3N2rictzAJu89U82JJCtwLcUTKDkgspaObVg0Z0ibVuXV3Y7M9vKTtJMYZoSYzib797Q2A/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-5. [微软黄学东团队发布 i-Code 成为多模态视频理解模型新标杆！](https://mp.weixin.qq.com/s/W8dM9DSUAlDMeDvokpIiYw)       :star::star:
-   - Abstract: 微软黄学东团队发布 i-Code 成为多模态视频理解模型新标杆！
-   - Paper: [i-Code: An Integrative and Composable Multimodal Learning Framework](https://arxiv.org/abs/2205.01818)
-   - Tips: 作者提出了一种多模态自监督预训练框架「i-Code」，用户可以灵活地将视觉、语音和语言的形式组合成统一的通用的向量表征。在该框架下，我们首先将各个模态的数据输入给预训练的单模态编码器。接着，我们通过多模态融合网络集成各单模态编码器的输出，该网络使用新型注意力机制等架构创新，有效地融合了不同模态的信息。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/cNFA8C0uVPvVVpXswXWfxJbBsIa5vTZzdTibSbKqyN6x9ocGey8QbONTb8CVxnxjH1sqAqQcaG3MAyk0QbJsHQQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+6. [ACL 2022 | 蚂蚁、北大提出基于层次化对比学习的文本生成框架，提升支付宝搜索体验](https://mp.weixin.qq.com/s/UA3JQzMiHKNT3WaIdqbdLw)       :star::star:
+   - Abstract: 蚂蚁、北大提出基于层次化对比学习的文本生成框架，提升支付宝搜索体验
+   - Paper: [Keywords and Instances: A Hierarchical Contrastive Learning Framework Unifying Hybrid Granularities for Text Generation](https://aclanthology.org/2022.acl-long.304.pdf)
+   - Tips: 研究者提出了一种多粒度对比生成方法，设计了层次化对比结构，在不同层级上进行信息增强，在句子粒度上增强学习整体的语义，在词粒度上增强局部重要信息。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gWibquRMwEibkpA6kMms9zjIvBPY4pHyxhicj18jsf8xLtMkkXFOJFUsMicXHCYJYWolqnMOtDIFgNgHZw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
-
-6. [你关心的「自动驾驶目标检测算法」组团来了！| Paper连击vol.5](https://mp.weixin.qq.com/s/rYQhC8ptWI85hZRXldqE7g)       :star::star:
-   - Abstract: 你关心的「自动驾驶目标检测算法」组团来了！
-   - Tips: 8篇自动驾驶场景下的目标检测算法供大家探讨研究。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ibaXaPIy7jV0ibSItc6ysyQibIAFZJeKn2icLSXHkLrqqmlWo2eTt1GzkMpukth10gIoejt9Wclk3hqQw7X8J82dkg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
 
 
 
@@ -193,10 +197,9 @@
     14. <a href="notes/202205/0525.md" target="_blank">公众号内容拓展学习笔记（2022.5.25）</a>
     15. <a href="notes/202205/0527.md" target="_blank">公众号内容拓展学习笔记（2022.5.27）</a>
     16. <a href="notes/202205/0528.md" target="_blank">公众号内容拓展学习笔记（2022.5.28）</a>
+    17. <a href="notes/202205/0529.md" target="_blank">公众号内容拓展学习笔记（2022.5.29）</a>
 </details>
 </pre>
-
-
 
 
 ## :paperclip:  Others
