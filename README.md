@@ -3,66 +3,60 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2022.5.29
+更新今日时间：2022.5.30
 
 ------
 
 ## :paperclip:  今日要点
 
-1. [基于跨模态元迁移，美图&大连理工的参考视频目标分割方法只需单阶段](https://mp.weixin.qq.com/s/7GPy-WmIki0X8WLtCfgliA)         :star::star:
-   - Abstract: 基于跨模态元迁移，美图&大连理工的参考视频目标分割方法只需单阶段
-   - Paper: [You Only Infer Once: Cross-Modal Meta-Transfer for Referring Video Object Segmentation](https://www.aaai.org/AAAI22Papers/AAAI-1100.LiD.pdf)
-   - Tips: 该研究提出了一种跨模态元迁移的端到端 RVOS 框架 ——YOFO，只需单阶段推理，即可实现利用参考文本信息直接得到视频目标的分割结果；提出了一个元迁移（Meta-Transfer）模块来增强时序信息，从而实现了更聚焦于目标的特征学习；提出了一个多尺度跨模态特征挖掘（Multi-Scale Cross-Modal Feature Mining）模块，能够充分融合语言、图片中的有用特征。
+1. [SurroundDepth：自监督多摄像头环视深度估计](https://mp.weixin.qq.com/s/jEEGIwtPq9oHoqqVCtbI6Q)         :star::star:
+   - Abstract: SurroundDepth：自监督多摄像头环视深度估计
+   - Paper: [SurroundDepth: Entangling Surrounding Views for Self-Supervised Multi-Camera Depth Estimation](https://arxiv.org/abs/2204.03636)
+   - Code: [https://github.com/weiyithu/SurroundDepth](https://github.com/weiyithu/SurroundDepth)
+   - Tips: 本文提出一种SurroundDepth方法，将来自多个周围视图的信息合并到一起，预测摄像头之间的深度图。具体地说用一个联合网络来处理所有周围的视图，并提出一个交叉视图transformer来有效地融合来自多个视图的信息。用交叉视图自注意来有效地实现多摄像机特征图之间的全局交互。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/KmXPKA19gWibFORd1PPiaLxnibStokSaqwgGLgTicStvSuAGymYtoQHfMHlqmXOLick784YhL4yGcGwJO59txYXIRkA/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-2. [3D车道线单目检测方法ONCE-3DLanes](https://mp.weixin.qq.com/s/dWu8hCuSe5i9sDQvRLGo7g)       :star::star:
-   - Abstract: 3D车道线单目检测方法ONCE-3DLanes
-   - Paper: [ONCE-3DLanes: Building Monocular 3D Lane Detection](https://arxiv.org/abs/2205.00301)
-   - Code: [https://github.com/once-3dlanes/once_3dlanes_benchmark](https://github.com/once-3dlanes/once_3dlanes_benchmark)
-   - Tips: 该文提出一个真实世界的自动驾驶数据集，ONCE-3DLanes，具有3-D空间的车道线布局标注。通过点云和图像像素之间的显式关系，文章设计了该数据集标注流水线，从211K个道路场景的2D车道线标注，自动生成高质量的3D车道线位置。此外，作者还提出一种无外参、无锚点的方法，称为SALAD，在图像视图中回归车道线的3D坐标，而无需将特征地图转换为BEV。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/E5w2bqqaSwgPFZfItoJRIU8WyUMP2DxicZEk8gl2d7tkeadNZvkNEdUYthoIYqpdHWo2y5FWEFdRof5U2tf59CQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/E5w2bqqaSwjGnUicPTSCJ876WMY4boGLAibdAiaHCUGM8XZ0gfOc2ibujMTMkTeibrpQVjJejyrALDvDLUiawjJhx2wQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-3. [浙大提出神经3D重建新工作！收录图形学顶会SIGGRAPH 2022](https://mp.weixin.qq.com/s/NQ-_AgFB0UXqxLDOGDgrWA)       :star::star:
-   - Abstract: 浙大提出神经3D重建新工作！收录图形学顶会SIGGRAPH 2022
-   - Paper: [Neural 3D Reconstruction in the Wild](https://arxiv.org/abs/2205.12955)
-   - Code: [https://zju3dv.github.io/neuralrecon-w](https://zju3dv.github.io/neuralrecon-w)
-   - Tips: 这项研究的基本框架借鉴了NeurIPS 2021上的NeuS，一种把隐式神经标准和体积渲染结合起来的方法。考虑NeuS的一些不足，研究人员提出体素引导（Voxel-guided）和表面引导（Surface-guided）混合的新采样方法。
+2. [CMU联手Adobe：GAN模型迎来预训练时代，仅需1%的训练样本｜CVPR 2022](https://mp.weixin.qq.com/s/y42X-UOKLgsaNPYg4qMRKw)       :star::star:
+   - Abstract: CMU联手Adobe：GAN模型迎来预训练时代，仅需1%的训练样本
+   - Paper: [Ensembling Off-the-shelf Models for GAN Training](https://arxiv.org/abs/2112.09130)
+   - Code: [https://github.com/nupurkmr9/vision-aided-gan](https://github.com/nupurkmr9/vision-aided-gan)
+   - Tips: 为了平衡判别器和生成器的能力，研究人员提出将一组不同的预训练模型的表征集合起来作为判别器。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/YicUhk5aAGtDWs05CiaLVxqH1BfJr4fUvSGh8kvicswd4eK9Al4fON2yHJibrqaBwl1evXzowUv8NUbIeKeLV6U3Dw/640?wx_fmt=gif&wxfrom=5&wx_lazy=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/UicQ7HgWiaUb2X8R8T2n1iauvcj34OhGmbtf609bjH0T8KAg3pGjGxpV85krq5wdLiaOmKtjv25Z7YMv5uv41RsatQ/640?wx_fmt=gif&wxfrom=5&wx_lazy=1" style='zoom:100%'>
 </div>
 
+3. [LITv2来袭 | 使用HiLo Attention实现高精度、快速度的变形金刚，下游任务均实时](https://mp.weixin.qq.com/s/UHsR_M93e3uidRsMsM6dkg)       :star::star:
+   - Abstract: 使用HiLo Attention实现高精度、快速度的变形金刚，下游任务均实时
+   - Paper: [Fast Vision Transformers with HiLo Attention](https://arxiv.org/abs/2205.13213)
+   - Tips: 本文提出了 `LITv2`，一种简单而有效的 `ViT`，它以更快的速度在各种不同模型大小的频谱上与现有的最先进方法相比表现出色。`LITv2` 的核心是一种新颖的`Self-Attention`机制，这里称之为 `HiLo`。
 
-4. [CVPR 2022 | 图森未来提出小目标检测工作QueryDet：使用级联稀疏query加速高分辨率下的小目标检测](https://mp.weixin.qq.com/s/jyE_73f0oSWiV70LRHi0Fg)       :star::star:
-   - Abstract: 图森未来提出小目标检测工作QueryDet：使用级联稀疏query加速高分辨率下的小目标检测
-   - Paper: [QueryDet: Cascaded Sparse Query for Accelerating High-Resolution Small Object Detection](https://arxiv.org/abs/2103.09136)
-   - Code: [https://github.com/ChenhongyiYang/QueryDet-PyTorch](https://github.com/ChenhongyiYang/QueryDet-PyTorch)
-   - Tips: QueryDet利用high-resolution feature来提升小目标检测性能的同时，通过CSQ机制，利用高层低分辨率特征初筛含有小目标的区域，在高分辨特征层上利用初筛获得的位置，使用sparse convolution，极大地节约了计算消耗。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/yNnalkXE7oWwLqLCO7nbYE9PWOnDv7wvNicsicxhYcWNZvrAosZh9no6yWlo7GQNjxWpPY9weKYTXwic7V3517ZlA/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/5ooHoYt0tgmmrLhB8mSuHh1TdlQQ9ZDOVJsbSP9Kpwz5umcHFdEaGLUicMHMI7NASBkx6t1lrTDqia6OVKJm5hng/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
+4. [目标检测中小目标检测，多尺度方法详细梳理](https://mp.weixin.qq.com/s/qA7c5Z8NaJnrzIaQYKQ5eg)       :star::star:
+   - Abstract: 目标检测中小目标检测，多尺度方法详细梳理
+   - Tips: 在目标检测应用中，小目标检测是经常遇到的难题。当然解决方式有很多种，多尺度方法就是其中常用的一种方式。因此本文详细梳理了多种多尺度检测方法，希望对大家有所帮助。
 
-5. [Science：睡眠医学的突破，大脑会在梦境中巩固积极情绪](https://mp.weixin.qq.com/s/xFdR-3hd0xpD96RvCqu38Q)       :star::star:
-   - Abstract: 睡眠医学的突破，大脑会在梦境中巩固积极情绪
-   - Paper: [Paradoxical somatodendritic decoupling supports cortical plasticity during REM sleep](https://www.science.org/doi/10.1126/science.abk2734)
-   - Tips: 在这项研究中，科学家们发现大脑会在梦境睡眠中对情绪进行分类，并巩固积极情绪的储存，同时抑制消极情绪。研究人员表示，这项工作强调了睡眠在心理健康中的重要性，并开辟了新的治疗策略。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/5qv5QsBmI9Cf6zzjVoM3N2rictzAJu89U82JJCtwLcUTKDkgspaObVg0Z0ibVuXV3Y7M9vKTtJMYZoSYzib797Q2A/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/Z8w2ExrFgDyCHZWMibYqZTuKrObYhaX7aCqiagSCsVeLxbEfG7y1icU1A6So8mribTU2lOXVVh5ExtO7hu1Ma9EXSg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
+5. [【他山之石】称霸Kaggle的十大深度学习技巧](https://mp.weixin.qq.com/s/keEUPBfAm0i7knsIU-larw)       :star::star:
+   - Abstract: 称霸Kaggle的十大深度学习技巧
+   - Tips: 通过学习fastai相关内容，结合Kaggle比赛，总结了一些经验技巧。
 
-6. [ACL 2022 | 蚂蚁、北大提出基于层次化对比学习的文本生成框架，提升支付宝搜索体验](https://mp.weixin.qq.com/s/UA3JQzMiHKNT3WaIdqbdLw)       :star::star:
-   - Abstract: 蚂蚁、北大提出基于层次化对比学习的文本生成框架，提升支付宝搜索体验
-   - Paper: [Keywords and Instances: A Hierarchical Contrastive Learning Framework Unifying Hybrid Granularities for Text Generation](https://aclanthology.org/2022.acl-long.304.pdf)
-   - Tips: 研究者提出了一种多粒度对比生成方法，设计了层次化对比结构，在不同层级上进行信息增强，在句子粒度上增强学习整体的语义，在词粒度上增强局部重要信息。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gWibquRMwEibkpA6kMms9zjIvBPY4pHyxhicj18jsf8xLtMkkXFOJFUsMicXHCYJYWolqnMOtDIFgNgHZw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/YicUhk5aAGtAwb0qia3sxLcBUOzDpAlKfJ5suBgU0Pt7cVj9CyRtQOibxibwDIjIKRBchFW31RtKhvXllk5EyLUVibg/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
+
+6. [Python处理PDF神器：PyMuPDF的安装与使用](https://mp.weixin.qq.com/s/_0N-YWFwHPWipNdR5XOeRg)       :star::star:
+   - Abstract: Python处理PDF神器：PyMuPDF的安装与使用
+   - Tips: `MuPDF` 是一个轻量级的 `PDF、XPS`和电子书查看器。`MuPDF` 由软件库、命令行工具和各种平台的查看器组成。同时支持与python绑定，帮助我们处理PDF。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/PvP6qjUpvIrYicZerRrW6rORuZvqsG0hfX6IHnEQr3Arh95tyA1SEdlZVAcz7qDzwrH4Cdh070IiaFHeaarGP8nA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
 
 
 
@@ -198,8 +192,10 @@
     15. <a href="notes/202205/0527.md" target="_blank">公众号内容拓展学习笔记（2022.5.27）</a>
     16. <a href="notes/202205/0528.md" target="_blank">公众号内容拓展学习笔记（2022.5.28）</a>
     17. <a href="notes/202205/0529.md" target="_blank">公众号内容拓展学习笔记（2022.5.29）</a>
+    18. <a href="notes/202205/0530.md" target="_blank">公众号内容拓展学习笔记（2022.5.30）</a>
 </details>
 </pre>
+
 
 
 ## :paperclip:  Others
