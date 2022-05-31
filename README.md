@@ -3,60 +3,67 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2022.5.30
+更新今日时间：2022.5.31
 
 ------
 
 ## :paperclip:  今日要点
 
-1. [SurroundDepth：自监督多摄像头环视深度估计](https://mp.weixin.qq.com/s/jEEGIwtPq9oHoqqVCtbI6Q)         :star::star:
-   - Abstract: SurroundDepth：自监督多摄像头环视深度估计
-   - Paper: [SurroundDepth: Entangling Surrounding Views for Self-Supervised Multi-Camera Depth Estimation](https://arxiv.org/abs/2204.03636)
-   - Code: [https://github.com/weiyithu/SurroundDepth](https://github.com/weiyithu/SurroundDepth)
-   - Tips: 本文提出一种SurroundDepth方法，将来自多个周围视图的信息合并到一起，预测摄像头之间的深度图。具体地说用一个联合网络来处理所有周围的视图，并提出一个交叉视图transformer来有效地融合来自多个视图的信息。用交叉视图自注意来有效地实现多摄像机特征图之间的全局交互。
+1. [2022年人体姿态估计SOTA方案ViTPose论文解读](https://mp.weixin.qq.com/s/lKBK1jbz0rMJ4y5x3e8iaQ)         :star::star:
+   - Abstract: 2022年人体姿态估计SOTA方案ViTPose论文解读
+   - Paper: [ViTPose: Simple Vision Transformer Baselines for Human Pose Estimation](https://arxiv.org/pdf/2204.12484v2.pdf)
+   - Code: [https://github.com/ViTAE-Transformer/ViTPose](https://github.com/ViTAE-Transformer/ViTPose)
+   - Tips: 本文实验了纯ViT用于人体姿态估计，在COCO数据集上取得了SOTA表现，同时验证了纯ViT所具有的诸多良好特性：结构简单、模型规模容易扩展、训练灵活、知识可迁移。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/E5w2bqqaSwjGnUicPTSCJ876WMY4boGLAibdAiaHCUGM8XZ0gfOc2ibujMTMkTeibrpQVjJejyrALDvDLUiawjJhx2wQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/bVTJ0talG6ooLicsZbhazLwQlibVSFyrpcoickqytsWzNbIOPosYcOtQfFDAXJMSk4TD1YXyvcKw2jkMicYwaYsadg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+2. [CVPR 2022 | BoxeR：用于2D和3D Transformer的Box新注意力机制](https://mp.weixin.qq.com/s/yPg5ctZ5bd1ZE7UtoBuVEg)       :star::star:
+   - Abstract: BoxeR：用于2D和3D Transformer的Box新注意力机制
+   - Paper: [BoxeR: Box-Attention for 2D and 3D Transformers](https://arxiv.org/abs/2111.13087)
+   - Code: [https://github.com/kienduynguyen/BoxeR](https://github.com/kienduynguyen/BoxeR)
+   - Tips: 这篇文章主要基于 Deformable DETR 做了进一步拓展，Deformable DETR 是通过对原特征学出需要的注意的几个点以及其相应注意力权重，而本文提出，只注意一个 box 区域内的所有点。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/yNnalkXE7oX2Fyj7kRLIkTMhE0PicWGuXbOib4APKbDxXiaFtjrmqia8otgkbM2JnGc1sBEZlAWd6zVGBbg77h7Siag/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-2. [CMU联手Adobe：GAN模型迎来预训练时代，仅需1%的训练样本｜CVPR 2022](https://mp.weixin.qq.com/s/y42X-UOKLgsaNPYg4qMRKw)       :star::star:
-   - Abstract: CMU联手Adobe：GAN模型迎来预训练时代，仅需1%的训练样本
-   - Paper: [Ensembling Off-the-shelf Models for GAN Training](https://arxiv.org/abs/2112.09130)
-   - Code: [https://github.com/nupurkmr9/vision-aided-gan](https://github.com/nupurkmr9/vision-aided-gan)
-   - Tips: 为了平衡判别器和生成器的能力，研究人员提出将一组不同的预训练模型的表征集合起来作为判别器。
+3. [NAACL2022：（代码实践）好的视觉引导促进更好的特征提取，多模态命名实体识别（附源代码下载）](https://mp.weixin.qq.com/s/b1hLbQTVI7Ox6fyeYqWKOg)       :star::star:
+   - Abstract: 好的视觉引导促进更好的特征提取，多模态命名实体识别
+   - Paper: [Good Visual Guidance Makes A Better Extractor: Hierarchical Visual Prefix for Multimodal Entity and Relation Extraction](https://arxiv.org/pdf/2205.03521.pdf)
+   - Code: [https://github.com/zjunlp/HVPNeT](https://github.com/zjunlp/HVPNeT)
+   - Tips: 研究者提出了一种新颖的分层视觉前缀融合网络（HVPNeT），用于视觉增强实体和关系提取，旨在实现更有效和更强大的性能。具体来说，将视觉表示视为可插入的视觉前缀，以指导错误不敏感预测决策的文本表示。进一步提出了一种动态门控聚合策略，以实现分层多尺度视觉特征作为融合的视觉前缀。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/UicQ7HgWiaUb2X8R8T2n1iauvcj34OhGmbtf609bjH0T8KAg3pGjGxpV85krq5wdLiaOmKtjv25Z7YMv5uv41RsatQ/640?wx_fmt=gif&wxfrom=5&wx_lazy=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwNoNR85g66FeP2lIDQLIY4YqaOVMWIq4To151La9hNzHOflxMBak5EF59nsScKKhETGgGY70u9qJg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-3. [LITv2来袭 | 使用HiLo Attention实现高精度、快速度的变形金刚，下游任务均实时](https://mp.weixin.qq.com/s/UHsR_M93e3uidRsMsM6dkg)       :star::star:
-   - Abstract: 使用HiLo Attention实现高精度、快速度的变形金刚，下游任务均实时
-   - Paper: [Fast Vision Transformers with HiLo Attention](https://arxiv.org/abs/2205.13213)
-   - Tips: 本文提出了 `LITv2`，一种简单而有效的 `ViT`，它以更快的速度在各种不同模型大小的频谱上与现有的最先进方法相比表现出色。`LITv2` 的核心是一种新颖的`Self-Attention`机制，这里称之为 `HiLo`。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/5ooHoYt0tgmmrLhB8mSuHh1TdlQQ9ZDOVJsbSP9Kpwz5umcHFdEaGLUicMHMI7NASBkx6t1lrTDqia6OVKJm5hng/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+4. [BEVFusion: 基于统一BEV表征的多任务多传感器融合](https://mp.weixin.qq.com/s/_wwA9JyG4dBn25wRAIdKyw)       :star::star:
+   - Abstract: BEVFusion: 基于统一BEV表征的多任务多传感器融合
+   - Paper: [BEVFusion: Multi-Task Multi-Sensor Fusion with Unified Bird’s-Eye View Representation](https://arxiv.org/abs/2205.13542)
+   - Code: [https://github.com/mit-han-lab/bevfusion](https://github.com/mit-han-lab/bevfusion)
+   - Tips: 本文提出的BEVFusion是一种多任务多传感器融合框架，其统一BEV表征空间中的多模态特征，很好地保留了几何和语义信息。为实现这一点，优化BEV池化，诊断并解除视图转换中的关键效率瓶颈，将延迟减少了40倍。BEVFusion从根本上来说是任务无关的，无缝支持不同的3D感知任务，几乎没有架构的更改。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/Q0FNTB1XHicwynyiamX3aEcbdMRxqwHZzKEkHnXG1fu9axB4X0MQY35Yfiah36dF19sMhqxAl0bIMMnF7OZnvBy3w/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-4. [目标检测中小目标检测，多尺度方法详细梳理](https://mp.weixin.qq.com/s/qA7c5Z8NaJnrzIaQYKQ5eg)       :star::star:
-   - Abstract: 目标检测中小目标检测，多尺度方法详细梳理
-   - Tips: 在目标检测应用中，小目标检测是经常遇到的难题。当然解决方式有很多种，多尺度方法就是其中常用的一种方式。因此本文详细梳理了多种多尺度检测方法，希望对大家有所帮助。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/Z8w2ExrFgDyCHZWMibYqZTuKrObYhaX7aCqiagSCsVeLxbEfG7y1icU1A6So8mribTU2lOXVVh5ExtO7hu1Ma9EXSg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+5. [RAL 2022｜基于3D语义共视图的语义SLAM精确回环检测](https://mp.weixin.qq.com/s/NfW2lec1m-ox9WU_cKCO-w)       :star::star:
+   - Abstract: 基于3D语义共视图的语义SLAM精确回环检测
+   - Paper: [Towards Accurate Loop Closure Detection in Semantic SLAM With 3D Semantic Covisibility Graphs](https://fujie.ece.ufl.edu/wp-content/uploads/sites/79/2022/02/SemanticSLAM-Covisibility-RAL2022.pdf)
+   - Tips: 本文提出了一种新的基于单目视觉的语义SLAM系统中的循环检测和漂移校正方法，以充分利用high-level的语义信息和low-level的几何信息。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/O60Uib8kfuuicvDB5ukad7Rn6w0F1dPnlQY1T3Nt6C5dlFmdeBUGSib6zamSEaEjzTauN4ko8ibHXKafh6TOwILQjA/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-5. [【他山之石】称霸Kaggle的十大深度学习技巧](https://mp.weixin.qq.com/s/keEUPBfAm0i7knsIU-larw)       :star::star:
-   - Abstract: 称霸Kaggle的十大深度学习技巧
-   - Tips: 通过学习fastai相关内容，结合Kaggle比赛，总结了一些经验技巧。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/YicUhk5aAGtAwb0qia3sxLcBUOzDpAlKfJ5suBgU0Pt7cVj9CyRtQOibxibwDIjIKRBchFW31RtKhvXllk5EyLUVibg/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+6. [如何轻松上手3D检测应用实战？飞桨产业实践范例全流程详解](https://mp.weixin.qq.com/s/cYFuHoxkTUm_0K3Tpa_FDg)       :star::star:
+   - Abstract: 如何轻松上手3D检测应用实战？飞桨产业实践范例全流程详解
+   - Code: [https://aistudio.baidu.com/aistudio/projectdetail/4038086](https://aistudio.baidu.com/aistudio/projectdetail/4038086)
+   - Tips: 为了让大家能够更快速的应用前沿的技术，百度视觉技术部基于飞桨提供了一套完整的3D视觉检测产业实践范例，提供了从数据准备、模型训练及优化的全流程可复用方案，降低产业落地门槛。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/sKia1FKFiafgj7tbRHlkfIWE41ibnkMgWkFRlowvg7ytw910GsFPX3831FvwQms5bns2s9NgalKtkj5FNicprqm5Kw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
-
-6. [Python处理PDF神器：PyMuPDF的安装与使用](https://mp.weixin.qq.com/s/_0N-YWFwHPWipNdR5XOeRg)       :star::star:
-   - Abstract: Python处理PDF神器：PyMuPDF的安装与使用
-   - Tips: `MuPDF` 是一个轻量级的 `PDF、XPS`和电子书查看器。`MuPDF` 由软件库、命令行工具和各种平台的查看器组成。同时支持与python绑定，帮助我们处理PDF。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/PvP6qjUpvIrYicZerRrW6rORuZvqsG0hfX6IHnEQr3Arh95tyA1SEdlZVAcz7qDzwrH4Cdh070IiaFHeaarGP8nA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
 
 
 
@@ -193,6 +200,7 @@
     16. <a href="notes/202205/0528.md" target="_blank">公众号内容拓展学习笔记（2022.5.28）</a>
     17. <a href="notes/202205/0529.md" target="_blank">公众号内容拓展学习笔记（2022.5.29）</a>
     18. <a href="notes/202205/0530.md" target="_blank">公众号内容拓展学习笔记（2022.5.30）</a>
+    19. <a href="notes/202205/0531.md" target="_blank">公众号内容拓展学习笔记（2022.5.31）</a>
 </details>
 </pre>
 
