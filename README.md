@@ -3,68 +3,65 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2022.6.1
+更新今日时间：2022.6.7
 
 ------
 
 ## :paperclip:  今日要点
 
-1. [性能超MAE、BEiT和MoCoV3！商汤&港中文提出MixMIM：在混合图像上进行MIM](https://mp.weixin.qq.com/s/moxZK6DeuUOGT3X0fFz2Rg)         :star::star:
-   - Abstract: 性能超MAE、BEiT和MoCoV3！商汤&港中文提出MixMIM：在混合图像上进行MIM
-   - Paper: [MixMIM: Mixed and Masked Image Modeling for Efficient Visual Representation Learning](https://arxiv.org/abs/2205.13137)
-   - Code: [https://github.com/Sense-X/MixMIM](https://github.com/Sense-X/MixMIM)
-   - Tips:  本文提出了一种混合掩蔽图像建模（MixMIM），用于有效的视觉表征学习。本文的MixMIM使用随机掩蔽混合两幅图像创建的混合输入，并应用双重重建从混合输入中恢复原始两幅图像。作者进一步探索了一种更简单但更强大的层次Transformer，以实现高效学习。
+1. [CVPR2022 | 重新审视池化：你的感受野不是最理想的](https://mp.weixin.qq.com/s/Ol4d3r5CudFrwmTp6HG-jw)         :star::star:
+   - Abstract: 重新审视池化：你的感受野不是最理想的
+   - Paper: [Pooling Revisited: Your Receptive Field is Suboptimal](https://arxiv.org/abs/2205.15254)
+   - Tips:  本文提出了一种简单而有效的动态优化池操作（ Dynamically Optimized Pooling operation），称为DynOPool，它通过学习每一层感受野的最佳大小和形状来优化特征映射的端到端比例因子。
 
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/gYUsOT36vfrTgR62ylQsoKjM0jq7H5Cickdib3cQ550ltJbRlCW5Jl1iaIk1OC7SlvA43tqJbVmOv7sSglNp7vib8A/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-2. [CVPR 2022 | Group R-CNN：化框为点，简化物体检测数据标注](https://mp.weixin.qq.com/s/2QFy-m3s8pekub_5XPYJYw)       :star::star:
-   - Abstract: Group R-CNN：化框为点，简化物体检测数据标注
-   - Paper: [Group R-CNN for Weakly Semi-supervised Object Detection with Points](https://arxiv.org/abs/2205.05920)
-   - Code: [https://github.com/jshilong/GroupRCNN](https://github.com/jshilong/GroupRCNN)
-   - Tips: 本文提出了 Group R-CNN，可以有效地使用点标注来提升检测器性能，大幅度超越之前的方法
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ialW0xobVWP6AZuOsrEibGXYa2DCjibOADP7TPicKXVd5u7l326S2qN9lgoAWa0ibX3SPBM83V6qzezEpNbI0NfPY8A/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/V2E1ll6kaTW2KrmLQ8Wm2JCncZgibOc1UBFPos2l9SANu3eno4l8pepAW4xafiaK4FAe8yT1yqfr8jqgVw0deo9g/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-3. [南理工&上海AI Lab提出Uniform Masking，为基于金字塔结构的视觉Transformer进行MAE预训练！](https://mp.weixin.qq.com/s/TNxk1Z_9NFId01EJL7pSlA)       :star::star:
-   - Abstract: 南理工&上海AI Lab提出Uniform Masking，为基于金字塔结构的视觉Transformer进行MAE预训练！
-   - Paper: [Uniform Masking: Enabling MAE Pre-training for Pyramid-based Vision Transformers with Locality](https://arxiv.org/abs/2205.10063)
-   - Code: [https://github.com/implus/UM-MAE](https://github.com/implus/UM-MAE)
-   - Tips: : 在本文中，作者提出了统一掩蔽（Uniform Masking，UM）策略，成功地实现了基于金字塔的具有局部性的VIT的MAE预训练（简称“UM-MAE”）。
+2. [即插即用 | 5行代码实现NAM注意力机制让ResNet、MobileNet轻松涨点(超越CBAM)](https://mp.weixin.qq.com/s/gK3LZd6iKdPDFE4EDqY3dA)       :star::star:
+   - Abstract:  5行代码实现NAM注意力机制让ResNet、MobileNet轻松涨点(超越CBAM)
+   - Paper: [NAM: Normalization-based Attention Module](https://arxiv.org/abs/2111.12419)
+   - Code: [https://github.com/Christian-lyc/NAM](https://github.com/Christian-lyc/NAM)
+   - Tips: 在这项工作中提出了一种新的基于规范化的注意力模块(NAM)，它抑制了较少显著性的权值。它对注意力模块应用一个权重稀疏惩罚，因此，在保持类似性能的同时，使它们更有效地计算。通过与ResNet和MobileNet上其他三种注意力机制的比较，表明本文的方法具有更高的准确性。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/BJbRvwibeSTun9oRyfBr7b7VLYBsl2icF2VFWSTGibPTSUEcKUz1AYcBs36iaicTegtOrBcgYL315zia6L2bVBhNQztg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/5ooHoYt0tglXNC44WpNQrjPoE5gCAlOWwacYCt0vYdDv9uhVg5634ibcF2q3CRqvW05e2MbMMI3le0NL9Eoib8rQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-
-4. [改进何恺明的MAE！GreenMIM：将Swin与MAE结合，训练速度大大提升！](https://mp.weixin.qq.com/s/uU4fo79U4PLZKdD7NhgL9A)       :star::star:
-   - Abstract: 改进何恺明的MAE！GreenMIM：将Swin与MAE结合，训练速度大大提升！
-   - Paper: [Green Hierarchical Vision Transformer for Masked Image Modeling](https://arxiv.org/abs/2205.13515)
-   - Code: [https://github.com/LayneH/GreenMIM](https://github.com/LayneH/GreenMIM)
-   - Tips: GreenMIM不光将Swin Transformer整合到了MAE框架上，既有与SimMIM相当的任务表现，还保证了计算效率和性能。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtCibrQiaEfCnLJyCcyZn8ULbfNWYIpaJZQOV1LC3qHhNyRDpQmvy1xa3ANhcE1tMOrJkasYDic8QjECA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/5ooHoYt0tglXNC44WpNQrjPoE5gCAlOWu8ysRpIMQke5j5hTIsjlx3ml3XfHBBFQ2lRK3icEKEFd5cn82ibgSKbg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
+3. [ICPR 2022｜3DUNet：卷积+胶囊强强联手，医学图像分割的新良方](https://mp.weixin.qq.com/s/uV2RqIpQeqCzVsg4GP9pIw)       :star::star:
+   - Abstract: 3DUNet：卷积+胶囊强强联手，医学图像分割的新良方
+   - Paper: [3DConvCaps: 3DUnet with Convolutional Capsule Encoder for Medical Image Segmentation](https://arxiv.org/abs/2205.09299)
+   - Tips: : 卷积神经网络（CNN）目前在医学图像分割领域应用广泛。本文基于胶囊网络，设计了一种包含卷积与胶囊编码器的3DUNet架构并应用于医学图像分割，在减少推理时间的同时性能远优于以往UNet类架构。
 
-5. [无需训练，自动扩展的视觉Transformer来了](https://mp.weixin.qq.com/s/RVKJ-SkBrmAO3drkxzVsOw)       :star::star:
-   - Abstract: 无需训练，自动扩展的视觉Transformer来了
-   - Paper: [Auto-scaling Vision Transformers without Training](https://arxiv.org/abs/2202.11921)
-   - Tips: 得克萨斯大学奥斯汀分校、悉尼科技大学和谷歌的研究者提出了 As-ViT（Auto-scaling Vision Transformers），这是一个无需训练的 ViT 自动扩展框架，它能以高效且有原则的方式自动设计和扩展 ViT。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwNOWgg2GyCOKhPiaZDAicic8T9WPXvHz5Ov9wicLxn0FvVrAdIRs6qu16aWrOX9ib6zlpEEbiaYTfiaNBDRQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_png/gYUsOT36vfp8qOBAdTMgj1oplfVVSQ7vG7ZT9mo6f14QnibROdy4nvoibsEJmE2WA2Oib1VpjfChOQzTI5ooNeQkQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
+4. [SCI：快速、灵活与稳健的低光照图像增强方法（CVPR 2022 Oral）](https://mp.weixin.qq.com/s/1edHkevclvnDNoVNRPitTg)       :star::star:
+   - Abstract: SCI：快速、灵活与稳健的低光照图像增强方法（CVPR 2022 Oral）
+   - Paper: [Toward Fast, Flexible, and Robust Low-Light Image Enhancement](https://arxiv.org/pdf/2204.10137.pdf)
+   - Code: [https://github.com/vis-opt-group/SCI](https://github.com/vis-opt-group/SCI)
+   - Tips: 本文提出了一种全新的低光照图像增强方案：自校准光照学习（SCI）。通过构建引入自校准模块的权重共享光照学习过程，摒弃了网络结构的繁杂设计过程，实现了仅使用简单操作进行增强的目的。
 
-6. [基于CNN的区域特定多尺度特征提取的两阶段停车位检测](https://mp.weixin.qq.com/s/lKlLQD-NuzCoKyxyS7IpKA)       :star::star:
-   - Abstract: 基于CNN的区域特定多尺度特征提取的两阶段停车位检测
-   - Paper: [CNN-based Two-Stage Parking Slot Detection Using Region-Specific Multi-Scale Feature Extraction](https://arxiv.org/abs/2108.06185)
-   - Tips: 作者提出了一种新的高度专业化的两阶段停车位检测方法，该方法在第一阶段寻找停车位入口作为区域建议，并在第二阶段从多尺度特征地图中提取区域特定特征以精确预测停车位的位置和属性。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/SdQCib1UzF3vSYibh5MesGyDjBN5hEq2b1NkpFcwjDTZFHibZJj6AYXDXZGYINegl6KFC81tBCjgicg0UOqheyCQaw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/BJbRvwibeSTsX2ZVlvxRBmx3eQa4IteiaUaQW0iaPRve6AMjaMGEnaDbgmJibdTq9CwicOGnhkOnBknyQTvgichjJ4xA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
+5. [一个语义引导的轨迹预测半监督对抗训练方法](https://mp.weixin.qq.com/s/eFqFjLmABlOpKzMSTXyHtg)       :star::star:
+   - Abstract: 一个语义引导的轨迹预测半监督对抗训练方法
+   - Paper: [Semi-supervised Semantics-guided Adversarial Training for Trajectory Prediction](https://arxiv.org/abs/2205.14230)
+   - Tips: 本文提出轨迹预测的对抗训练方法。具体来说是一种基于半监督对抗自动编码器（autoencoder）的方法，利用领域知识对分离的语义特征进行建模，并为对抗训练提供附加的潜标签。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/E5w2bqqaSwjz0mVvvViaoib1CzZ7caeQ9o7B8BqrE3iciaCqDt56BY5E8ef6VrIuRrO7LCiaMibUb4oRee3xnaoa5eyg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+6. [StopNet：为城市自动驾驶的可扩展轨迹预测和占有预测方法](https://mp.weixin.qq.com/s/VGtFcRDLVcNDlCUbESSfFA)       :star::star:
+   - Abstract: StopNet：为城市自动驾驶的可扩展轨迹预测和占有预测方法
+   - Paper: [StopNet: Scalable Trajectory and Occupancy Prediction for Urban Autonomous Driving](https://arxiv.org/abs/2206.00991)
+   - Tips: 这项工作StopNet，是一种关注延迟和扩展性的运动预测方法。开发一种新的全场景（Whole-scene）稀疏输入表征，可以同时对包括所有智体的场景输入进行编码。借鉴3D目标检测，开发一个PointPillars启发的场景编码器，其同时处理从所有智体中采样的稀疏点，从而形成一个非常快速的轨迹预测模型。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/E5w2bqqaSwiaLj3aJXiassY4Vyr59PvvVtWOdv88aHAEwqA1ib5ulLyRQ320tS0oq814SrWfzby2B9icgj8Ysk5crA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
 
 
 
@@ -205,9 +202,10 @@
 </details>
 <details><summary>6月</summary>
     1. <a href="notes/202206/0601.md" target="_blank">公众号内容拓展学习笔记（2022.6.1）</a>
-    2. <a href="notes/202206/0602.md" target="_blank">公众号内容拓展学习笔记（2022.6.2）</a>
+    2. <a href="notes/202206/0607.md" target="_blank">公众号内容拓展学习笔记（2022.6.7）</a>
 </details>
 </pre>
+
 
 
 ## :paperclip:  Others
