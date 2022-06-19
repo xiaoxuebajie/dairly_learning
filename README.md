@@ -3,65 +3,67 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2022.6.7
+更新今日时间：2022.6.19
 
 ------
 
 ## :paperclip:  今日要点
 
-1. [CVPR2022 | 重新审视池化：你的感受野不是最理想的](https://mp.weixin.qq.com/s/Ol4d3r5CudFrwmTp6HG-jw)         :star::star:
-   - Abstract: 重新审视池化：你的感受野不是最理想的
-   - Paper: [Pooling Revisited: Your Receptive Field is Suboptimal](https://arxiv.org/abs/2205.15254)
-   - Tips:  本文提出了一种简单而有效的动态优化池操作（ Dynamically Optimized Pooling operation），称为DynOPool，它通过学习每一层感受野的最佳大小和形状来优化特征映射的端到端比例因子。
+1. [改进Yolov5 | 用 GSConv+Slim Neck 一步步 Yolov5 再提升！！！](https://mp.weixin.qq.com/s/HkrCryQjtjWP1EfMPhxJwA)         :star::star:
+   - Abstract: 用 GSConv+Slim Neck 一步步 Yolov5 再提升！！！
+   - Paper: [Slim-neck by GSConv: A better design paradigm of detector architectures for autonomous vehicles](https://arxiv.org/abs/2206.02424)
+   - Tips:  本文引入了一种新方法 `GSConv` 来减轻模型的复杂度并保持准确性。`GSConv` 可以更好地平衡模型的准确性和速度。并且，提供了一种设计范式，`Slim-Neck`，以实现检测器更高的计算成本效益。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/V2E1ll6kaTW2KrmLQ8Wm2JCncZgibOc1UBFPos2l9SANu3eno4l8pepAW4xafiaK4FAe8yT1yqfr8jqgVw0deo9g/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/5ooHoYt0tgmHIibVGVL3oPI0sTD6iahwztJsKicmnLjfg7cOJVxfW6PmsAbAELUXHZibSbmd8Yic9tPpciaTHljeGMjQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+2. [重振PointNet++雄风！PointNeXt：通过改进的模型训练和缩放策略重新审视PointNet++](https://mp.weixin.qq.com/s/p2ZFxUIHLfjSWrHy9nkzMQ)       :star::star:
+   - Abstract:  PointNeXt：通过改进的模型训练和缩放策略重新审视PointNet++
+   - Paper: [PointNeXt: Revisiting PointNet++ with Improved Training and Scaling Strategies](https://arxiv.org/abs/2206.0467)
+   - Code: [https://github.com/guochengqian/pointnext](https://github.com/guochengqian/pointnext)
+   - Tips: 在这项工作中首先提出了一组改进的训练策略，显著提高了 PointNet++ 的性能。其次将倒置残差瓶颈设计和可分离 MLP 引入 PointNet++，以实现高效且有效的模型缩放，并提出 PointNeXt，即下一版本的 PointNets。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/yNnalkXE7oXt22exZ8eKVNCcgkLlt1vFRybDfvPicWCWrhLmVaySPPe9rGEMbzibPpBIUrv6MSFZibWyDloINjcYg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-2. [即插即用 | 5行代码实现NAM注意力机制让ResNet、MobileNet轻松涨点(超越CBAM)](https://mp.weixin.qq.com/s/gK3LZd6iKdPDFE4EDqY3dA)       :star::star:
-   - Abstract:  5行代码实现NAM注意力机制让ResNet、MobileNet轻松涨点(超越CBAM)
-   - Paper: [NAM: Normalization-based Attention Module](https://arxiv.org/abs/2111.12419)
-   - Code: [https://github.com/Christian-lyc/NAM](https://github.com/Christian-lyc/NAM)
-   - Tips: 在这项工作中提出了一种新的基于规范化的注意力模块(NAM)，它抑制了较少显著性的权值。它对注意力模块应用一个权重稀疏惩罚，因此，在保持类似性能的同时，使它们更有效地计算。通过与ResNet和MobileNet上其他三种注意力机制的比较，表明本文的方法具有更高的准确性。
+3. [腾讯Lab：用Transformer振兴CNN骨干网络（附论文源代码下载）](https://mp.weixin.qq.com/s/ZiNCywWKeLXyLClxVYkwkg)       :star::star:
+   - Abstract: 腾讯Lab：用Transformer振兴CNN骨干网络（附论文源代码下载）
+   - Paper: [Revitalizing CNN Attentions via Transformers in Self-Supervised Visual Representation Learning](https://arxiv.org/pdf/2110.05340.pdf)
+   - Code: [https://github.com/ChongjianGE/CARE](https://github.com/ChongjianGE/CARE)
+   - Tips: : 本文提出了一个利用 Transformer 结构来辅助 CNN 网络训练的视觉自监督表征学习框架。其核心贡献在于利用一种网络结构的特性（即 Transformer 的注意力提升特性），在训练中监督目标网络（即 CNN 骨干网络），从而使得网络特性能够得到迁移并提升目标网络性能的效果。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/5ooHoYt0tglXNC44WpNQrjPoE5gCAlOWwacYCt0vYdDv9uhVg5634ibcF2q3CRqvW05e2MbMMI3le0NL9Eoib8rQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gW9NLDqanxM2JfzPQm4wLrF8CH4Jl63KyOhvAm6uc3eDbHhicoZTnuicHtEsjVkzn3iaicLU8PTB3X8XkQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/5ooHoYt0tglXNC44WpNQrjPoE5gCAlOWu8ysRpIMQke5j5hTIsjlx3ml3XfHBBFQ2lRK3icEKEFd5cn82ibgSKbg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+
+4. [CVPR：IoU优化——在Anchor-Free中提升目标检测精度（附源码）](https://mp.weixin.qq.com/s/463ncxQVY-DCfKQRquh84w)       :star::star:
+   - Abstract: IoU优化——在Anchor-Free中提升目标检测精度（附源码）
+   - Paper: [Pseudo-IoU: Improving Label Assignment in Anchor-Free Object Detection](https://arxiv.org/abs/2104.14082)
+   - Code: [https://github.com/SHI-Labs/Pseudo-IoU-for-Anchor-Free-Object-Detection](https://github.com/SHI-Labs/Pseudo-IoU-for-Anchor-Free-Object-Detection)
+   - Tips: 研究者提出了伪IoU：一个简单的度量，带来更标准化和准确的分配规则到anchor-free目标检测框架没有任何额外的计算成本或额外的训练和测试参数，通过利用训练样本质量良好的有效分配规则使它可以进一步提高anchor-free目标检测，之前已经应用于基于anchor的方法。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwOofABsTcQEicBRMRaRlgKF5Ic4DwlmRP1a34Ahp8bafgml2so2qFCsiclcHZ0Eg0QEetDM0hsBGRDQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-3. [ICPR 2022｜3DUNet：卷积+胶囊强强联手，医学图像分割的新良方](https://mp.weixin.qq.com/s/uV2RqIpQeqCzVsg4GP9pIw)       :star::star:
-   - Abstract: 3DUNet：卷积+胶囊强强联手，医学图像分割的新良方
-   - Paper: [3DConvCaps: 3DUnet with Convolutional Capsule Encoder for Medical Image Segmentation](https://arxiv.org/abs/2205.09299)
-   - Tips: : 卷积神经网络（CNN）目前在医学图像分割领域应用广泛。本文基于胶囊网络，设计了一种包含卷积与胶囊编码器的3DUNet架构并应用于医学图像分割，在减少推理时间的同时性能远优于以往UNet类架构。
 
-<div align=center><img src="https://mmbiz.qpic.cn/sz_mmbiz_png/gYUsOT36vfp8qOBAdTMgj1oplfVVSQ7vG7ZT9mo6f14QnibROdy4nvoibsEJmE2WA2Oib1VpjfChOQzTI5ooNeQkQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+5. [详细解读TPH-YOLOv5 | 让目标检测任务中的小目标无处遁形](https://mp.weixin.qq.com/s/LQ_zVxgw8hymA6Yovcvl2g)       :star::star:
+   - Abstract: 详细解读TPH-YOLOv5 | 让目标检测任务中的小目标无处遁形
+   - Paper: [TPH-YOLOv5: Improved YOLOv5 Based on Transformer Prediction Head for Object Detection on Drone-captured Scenarios](https://arxiv.org/abs/2108.11539)
+   - Tips: TPH-YOLOv5在YOLOv5的基础上增加了一个prediction heads 来检测不同尺度的目标。然后通过探索Self-Attention的预测潜力使用了Transformer Prediction Heads(TPH)代替原来的prediction heads。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/5ooHoYt0tglHaia6B4F7D88cV76KsxdKvrg3BONjkzEsVibhFqmHlvMMh5oSWd53sQbwTYEkQ4dEd1jRbDbCyB9w/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-4. [SCI：快速、灵活与稳健的低光照图像增强方法（CVPR 2022 Oral）](https://mp.weixin.qq.com/s/1edHkevclvnDNoVNRPitTg)       :star::star:
-   - Abstract: SCI：快速、灵活与稳健的低光照图像增强方法（CVPR 2022 Oral）
-   - Paper: [Toward Fast, Flexible, and Robust Low-Light Image Enhancement](https://arxiv.org/pdf/2204.10137.pdf)
-   - Code: [https://github.com/vis-opt-group/SCI](https://github.com/vis-opt-group/SCI)
-   - Tips: 本文提出了一种全新的低光照图像增强方案：自校准光照学习（SCI）。通过构建引入自校准模块的权重共享光照学习过程，摒弃了网络结构的繁杂设计过程，实现了仅使用简单操作进行增强的目的。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/BJbRvwibeSTsX2ZVlvxRBmx3eQa4IteiaUaQW0iaPRve6AMjaMGEnaDbgmJibdTq9CwicOGnhkOnBknyQTvgichjJ4xA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+6. [新技术：高效的自监督视觉预训练，局部遮挡再也不用担心！](https://mp.weixin.qq.com/s/__48fY5hlH04weeYAnlJkw)       :star::star:
+   - Abstract: 新技术：高效的自监督视觉预训练，局部遮挡再也不用担心！
+   - Paper: [Efficient Self-supervised Vision Pretraining with Local Masked Reconstruction](https://arxiv.org/pdf/2206.00790.pdf)
+   - Tips: 研究者提出了局部掩码重建(LoMaR)，这是一种简单而有效的方法，它在简单的Transformer编码器上的7×7补丁的小窗口内执行掩码重建，与全局相比，提高了效率和准确性之间的权衡对整个图像进行掩码重建。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwNc8W1av8ykXno01F0He6jLfJpnh6CCI3XDcib2qewAZKNpian44WSedjAUXuicxAVSpwGiakhrZfKfgQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-5. [一个语义引导的轨迹预测半监督对抗训练方法](https://mp.weixin.qq.com/s/eFqFjLmABlOpKzMSTXyHtg)       :star::star:
-   - Abstract: 一个语义引导的轨迹预测半监督对抗训练方法
-   - Paper: [Semi-supervised Semantics-guided Adversarial Training for Trajectory Prediction](https://arxiv.org/abs/2205.14230)
-   - Tips: 本文提出轨迹预测的对抗训练方法。具体来说是一种基于半监督对抗自动编码器（autoencoder）的方法，利用领域知识对分离的语义特征进行建模，并为对抗训练提供附加的潜标签。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/E5w2bqqaSwjz0mVvvViaoib1CzZ7caeQ9o7B8BqrE3iciaCqDt56BY5E8ef6VrIuRrO7LCiaMibUb4oRee3xnaoa5eyg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-6. [StopNet：为城市自动驾驶的可扩展轨迹预测和占有预测方法](https://mp.weixin.qq.com/s/VGtFcRDLVcNDlCUbESSfFA)       :star::star:
-   - Abstract: StopNet：为城市自动驾驶的可扩展轨迹预测和占有预测方法
-   - Paper: [StopNet: Scalable Trajectory and Occupancy Prediction for Urban Autonomous Driving](https://arxiv.org/abs/2206.00991)
-   - Tips: 这项工作StopNet，是一种关注延迟和扩展性的运动预测方法。开发一种新的全场景（Whole-scene）稀疏输入表征，可以同时对包括所有智体的场景输入进行编码。借鉴3D目标检测，开发一个PointPillars启发的场景编码器，其同时处理从所有智体中采样的稀疏点，从而形成一个非常快速的轨迹预测模型。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/E5w2bqqaSwiaLj3aJXiassY4Vyr59PvvVtWOdv88aHAEwqA1ib5ulLyRQ320tS0oq814SrWfzby2B9icgj8Ysk5crA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
 
 
 
@@ -203,6 +205,7 @@
 <details><summary>6月</summary>
     1. <a href="notes/202206/0601.md" target="_blank">公众号内容拓展学习笔记（2022.6.1）</a>
     2. <a href="notes/202206/0607.md" target="_blank">公众号内容拓展学习笔记（2022.6.7）</a>
+    3. <a href="notes/202206/0619.md" target="_blank">公众号内容拓展学习笔记（2022.6.19）</a>
 </details>
 </pre>
 
