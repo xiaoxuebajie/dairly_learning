@@ -3,7 +3,7 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2022.6.20
+更新今日时间：2022.7.5
 
 ------
 
@@ -11,59 +11,62 @@
 
 ## :paperclip:  今日要点
 
-1. [CVPR 2022 Oral | TCFormer：基于动态token聚类的transformer](https://mp.weixin.qq.com/s/Yz-wrAqQAqm_TKlxjQa5xQ)         :star::star:
-   - Abstract: TCFormer：基于动态token聚类的transformer
-   - Paper: [Not All Tokens Are Equal: Human-centric Visual Analysis via Token Clustering Transformer](https://arxiv.org/abs/2204.08680)
-   - Code: [https://github.com/zengwang430521/TCFormer](https://github.com/zengwang430521/TCFormer)
-   - Tips:  TCFormer 采用了一种基于特征聚类的动态令牌生成方式，和一种基于 transformer 的特征聚合模块。TCFormer 在基于图像的人体全身关键点估计、人脸关键点估计和人体三维网格重建任务上都获得了最先进的效果，并在人体细节的重建精度上取得了明显的提升。
+1. [港科大&MSRA：图像到图像转换，Finetuning is all you need](https://mp.weixin.qq.com/s/dIFubdO7TPx4pvRQ8aSEAQ)         :star::star:
+   - Abstract: 港科大&MSRA：图像到图像转换，Finetuning is all you need
+   - Paper: [Pretraining is All You Need for Image-to-Image Translation](https://arxiv.org/pdf/2205.12952.pdf)
+   - Tips:  研究者将每个图像到图像的转换问题视为下游任务，并引入了一个简单通用框架，该框架采用预训练的扩散模型来适应各种图像到图像的转换。他们将提出的预训练图像到图像转换模型称为 PITI（pretraining-based image-to-image translation）。此外，研究者还提出用对抗训练来增强扩散模型训练中的纹理合成，并与归一化指导采样结合以提升生成质量。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/ibaXaPIy7jV0yac2ueIs1mAWEibY02eeskas0j6YPujgfoQvHEHO4FUhFNPhop0q3nch6B1z0rzxorXQqxWrHFdw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gWicGSyLwmgvrPibLE4pesQnqgTqN7IX6xLfSZ6zVVbor6XufjOoqklXosvEfV1ElTtMCDWzCf1dUXWA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+2. [屠榜多目标跟踪！BoT-SORT：稳健的关联多行人跟踪](https://mp.weixin.qq.com/s/5d22OZbrxS-FTLqh1iCn4g)       :star::star:
+   - Abstract: 屠榜多目标跟踪！BoT-SORT：稳健的关联多行人跟踪
+   - Paper: [BoT-SORT: Robust Associations Multi-Pedestrian Tracking](https://arxiv.org/abs/2206.14651)
+   - Code: [https://github.com/NirAharon/BOT-SORT](https://github.com/NirAharon/BOT-SORT)
+   - Tips: 在本文中提出了一种新的鲁棒跟踪器，它可以结合运动和外观信息的优点，以及相机运动补偿和更准确的卡尔曼滤波器状态向量。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/5ooHoYt0tgktYQfMrLIJOqz7t9YDZAUCWPdwxkCiaTv2Ls3POc5fVTuO6Lt2GabtiaQib92DjsUUfGrIibKlLOXqgA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-2. [预训练的数据不是越多越好？港科大&华为诺亚提出具有可扩展动态路由的自监督预训练范式SDRNet，在分类和检测任务上SOTA！](https://mp.weixin.qq.com/s/LwqDSQM0of2A0jVmLTjBXw)       :star::star:
-   - Abstract:  港科大&华为诺亚提出具有可扩展动态路由的自监督预训练范式SDRNet
-   - Paper: [Task-customized Self-supervised Pre-training with Scalable Dynamic Routing](https://www.aaai.org/AAAI22Papers/AAAI-12678.LiuZ.pdf)
-   - Tips: 作者提出了一种新的SSL范式，称为可拓展动态路由（SDR），它可以为不同的下游任务实现动态预训练和高效部署。具体来说，作者用不同的子网构建SDRnet，并用包含不同语义簇的不同数据子集训练每个子网。作者进一步提出了一个数据感知的渐进式训练框架，以稳定子网的预训练过程并避免崩溃。
+3. [ScePT: 为规划的场景一致和基于策略轨迹预测](https://mp.weixin.qq.com/s/UxZFYHFk32MSTnK58FSFwQ)       :star::star:
+   - Abstract: ScePT: 为规划的场景一致和基于策略轨迹预测
+   - Paper: [ScePT: Scene-consistent, Policy-based Trajectory Predictions for Planning](https://arxiv.org/abs/2206.13387)
+   - Code: [https://github.com/nvr-avg/ScePT](https://github.com/nvr-avg/ScePT)
+   - Tips: 这项工作提出基于策略规划的轨迹预测模型ScePT，该模型可以生成适用于自主系统运动规划、精确、场景一致的轨迹预测。其明确地强制场景一致性，并学习可用于制约预测的智体交互策略。在多个真实行人和自主车辆数据集上的实验表明，ScePT匹配当前最先进的预测精度，并显著提高场景一致性。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/BJbRvwibeSTteWLH8JCqqxWhJ2E0EmtMPbfzBXLAxT0MKrRv7QNBWiaSxhHr7G7x5IjHlGHd2O0WYxibQiavsE3aDg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/E5w2bqqaSwiaxw6ZUxiadRMERFqj1L9nBLp6oj5wMaPolUngBB3lLwDqqsngnLn8yKjtkp5b79dBy5AoqVo8SYAg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-3. [CVPR 2022 | 只需要一组预训练参数，所有恶劣天气一次解决！](https://mp.weixin.qq.com/s/MnqgHMqGzA4c1kk6sI-IUg)       :star::star:
-   - Abstract: 只需要一组预训练参数，所有恶劣天气一次解决！
-   - Paper: [Learning Multiple Adverse Weather Removal via Two-stage Knowledge Learning and Multi-contrastive Regularization: Toward a Unified Model](https://openaccess.thecvf.com/content/CVPR2022/papers/Chen_Learning_Multiple_Adverse_Weather_Removal_via_Two-Stage_Knowledge_Learning_and_CVPR_2022_paper.pdf)
-   - Code: [https://github.com/fingerk28/Two-stage-Knowledge-For-Multiple-Adverse-Weather-Removal](https://github.com/fingerk28/Two-stage-Knowledge-For-Multiple-Adverse-Weather-Removal)
-   - Tips: 使用collaborative knowledge Transfer去做不同的天气型态学习，并且设计多种模块帮助学习对于多天气学习是相当有帮助的；使用multi-contrastive regularization及two-stage knowledge learning能够帮助模型根据不同的难度去做知识的学习。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/yNnalkXE7oUTcHDKKYHb9oGRuP0tVic5MsWZRnvZuv45MsYkWt4E4NyJ63gIoSWV5upMUndFdFScqdue7G99WVQ/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+4. [CVPR 2022 | 复旦大学提出ZITS：基于Transformer结构增强的增量式图像修复](https://mp.weixin.qq.com/s/Bnqw2gFS_TTEeglRm3aIIw)       :star::star:
+   - Abstract: 复旦大学提出ZITS：基于Transformer结构增强的增量式图像修复
+   - Paper: [Incremental Transformer Structure Enhanced Image Inpainting with Masking Positional Encoding](https://arxiv.org/abs/2203.00867)
+   - Code: [https://github.com/DQiaole/ZITS_inpainting](https://github.com/DQiaole/ZITS_inpainting)
+   - Tips: 作者利用了一个基于Transformer的模型推断整体结构（边缘+线框）。利用简单的CNN，我们可以把这种结构图非常轻松的上采样到任意分辨率。进一步地，我们提出了利用零初始化残差连接技术增量式地将结构注入到后续CNN纹理修复网络。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/yNnalkXE7oX1JznWHEUhCBa6FgnxEGmGRPJIibvsnhWnFaTw6zgSCuoN4mm4YQqu4VJQA3TayicD5QXypts1rZ0g/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-4. [Curriculum Labeling：重新审视半监督学习的伪标签](https://mp.weixin.qq.com/s/xpJrqfJKdYuSoxn40dCSnQ)       :star::star:
-   - Abstract: Curriculum Labeling：重新审视半监督学习的伪标签
-   - Paper: [Curriculum Labeling: Revisiting Pseudo-Labeling for Semi-Supervised Learning](https://arxiv.org/abs/2001.06001)
-   - Code: [https://github.com/uvavision/Curriculum-Labeling](https://github.com/uvavision/Curriculum-Labeling)
-   - Tips: Curriculum Labeling (CL)，在每个自训练周期之前重新启动模型参数，优于伪标签 (PL)。Pseudo-Labeling (PL) 通过将伪标签应用于未标记集中的样本以在自训练周期中进行模型训练。Curriculum Labeling (CL)中，应用类似课程学习的原则，通过在每个自学习周期之前重新启动模型参数来避免概念漂移。
+5. [【源头活水】CVPR 2022 | 大幅减少零样本学习所需的人工标注，马普所和北邮提出富含视觉信息的类别语义嵌入](https://mp.weixin.qq.com/s/VfXlObtw2nbZayuuxtUsvg)       :star::star:
+   - Abstract: 大幅减少零样本学习所需的人工标注，马普所和北邮提出富含视觉信息的类别语义嵌入
+   - Paper: [VGSE: Visually-Grounded Semantic Embeddings for Zero-Shot Learning](https://arxiv.org/abs/2203.10444)
+   - Code: [https://github.com/wenjiaXu/VGSE](https://github.com/wenjiaXu/VGSE)
+   - Tips: 为减少零样本学习所需的人工标注，提高类别嵌入的语义和视觉完备性，本文提出一个自动的类别嵌入发掘网络 VSGE 模型，能够利用图像切片的视觉相似性发掘类别嵌入。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/6wQyVOrkRNIZjOQSiaMtOQSVNWcpvNI3vxWWaIIN2EBHLJnTK86EpicrDpDiaHzrp9kic184icgTlpfvJ9aJQj3lgKg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gW9zTkJA8futG2rNvAkVibZnFJAIYTSHFQTJEohUynFZQZYlHNNUErSEyuqsmkn5LH9Sf23KClVc9qQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-5. [CVPR2022 | 基于自我中心数据的OCR评估](https://mp.weixin.qq.com/s/SByoUbGiomVpx5VvcrYk6Q)       :star::star:
-   - Abstract: 基于自我中心数据的OCR评估
-   - Paper: [An Evaluation of OCR on Egocentric Data](http://arxiv.org/pdf/2206.05496)
-   - Code: [https://github.com/tobyperrett/epic-text-annotations](https://github.com/tobyperrett/epic-text-annotations)
-   - Tips: 本文研究了OCR方法在EPIC-KITCHENS数据集中识别图像中文本的能力。介绍了一种有效的旋转和合并pipeline。将其应用于经过预训练的最新OCR方法，展示了相对于所有非旋转感知基线的巨大改进。
+6. [SIGGRAPH 2022|通过步态就能识别身体疾病，好神奇](https://mp.weixin.qq.com/s/3rbNM6PkQHxIvwG3NmsoLA)       :star::star:
+   - Abstract: 通过步态就能识别身体疾病，好神奇
+   - Paper: [Generative GaitNet](https://mrl.snu.ac.kr/research/ProjectGaitNet/paper.pdf)
+   - Tips: 本文提出了生成式GaitNet，这是一种基于深度强化学习控制一个包含304条hill型肌肉肌腱的全面的全身肌肉骨骼模型。生成式GaitNet是一个预先训练的，在618-dimensional连续学习的人工神经网络的集成系统解剖学状况(例如，质量分布、身体比例、骨骼畸形和肌肉缺陷)和步态状况(如步幅和节奏)。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/V2E1ll6kaTUgbicceq94yoZ60URa9RE0VWhMdqthjCsbBGcIjwicGnMELfHoodY42IFkO6I1lUpBQcPqJGCyzAww/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><video src="http://mpvideo.qpic.cn/0bc3eiaaiaaauiakgsf64brfaiwdaqraabaa.f10003.mp4?dis_k=71a653cadfe202f8cdc22ebe63ea0f5f&dis_t=1656987195&vid=wxv_2467418745456656388&format_id=10003&support_redirect=0&mmversion=false" style='zoom:100%'>
 </div>
 
-6. [卧槽，这才是最强Python刷题网站！](https://mp.weixin.qq.com/s/9tMM9ysdtKgOgL_d_2gzNA)       :star::star:
-   - Abstract: 卧槽，这才是最强Python刷题网站！
-   - Address: [https://www.nowcoder.com/link/pc_gzh_pyahzsq_python](https://www.nowcoder.com/link/pc_gzh_pyahzsq_python)
-   - Tips: 作者给大家推荐一个粉丝反馈用起来不错的免费python学习&练习网站。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/SXE9StoF95O3o8X4eALeeTgpFL9Kjwk13dNL9QJrMyHXY7ntuIicJibjVRS41eJKpic8YgHT7UbuWibUUDLs5xb90Q/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
+## 
 
 
 ## :paperclip:  历史更新
@@ -207,8 +210,10 @@
     3. <a href="notes/202206/0619.md" target="_blank">公众号内容拓展学习笔记（2022.6.19）</a>
     4. <a href="notes/202206/0620.md" target="_blank">公众号内容拓展学习笔记（2022.6.20）</a>
 </details>
+<details><summary>7月</summary>
+    1. <a href="notes/202207/07015.md" target="_blank">公众号内容拓展学习笔记（2022.7.5）</a>
+</details>
 </pre>
-
 
 
 
