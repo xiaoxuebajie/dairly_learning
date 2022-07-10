@@ -3,7 +3,7 @@
 
 更新开始时间：2021.3.21
 
-更新今日时间：2022.7.5
+更新今日时间：2022.7.10
 
 ------
 
@@ -11,62 +11,63 @@
 
 ## :paperclip:  今日要点
 
-1. [港科大&MSRA：图像到图像转换，Finetuning is all you need](https://mp.weixin.qq.com/s/dIFubdO7TPx4pvRQ8aSEAQ)         :star::star:
-   - Abstract: 港科大&MSRA：图像到图像转换，Finetuning is all you need
-   - Paper: [Pretraining is All You Need for Image-to-Image Translation](https://arxiv.org/pdf/2205.12952.pdf)
-   - Tips:  研究者将每个图像到图像的转换问题视为下游任务，并引入了一个简单通用框架，该框架采用预训练的扩散模型来适应各种图像到图像的转换。他们将提出的预训练图像到图像转换模型称为 PITI（pretraining-based image-to-image translation）。此外，研究者还提出用对抗训练来增强扩散模型训练中的纹理合成，并与归一化指导采样结合以提升生成质量。
+1. [劲爆！YOLOv6又快又准的目标检测框架开源啦（附源代码下载）](https://mp.weixin.qq.com/s/T07zfA60e7OcfL8vgrxduw)         :star::star:
+   - Abstract: YOLOv6又快又准的目标检测框架开源啦
+   - Code: [https://github.com/meituan/YOLOv6](https://github.com/meituan/YOLOv6)
+   - Tips:  本文介绍了美团视觉智能部在目标检测框架方面的优化及实践经验，针对YOLO系列框架，在训练策略、主干网络、多尺度特征融合、检测头等方面进行了思考和优化，设计了新的检测框架-YOLOv6，来解决工业应用落地所遇到的实际问题。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gWicGSyLwmgvrPibLE4pesQnqgTqN7IX6xLfSZ6zVVbor6XufjOoqklXosvEfV1ElTtMCDWzCf1dUXWA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/hEx03cFgUsXYibVOEYCFpPdGEX5BzNM4KN0ep6qCnTrwNDLVicjopksE9h0wQVKq0TcK8JWthicRmhFZsG0TE1j3w/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
-2. [屠榜多目标跟踪！BoT-SORT：稳健的关联多行人跟踪](https://mp.weixin.qq.com/s/5d22OZbrxS-FTLqh1iCn4g)       :star::star:
-   - Abstract: 屠榜多目标跟踪！BoT-SORT：稳健的关联多行人跟踪
-   - Paper: [BoT-SORT: Robust Associations Multi-Pedestrian Tracking](https://arxiv.org/abs/2206.14651)
-   - Code: [https://github.com/NirAharon/BOT-SORT](https://github.com/NirAharon/BOT-SORT)
-   - Tips: 在本文中提出了一种新的鲁棒跟踪器，它可以结合运动和外观信息的优点，以及相机运动补偿和更准确的卡尔曼滤波器状态向量。
+2. [Yolov7：最新最快的实时检测框架，最详细分析解释（附源代码）](https://mp.weixin.qq.com/s/Ec3aM3KCxg5TjcMpG48viQ)       :star::star:
+   - Abstract: Yolov7：最新最快的实时检测框架，最详细分析解释
+   - Paper: [YOLOv7: Trainable bag-of-freebies sets new state-of-the-art for real-time object detectors](https://arxiv.org/pdf/2207.02696.pdf)
+   - Code: [https://github.com/WongKinYiu/yolov7](https://github.com/WongKinYiu/yolov7)
+   - Tips: Yolov7在5 FPS到160 FPS范围内的速度和精度达到了新的高度，并在GPU V100上具有30 FPS或更高的所有已知实时目标检测器中具有最高的精度56.8%AP。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/5ooHoYt0tgktYQfMrLIJOqz7t9YDZAUCWPdwxkCiaTv2Ls3POc5fVTuO6Lt2GabtiaQib92DjsUUfGrIibKlLOXqgA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-
-3. [ScePT: 为规划的场景一致和基于策略轨迹预测](https://mp.weixin.qq.com/s/UxZFYHFk32MSTnK58FSFwQ)       :star::star:
-   - Abstract: ScePT: 为规划的场景一致和基于策略轨迹预测
-   - Paper: [ScePT: Scene-consistent, Policy-based Trajectory Predictions for Planning](https://arxiv.org/abs/2206.13387)
-   - Code: [https://github.com/nvr-avg/ScePT](https://github.com/nvr-avg/ScePT)
-   - Tips: 这项工作提出基于策略规划的轨迹预测模型ScePT，该模型可以生成适用于自主系统运动规划、精确、场景一致的轨迹预测。其明确地强制场景一致性，并学习可用于制约预测的智体交互策略。在多个真实行人和自主车辆数据集上的实验表明，ScePT匹配当前最先进的预测精度，并显著提高场景一致性。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/E5w2bqqaSwiaxw6ZUxiadRMERFqj1L9nBLp6oj5wMaPolUngBB3lLwDqqsngnLn8yKjtkp5b79dBy5AoqVo8SYAg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/1MtnAxmWSwNELKs8yfPfiabib8jtXMeBtU4FYg9L2dCXjhtPU0CrKP7Dib2qN0sdh1SFNLFRWPFH7j33NCsdVCkbw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
 </div>
 
 
-4. [CVPR 2022 | 复旦大学提出ZITS：基于Transformer结构增强的增量式图像修复](https://mp.weixin.qq.com/s/Bnqw2gFS_TTEeglRm3aIIw)       :star::star:
-   - Abstract: 复旦大学提出ZITS：基于Transformer结构增强的增量式图像修复
-   - Paper: [Incremental Transformer Structure Enhanced Image Inpainting with Masking Positional Encoding](https://arxiv.org/abs/2203.00867)
-   - Code: [https://github.com/DQiaole/ZITS_inpainting](https://github.com/DQiaole/ZITS_inpainting)
-   - Tips: 作者利用了一个基于Transformer的模型推断整体结构（边缘+线框）。利用简单的CNN，我们可以把这种结构图非常轻松的上采样到任意分辨率。进一步地，我们提出了利用零初始化残差连接技术增量式地将结构注入到后续CNN纹理修复网络。
+3. [最新开源！照片3D风格化：从单张照片生成风格化的3D照片 （CVPR 2022 Oral）](https://mp.weixin.qq.com/s/H-dbUv2ifRtTOCo-a7gwzQ)       :star::star:
+   - Abstract: 照片3D风格化：从单张照片生成风格化的3D照片
+   - Paper: [3D Photo Stylization Learning to Generate Stylized Novel Views from a Single Image](https://arxiv.org/abs/2112.00169)
+   - Code: [https://github.com/fmu2/3d_photo_stylization](https://github.com/fmu2/3d_photo_stylization)
+   - Tips: 这项工作提出了一个全新的深度学习模型。文中的模型将风格迁移和新视角生成通过点云的表示方式统一起来，从而获得高质量的照片3D风格化效果。与其他可行方案进行了充分对比，并初步展示了一些照片3D风格化的潜在应用。
 
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_jpg/yNnalkXE7oX1JznWHEUhCBa6FgnxEGmGRPJIibvsnhWnFaTw6zgSCuoN4mm4YQqu4VJQA3TayicD5QXypts1rZ0g/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-5. [【源头活水】CVPR 2022 | 大幅减少零样本学习所需的人工标注，马普所和北邮提出富含视觉信息的类别语义嵌入](https://mp.weixin.qq.com/s/VfXlObtw2nbZayuuxtUsvg)       :star::star:
-   - Abstract: 大幅减少零样本学习所需的人工标注，马普所和北邮提出富含视觉信息的类别语义嵌入
-   - Paper: [VGSE: Visually-Grounded Semantic Embeddings for Zero-Shot Learning](https://arxiv.org/abs/2203.10444)
-   - Code: [https://github.com/wenjiaXu/VGSE](https://github.com/wenjiaXu/VGSE)
-   - Tips: 为减少零样本学习所需的人工标注，提高类别嵌入的语义和视觉完备性，本文提出一个自动的类别嵌入发掘网络 VSGE 模型，能够利用图像切片的视觉相似性发掘类别嵌入。
-
-<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gW9zTkJA8futG2rNvAkVibZnFJAIYTSHFQTJEohUynFZQZYlHNNUErSEyuqsmkn5LH9Sf23KClVc9qQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
-</div>
-
-6. [SIGGRAPH 2022|通过步态就能识别身体疾病，好神奇](https://mp.weixin.qq.com/s/3rbNM6PkQHxIvwG3NmsoLA)       :star::star:
-   - Abstract: 通过步态就能识别身体疾病，好神奇
-   - Paper: [Generative GaitNet](https://mrl.snu.ac.kr/research/ProjectGaitNet/paper.pdf)
-   - Tips: 本文提出了生成式GaitNet，这是一种基于深度强化学习控制一个包含304条hill型肌肉肌腱的全面的全身肌肉骨骼模型。生成式GaitNet是一个预先训练的，在618-dimensional连续学习的人工神经网络的集成系统解剖学状况(例如，质量分布、身体比例、骨骼畸形和肌肉缺陷)和步态状况(如步幅和节奏)。
-
-<div align=center><video src="http://mpvideo.qpic.cn/0bc3eiaaiaaauiakgsf64brfaiwdaqraabaa.f10003.mp4?dis_k=71a653cadfe202f8cdc22ebe63ea0f5f&dis_t=1656987195&vid=wxv_2467418745456656388&format_id=10003&support_redirect=0&mmversion=false" style='zoom:100%'>
+<div align=center><video src="http://mpvideo.qpic.cn/0bc3imaawaaafaakxuoc55rfaq6dbnbqacya.f10003.mp4?dis_k=8f63bfc18b3b00d3d702e8369ea8cf89&dis_t=1657422614&vid=wxv_2471786371653926913&format_id=10003&support_redirect=0&mmversion=false" style='zoom:100%'>
 </div>
 
 
-## 
+4. [EPro-PnP：用于单目物体姿态估计的广义端到端概率 PnP（CVPR 2022）](https://mp.weixin.qq.com/s/Pq0G6cb0sua-9gIOyB8buQ)       :star::star:
+   - Abstract: EPro-PnP：用于单目物体姿态估计的广义端到端概率 PnP
+   - Paper: [EPro-PnP: Generalized End-to-End Probabilistic Perspective-n-Points for Monocular Object Pose Estimation](https://arxiv.org/abs/2203.13254)
+   - Code: [https://github.com/tjiiv-cprg/EPro-PnP](https://github.com/tjiiv-cprg/EPro-PnP)
+   - Tips: 作者提出了 EPro-PnP，这是一个概率 PnP 层，用于通过可学习的 2D-3D 对应关系进行端到端姿态估计。只需将EPro-PnP 插入 CDPN 框架，EPro-PnP 就可以轻松达到 6DoF 姿态估计的顶级性能。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/O60Uib8kfuuicP5RI7S17OKAnkpMNDrNQlb1N0cwGOetaPvI1fjJN48NpXNgdfFREPxdmtGedmNar33k6SOhKOhA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+
+5. [ICRA 2022杰出论文：自动驾驶2D图像转成鸟瞰图，准确率立增15%](https://mp.weixin.qq.com/s/-0ZQEVCAp8sJlxTAcln_Kw)       :star::star:
+   - Abstract: 自动驾驶2D图像转成鸟瞰图，准确率立增15%
+   - Paper: [Translating Images into Maps](https://arxiv.org/pdf/2110.00966.pdf)
+   - Code: [https://github.com/avishkarsaha/translating-images-into-maps](https://github.com/avishkarsaha/translating-images-into-maps)
+   - Tips: 来自萨里大学的研究者引入了注意力机制，将自动驾驶的 2D 图像转换为鸟瞰图，使得模型的识别准确率提升了 15%。这项研究在不久前落幕的 ICRA 2022 会议上获得了杰出论文奖。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_gif/KmXPKA19gWicibR1SYqgGgRvZI9icRH1XIycMdbeVZE6BdPHzibLaMr9C3KbFysEiaIGSHKvh4XSHRXAGFxdCJxf3Yg/640?wx_fmt=gif&wxfrom=5&wx_lazy=1" style='zoom:100%'>
+</div>
+
+
+6. [PolarFormer：极transformer的多摄像头3D目标检测](https://mp.weixin.qq.com/s/C8Lkx8c_x6-TRo0hjdpxXw)       :star::star:
+   - Abstract: PolarFormer：极transformer的多摄像头3D目标检测
+   - Paper: [PolarFormer: Multi-camera 3D Object Detection with Polar Transformers](https://arxiv.org/abs/2206.15398)
+   - Tips: 本文提倡利用极坐标系，并提出一种极transformer（PolarFormer），以多摄像机2D图像作为输入，用于BEV空间更精确3D目标检测。
+
+<div align=center><img src="https://mmbiz.qpic.cn/mmbiz_png/E5w2bqqaSwggapSnG6KyLtVstxuhovyia17yGibLR9vfIR935OL3r8aLm7cjNHqiaSCpnhhZRMFkEvXEaPn4V3RTg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" style='zoom:100%'>
+</div>
+
+
 
 
 ## :paperclip:  历史更新
@@ -211,9 +212,11 @@
     4. <a href="notes/202206/0620.md" target="_blank">公众号内容拓展学习笔记（2022.6.20）</a>
 </details>
 <details><summary>7月</summary>
-    1. <a href="notes/202207/07015.md" target="_blank">公众号内容拓展学习笔记（2022.7.5）</a>
+    1. <a href="notes/202207/0705.md" target="_blank">公众号内容拓展学习笔记（2022.7.5）</a>
+    2. <a href="notes/202207/0710.md" target="_blank">公众号内容拓展学习笔记（2022.7.10）</a>
 </details>
 </pre>
+
 
 
 
